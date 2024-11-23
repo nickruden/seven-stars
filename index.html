@@ -3,9 +3,1591 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>7 звёзд</title>
+
+    <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/UI/button.css">
+    <link rel="stylesheet" href="./styles/UI/input.css">
+    <link rel="stylesheet" href="./styles/UI/checkbox.css">
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <link rel="stylesheet" href="./styles/components/feedback-block.css">
+
+    <link rel="stylesheet" href="./styles/pages/main.css">
 </head>
 <body>
-    <div>Это главная страница</div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="my-container header__container">
+                <a href="" class="header__logo-link"><img src="./assets/images/logo.svg" alt="logo"
+                        class="header__logo-img"></a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="" class="header__menu-link">О нас</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Детские сады</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Центр развития</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Новости</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Блог</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <div class="header__smp">
+                        <a href="" class="header__smp-link">
+                            <img src="./assets/images/smp-icons/Telegram.svg" alt="Tg-icon" class="header__smp-img">
+                        </a>
+                        <a href="" class="header__smp-link">
+                            <img src="./assets/images/smp-icons/WhatsApp.svg" alt="WA-icon" class="header__smp-img">
+                        </a>
+                    </div>
+                    <div class="header__buttons">
+                        <button class="my-button my-button_noColor my-button_borderOval header__button">ЗАПИСАТЬСЯ</button>
+                        <a href="tel:+73952738200" class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7 (3952) 738-200</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="top-block main__top-block">
+                <div class="my-container top-block__container">
+                    <div class="top-block__body">
+                        <div class="top-block__title"> частные детские сады. <br> центр развития. <br> «семь звёзд» <div
+                                class="top-block__location">
+                                <div class="top-block__location-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C7.582 2 4 5.35813 4 9.5C4 11.1309 4.57033 12.6275 5.51833 13.8531C5.53533 13.8825 5.538 13.9153 5.55733 13.9434L10.8907 21.4434C11.138 21.7913 11.5547 22 12 22C12.4453 22 12.862 21.7913 13.1093 21.4434L18.4427 13.9434C18.4623 13.9153 18.4647 13.8825 18.4817 13.8531C19.4297 12.6275 20 11.1309 20 9.5C20 5.35813 16.418 2 12 2ZM12 12C10.5273 12 9.33333 10.8806 9.33333 9.5C9.33333 8.11937 10.5273 7 12 7C13.4727 7 14.6667 8.11937 14.6667 9.5C14.6667 10.8806 13.4727 12 12 12Z"
+                                            fill="black" />
+                                    </svg>
+                                </div> <span class="top-block__location-text"> В Иркутске</span>
+                            </div>
+                        </div>
+                        <ul class="top-block__list">
+                            <li class="top-block__list-item">Дружим с детьми с 2007 года</li>
+                            <li class="top-block__list-item">Возможность оплаты маткапиталом</li>
+                            <li class="top-block__list-item">До 12 человек в группе в детских садах</li>
+                            <li class="top-block__list-item">Лицензия на образовательную деятельность</li>
+                            <li class="top-block__list-item">Реджио-подход</li>
+                        </ul>
+                        <div class="top-block__links">
+                            <a href="" class="top-block__link active">экскурсия <br> в детский сад</a>
+                            <a href="" class="top-block__link">записаться <br> в центр развития</a>
+                        </div>
+                    </div>
+                    <div class="top-block__wrap-img"></div>
+                </div>
+                <img src="./assets/images/main/background/cones-7.png" alt="" class="top-block__background-img">
+            </section>
+            <section class="branches main__branches">
+                <div class="my-container branches__container">
+                    <h2 class="block-title branches__title">Наши <br> филиалы</h2>
+                    <div class="branches__body">
+                        <div class="branches__content">
+                            <div class="branches__img-wrap">
+                                <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
+                            </div>
+                            <div class="branches__info">
+                                <div class="branches__address">
+                                    <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                    <span class="branches__address-text">Березовая, 8 (м-н Солнечный)</span>
+                                </div>
+                                <div class="branches__texts">
+                                    <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                    <div class="branches__price">42 500₽ / мес.</div>
+                                </div>
+                                <div class="branches__info-buttons">
+                                    <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                        подробнее</button>
+                                    <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                        на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_92_1210)">
+                                            <path d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292" stroke="#4E6932" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_92_1210">
+                                            <rect width="26" height="26" fill="white" transform="translate(0.438477 0.915039)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="branches__buttons">
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
+                                7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
+                                7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button active">ул.
+                                Каландаришвили, 7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
+                                7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
+                                7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
+                                7</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-2.png" alt="" class="branches__background-img">
+            </section>
+            <section class="inspiration main__inspiration">
+                <div class="my-container inspiration__container">
+                    <div class="inspiration__inner">
+                        <div class="inspiration__desc">
+                            <h2 class="block-title inspiration__title">Мы <br> вдохновляемся <br> реджио</h2>
+                            <div class="inspiration__text">У нас нет случайных людей в коллективе. Наши педагоги вкладывают всю свою
+                                искреннюю любовь и уважение в каждую минуту жизни детей: от исследования окружающего мира до
+                                создания интересных крупных проектов.</div>
+                        </div>
+                        <div class="inspiration__slider">
+                            <div class="swiper inspiration__swiper">
+                                <div class="swiper-wrapper inspiration__swiper-wrapper">
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">01</div>
+                                            <div class="inspiration__slide-text">Видим в каждом ребёнке личность, слушаем и слышим детей</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/inspiration/slide-img.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">02</div>
+                                            <div class="inspiration__slide-text">Не даем готовых ответов, но исследуем любой вопрос вместе </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">03</div>
+                                            <div class="inspiration__slide-text">учим работать в команде</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">04</div>
+                                            <div class="inspiration__slide-text">предлагаем детям разные пути для самовыражения</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">05</div>
+                                            <div class="inspiration__slide-text">помогаем ребёнку раскрыть свой потенциал в проектной работе</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/inspiration/slide-img.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">06</div>
+                                            <div class="inspiration__slide-text">способствуем пробуждению интереса и мотивации к знаниям</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">07</div>
+                                            <div class="inspiration__slide-text">учимся рассуждать в моменте, всегда и везде</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/inspiration/slide-img.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide">
+                                            <div class="inspiration__slide-number">08</div>
+                                            <div class="inspiration__slide-text">говоря о правилах, объясняем, откуда они берутся</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev inspiration__swiper-button-prev">
+                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                            </div>
+                            <div class="swiper-button-next inspiration__swiper-button-next">
+                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project-activity main__project-activity">
+                <div class="my-container project-activity__container">
+                    <div class="avantage-descripion project-activity__description">
+                        <h2 class="block-title avantage-descripion__title">занимаемся проектной деятельностью</h2>
+                        <div class="avantage-descripion__texts">
+                            <div class="avantage-descripion__pre-title">Выбираем с детьми интересную тему и изучаем ее со всех
+                                сторон</div>
+                            <div class="avantage-descripion__accordion">
+                                <div class="avantage-descripion__accordion-content">
+                                    <div class="avantage-descripion__accordion-content-visible">
+                                        <div class="avantage-descripion__accordion-visible-text">Дети учатся взаимодействовать в команде. Ежедневно проходят детские советы, на которых каждый получает право высказаться.  Раз в несколько месяцев мы организуем показ проекта, чтобы родители могли прийти и обсудить с ребёнком то, чем он занимается. Готовые детские работы размещаются на специальных системах подвеса — чтобы ребёнок мог гордиться своим трудом.</div>
+                                        <div class="avantage-descripion__accordion-content-hidden" id="project-activity">«Проектирование» — возникающий и
+                                            изменяющийся в процессе реализации
+                                            учебный план, в центре которого находятся
+                                            интересы ребёнка.
+                                            Педагоги наблюдают за детьми,
+                                            внимательно прислушиваются к ним, ценят
+                                            их собственные идеи, чтобы понять, что
+                                            именно интересует детей в наибольшей
+                                            степени в данный момент и предложить им
+                                            тему проекта. Например, изучение света и
+                                            тени, свойств воды, животных Африки или
+                                            комнатных растений.
+                                            Дети являются главными действующими
+                                            лицами процесса получения собственных
+                                            знаний. Задача педагога — помочь в
+                                            решении возникающих проблем в ходе
+                                            реализации проекта, предоставить
+                                            информацию и опыт в случаях, когда это
+                                            необходимо. В остальном дети сами
+                                            выбирают, как решить задачу, используя
+                                            свое мышление, креативность и гибкость.
+                                            Такой подход к обучению — это ёмкий,
+                                            интересный процесс, который позволяет
+                                            взглянуть на предмет исследования с
+                                            разных сторон. Это естественный и
+                                            экологичный способ обучения ребёнка
+                                            работе в команде, постановке задач,
+                                            планированию, анализу.
+                                        </div>
+                                        <button class="my-button my-button_noColor my-button_noBorder avantage-descripion__accordion-button" id="project-activity"><span class="avantage-descripion__accordion-button-text">больше</span> 
+                                            <div class="my-button__img-arrow avantage-description__accordion-button-img"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_92_1210)">
+                                                <path d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292" stroke="#4E6932" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_92_1210">
+                                                <rect width="26" height="26" fill="white" transform="translate(0.438477 0.915039)"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                                </div>
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-activity__slider">
+                        <div class="swiper project-activity__swiper">
+                            <div class="swiper-wrapper project-activity__swiper-wrapper">
+                                <div class="swiper-slide project-activity__swiper-slide">
+                                    <div class="project-activity__slide">
+                                        <div class="project-activity__slide-wrap-img"><img src="./assets/images/main/project-activity/slide-1.jpg" alt=""
+                                                class="project-activity__slide-img"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide project-activity__swiper-slide">
+                                    <div class="project-activity__slide">
+                                        <div class="project-activity__slide-wrap-img"><img src="./assets/images/main/project-activity/slide-2.jpg" alt=""
+                                                class="project-activity__slide-img"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide project-activity__swiper-slide">
+                                    <div class="project-activity__slide">
+                                        <div class="project-activity__slide-wrap-img"><img src="./assets/images/main/project-activity/slide-3.jpg" alt=""
+                                                class="project-activity__slide-img"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide project-activity__swiper-slide">
+                                    <div class="project-activity__slide">
+                                        <div class="project-activity__slide-wrap-img"><img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                class="project-activity__slide-img"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-activity__buttons">
+                        <a href="" class="my-button my-button_noColor my-button_borderSquare project-activity__link">посмотреть все
+                            проекты</a>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-9.png" alt="" class="project-activity__background-img">
+            </section>
+            <section class="modern-tools main__modern-tools">
+                <div class="my-container modern-tools__container">
+                    <div class="avantage-descripion modern-tools__description">
+                        <h2 class="block-title avantage-descripion__title">изучаем мир <br> при помощи современных инструментов</h2>
+                        <div class="avantage-descripion__texts">
+                            <div class="avantage-descripion__pre-title">Мы не ограждаем детей от современных технологий. Под присмотром педагога ребенок может работать с цифровым оборудованием.</div>
+                            <div class="avantage-descripion__accordion">
+                                <div class="avantage-descripion__accordion-content">
+                                    <div class="avantage-descripion__accordion-content-visible">
+                                        <div class="avantage-descripion__accordion-visible-text">Мы создаем пространство, которое приглашает детей к исследованию и творчеству и дарит им приятное ощущение свободы, спокойствия, вызывает интерес и мотивацию.</div>
+                                        <div class="avantage-descripion__accordion-content-hidden" id="modern-tools">
+                                            Ребёнок исследует, трогает, щупает, играет. Богатство опыта напрямую зависит от количества и качества материалов, с которыми ребёнок взаимодействует. В садах “Семь Звезд” можно увидеть самые разные инструменты и предметы: от шишек до цифрового микроскопа. Предпочтение отдается натуральным качественным материалам и материалам с открытым назначением.
+                                        </div>
+                                        <button class="my-button my-button_noColor my-button_noBorder avantage-descripion__accordion-button" id="modern-tools">
+                                            <span class="avantage-descripion__accordion-button-text">больше</span>
+                                            <div class="my-button__img-arrow avantage-description__accordion-button-img">
+                                                <svg
+                                                    width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modern-tools__slider">
+                        <div class="swiper modern-tools__swiper">
+                            <div class="swiper-wrapper modern-tools__swiper-wrapper">
+                                <div class="swiper-slide modern-tools__swiper-slide">
+                                    <div class="modern-tools__slide">
+                                        <div class="modern-tools__slide-title">оверхед-проекторы</div>
+                                        <div class="modern-tools__slide-wrap-img">
+                                            <img src="./assets/images/main/modern-tools/slide-1.jpg" alt=""
+                                                class="modern-tools__slide-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide modern-tools__swiper-slide">
+                                    <div class="modern-tools__slide">
+                                        <div class="modern-tools__slide-title">электронные микроскопы</div>
+                                        <div class="modern-tools__slide-wrap-img">
+                                            <img src="./assets/images/main/modern-tools/slide-2.jpg" alt=""
+                                                class="modern-tools__slide-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide modern-tools__swiper-slide">
+                                    <div class="modern-tools__slide">
+                                        <div class="modern-tools__slide-title">световые столы</div>
+                                        <div class="modern-tools__slide-wrap-img">
+                                            <img src="./assets/images/main/modern-tools/slide-3.jpg" alt=""
+                                                class="modern-tools__slide-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide modern-tools__swiper-slide">
+                                    <div class="modern-tools__slide">
+                                        <div class="modern-tools__slide-title">оверхед-проекторы</div>
+                                        <div class="modern-tools__slide-wrap-img">
+                                            <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                class="modern-tools__slide-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-6.png" alt="" class="modern-tools__background-img">
+            </section>
+            <section class="preparing-child main__project-activity">
+                <div class="my-container preparing-child__container">
+                    <div class="avantage-descripion preparing-child__description">
+                        <h2 class="block-title avantage-descripion__title">Готовим ребенка к школе</h2>
+                        <div class="avantage-descripion__texts">
+                            <div class="avantage-descripion__pre-title">Мы берем самое лучшее из системы реджио, вдохновляя детей на
+                                интересные открытия и обучая их общаться со сверстниками и взрослыми</div>
+                            <div class="avantage-descripion__accordion">
+                                <div class="avantage-descripion__accordion-content">
+                                    <div class="avantage-descripion__accordion-content-visible">
+                                        <div class="avantage-descripion__accordion-visible-text">В обучении мы нацелены на живой, а
+                                            не формальный подход, но в то же время учитываем существующую программу ФГОС и основную
+                                            программу дошкольного образования «Вдохновение» под редакцией И.Е. Федосовой, В.К.
+                                            Загвоздкина. В завершение ваш ребёнок будет не только владеть базовыми умениями,
+                                            необходимыми для будущего первоклассниками, но и получит столь важные в его возрасте
+                                            навыки социализации. </div>
+                                        <div class="avantage-descripion__accordion-content-hidden" id="preparing-child">
+                                            «Проектирование» — возникающий и
+                                            изменяющийся в процессе реализации
+                                            учебный план, в центре которого находятся
+                                            интересы ребёнка.
+                                            Педагоги наблюдают за детьми,
+                                            внимательно прислушиваются к ним, ценят
+                                            их собственные идеи, чтобы понять, что
+                                            именно интересует детей в наибольшей
+                                            степени в данный момент и предложить им
+                                            тему проекта. Например, изучение света и
+                                            тени, свойств воды, животных Африки или
+                                            комнатных растений.
+                                            Дети являются главными действующими
+                                            лицами процесса получения собственных
+                                            знаний. Задача педагога — помочь в
+                                            решении возникающих проблем в ходе
+                                            реализации проекта, предоставить
+                                            информацию и опыт в случаях, когда это
+                                            необходимо. В остальном дети сами
+                                            выбирают, как решить задачу, используя
+                                            свое мышление, креативность и гибкость.
+                                            Такой подход к обучению — это ёмкий,
+                                            интересный процесс, который позволяет
+                                            взглянуть на предмет исследования с
+                                            разных сторон. Это естественный и
+                                            экологичный способ обучения ребёнка
+                                            работе в команде, постановке задач,
+                                            планированию, анализу.</div>
+                                        <button
+                                            class="my-button my-button_noColor my-button_noBorder avantage-descripion__accordion-button"
+                                            id="preparing-child"><span
+                                                class="avantage-descripion__accordion-button-text">больше</span>
+                                            <div class="my-button__img-arrow avantage-description__accordion-button-img"><svg
+                                                    width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preparing-child__content">
+                        <div class="preparing-child__content-img-title">уже 17 лет выпускаем детей, на 100% подготовленных к школе
+                        </div>
+                        <div class="preparing-child__content-img"></div>
+                    </div>
+                    <div class="preparing-child__buttons">
+                        <a href="" class="my-button my-button_noColor my-button_borderSquare preparing-child__link">образовательная
+                            программа</a>
+                    </div>
+                </div>
+            </section>
+            <section class="why-choose-us main__why-choose-us">
+                <div class="my-container why-choose-us__container">
+                    <h2 class="block-title why-choose-us__title">за что нас выбирают</h2>
+                    <div class="accordion why-choose-us__accordion" id="accordionExample">
+                        <div class="accordion-item why-choose-us__accordion-item">
+                          <h2 class="accordion-header why-choose-us__accordion-header">
+                            <button class="accordion-button why-choose-us__accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <span class="accordion-button-title why-choose-us__accordion-button-title">Профессиональный подход</span>
+                              <span class="accordion-button-text why-choose-us__accordion-button-text">Образовательная деятельность в наших садах составлена в соответствии с ФГОС и программы дошкольного образования «Вдохновение». Наша организация имеет все необходимые документы.</span>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse why-choose-us__accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body why-choose-us__accordion-body">
+                                <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
+                                <div class="why-choose-us__accordion-body-img-wrap">
+                                    <img src="./assets/images/main/why-choose-us/accordion-img.jpg" alt="" class="why-choose-us__accordion-body-img">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item why-choose-us__accordion-item">
+                          <h2 class="accordion-header why-choose-us__accordion-header">
+                            <button class="accordion-button why-choose-us__accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <span class="accordion-button-title why-choose-us__accordion-button-title">В каждой группе — до 12 человек</span>
+                              <span class="accordion-button-text why-choose-us__accordion-button-text">Небольшое количество детей в группах в детских садах позволяет педагогам уделять внимание каждому ребёнку.</span>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse why-choose-us__accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body why-choose-us__accordion-body">
+                                <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
+                                <div class="why-choose-us__accordion-body-img-wrap">
+                                    <img src="./assets/images/main/why-choose-us/accordion-img.jpg" alt="" class="why-choose-us__accordion-body-img">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item why-choose-us__accordion-item">
+                          <h2 class="accordion-header why-choose-us__accordion-header">
+                            <button class="accordion-button why-choose-us__accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <span class="accordion-button-title why-choose-us__accordion-button-title">Уютная атмосфера</span>
+                              <span class="accordion-button-text why-choose-us__accordion-button-text">Для каждого помещения разработан индивидуальный дизайн-проект с учетом всех нюансов — от безопасной мебели с закругленными краями до спокойной цветовой гаммы.</span>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse why-choose-us__accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body why-choose-us__accordion-body">
+                                <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
+                                <div class="why-choose-us__accordion-body-img-wrap">
+                                    <img src="./assets/images/main/why-choose-us/accordion-img.jpg" alt="" class="why-choose-us__accordion-body-img">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item why-choose-us__accordion-item">
+                          <h2 class="accordion-header why-choose-us__accordion-header">
+                            <button class="accordion-button why-choose-us__accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <span class="accordion-button-title why-choose-us__accordion-button-title">Компетентность</span>
+                              <span class="accordion-button-text why-choose-us__accordion-button-text">Весь наш педагогический состав тщательно подобран, не только по образованию, но и по отношению к воспитательному процессу. Все педагоги регулярно повышают квалификацию.</span>
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse why-choose-us__accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body why-choose-us__accordion-body">
+                                <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
+                                <div class="why-choose-us__accordion-body-img-wrap">
+                                    <img src="./assets/images/main/why-choose-us/accordion-img.jpg" alt="" class="why-choose-us__accordion-body-img">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item why-choose-us__accordion-item">
+                          <h2 class="accordion-header why-choose-us__accordion-header">
+                            <button class="accordion-button why-choose-us__accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <span class="accordion-button-title why-choose-us__accordion-button-title">Ответственность и безопасность</span>
+                              <span class="accordion-button-text why-choose-us__accordion-button-text">Все помещения оснащены системами пожарной безопасности, видеонаблюдения, охранной сигнализации. Вход доступен только через звонок.</span>
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse why-choose-us__accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body why-choose-us__accordion-body">
+                                <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
+                                <div class="why-choose-us__accordion-body-img-wrap">
+                                    <img src="./assets/images/main/reviews/video.jpg" alt="" class="why-choose-us__accordion-body-img">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <article class="feedback-block why-choose-us__feedback-block">
+                        <div class="my-container feedback-block__container">
+                            <div class="feedback-block__inner">
+                                <div class="feedback-block__description">
+                                    <div class="feedback-block__main-text">Хотите записаться на экскурсию в один из наших садов,
+                                        <br> попасть в центр развития <br> или уточнить информацию?
+                                    </div>
+                                    <div class="feedback-block__pre-text">Оставьте Ваш телефон, <br> и мы перезвоним в ближайшее
+                                        время</div>
+                                </div>
+                                <form action="" class="feedback-form feedback-block__form">
+                                    <div class="feedback-form__elements">
+                                        <input type="text" name="input-name" id="inputName" class="my-input feedback-form__input"
+                                            placeholder="Ваше имя">
+                                        <input type="tel" name="input-phone" id="inputPhone" class="my-input feedback-form__input"
+                                            placeholder="+7 (999) 999 99 99">
+                                        <label for="why-choose-us__agreementCheck" class="my-checkbox feedback-form__checkbox">
+                                            <input type="checkbox" name="agreement-checkbox" id="why-choose-us__agreementCheck"
+                                                class="my-checkbox__old">
+                                            <span class="my-checkbox__new"></span>
+                                            <span class="my-checkbox__text">согласие на обработку персональных данных</span>
+                                        </label>
+                                        <button class="my-button my-button_borderSquare feedback-form__button">отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <img src="./assets/images/main/background/cones-5.png" alt="" class="why-choose-us__background-img">
+            </section>
+            <div class="lifestyle lifestyle__main">
+                <div class="lifestyle__items">
+                    <div class="lifestyle__block-nutrition lifestyle-item">
+                        <div class="my-container lifestyle-item__container">
+                            <div class="lifestyle-item__slider">
+                                <div class="swiper block-nutrition__swiper lifestyle-item__swiper">
+                                    <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-nutrition/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-nutrition/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-nutrition/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-nutrition/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-button-prev block-nutrition__swiper-button-prev lifestyle-item__swiper-button-prev">
+                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                                </div>
+                                <div
+                                    class="swiper-button-next block-nutrition__swiper-button-next lifestyle-item__swiper-button-next">
+                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                                </div>
+                                <div class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
+                                </div>
+                            </div>
+                            <div class="lifestyle-item__body">
+                                <h2 class="block-title lifestyle-item__title">
+                                    здоровое <br> питание
+                                </h2>
+                                <div class="lifestyle-item__texts">
+                                    <div class="lifestyle-item__pre-title">
+                                        В каждом детском саду оборудован профессиональный пищеблок, в котором трудится повар и
+                                        помощник
+                                        повара
+                                    </div>
+                                    <div class="lifestyle-item__text">
+                                        Кухня сертифицирована по СанПиНу, работает с проверенными поставщиками продуктов — «Саянский
+                                        бройлер», «ЯНТА» и др. Рацион полноценный, сбалансированный, с рассчитанной энергетической
+                                        ценностью, необходимым содержанием витаминов и минералов. Питание пятиразовое: завтрак,
+                                        второй
+                                        завтрак (фруктопауза), обед, полдник, ужин.
+                                    </div>
+                                    <div class="lifestyle-item__footnote">сертифицировано по СанПину</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lifestyle__block-walk lifestyle-item">
+                        <div class="my-container lifestyle-item__container">
+                            <div class="lifestyle-item__slider">
+                                <div class="swiper block-walk__swiper lifestyle-item__swiper">
+                                    <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-walk/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-walk/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-walk/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-walk/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev block-walk__swiper-button-prev lifestyle-item__swiper-button-prev">
+                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                                </div>
+                                <div class="swiper-button-next block-walk__swiper-button-next lifestyle-item__swiper-button-next">
+                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                                </div>
+                                <div class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
+                                </div>
+                            </div>
+                            <div class="lifestyle-item__body">
+                                <h2 class="block-title lifestyle-item__title">
+                                    прогулки <br> с пользой
+                                </h2>
+                                <div class="lifestyle-item__texts">
+                                    <div class="lifestyle-item__pre-title">
+                                        Детские площадки — это отличная возможность для ребёнка еще больше узнать об окружающем мире
+                                    </div>
+                                    <div class="lifestyle-item__text">
+                                        <p>Прогулки устраиваются 1-2 раза в день, продолжительностью от 1 до 2х часов, в зависимости
+                                            от погодных условий. Воспитатели организуют детей, время прогулки проходит с пользой.
+                                        </p>
+                                        <p> Для ребёнка это не только подвижные игры, но и возможность получить новый опыт и открыть
+                                            для себя столько всего интересного!</p>
+                                    </div>
+                                    <div class="lifestyle-item__footnote">удивляться всему, подмечать и открывать новое</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lifestyle__block-health lifestyle-item">
+                        <div class="my-container lifestyle-item__container">
+                            <div class="lifestyle-item__slider">
+                                <div class="swiper block-health__swiper lifestyle-item__swiper">
+                                    <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-health/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-health/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-health/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/lifestyle/block-health/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev block-health__swiper-button-prev lifestyle-item__swiper-button-prev">
+                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                                </div>
+                                <div class="swiper-button-next block-health__swiper-button-next lifestyle-item__swiper-button-next">
+                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                                </div>
+                                <div class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
+                                </div>
+                            </div>
+                            <div class="lifestyle-item__body">
+                                <h2 class="block-title lifestyle-item__title">
+                                    медицинское <br> сопровождение
+                                </h2>
+                                <div class="lifestyle-item__texts">
+                                    <div class="lifestyle-item__pre-title">
+                                        Врач-педиатр регулярно осматривает детей в соответствии с требованиями в сфере
+                                        здравоохранения
+                                    </div>
+                                    <div class="lifestyle-item__text">
+                                        Ежедневно с детьми проводятся утренние зарядки, закаливающие процедуры и прогулки — минимум
+                                        2 раза в день. Все помещения оснащены бактерицидными лампами, санитайзерами, увлажнителями
+                                        воздуха. Мы соблюдаем режим проветривания, уборки помещений, обработки материалов и
+                                        оборудования с дезинфицирующими средствами.
+                                    </div>
+                                    <div class="lifestyle-item__footnote">осмотр педиатром</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-4.png" alt="" class="lifestyle__background-img">
+            </div>
+            <section class="dev-environment main__dev-environment">
+                <div class="my-container dev-environment__container">
+                    <h2 class="block-title dev-environment__title">развивающая среда</h2>
+                    <div class="dev-environment__content">
+                        <div class="dev-environment__text-slider">
+                            <div class="swiper dev-environment__text-swiper">
+                                <div class="swiper-wrapper dev-environment__text-swiper-wrapper">
+                                    <div class="swiper-slide dev-environment__text-swiper-slide" id="slide1">
+                                        <div class="dev-environment__text-slide">
+                                            <div class="dev-environment__slide-title">Сенсорные зоны</div>
+                                            <div class="dev-environment__slide-text">Для стимуляции познавательной и двигательной
+                                                активности, развития мелкой моторики</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide dev-environment__text-swiper-slide" id="slide2">
+                                        <div class="dev-environment__text-slide">
+                                            <div class="dev-environment__slide-title">Множество обучающих предметов и интересных
+                                                пособий</div>
+                                            <div class="dev-environment__slide-text">мотивирует детей на получение информации</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide dev-environment__text-swiper-slide" id="slide3">
+                                        <div class="dev-environment__text-slide">
+                                            <div class="dev-environment__slide-title">Все необходимое для творческой деятельности
+                                            </div>
+                                            <div class="dev-environment__slide-text">огромное количество природных и бросовых
+                                                материалов</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide dev-environment__text-swiper-slide" id="slide4">
+                                        <div class="dev-environment__text-slide">
+                                            <div class="dev-environment__slide-title">Продуманная планировка помещений</div>
+                                            <div class="dev-environment__slide-text">способствует активному взаимодействию детей с
+                                                окружающим миром</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination dev-environment__text-swiper-pagination"></div>
+                            <div class="swiper-button-prev dev-environment__text-swiper-button-prev">
+                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                            </div>
+                            <div class="swiper-button-next dev-environment__text-swiper-button-next">
+                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                            </div>
+                        </div>
+                        <div class="dev-environment__img-sliders">
+                            <div class="dev-environment__image-slider" data-id="slide1">
+                                <div class="swiper dev-environment__image-swiper">
+                                    <div class="swiper-wrapper dev-environment__image-swiper-wrapper">
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination dev-environment__image-swiper-pagination"></div>
+                            </div>
+                            <div class="dev-environment__image-slider" data-id="slide2">
+                                <div class="swiper dev-environment__image-swiper">
+                                    <div class="swiper-wrapper dev-environment__image-swiper-wrapper">
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination dev-environment__image-swiper-pagination"></div>
+                            </div>
+                            <div class="dev-environment__image-slider" data-id="slide3">
+                                <div class="swiper dev-environment__image-swiper">
+                                    <div class="swiper-wrapper dev-environment__image-swiper-wrapper">
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination dev-environment__image-swiper-pagination"></div>
+                            </div>
+                            <div class="dev-environment__image-slider" data-id="slide4">
+                                <div class="swiper dev-environment__image-swiper">
+                                    <div class="swiper-wrapper dev-environment__image-swiper-wrapper">
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide dev-environment__image-swiper-slide">
+                                            <div class="dev-environment__image-slide">
+                                                <div class="dev-environment__image-slide-wrap">
+                                                    <img src="./assets/images/main/reviews/video.jpg" alt=""
+                                                        class="dev-environment__image-slide-photo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination dev-environment__image-swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-7.png" alt="" class="dev-environment__background-img">
+            </section>
+            <section class="development main__development">
+                <div class="my-container development__container">
+                    <div class="avantage-descripion development__description">
+                        <h2 class="block-title avantage-descripion__title">всестороннее развитие</h2>
+                        <div class="avantage-descripion__texts">
+                            <div class="avantage-descripion__pre-title">Занятия ведут опытные педагоги</div>
+                            <div class="avantage-descripion__accordion">
+                                <div class="avantage-descripion__accordion-content">
+                                    <div class="avantage-descripion__accordion-content-visible">
+                                        <div class="avantage-descripion__accordion-visible-text">Дополнительные занятия проводятся <br> в
+                                            определенные дни недели в специально <br> отведенное время.</div>
+                                        <div class="avantage-descripion__accordion-content-hidden" id="development">
+                                            В детском саду ребята взаимодействуют как со своими наставниками в группе
+                                            (воспитателями), так и с педагогами дополнительного образования: хореограф, музыкальный
+                                            руководитель, педагог английского языка, педагог по робототехнике, педагог по
+                                            творчеству, логопед.Разностороннее развитие ребенка обеспечивается за счет
+                                            дополнительных занятий, смены активной деятельности, где у каждого воспитанника есть
+                                            возможность проявить и раскрыть себя. Для нас очень ценно, чтобы ребёнок, получая
+                                            разнообразный социальный опыт и навыки, умел выстраивать отношения как со сверстниками,
+                                            так и со взрослыми
+                                        </div>
+                                        <button
+                                            class="my-button my-button_noColor my-button_noBorder avantage-descripion__accordion-button"
+                                            id="development">
+                                            <span class="avantage-descripion__accordion-button-text">больше</span>
+                                            <div class="my-button__img-arrow avantage-description__accordion-button-img"><svg
+                                                    width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="development__content">
+                        <div class="development__content-img-wrap">
+                            <div class="development__content-img-title">робототехника</div>
+                            <div class="development__content-img"></div>
+                        </div>
+                        <div class="development__buttons">
+                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                                <img src="./assets/images/main/development/svg_dance.svg" alt="" class="development__button-img"> Ритмика
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                                <img src="./assets/images/main/development/svg_music.svg" alt="" class="development__button-img"> Музыка
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                                <img src="./assets/images/main/development/svg_robot.svg" alt="" class="development__button-img"> Робототехника
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                                <img src="./assets/images/main/development/svg_book.svg" alt="" class="development__button-img"> Английский
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                                <img src="./assets/images/main/development/svg_brush.svg" alt="" class="development__button-img"> Творчество
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button development__button_isIndivid"> 
+                                <img src="./assets/images/main/development/svg_teacher.svg" alt="" class="development__button-img"> Логопед
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-6.png" alt="" class="development__background-img">
+            </section>
+            <section class="holidays main__holidays">
+                <div class="my-container holidays__container">
+                    <div class="holidays__description">
+                        <h2 class="block-title holidays__title">яркие <br> праздники</h2>
+                        <div class="holidays__texts">
+                            <div class="holidays__texts-inner">
+                                <div class="holidays__pre-title">Яркие праздники — часть эстетического воспитания</div>
+                                <div class="holidays__text">Устраивая праздничные мероприятия, мы заботимся не только об оформлении
+                                    помещении и наличии аниматоров, но и тщательно подбираем репертуар, обращаем внимание на костюмы
+                                    выступающих, общую атмосферу. Каждый праздник становится для ребенка ярким и интересным событием и
+                                    надолго остается в его памяти.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holidays__images">
+                        <div class="holidays__image-card">
+                            <div class="holidays__image-card-title">праздник осени</div>
+                            <div class="holidays__image-card-img-wrap">
+                                <img src="./assets/images/main/holidays/card-img-1.jpg" alt="" class="holidays__image-card-img">
+                            </div>
+                        </div>
+                        <div class="holidays__image-card">
+                            <div class="holidays__image-card-title">выпускной</div>
+                            <div class="holidays__image-card-img-wrap">
+                                <img src="./assets/images/main/holidays/card-img-2.jpg" alt="" class="holidays__image-card-img">
+                            </div>
+                        </div>
+                        <div class="holidays__image-card">
+                            <div class="holidays__image-card-title">встреча весны</div>
+                            <div class="holidays__image-card-img-wrap">
+                                <img src="./assets/images/main/holidays/card-img-3.jpg" alt="" class="holidays__image-card-img">
+                            </div>
+                        </div>
+                        <div class="holidays__image-card">
+                            <div class="holidays__image-card-title">новый год</div>
+                            <div class="holidays__image-card-img-wrap">
+                                <img src="./assets/images/main/holidays/card-img-4.jpg" alt="" class="holidays__image-card-img">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="my-button my-button_noColor my-button_borderSquare holidays__button-link">посмотреть наши
+                        мероприятия</a>
+                </div>
+                <img src="./assets/images/main/background/cones-8.png" alt="" class="holidays__background-img">
+            </section>
+            <section class="teachers main__teachers">
+                <div class="my-container teachers__container">
+                    <h2 class="block-title teachers__title">наши педагоги</h2>
+                    <div class="teachers__slider">
+                        <div class="swiper teachers__swiper">
+                            <div class="swiper-wrapper teachers__swiper-wrapper">
+                                <div class="swiper-slide teachers__swiper-slide">
+                                    <div class="teachers__slide">
+                                        <div class="teachers__slide-img-wrap">
+                                            <img src="./assets/images/main/teachers/slide-img-1.png" alt=""
+                                                class="teachers__slide-img">
+                                        </div>
+                                        <div class="teachers__slide-body">
+                                            <div class="teachers__slide-title">Олеся Сергеевна</div>
+                                            <div class="teachers__slide-text">дополнительная информация <br> о воспитателе</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide teachers__swiper-slide">
+                                    <div class="teachers__slide">
+                                        <div class="teachers__slide-img-wrap">
+                                            <img src="./assets/images/main/teachers/slide-img-2.png" alt=""
+                                                class="teachers__slide-img">
+                                        </div>
+                                        <div class="teachers__slide-body">
+                                            <div class="teachers__slide-title">Анастасия Николаевна</div>
+                                            <div class="teachers__slide-text">дополнительная информация <br> о воспитателе</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide teachers__swiper-slide">
+                                    <div class="teachers__slide">
+                                        <div class="teachers__slide-img-wrap">
+                                            <img src="./assets/images/main/teachers/slide-img-3.png" alt=""
+                                                class="teachers__slide-img">
+                                        </div>
+                                        <div class="teachers__slide-body">
+                                            <div class="teachers__slide-title">Гульнара Руфатовна</div>
+                                            <div class="teachers__slide-text">дополнительная информация <br> о воспитателе</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide teachers__swiper-slide">
+                                    <div class="teachers__slide">
+                                        <div class="teachers__slide-img-wrap">
+                                            <img src="./assets/images/main/teachers/slide-img-4.png" alt=""
+                                                class="teachers__slide-img">
+                                        </div>
+                                        <div class="teachers__slide-body">
+                                            <div class="teachers__slide-title">Анна Витальевна</div>
+                                            <div class="teachers__slide-text">дополнительная информация <br> о воспитателе</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev teachers__swiper-button-prev">
+                            <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                        </div>
+                        <div class="swiper-button-next teachers__swiper-button-next">
+                            <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/main/background/cones-1.png" alt="" class="teachers__background-img">
+            </section>
+            <section class="reviews main__reviews">
+                <div class="my-container reviews__container">
+                    <h2 class="block-title reviews__title">отзывы</h2>
+                    <div class="reviews__content">
+                        <div class="reviews__content-title">Приятные слова родителей о наших садах</div>
+                        <div class="reviews__slider">
+                            <div class="swiper reviews__swiper">
+                                <div class="swiper-wrapper reviews__swiper-wrapper">
+                                    <div class="swiper-slide reviews__swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-img-wrap">
+                                                <img src="./assets/images/main/reviews/vide-img-1.jpg" alt="" class="reviews__slide-img">
+                                                <div class="reviws__slide-play-button-wrap">
+                                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z" fill="#4E6932"/>
+                                                    </svg>                                                        
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slide-text">Березовая, 8</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide reviews__swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-img-wrap">
+                                                <img src="./assets/images/main/reviews/vide-img-2.jpg" alt="" class="reviews__slide-img">
+                                                <div class="reviws__slide-play-button-wrap">
+                                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z" fill="#4E6932"/>
+                                                    </svg>                                                        
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slide-text">ул. Александра Невского, 60</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide reviews__swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-img-wrap">
+                                                <img src="./assets/images/main/reviews/vide-img-3.jpg" alt="" class="reviews__slide-img">
+                                                <div class="reviws__slide-play-button-wrap">
+                                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z" fill="#4E6932"/>
+                                                    </svg>                                                        
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slide-text">Алмазная, 5</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide reviews__swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-img-wrap">
+                                                <img src="./assets/images/main/reviews/vide-img-1.jpg" alt="" class="reviews__slide-img">
+                                                <div class="reviws__slide-play-button-wrap">
+                                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z" fill="#4E6932"/>
+                                                    </svg>                                                        
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slide-text">Березовая, 8</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide reviews__swiper-slide">
+                                        <div class="reviews__slide">
+                                            <div class="reviews__slide-img-wrap">
+                                                <img src="./assets/images/main/reviews/vide-img-1.jpg" alt="" class="reviews__slide-img">
+                                                <div class="reviws__slide-play-button-wrap">
+                                                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z" fill="#4E6932"/>
+                                                    </svg>                                                        
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slide-text">Березовая, 8</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev reviews__swiper-button-prev">
+                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
+                            </div>
+                            <div class="swiper-button-next reviews__swiper-button-next">
+                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                            </div>
+                        </div>
+                    </div>
+                    <article class="feedback-block reviews__feedback-block">
+                        <div class="my-container feedback-block__container">
+                            <div class="feedback-block__inner">
+                                <div class="feedback-block__description">
+                                    <div class="feedback-block__main-text">Хотите записаться на экскурсию в один из наших садов,
+                                        <br> попасть в центр развития <br> или уточнить информацию?
+                                    </div>
+                                    <div class="feedback-block__pre-text">Оставьте Ваш телефон, <br> и мы перезвоним в ближайшее
+                                        время</div>
+                                </div>
+                                <form action="" class="feedback-form feedback-block__form">
+                                    <div class="feedback-form__elements">
+                                        <input type="text" name="input-name" id="inputName" class="my-input feedback-form__input"
+                                            placeholder="Ваше имя">
+                                        <input type="tel" name="input-phone" id="inputPhone" class="my-input feedback-form__input"
+                                            placeholder="+7 (999) 999 99 99">
+                                        <label for="agreementCheck" class="my-checkbox feedback-form__checkbox">
+                                            <input type="checkbox" name="agreement-checkbox" id="agreementCheck"
+                                                class="my-checkbox__old">
+                                            <span class="my-checkbox__new"></span>
+                                            <span class="my-checkbox__text">согласие на обработку персональных данных</span>
+                                        </label>
+                                        <button class="my-button my-button_borderSquare feedback-form__button">отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <img src="./assets/images/main/background/cones.png" alt="" class="reviews__background-img">
+            </section>
+            <section class="contacts main__contacts">
+                <div class="my-container contacts__container">
+                    <div class="contacts__inner">
+                        <div class="contacts__body">
+                            <div class="contacts__desc">
+                                <div class="contacts__smd">
+                                    <h2 class="contacts__title">Контакты</h2>
+                                    <div class="contacts__info">
+                                        <a href="tel:+73952738200" class="contacts__phone">
+                                            <img src="./assets/images/smp-icons/phone.svg" alt="" class="contacts__phone-icon"> <span class="contacts__phone-text"> +7
+                                            (395) 273 82 00</span> </a>
+                                        <a href="mailto:7stars07@mail.ru" class="contacts__email">
+                                            <img src="./assets/images/smp-icons/email.svg" alt="" class="contacts__email-icon">
+                                            <span class="contacts__email-text">7stars07@mail.ru</span></a>
+                                    </div>
+                                </div>
+                                <div class="contacts__addresses">
+                                    <div class="contacts__address-block">
+                                        <div class="contacts__address-title">Детские сады</div>
+                                        <ul class="contacts__address-items">
+                                            <li class="contacts__address-item">ул. Алмазная, 5 (м-н Первомайский)</li>
+                                            <li class="contacts__address-item">ул. Декабрьских событий, 102</li>
+                                            <li class="contacts__address-item">ул. Александра Невского, 60</li>
+                                            <li class="contacts__address-item">ул. Каландаришвили, 7</li>
+                                            <li class="contacts__address-item">ул. Березовая, 8 (м-н Солнечный)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="contacts__address-block">
+                                        <div class="contacts__address-title">Центр развития</div>
+                                        <ul class="contacts__address-items">
+                                            <li class="contacts__address-item">ул. Александра Невского, 60</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="my-button my-button_noColor my-button_borderSquare contacts__button">задать
+                                вопрос</button>
+                        </div>
+                        <div class="contacts__map-wrap">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa492017f50e8e42aaae25d9b0ac6e2d6bf8701ce1c04ebd58da068a3b99b603a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="my-container footer__container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <a href="" class="footer__logo-link">
+                            <img src="./assets/images/logo-white.svg" alt="" class="footer__logo-img">
+                        </a>
+                        <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с лицензией № 9378 от 29.07.2016 </div>
+                    </div>
+                    <div class="footer__right">
+                        <nav class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Сведения об организации</a>
+                                </li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">О нас</a></li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Центр развития</a></li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Новости</a></li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Блог</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/bootstrap/popper.min.js"></script>
+    <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script>
+        const reviewsSwiper = new Swiper('.reviews__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: '.reviews__swiper-button-next',
+                prevEl: '.reviews__swiper-button-prev',
+            },
+        });
+
+        const teachersSwiper = new Swiper('.teachers__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 4,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: '.teachers__swiper-button-next',
+                prevEl: '.teachers__swiper-button-prev',
+            },
+        });
+
+        const inspirationSwiper = new Swiper('.inspiration__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 24,
+            slidesPerGroup: 3,
+            navigation: {
+                nextEl: '.inspiration__swiper-button-next',
+                prevEl: '.inspiration__swiper-button-prev',
+            },
+        });
+
+        const projectActivitySwiper = new Swiper('.project-activity__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 2,
+            spaceBetween: 24,
+        });
+
+        const modernToolsSwiper = new Swiper('.modern-tools__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 2,
+            spaceBetween: 24,
+        });
+
+        const blockNutritionSwiper = new Swiper('.block-nutrition__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.block-nutrition__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.block-nutrition__swiper-button-next',
+                prevEl: '.block-nutrition__swiper-button-prev',
+            },
+        });
+
+        const blockWalkSwiper = new Swiper('.block-walk__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.block-walk__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.block-walk__swiper-button-next',
+                prevEl: '.block-walk__swiper-button-prev',
+            },
+        });
+
+        const blockHealthSwiper = new Swiper('.block-health__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.block-health__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.block-health__swiper-button-next',
+                prevEl: '.block-health__swiper-button-prev',
+            },
+        });
+
+        const devEnvironmenTextSwiper = new Swiper('.dev-environment__text-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.dev-environment__text-swiper-pagination',
+                type: 'fraction',
+                formatFractionCurrent: number => {
+                    return ('0' + number).slice(-2);
+                },
+                formatFractionTotal: number => {
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: (currentClass, totalClass) => {
+                    return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+                }
+            },
+            navigation: {
+                nextEl: '.dev-environment__text-swiper-button-next',
+                prevEl: '.dev-environment__text-swiper-button-prev',
+            },
+        });
+
+        const sliders = document.querySelectorAll('.dev-environment__image-slider');
+        const imageSwipers = [];
+
+        sliders.forEach(slider => {
+            const dataId = slider.getAttribute('data-id');
+            const swiperContainer = slider.querySelector('.dev-environment__image-swiper');
+            const paginationContainer = slider.querySelector('.dev-environment__image-swiper-pagination');
+
+            const swiper = new Swiper(swiperContainer, {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 24,
+                pagination: {
+                    el: paginationContainer,
+                },
+            });
+            imageSwipers.push({ dataId, slider });
+        });
+        console.log(imageSwipers)
+
+        function showImageSlider(activeSlideId) {
+            console.log(activeSlideId)
+            imageSwipers.forEach(imageSwiper => {
+                if (imageSwiper.dataId === activeSlideId) {
+                    imageSwiper.slider.style.display = 'block';
+                } else {
+                    imageSwiper.slider.style.display = 'none';
+                }
+            });
+        }
+
+        showImageSlider(devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id);
+
+        devEnvironmenTextSwiper.on('slideChange', function () {
+            const activeSlideId = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id;
+            showImageSlider(activeSlideId);
+        });
+
+
+        const accordionButtons = document.querySelectorAll('.avantage-descripion__accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const contentId = button.id;
+                const accordionContentHidden = document.getElementById(contentId);
+                const accordionButtonText = button.querySelector('.avantage-descripion__accordion-button-text');
+
+                if (accordionContentHidden.classList.contains('open')) {
+                    accordionContentHidden.style.maxHeight = '0';
+                    accordionButtonText.textContent = 'больше';
+                } else {
+                    accordionContentHidden.style.maxHeight = accordionContentHidden.scrollHeight + 'px';
+                    accordionButtonText.textContent = 'меньше';
+                }
+                accordionContentHidden.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>

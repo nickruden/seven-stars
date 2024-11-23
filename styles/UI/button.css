@@ -1,0 +1,84 @@
+.my-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25.5px;
+    font-family: 'Jost';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #90AB7B;
+}
+
+
+/* ЦВЕТА */
+.my-button_lightGreen {
+    border: 1px solid #C9DAA4;
+    color: #4E6932;
+    background-color: #C9DAA4;
+}
+.my-button_noColor {
+    border: 1px solid #4E6932;
+    color: #4E6932;
+    background: transparent;
+}
+
+
+/* РАМКИ */
+.my-button_borderOval {
+    border-radius: 100px;
+}
+.my-button_borderSquare {
+    border-radius: 14px;
+}
+.my-button_noBorder {
+    border: none;
+    padding: 15px 0px;
+    font-weight: 500;
+}
+.my-button_noBorder .my-button__img-arrow {
+    margin-left: 10px;
+}
+
+
+/* СОСТОЯНИЯ */
+.my-button:hover {
+    background-color: #4E6932;
+}
+.my-button:hover.my-button_lightGreen {
+    border: 1px solid #b4c492;
+    color: #FFF;
+    background-color: #b4c492;
+}
+.my-button:hover.my-button_noColor {
+    border: 1px solid #C7D8A5;
+    color: #4E6932;
+    background: #C7D8A5;
+}
+.my-button:hover.my-button_noColor.my-button_noBorder {
+    border: none;
+    color: #b4c492;
+    background: transparent;
+}
+.my-button:hover.my-button_noColor.my-button_noBorder .my-button__img-arrow path {
+    stroke: #b4c492;
+}
+
+
+.my-button.active.my-button_lightGreen {
+    border: 1px solid #b4c492;
+    color: #FFF;
+    background-color: #b4c492;
+}
+.my-button.active.my-button_noColor {
+    border: 1px solid #C7D8A5;
+    color: #4E6932;
+    background: #C7D8A5;
+}
+.my-button.active.my-button_noColor.my-button_noBorder {
+    border: none;
+    color: #4E6932;
+    background: transparent;
+}

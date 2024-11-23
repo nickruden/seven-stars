@@ -1,0 +1,10 @@
+.my-input {
+    font-size: 14px;
+    line-height: 130%;
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    padding: 20px 24px;
+}
+.my-input::placeholder {
+    color: #CFCFCF;
+}

@@ -1,0 +1,1275 @@
+/* ПЕРВЫЙ БЛОК */
+.top-block {
+    padding-top: 28px;
+    position: relative;
+}
+.top-block__background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.main__top-block {
+}
+.top-block__container {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    z-index: 5;
+}
+.top-block__body {
+}
+.top-block__title {
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 35px;
+}
+.top-block__location {
+    font-size: 14px;
+    line-height: 130%;
+    display: inline-flex;
+    align-items: flex-end;
+    text-transform: capitalize;
+}
+.top-block__location-img {
+    margin-right: 5px;
+    margin-bottom: 1.5px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+}
+.top-block__location-text {
+}
+.top-block__list {
+    margin-bottom: 70px;
+}
+.top-block__list-item::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #030303;
+    top: 1px;
+    left: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.top-block__list-item {
+    font-size: 16px;
+    line-height: 100%;
+    color: #030303;
+}
+.top-block__list-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+.top-block__list-item::first-letter {
+    text-transform: uppercase;
+}
+.top-block__links {
+    display: flex;
+    gap: 24px;
+}
+.top-block__link {
+    width: 302px;
+    height: 168px;
+    font-family: 'Jost';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 24px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+.top-block__link::after {
+    content: url('../../assets/images/icons/arrow-black.svg');
+    padding: 8.5px;
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 43px;
+    transform: rotate(-45deg);
+    box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    z-index: 5;
+}
+.top-block__link:hover {
+    color: #030303;
+    background-color: #C9DAA4;
+}
+.top-block__link.active {
+    background-color: #C9DAA4;
+}
+.top-block__link.active::before {
+    content: '';
+    display: inline-block;
+    height: 220%;
+    width: 300%;
+    position: absolute;
+    top: -180px;
+    left: -20px;
+    background: url('../../assets/images/patterns.png') 100% / cover;
+    z-index: 2;
+    opacity: .1;
+}
+.top-block__wrap-img {
+    max-height: 560px;
+    max-width: 628px;
+    border-radius: 24px;
+    background: url('../../assets/images/main/top-block/top-block-img.png') 100% no-repeat;
+    background-size: cover;
+    height: 560px;
+    width: 628px;
+}
+
+
+/* БЛОК НАШИ ФИЛИАЛЫ */
+.branches {
+    padding-top: 120px;
+    position: relative;
+}
+.branches__background-img {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    z-index: 3;
+}
+.main__branches {
+}
+.branches__container {
+    position: relative;
+    z-index: 5;
+}
+.branches__title {
+    padding-bottom: 44px;
+}
+.branches__body {
+    display: flex;
+    gap: 16px;
+}
+.branches__content {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+.branches__img-wrap {
+    height: 300px;
+    width: 372px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.branches__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.branches__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: #F8F8F8;
+    width: 100%;
+    max-width: 590px;
+}
+.branches__address {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.branches__address-icon {
+    height: 26px;
+    width: 26px;
+}
+.branches__address-text {
+    font-size: 24px;
+    line-height: 130%;
+    color: #4E6932;
+}
+.branches__texts {
+    font-size: 14px;
+    line-height: 130%;
+}
+.branches__text {
+}
+.branches__text:not(:last-child) {
+    margin-bottom: 16px;
+}
+.branches__price {
+    font-weight: 600;
+}
+.branches__info-buttons {
+    display: flex;
+    gap: 40px;
+    max-height: 52px;
+}
+.branches__info-button {
+    max-width: 248px;
+    width: 100%;
+}
+.branches__info-link {
+}
+.branches__info-link-img {
+}
+.branches__buttons {
+    width: 100%;
+    max-width: 286px;
+}
+.branches__button {
+    width: 100%;
+    font-size: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.branches__button:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+
+/* БЛОК МЫ ВДОХНОВЛЯЕМСЯ РЕДЖИО */
+.inspiration {
+    padding-top: 120px;
+}
+.main__inspiration {
+}
+.inspiration__container {
+}
+.inspiration__inner {
+    padding: 40px 32px;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+}
+.inspiration__desc {
+    display: flex;
+    margin-bottom: 61px;
+}
+.inspiration__title {
+    margin-bottom: 0px;
+    margin-right: 99px;
+}
+.inspiration__text {
+    max-width: 410px;
+    line-height: 130%;
+    margin-bottom: 11px;
+    align-self: flex-end;
+}
+.inspiration__slider {
+    max-height: 298px;
+    position: relative;
+}
+.inspiration__swiper {
+}
+.inspiration__swiper-wrapper {
+}
+.inspiration__swiper-slide {
+    border-radius: 16px;
+    overflow: hidden;
+}
+.inspiration__slide {
+    max-width: 389px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 40px;
+    background-color: #FFF;
+}
+.inspiration__slide-number {
+    font-size: 32px;
+    line-height: 120%;
+    color: #CFCFCF;
+    margin-bottom: 30px;
+}
+.inspiration__slide-text {
+    font-size: 20px;
+    line-height: 120%;
+    color: #4E6932;
+    max-width: 276px;
+}
+.inspiration__slide-text::first-letter {
+    text-transform: uppercase;
+}
+.inspiration__slide-image {
+}
+.inspiration__slide-image-wrap {
+    height: 289px;
+    width: 389px;
+}
+.inspiration__slide-image-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.inspiration__swiper-button-prev {
+}
+.inspiration__swiper-button-next {
+}
+
+
+/* БЛОК ДЛЯ ОПИСАНИЯ БЛОКОВ С ВЫПАДАЮЩИМ ТЕКСТОМ ПО КНОПКЕ */
+.avantage-descripion {
+    display: flex;
+}
+.avantage-descripion__title {
+    padding-bottom: 0px;
+    margin-right: 72px;
+    max-width: 580px;
+    width: 100%;
+}
+.avantage-descripion__texts {
+    margin-top: 7px;
+    margin-right: 20px;
+    width: 100%;
+}
+.avantage-descripion__pre-title {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 60px;
+    max-width: 424px;
+}
+.avantage-descripion__accordion {
+}
+.avantage-descripion__accordion-content {
+    max-width: 410px;
+}
+.avantage-descripion__accordion-content-visible {
+}
+.avantage-descripion__accordion-visible-text {
+    font-size: 13px;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+.avantage-descripion__accordion-button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.avantage-descripion__accordion-button:hover .avantage-description__accordion-button-img {
+    transform: rotate(90deg);
+}
+.avantage-description__accordion-button-img {
+    transition: transform .2s;
+}
+.avantage-descripion__accordion-content-hidden {
+    font-size: 13px;
+    line-height: 130%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 600ms;
+}
+.avantage-descripion__accordion-content-hidden.open + .avantage-descripion__accordion-button:hover .avantage-description__accordion-button-img {
+    transform: rotate(-90deg);
+}
+
+
+/* БЛОК ЗАНИМАЕМСЯ ПРОЕКТНОЙ ДЕЯТЕЛЬНОСТЬЮ */
+.project-activity {
+    padding-top: 120px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.project-activity__background-img {
+    position: absolute;
+    bottom: -286px;
+    left: 0px;
+    z-index: 3;
+}
+.main__project-activity {
+}
+.project-activity__container {
+    position: relative;
+    z-index: 5;
+}
+.project-activity__description {
+    margin-bottom: 71px;
+}
+.project-activity__slider {
+    margin-bottom: 35px;
+    max-height: 540px;
+    width: 100%;
+}
+.project-activity__swiper {
+    overflow: visible;
+}
+.project-activity__swiper-wrapper {
+}
+.project-activity__swiper-slide {
+    border-radius: 24px;
+    overflow: hidden;
+}
+.project-activity__slide {
+}
+.project-activity__slide-wrap-img {
+    width: 628px;
+    height: 540px;
+}
+.project-activity__slide-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 628 / 540;
+}
+.project-activity__buttons {
+}
+.project-activity__link {
+}
+
+
+/* БЛОК ИЗУЧАЕМ МИР ПРИ ПОМОЩИ СОВРЕМЕННЫХ ИНСТРУМЕНТОВ */
+.modern-tools {
+    padding-top: 120px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.main__modern-tools {
+}
+.modern-tools__background-img {
+    position: absolute;
+    z-index: 3;
+    top: 47%;
+    left: 0px;
+}
+.modern-tools__container {
+    position: relative;
+    z-index: 5;
+}
+.modern-tools__description {
+    margin-bottom: 80px;
+}
+.modern-tools__slider {
+    margin-bottom: 35px;
+    max-height: 582px;
+    width: 100%;
+}
+.modern-tools__swiper {
+    overflow: visible;
+}
+.modern-tools__swiper-wrapper {
+}
+.modern-tools__swiper-slide {
+}
+.modern-tools__slide {
+}
+.modern-tools__slide-title {
+    line-height: 130%;
+    color: #4E6932;
+    padding: 4px;
+    margin-bottom: 16px;
+}
+.modern-tools__slide-wrap-img {
+    width: 628px;
+    height: 540px;
+}
+.modern-tools__slide-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 628 / 540;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+
+/* БЛОК ГОТОВИМ РЕБЁНКА К ШКОЛЕ */
+.preparing-child {
+    padding-top: 120px;
+}
+.main__project-activity {
+}
+.preparing-child__container {
+}
+.preparing-child__description {
+    margin-bottom: 80px;
+}
+.my-button__img-arrow {
+}
+.avantage-description__accordion-button-img {
+}
+.preparing-child__content {
+    margin-bottom: 24px;
+}
+.preparing-child__content-img-title {
+    line-height: 130%;
+    color: #4E6932;
+    padding: 4px 0px;
+    margin-bottom: 16px;
+}
+.preparing-child__content-img {
+    height: 540px;
+    width: 100%;
+    background: url('../../assets/images/main/preparing-child/preparing-img.jpg') 100% no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+}
+.preparing-child__buttons {
+}
+.preparing-child__link {
+}
+
+
+/* БЛОК ЗА ЧТО НАС ВЫБИРАЮТ */
+.why-choose-us {
+    padding-top: 120px;
+    position: relative;
+}
+.main__why-choose-us {
+}
+.why-choose-us__background-img {
+    position: absolute;
+    top: -138px;
+    right: 0px;
+    z-index: 3;
+}
+.why-choose-us__container {
+    position: relative;
+    z-index: 5;
+}
+.why-choose-us__title {
+    padding-bottom: 80px;
+}
+.why-choose-us__accordion {
+    margin: 0px 0px 80px 0px;
+    padding: 0;
+    border: 0;
+}
+.why-choose-us__accordion * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0px!important;
+    box-shadow: none!important;
+}
+.why-choose-us__accordion-item {
+    padding: 40px 0px;
+    border-top: 1px solid #4E6932;
+    border-bottom: 1px solid #4E6932;
+}
+.why-choose-us__accordion-header {
+    display: flex;
+}
+.why-choose-us__accordion-button {
+    background-color: #FFF!important;
+}
+.why-choose-us__accordion-button[aria-expanded="true"] {
+    background-color: #FFF;
+}
+.why-choose-us__accordion-button::after {
+    background-image: url('../../assets/images/slider/arrow.svg')!important;
+    height: 26px;
+    width: 26px;
+    background-size: auto;
+    margin-bottom: auto;
+    transition: transform 500ms;
+}
+.why-choose-us__accordion-button:not(.collapsed)::after {
+    transform: rotate(-90deg);
+}
+.why-choose-us__accordion-button.collapsed::after {
+    transform: rotate(90deg);
+    opacity: 0.5;
+}
+.why-choose-us__accordion-button-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    max-width: 440px;
+    width: 100%;
+    margin-right: 212px;
+}
+.why-choose-us__accordion-button.collapsed .why-choose-us__accordion-button-text {
+    color: #B3B3B3;
+}
+.why-choose-us__accordion-button-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    max-width: 410px;
+}
+.why-choose-us__accordion-collapse {
+    transition: height 0.3s ease-in-out;
+}
+.why-choose-us__accordion-body {
+    padding-top: 40px;
+    padding-right: 26px;
+    display: flex;
+}
+.why-choose-us__accordion-body-img-wrap {
+    height: 200px;
+    width: 410px;
+    border-radius: 20px!important;
+    overflow: hidden;
+}
+.why-choose-us__accordion-body-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.why-choose-us__feedback-block {
+}
+
+
+/* БЛОКИ ВНУТРИ ГРУППЫ СТИЛЬ ЖИЗНИ */
+.lifestyle-item {
+    padding-top: 120px;
+}
+
+.lifestyle-item:nth-of-type(even) .lifestyle-item__slider {
+    order: 2;
+    margin-right: 0px;
+}
+
+.lifestyle-item:nth-of-type(even) .lifestyle-item__body {
+    order: 1;
+    margin-right: 92px;
+}
+
+.lifestyle-item:nth-of-type(even) .lifestyle-item__swiper-button-prev {
+    left: -117%;
+}
+
+.lifestyle-item:nth-of-type(even) .lifestyle-item__swiper-button-next {
+    left: calc(-117% + 42px);
+}
+
+.lifestyle-item__container {
+    display: flex;
+}
+.lifestyle-item__container {
+
+}
+.lifestyle-item__slider {
+    max-height: 600px;
+    max-width: 560px;
+    position: relative;
+    margin-right: 92px;
+}
+.lifestyle-item__swiper {
+}
+.lifestyle-item__swiper-wrapper {
+}
+.lifestyle-item__swiper-slide {
+    border-radius: 24px;
+    overflow: hidden;
+}
+.lifestyle-item__slide {
+    max-width: 560px;
+    max-height: 600px;
+}
+.lifestyle-item__slide-img-wrap {
+    height: 600px;
+    width: 560px;
+}
+.lifestyle-item__slide-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.lifestyle-item__swiper-button-prev, .lifestyle-item__swiper-button-next {
+    top: auto;
+    bottom: 0;
+}
+.lifestyle-item__swiper-button-prev {
+    right: calc(-28% + 42px);
+    bottom: -3px;
+}
+.lifestyle-item__swiper-button-next {
+    right: -28%;
+}
+.lifestyle-item__swiper-pagination {
+    position: absolute;
+    bottom: 32px!important;
+}
+.lifestyle-item__body {
+}
+.lifestyle-item__title {
+    padding-bottom: 80px;
+}
+.lifestyle-item__texts {
+    max-width: 562px;
+}
+.lifestyle-item__pre-title {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+.lifestyle-item__text {
+    font-size: 14px;
+    line-height: 130%;
+    max-width: 410px;
+    margin-bottom: 51px;
+}
+.lifestyle-item__footnote {
+    font-size: 14px;
+    line-height: 130%;
+    color: #4E6932;
+}
+
+
+/* БЛОК РАЗВИВАЮЩАЯ СРЕДА */
+.dev-environment {
+    padding-top: 120px;
+    max-height: 783px;
+    position: relative;
+}
+.main__dev-environment {
+}
+.dev-environment__background-img {
+    position: absolute;
+    top: 325px;
+    left: 0px;
+    z-index: 3;
+}
+.dev-environment__container {
+    position: relative;
+    z-index: 5;
+}
+.dev-environment__title {
+}
+.dev-environment__content {
+    display: flex;
+    gap: 24px;
+}
+.dev-environment__content > * {
+    flex: 1 1 calc(50% - 24px);
+}
+
+.dev-environment__text-slider {
+    max-width: 628px;
+    max-height: 540px;
+    border-radius: 24px;
+    position: relative;
+}
+.dev-environment__text-swiper {
+}
+.dev-environment__text-swiper-wrapper {
+}
+.dev-environment__text-swiper-slide {
+    border-radius: 24px;
+    overflow: hidden;
+}
+.dev-environment__text-slide {
+    height: 100%;
+    background-color: #F8F8F8;
+    padding: 60px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.dev-environment__slide-title {
+    font-size: 24px;
+    line-height: 130%;
+    color: #4E6932;
+    margin-bottom: 60px;
+}
+.dev-environment__slide-text {
+    line-height: 130%;
+    max-width: 410px;
+}
+.dev-environment__text-swiper-pagination {
+    position: absolute;
+    line-height: 130%;
+    bottom: 90px!important;
+    left: 40px!important;
+    width: auto;
+}
+.dev-environment__text-swiper-button-prev, .dev-environment__text-swiper-button-next {
+    top: auto;
+    bottom: 40px;
+}
+.dev-environment__text-swiper-button-prev {
+    left: 40px;
+}
+.dev-environment__text-swiper-button-next {
+    left: 82px;
+    bottom: 40.7px;
+}
+
+.dev-environment__img-sliders {
+    display: flex;
+    max-height: 628px;
+}
+.dev-environment__image-slider {
+    max-width: 628px;
+    max-height: 540px;
+    border-radius: 24px;
+    position: relative;
+}
+.dev-environment__image-swiper {
+}
+.dev-environment__image-swiper-wrapper {
+}
+.dev-environment__image-swiper-slide {
+    border-radius: 24px;
+    overflow: hidden;
+}
+.dev-environment__image-slide {
+    max-width: 628px;
+    max-height: 540px;
+}
+.dev-environment__image-slide-wrap {
+    width: 628px;
+    height: 540px;
+}
+.dev-environment__image-slide-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.dev-environment__image-swiper-pagination {
+    position: absolute;
+    bottom: 32px!important;
+}
+
+
+/* ГРУППА БЛОКОВ ОПИСЫВАЮЩИХ СТИЛЬ ЖИЗНИ (ЗДОРОВОЕ ПИТАНИЕ, ПРОГУЛКИ С ПОЛЬЗОЙ, МЕДИЦИНСКОЕ СОПРОВОЖДЕНИЕ) */
+.lifestyle {
+    position: relative;
+    z-index: 3;
+}
+.lifestyle__main {
+}
+.lifestyle__background-img {
+    position: absolute;
+    top: -419px;
+    left: 0px;
+    z-index: 3;
+}
+.lifestyle__items {
+    position: relative;
+    z-index: 5;
+}
+.lifestyle__block-item {
+}
+
+
+/* БЛОК ВСЕСТОРОННЕЕ РАЗВИТИЕ */
+.development {
+    padding-top: 120px;
+    position: relative;
+}
+.main__development {
+}
+.development__background-img {
+    position: absolute;
+    top: 318px;
+    left: 0px;
+    z-index: 3;
+}
+.development__container {
+    position: relative;
+    z-index: 5;
+}
+.development__description {
+    margin-bottom: 50px;
+}
+.development__content {
+}
+.development__content-img-wrap {
+    margin-bottom: 24px;
+}
+.development__content-img-title {
+    line-height: 130%;
+    color: #4E6932;
+    padding: 4px 0px;
+    margin-bottom: 16px;
+}
+.development__content-img {
+    height: 540px;
+    width: 100%;
+    background: url('../../assets/images/main/development/block-img.jpg') 100% no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+}
+.development__buttons {
+    border-radius: 24px;
+    background-color: #F8F8F8;
+    padding: 40px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.development__button {
+    flex: 1 0 calc(33.333% - 24px);
+    max-width: 389px;
+    padding: 32px 40px;
+    background-color: #FFF;
+    border-radius: 16px;
+    font-size: 20px;
+    text-transform: capitalize;
+    justify-content: flex-start;
+}
+.development__button_isIndivid {
+    position: relative;
+}
+.development__button_isIndivid::after {
+    content: 'индивидуально';
+    display: flex;
+    align-items: center;
+    padding: 3px 16px;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: lowercase;
+    background-color: #FFF;
+    border: 1px solid rgba(78, 105, 50, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 100px;
+    transform: rotate(2deg);
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+.development__button-img {
+    margin-right: 40px;
+    height: 32px;
+    width: 32px;
+}
+.development__button:hover {
+    color: #4E6932!Important;
+    background-color: #C7D8A5!Important;
+}
+
+
+/* БЛОК ЯРКИЕ ПРАЗДНИКИ */
+.holidays {
+    padding-top: 120px;
+    position: relative;
+}
+.main__holidays {
+}
+.holidays__background-img {
+    position: absolute;
+    top: 732px;
+    right: 0px;
+    z-index: 3;
+}
+.holidays__container {
+    position: relative;
+    z-index: 5;
+}
+.holidays__description {
+    margin-bottom: 60px;
+    display: flex;
+    gap: 22px;
+}
+.holidays__title {
+    margin-bottom: 0px;
+    margin-right: 72px;
+}
+.holidays__texts {
+    margin-top: 7px;
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.holidays__texts-inner {
+    max-width: 410px;
+}
+.holidays__pre-title {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 60px;
+}
+.holidays__text {
+    line-height: 130%;
+}
+.holidays__images {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.holidays__image-card {
+    flex: 1 0 calc(33% - 24px);
+    max-width: 628px;
+}
+.holidays__image-card-title {
+    line-height: 130%;
+    color: #4E6932;
+    margin-bottom: 20px;
+}
+.holidays__image-card-img-wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    height: 540px;
+    width: 628px;
+}
+.holidays__image-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.holidays__button-link {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+
+/* БЛОК НАШИ ПЕДАГОГИ */
+.teachers {
+    padding-top: 120px;
+    position: relative;
+}
+.main__teachers {
+}
+.teachers__background-img {
+    position: absolute;
+    top: 297px;
+    left: 0px;
+    z-index: 3;
+}
+.teachers__container {
+    position: relative;
+    z-index: 5;
+}
+.teachers__title {
+    max-width: 302px;
+}
+.teachers__slider {
+}
+.teachers__swiper {
+}
+.teachers__swiper-wrapper {
+}
+.teachers__swiper-slide {
+}
+.teachers__slide {
+    max-width: 302px;
+}
+.teachers__slide-img-wrap {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #FCFCFC;
+    height: 320px;
+    width: 302px;
+}
+.teachers__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teachers__slide-body {
+}
+.teachers__slide-title {
+    font-size: 20px;
+    line-height: 120%;
+    color: #4E6932;
+    margin-bottom: 16px;
+}
+.teachers__slide-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #B3B3B3;
+    max-width: 144px;
+}
+.teachers__swiper-button-prev, .teachers__swiper-button-next {
+    display: none;
+}
+.teachers__swiper-button-prev {
+}
+.teachers__swiper-button-next {
+}
+
+
+/* БЛОК ОТЗЫВОВ */
+.reviews {
+    padding-top: 120px;
+    position: relative;
+}
+.reviews__background-img {
+    position: absolute;
+    top: 0;
+    right: 117px;
+    z-index: 3;
+}
+.main__reviews {
+}
+.reviews__container {
+    position: relative;
+    z-index: 5;
+}
+.reviews__title {
+}
+.reviews__content {
+    padding: 40px 32px;
+    background-color: #FCFCFC;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+.reviews__content-title {
+    font-size: 24px;
+    line-height: 130%;
+    max-width: 361px;
+}
+.reviews__slider {
+    max-height: 363px;
+    position: relative;
+}
+.reviews__swiper {
+}
+.reviews__swiper-wrapper {
+}
+.reviews__swiper-slide {
+}
+.reviews__slide {
+    user-select: none;
+}
+.reviews__slide-img-wrap {
+    height: 320px;
+    width: 389px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: pointer;
+}
+.reviews__slide-img-wrap:hover::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.reviews__slide-img {
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -97px;
+}
+.reviws__slide-play-button-wrap {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    cursor: pointer;
+}
+.reviews__slide-img-wrap:hover path {
+    fill: #2f3f1d;
+}
+.reviews__slide-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #4E6932;
+}
+.reviews__swiper-button-prev {
+}
+.reviews__swiper-button-next {
+}
+.reviews__feedback-block {
+}
+
+
+/* БЛОК КОНТАКТОВ */
+.contacts {
+    padding-top: 120px;
+}
+.main__contacts {
+}
+.contacts__container {
+}
+.contacts__inner {
+    padding: 32px 40px;
+    background-color: #FCFCFC;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__body {
+    padding-top: 28px;
+    margin-right: 39px;
+    max-width: 533px;
+    width: 100%;
+}
+.contacts__desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65.5px;
+}
+.contacts__smd {
+}
+.contacts__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 500;
+}
+.contacts__info {
+}
+.contacts__info * {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    line-height: 130%;
+}
+.contacts__info * img {
+    margin-right: 8px;
+    max-height: 24px;
+    max-width: 24px;
+}
+.contacts__info > *:not(:last-child) {
+    margin-bottom: 17px;
+}
+.contacts__phone {
+}
+.contacts__phone-icon {
+}
+.contacts__email {
+}
+.contacts__email-icon {
+}
+.contacts__addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+}
+.contacts__address-block {
+}
+.contacts__address-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 130%;
+}
+.contacts__address-items {
+}
+.contacts__address-item {
+    font-size: 14px;
+    line-height: 130%;
+}
+.contacts__address-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.contacts__button {
+    max-width: 511px;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.contacts__map-wrap {
+    max-width: 628px;
+    width: 100%;
+    max-height: 512px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.contacts__map-wrap > * {
+    height: 100%;
+    width: 100%;
+}

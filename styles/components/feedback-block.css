@@ -1,0 +1,71 @@
+.feedback-block {
+}
+.feedback-block__container {
+    padding: 32px 40px;
+    background-color: #CCDBAC;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+.feedback-block__container::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../assets/images/patterns.png') 100% / cover;
+    z-index: 2;
+    opacity: .1;
+}
+.feedback-block__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+.feedback-block__description {
+    padding-top: 58px;
+    margin-right: 50px;
+}
+.feedback-block__main-text {
+    font-size: 24px;
+    line-height: 120%;
+    color: #030303;
+    max-width: 414px;
+    margin-bottom: 60px;
+}
+.feedback-block__pre-text {
+    font-size: 14px;
+    line-height: 130%;
+    color: #030303;
+}
+.feedback-form {
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    padding: 32px 40px 29px 40px;
+}
+.feedback-block__form {
+    max-width: 588px;
+    width: 100%;
+}
+.feedback-form__elements {
+    display: flex;
+    flex-direction: column;
+}
+.feedback-form__input {
+}
+.feedback-form__input:not(:last-child) {
+    margin-bottom: 16px;
+}
+.feedback-form__input[name="input-phone"] {
+    margin-bottom: 28px;
+}
+.feedback-form__checkbox {
+    margin-bottom: 45px;
+}
+.feedback-form__button {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
