@@ -13,21 +13,31 @@
     user-select: none;
 }
 
+.swiper-navigation {
+    position: absolute;
+    top: -67px;
+    right: 0;
+}
+
 .swiper-button-prev, .swiper-button-next {
     height: 26px;
     position: absolute;
-    top: -58px;
+    top: 0;
     right: 0;
     left: auto;
     user-select: none;
+    margin-top: 0px;
+    opacity: 0.5;
 }
 .swiper-button-prev::after, .swiper-button-next::after {
     content: '';
 }
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    opacity: 1;
+}
 .swiper-button-prev {
-    transform: rotate(180deg);
     right: 42px;
-    top: -54.6px;
+    top: 0;
 }
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 0.5;

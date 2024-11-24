@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/UI/button.css">
     <link rel="stylesheet" href="./styles/UI/input.css">
     <link rel="stylesheet" href="./styles/UI/checkbox.css">
+    <link rel="stylesheet" href="./styles/components/form.css">
     <link rel="stylesheet" href="./styles/components/header.css">
     <link rel="stylesheet" href="./styles/components/footer.css">
     <link rel="stylesheet" href="./styles/custom.css">
@@ -86,51 +87,237 @@
                 <div class="my-container branches__container">
                     <h2 class="block-title branches__title">Наши <br> филиалы</h2>
                     <div class="branches__body">
-                        <div class="branches__content">
-                            <div class="branches__img-wrap">
-                                <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
-                            </div>
-                            <div class="branches__info">
-                                <div class="branches__address">
-                                    <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
-                                    <span class="branches__address-text">Березовая, 8 (м-н Солнечный)</span>
+                        <div class="branches__contents">
+                            <div class="branches__content-item" id="loc-1">
+                                <div class="branches__img-wrap">
+                                    <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
                                 </div>
-                                <div class="branches__texts">
-                                    <div class="branches__text">Возможность оплатить маткапиталом</div>
-                                    <div class="branches__price">42 500₽ / мес.</div>
-                                </div>
-                                <div class="branches__info-buttons">
-                                    <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
-                                        подробнее</button>
-                                    <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
-                                        на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_92_1210)">
-                                            <path d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292" stroke="#4E6932" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_92_1210">
-                                            <rect width="26" height="26" fill="white" transform="translate(0.438477 0.915039)"/>
-                                            </clipPath>
-                                            </defs>
-                                            </svg>
+                                <div class="branches__info">
+                                    <div class="branches__address">
+                                        <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                        <span class="branches__address-text">Каландаришвили, 7</span>
+                                    </div>
+                                    <div class="branches__texts">
+                                        <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                        <div class="branches__price">42 500₽ / мес.</div>
+                                    </div>
+                                    <div class="branches__info-buttons">
+                                        <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                            подробнее</button>
+                                        <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                            на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27"
+                                                    viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
                                             </div>
-                                    </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branches__content-item" id="loc-2">
+                                <div class="branches__img-wrap">
+                                    <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
+                                </div>
+                                <div class="branches__info">
+                                    <div class="branches__address">
+                                        <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                        <span class="branches__address-text">Александра Невского, 60</span>
+                                    </div>
+                                    <div class="branches__texts">
+                                        <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                        <div class="branches__price">42 500₽ / мес.</div>
+                                    </div>
+                                    <div class="branches__info-buttons">
+                                        <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                            подробнее</button>
+                                        <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                            на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27"
+                                                    viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branches__content-item" id="loc-3">
+                                <div class="branches__img-wrap">
+                                    <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
+                                </div>
+                                <div class="branches__info">
+                                    <div class="branches__address">
+                                        <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                        <span class="branches__address-text">Березовая, 8 (м-н Солнечный)</span>
+                                    </div>
+                                    <div class="branches__texts">
+                                        <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                        <div class="branches__price">42 500₽ / мес.</div>
+                                    </div>
+                                    <div class="branches__info-buttons">
+                                        <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                            подробнее</button>
+                                        <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                            на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27"
+                                                    viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branches__content-item" id="loc-4">
+                                <div class="branches__img-wrap">
+                                    <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
+                                </div>
+                                <div class="branches__info">
+                                    <div class="branches__address">
+                                        <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                        <span class="branches__address-text">Декабрьских событий, 102</span>
+                                    </div>
+                                    <div class="branches__texts">
+                                        <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                        <div class="branches__price">42 500₽ / мес.</div>
+                                    </div>
+                                    <div class="branches__info-buttons">
+                                        <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                            подробнее</button>
+                                        <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                            на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27"
+                                                    viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branches__content-item" id="loc-5">
+                                <div class="branches__img-wrap">
+                                    <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
+                                </div>
+                                <div class="branches__info">
+                                    <div class="branches__address">
+                                        <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                        <span class="branches__address-text">Алмазная, 5 (первомайский)</span>
+                                    </div>
+                                    <div class="branches__texts">
+                                        <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                        <div class="branches__price">42 500₽ / мес.</div>
+                                    </div>
+                                    <div class="branches__info-buttons">
+                                        <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                            подробнее</button>
+                                        <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                            на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27"
+                                                    viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="branches__content-item" id="loc-6">
+                                <div class="branches__img-wrap">
+                                    <img src="./assets/images/main/branches/branches-img.jpg" alt="" class="branches__img">
+                                </div>
+                                <div class="branches__info">
+                                    <div class="branches__address">
+                                        <img src="./assets/images/icons/location.svg" alt="" class="branches__address-icon">
+                                        <span class="branches__address-text">Центр развития</span>
+                                    </div>
+                                    <div class="branches__texts">
+                                        <div class="branches__text">Возможность оплатить маткапиталом</div>
+                                        <div class="branches__price">42 500₽ / мес.</div>
+                                    </div>
+                                    <div class="branches__info-buttons">
+                                        <button class="my-button my-button_noColor my-button_borderSquare branches__info-button">узнать
+                                            подробнее</button>
+                                        <a href="" class="my-button my-button_noColor my-button_noBorder branches__info-link">посмотреть
+                                            на карте <div class="my-button__img-arrow branches__info-link-img"><svg width="27" height="27"
+                                                    viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_92_1210)">
+                                                        <path
+                                                            d="M5.78613 13.9151L21.0908 13.9151M21.0908 13.9151L14.7138 7.53811M21.0908 13.9151L14.7138 20.292"
+                                                            stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_92_1210">
+                                                            <rect width="26" height="26" fill="white"
+                                                                transform="translate(0.438477 0.915039)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="branches__buttons">
-                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
-                                7</button>
-                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
-                                7</button>
-                            <button class="my-button my-button_noColor my-button_borderSquare branches__button active">ул.
-                                Каландаришвили, 7</button>
-                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
-                                7</button>
-                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
-                                7</button>
-                            <button class="my-button my-button_noColor my-button_borderSquare branches__button">ул. Каландаришвили,
-                                7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button" data-content="loc-1">ул. Каландаришвили, 7</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button" data-content="loc-2">ул. александра невского, 60</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button active" data-content="loc-3">ул. березовая, 8 (солнечный)</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button" data-content="loc-4">ул. Декабрьских событий, 102</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button" data-content="loc-5">ул. алмазная, 5 (первомайский)</button>
+                            <button class="my-button my-button_noColor my-button_borderSquare branches__button" data-content="loc-6">центр развития</button>
                         </div>
                     </div>
                 </div>
@@ -169,6 +356,14 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/inspiration/slide-img.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
                                         <div class="inspiration__slide">
                                             <div class="inspiration__slide-number">03</div>
                                             <div class="inspiration__slide-text">учим работать в команде</div>
@@ -189,6 +384,14 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/inspiration/slide-img.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
                                         <div class="inspiration__slide">
                                             <div class="inspiration__slide-number">05</div>
                                             <div class="inspiration__slide-text">помогаем ребёнку раскрыть свой потенциал в проектной работе</div>
@@ -206,6 +409,14 @@
                                         <div class="inspiration__slide">
                                             <div class="inspiration__slide-number">06</div>
                                             <div class="inspiration__slide-text">способствуем пробуждению интереса и мотивации к знаниям</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide inspiration__swiper-slide">
+                                        <div class="inspiration__slide-image">
+                                            <div class="inspiration__slide-image-wrap">
+                                                <img src="./assets/images/main/inspiration/slide-img.jpg" alt=""
+                                                    class="inspiration__slide-image-photo">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide inspiration__swiper-slide">
@@ -230,11 +441,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev inspiration__swiper-button-prev">
-                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                            </div>
-                            <div class="swiper-button-next inspiration__swiper-button-next">
-                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                            <div class="swiper-navigation">
+                                <div class="swiper-button-prev inspiration__swiper-button-prev">
+                                    <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                </div>
+                                <div class="swiper-button-next inspiration__swiper-button-next">
+                                    <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -607,7 +820,7 @@
                                             <input type="checkbox" name="agreement-checkbox" id="why-choose-us__agreementCheck"
                                                 class="my-checkbox__old">
                                             <span class="my-checkbox__new"></span>
-                                            <span class="my-checkbox__text">согласие на обработку персональных данных</span>
+                                            <span class="my-checkbox__text">согласие на <a href="https://7zvezd-irk.ru/include/licenses_detail.php" class="my-checkbox__text-link">обработку персональных данных</a></span>
                                         </label>
                                         <button class="my-button my-button_borderSquare feedback-form__button">отправить</button>
                                     </div>
@@ -667,14 +880,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class="swiper-button-prev block-nutrition__swiper-button-prev lifestyle-item__swiper-button-prev">
-                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                                </div>
-                                <div
-                                    class="swiper-button-next block-nutrition__swiper-button-next lifestyle-item__swiper-button-next">
-                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
-                                </div>
                                 <div class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                             </div>
@@ -696,6 +901,14 @@
                                         завтрак (фруктопауза), обед, полдник, ужин.
                                     </div>
                                     <div class="lifestyle-item__footnote">сертифицировано по СанПину</div>
+                                    <div class="swiper-navigation">
+                                        <div class="swiper-button-prev block-nutrition__swiper-button-prev lifestyle-item__swiper-button-prev">
+                                            <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                        </div>
+                                        <div class="swiper-button-next block-nutrition__swiper-button-next lifestyle-item__swiper-button-next">
+                                            <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -747,12 +960,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-button-prev block-walk__swiper-button-prev lifestyle-item__swiper-button-prev">
-                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                                </div>
-                                <div class="swiper-button-next block-walk__swiper-button-next lifestyle-item__swiper-button-next">
-                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
-                                </div>
                                 <div class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                             </div>
@@ -772,6 +979,14 @@
                                             для себя столько всего интересного!</p>
                                     </div>
                                     <div class="lifestyle-item__footnote">удивляться всему, подмечать и открывать новое</div>
+                                    <div class="swiper-navigation">
+                                        <div class="swiper-button-prev block-walk__swiper-button-prev lifestyle-item__swiper-button-prev">
+                                            <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                        </div>
+                                        <div class="swiper-button-next block-walk__swiper-button-next lifestyle-item__swiper-button-next">
+                                            <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -823,12 +1038,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-button-prev block-health__swiper-button-prev lifestyle-item__swiper-button-prev">
-                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                                </div>
-                                <div class="swiper-button-next block-health__swiper-button-next lifestyle-item__swiper-button-next">
-                                    <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
-                                </div>
                                 <div class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                             </div>
@@ -848,6 +1057,14 @@
                                         оборудования с дезинфицирующими средствами.
                                     </div>
                                     <div class="lifestyle-item__footnote">осмотр педиатром</div>
+                                    <div class="swiper-navigation">
+                                        <div class="swiper-button-prev block-health__swiper-button-prev lifestyle-item__swiper-button-prev">
+                                            <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                        </div>
+                                        <div class="swiper-button-next block-health__swiper-button-next lifestyle-item__swiper-button-next">
+                                            <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -894,11 +1111,13 @@
                                 </div>
                             </div>
                             <div class="swiper-pagination dev-environment__text-swiper-pagination"></div>
-                            <div class="swiper-button-prev dev-environment__text-swiper-button-prev">
-                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                            </div>
-                            <div class="swiper-button-next dev-environment__text-swiper-button-next">
-                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                            <div class="swiper-navigation">
+                                <div class="swiper-button-prev dev-environment__text-swiper-button-prev">
+                                    <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                </div>
+                                <div class="swiper-button-next dev-environment__text-swiper-button-next">
+                                    <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                </div>
                             </div>
                         </div>
                         <div class="dev-environment__img-sliders">
@@ -1223,13 +1442,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide teachers__swiper-slide">
+                                    <div class="teachers__slide">
+                                        <div class="teachers__slide-img-wrap">
+                                            <img src="./assets/images/main/teachers/slide-img-4.png" alt=""
+                                                class="teachers__slide-img">
+                                        </div>
+                                        <div class="teachers__slide-body">
+                                            <div class="teachers__slide-title">Анна Витальевна</div>
+                                            <div class="teachers__slide-text">дополнительная информация <br> о воспитателе</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev teachers__swiper-button-prev">
-                            <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                        </div>
-                        <div class="swiper-button-next teachers__swiper-button-next">
-                            <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-prev teachers__swiper-button-prev">
+                                <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                            </div>
+                            <div class="swiper-button-next teachers__swiper-button-next">
+                                <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1310,11 +1543,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev reviews__swiper-button-prev">
-                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-prev-img">
-                            </div>
-                            <div class="swiper-button-next reviews__swiper-button-next">
-                                <img src="./assets/images/slider/arrow.svg" alt="" class="swiper-button-next-img">
+                            <div class="swiper-navigation">
+                                <div class="swiper-button-prev reviews__swiper-button-prev">
+                                    <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                </div>
+                                <div class="swiper-button-next reviews__swiper-button-next">
+                                    <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1338,7 +1573,7 @@
                                             <input type="checkbox" name="agreement-checkbox" id="agreementCheck"
                                                 class="my-checkbox__old">
                                             <span class="my-checkbox__new"></span>
-                                            <span class="my-checkbox__text">согласие на обработку персональных данных</span>
+                                            <span class="my-checkbox__text">согласие на <a href="https://7zvezd-irk.ru/include/licenses_detail.php" class="my-checkbox__text-link">обработку персональных данных</a></span>
                                         </label>
                                         <button class="my-button my-button_borderSquare feedback-form__button">отправить</button>
                                     </div>
@@ -1426,7 +1661,32 @@
     <script src="./assets/libs/bootstrap/popper.min.js"></script>
     <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
 
+    <script src="./assets/js/phone-mask.js"></script>
+
     <script>
+    document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.branches__button');
+            const contents = document.querySelectorAll('.branches__content-item');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetContentId = this.getAttribute('data-content');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents.forEach(content => content.classList.remove('active'));
+
+                    this.classList.add('active');
+                    document.getElementById(targetContentId).classList.add('active');
+                });
+            });
+
+            const defaultActiveButton = document.querySelector('.branches__button.active');
+            if (defaultActiveButton) {
+                const defaultContentId = defaultActiveButton.getAttribute('data-content');
+                document.getElementById(defaultContentId).classList.add('active');
+            }
+        });
+        
         const reviewsSwiper = new Swiper('.reviews__swiper', {
             direction: 'horizontal',
             slidesPerView: 3,
@@ -1441,6 +1701,10 @@
             direction: 'horizontal',
             slidesPerView: 4,
             spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
             navigation: {
                 nextEl: '.teachers__swiper-button-next',
                 prevEl: '.teachers__swiper-button-prev',
@@ -1451,7 +1715,6 @@
             direction: 'horizontal',
             slidesPerView: 3,
             spaceBetween: 24,
-            slidesPerGroup: 3,
             navigation: {
                 nextEl: '.inspiration__swiper-button-next',
                 prevEl: '.inspiration__swiper-button-prev',

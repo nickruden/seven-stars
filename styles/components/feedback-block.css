@@ -41,31 +41,8 @@
     line-height: 130%;
     color: #030303;
 }
-.feedback-form {
-    background-color: #FCFCFC;
-    border-radius: 16px;
-    padding: 32px 40px 29px 40px;
-}
 .feedback-block__form {
     max-width: 588px;
     width: 100%;
 }
-.feedback-form__elements {
-    display: flex;
-    flex-direction: column;
-}
-.feedback-form__input {
-}
-.feedback-form__input:not(:last-child) {
-    margin-bottom: 16px;
-}
-.feedback-form__input[name="input-phone"] {
-    margin-bottom: 28px;
-}
-.feedback-form__checkbox {
-    margin-bottom: 45px;
-}
-.feedback-form__button {
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
+
