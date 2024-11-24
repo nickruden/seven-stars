@@ -569,7 +569,7 @@
     background-color: #FFF;
 }
 .why-choose-us__accordion-button::after {
-    background-image: url('../../assets/images/slider/arrow.svg')!important;
+    background-image: url('../../assets/images/slider/arrow-next.svg')!important;
     height: 26px;
     width: 26px;
     background-size: auto;
