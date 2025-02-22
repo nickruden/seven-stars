@@ -1439,27 +1439,77 @@
                         </div>
                     </div>
                     <div class="development__content">
-                        <div class="development__content-img-wrap">
-                            <div class="development__content-img-title">робототехника</div>
-                            <div class="development__content-img"></div>
+                        <div class="development__slider">
+                            <div class="swiper development__swiper">
+                                <div class="swiper-wrapper development__swiper-wrapper">
+                                    <div class="swiper-slide development__swiper-slide" data-slide="0">
+                                        <div class="development__slide">
+                                            <div class="development__image-card-title">робототехника</div>
+                                            <div class="development__image-card-img-wrap">
+                                                <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt="" class="development__image-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide development__swiper-slide" data-slide="1">
+                                        <div class="development__slide">
+                                            <div class="development__image-card-title">ритмика</div>
+                                            <div class="development__image-card-img-wrap">
+                                                <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt="" class="development__image-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide development__swiper-slide" data-slide="2">
+                                        <div class="development__slide">
+                                            <div class="development__image-card-title">Музыка</div>
+                                            <div class="development__image-card-img-wrap">
+                                                <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt="" class="development__image-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide development__swiper-slide" data-slide="3">
+                                        <div class="development__slide">
+                                            <div class="development__image-card-title">Английский</div>
+                                            <div class="development__image-card-img-wrap">
+                                                <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt="" class="development__image-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide development__swiper-slide" data-slide="4">
+                                        <div class="development__slide">
+                                            <div class="development__image-card-title">Творчество</div>
+                                            <div class="development__image-card-img-wrap">
+                                                <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt="" class="development__image-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide development__swiper-slide" data-slide="5">
+                                        <div class="development__slide">
+                                            <div class="development__image-card-title">Логопед</div>
+                                            <div class="development__image-card-img-wrap">
+                                                <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt="" class="development__image-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="development__buttons">
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
-                                <img src="./assets/images/pages/main/development/svg_dance.svg" alt="" class="development__button-img"> Ритмика
-                            </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
-                                <img src="./assets/images/pages/main/development/svg_music.svg" alt="" class="development__button-img"> Музыка
-                            </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="0"> 
                                 <img src="./assets/images/pages/main/development/svg_robot.svg" alt="" class="development__button-img"> Робототехника
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="1"> 
+                                <img src="./assets/images/pages/main/development/svg_dance.svg" alt="" class="development__button-img"> Ритмика
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="2"> 
+                                <img src="./assets/images/pages/main/development/svg_music.svg" alt="" class="development__button-img"> Музыка
+                            </button>
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="3"> 
                                 <img src="./assets/images/pages/main/development/svg_book.svg" alt="" class="development__button-img"> Английский
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"> 
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="4"> 
                                 <img src="./assets/images/pages/main/development/svg_brush.svg" alt="" class="development__button-img"> Творчество
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button development__button_isIndivid"> 
+                            <button class="my-button my-button_noColor my-button_noBorder development__button development__button_isIndivid" data-slide="5"> 
                                 <img src="./assets/images/pages/main/development/svg_teacher.svg" alt="" class="development__button-img"> Логопед
                             </button>
                         </div>
@@ -1841,6 +1891,46 @@
             }
         });
         
+        const buttons = document.querySelectorAll('.development__button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const slideIndex = parseInt(this.getAttribute('data-slide'));
+                    developmentSwiper.slideTo(slideIndex); 
+                    updateActiveButton(slideIndex);
+                });
+            });
+
+        const developmentSwiper = new Swiper('.development__swiper', {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                autoplay: {
+                    delay: 30000,
+                },
+                on: {
+                    slideChange: function () {
+                        updateActiveButton(this.realIndex);
+                    },
+                },
+            });
+
+            // Функция для обновления активной кнопки
+            function updateActiveButton(index) {
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                });
+
+                const activeButton = document.querySelector(`.development__button[data-slide="${index}"]`);
+        if (activeButton) {
+            activeButton.classList.add('active');
+        }
+            }
+
+            // Инициализация активной кнопки при загрузке страницы
+            updateActiveButton(developmentSwiper.realIndex);
+
         const holidaysSwiper = new Swiper('.holidays__swiper', {
             direction: 'horizontal',
             slidesPerView: 1.15,

@@ -235,6 +235,11 @@
         display: block;
         margin-bottom: 35px;
     }
+    .top-block__link.active::before {
+        height: 200%;
+        width: 335%;
+        top: -34px;
+    }
 }
 @media (width < 903px) {
     .top-block__link {
@@ -1843,25 +1848,40 @@
 }
 .development__content {
 }
-.development__content-img-wrap {
+.development__slider {
+    max-width: 1280px;
+    width: 100%;
     margin-bottom: 24px;
 }
-.development__content-img-title {
+.development__swiper {
+}
+.development__swiper-wrapper {
+}
+.development__swiper-slide {
+}
+.development__slide {
+}
+.development__image-card-title {
     line-height: 130%;
     color: #4E6932;
+    text-transform: lowercase;
     padding: 4px 0px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
-.development__content-img {
+.development__image-card-img-wrap {
     height: 540px;
     width: 100%;
-    background: url('../../assets/images/pages/main/development/block-img.jpg') 100% no-repeat;
-    background-size: cover;
     border-radius: 24px;
+    overflow: hidden;
+}
+.development__image-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .development__buttons {
     border-radius: 24px;
-    background-color: #F8F8F8;
+    background-color: rgba(248, 248, 248, 1);
     padding: 40px 32px;
     display: flex;
     flex-wrap: wrap;
@@ -1902,9 +1922,113 @@
     height: 32px;
     width: 32px;
 }
-.development__button:hover {
+.development__button:hover, .development__button:focus, .development__button:active, .development__button.active  {
     color: #4E6932!Important;
     background-color: #C7D8A5!Important;
+}
+.development__image-card-img-wrap {
+    height: 480px;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+@media (width < 1341px) {
+
+}
+@media (width < 1281px) {
+    .development__image-card-img-wrap {
+        height: 480px;
+    }
+}
+@media (width < 992px) {
+    .development__image-card-img-wrap {
+        height: 430px;
+    }
+    .development__buttons {
+        padding: 30px 22px;
+        gap: 18px;
+    }
+    .development__button {
+        flex: 1 1 calc(50% - 18px);
+        max-width: none;
+        padding: 24px 31px;
+    }
+}
+@media (width < 769px) {
+    .development__container {
+        padding: 0px;
+    }
+    .development__description {
+        padding: 0px 30px;
+    }
+    .development__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .development__slider {
+        margin-bottom: 0px;
+        order: 2;
+        padding: 0px 30px;
+        background-color: rgba(248, 248, 248, 1);
+    }
+    .development__image-card-title {
+        padding: 0px;
+        margin-bottom: 18px;
+    }
+    .development__buttons {
+        padding: 0px 30px;
+        gap: 18px;
+        background-color: transparent;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .development__button {
+        flex: 1 1 calc(100% - 18px);
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 20px 25px;
+        justify-content: center;
+        border: 1px solid rgba(78, 105, 50, 1);
+    }
+    .development__button-img {
+        margin-right: 20px;
+    }
+}
+@media (width < 651px) {
+    .development__image-card-img-wrap {
+        height: 390px;
+    }
+    .development__buttons {
+        gap: 20px;
+        margin-bottom: 48px;
+    }
+    .development__button {
+        font-size: 16px;
+        padding: 18px;
+    }
+}
+@media (width < 551px) {
+    .development__image-card-img-wrap {
+        height: 275px;
+    }
+    .development__buttons {
+        margin-bottom: 45px;
+    }
+    .development__image-card-title {
+        margin-bottom: 16px;
+    }
+    .development__button {
+        font-size: 16px;
+        padding: 9px;
+    }
+    .development__button_isIndivid::after {
+        transform: rotate(4deg);
+        top: -10px;
+    }
+}
+@media (width < 431px) {
+
 }
 
 
@@ -2136,7 +2260,6 @@
         margin-bottom: 16px;
     }
 }
-
 @media (width < 431px) {
     .holidays {
         padding-top: 90px;
