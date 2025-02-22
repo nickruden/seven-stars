@@ -40,8 +40,114 @@
 .footer__menu-item {
 }
 .footer__menu-item:not(:last-child) {
-    margin-right: 49px;
+    margin-right: 40px;
 }
 .footer__menu-link {
+    font-size: 16px;
     color: #FFF;
+}
+
+@media (width < 1281px) {
+    .footer {
+        padding: 32px 0px 60px 0px;
+    }
+}
+@media (width < 1101px) {
+    .footer {
+        padding: 45px 0px 47px 0px;
+    }
+    .footer__menu {
+        justify-content: flex-end;
+    }
+    .footer__menu-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+@media (width < 992px) {
+    .footer {
+        padding: 50px 0px 25px 0px;
+    }
+    .footer__menu {
+        justify-content: flex-end;
+    }
+    .footer__menu-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+@media (width < 769px) {
+    .footer {
+        padding: 71px 0px 0px 0px;
+    }
+    .footer__container {
+        padding: 0px;
+    }
+    .footer__inner {
+        padding: 42px 30px 50px 30px;
+        border-radius: 24px 24px 0px 0px;
+        gap: 31px;
+    }
+    .footer__menu {
+        justify-content: flex-end;
+    }
+    .footer__logo-link {
+        margin-bottom: 31px;
+    }
+    .footer__menu-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .footer__menu-item:not(:last-child) {
+        margin-right: 0px;
+    }
+    .footer__menu-link {
+        font-size: 16px;
+    }
+}
+
+@media (width < 651px) {
+    .footer {
+        padding: 85px 0px 0px 0px;
+    }
+}
+
+@media (width < 501px) {
+    .footer {
+        padding: 90px 0px 0px 0px;
+    }
+    .footer__container {
+        padding: 0px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        gap: 27px;
+    }
+    .footer__menu {
+        justify-content: flex-start;
+    }
+    .footer__logo-link {
+        margin-bottom: 27px;
+    }
+    .footer__menu-list {
+        flex-direction: column;
+    }
+}
+
+@media (width < 431px) {
+    .footer__inner {
+        gap: 24px;
+    }
+    .footer__logo-link {
+        margin-bottom: 24px;
+    }
+    .footer__menu-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer__menu-link {
+        font-size: 14px;
+    }
 }

@@ -24,10 +24,10 @@
     justify-content: space-between;
     position: relative;
     z-index: 5;
+    gap: 50px;
 }
 .feedback-block__description {
     padding-top: 58px;
-    margin-right: 50px;
 }
 .feedback-block__main-text {
     font-size: 24px;
@@ -37,7 +37,7 @@
     margin-bottom: 60px;
 }
 .feedback-block__pre-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 130%;
     color: #030303;
 }
@@ -46,3 +46,115 @@
     width: 100%;
 }
 
+@media (width < 1281px) {
+    .feedback-block__inner {
+        gap: 40px;
+    }
+    .feedback-block__description {
+        padding-top: 44px;
+    }
+    .feedback-block__main-text {
+        font-size: 23px;
+        margin-bottom: 55px;
+    }
+    .feedback-block__pre-text {
+        font-size: 15px;;
+    }
+    .feedback-block__form {
+        max-width: 480px;
+    }
+}
+
+@media (width < 992px) {
+    .feedback-block__inner {
+        gap: 30px;
+    }
+    .feedback-block__description {
+        padding-top: 25px;
+    }
+    .feedback-block__main-text {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    .feedback-block__form {
+        max-width: 330px;
+    }
+    .feedback-form {
+        padding: 25px 30px 30px 30px;
+    }
+}
+
+@media (width < 769px) {
+    .feedback-block__container {
+        padding: 35px;
+    }
+    .feedback-block__inner {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .feedback-block__description {
+        padding-top: 0px;
+        margin-right: 0px;
+    }
+    .feedback-block__main-text {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .feedback-block__form {
+        max-width: none;
+    }
+    .feedback-form {
+        padding: 25px 30px 30px 30px;
+    }
+}
+
+@media (width < 651px) {
+    
+}
+
+@media (width < 551px) {
+    .feedback-block__container {
+        padding: 30px;
+    }
+    .feedback-block__inner {
+        gap: 30px;
+    }
+    .feedback-block__description {
+        padding-left: 10px;
+    }
+    .feedback-block__main-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .feedback-block__pre-text {
+        font-size: 14px;
+    }
+    .feedback-form {
+        padding: 25px 25px 30px 25px;
+    }
+}
+
+@media (width < 431px) {
+    .feedback-block__container {
+        padding: 30px;
+    }
+    .feedback-block__inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .feedback-block__description {
+        padding-top: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+    }
+    .feedback-block__main-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .feedback-block__pre-text {
+        font-size: 14px;
+    }
+    .feedback-form {
+        padding: 20px 20px 30px 20px;
+    }
+}

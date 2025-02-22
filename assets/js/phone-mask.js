@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const phoneInputs = document.querySelectorAll('.my-input[name="input-phone"]');
 
