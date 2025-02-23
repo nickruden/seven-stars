@@ -66,11 +66,13 @@
     font-weight: 500;
     color: #030303;
     border: 1px solid #96B554;
+    padding: 15px 25px;
 }
 .header__link-phone {
     font-family: 'Montserrat';
     font-weight: 500;
     color: #030303;
+    padding: 15px 25px;
 }
 
 @media (width < 1318px) {
@@ -109,6 +111,16 @@
         width: 100%;
         height: 2px;
         background-color: #4E6932;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .burger-button.show span:nth-of-type(1) {
+        transform: rotate(45deg) translate(6px, 11px);
+    }
+    .burger-button.show span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .burger-button.show span:nth-of-type(3) {
+        transform: rotate(-45deg) translate(6px, -11px);
     }
     .burger-button:hover {
         display: flex;
@@ -140,11 +152,13 @@
 
 @media (width <= 768px) {
     .header {
-        padding: 23px 0px;
+        padding: 0px;
         position: fixed;
         width: 100%;
-        background-color: #F8F8F8;
         z-index: 1000;
+    }
+    .header__container {
+        padding: 0px;
     }
     .header__desktop {
         display: none;
@@ -155,9 +169,12 @@
         gap: 24px;
     }
     .header__mobile-top {
+        padding: 23px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: #F8F8F8;
+        padding-bottom: 24px;
     }
     .mobile-menu {
     }
@@ -165,6 +182,33 @@
     .header__mobile-menu {
         width: 36px;
         height: 24px;
+    }
+
+    .header__mobile-section-links {
+        padding: 0px 30px;
+    }
+    .header__links-slider {
+        max-width: 769px;
+        width: 100%;
+    }
+    .header__links-swiper {
+        overflow: visible;
+    }
+    .header__links-swiper-wrapper {
+        overflow: visible;
+    }
+    .header__links-swiper-slide {
+        display: inline-block;
+        width: auto !important;
+        white-space: nowrap; 
+    }
+    .header__link-slide {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 100%;
+        padding: 8px;
+        display: inline-block;
+        background-color: #FFF;
     }
 }
 @media (width <= 600px) {

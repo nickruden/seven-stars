@@ -338,17 +338,17 @@
 
 @media (width <= 768px) {
     .top-block {
-        padding-top: calc(28px + 94px);
+        padding-top: calc(28px + 150.4px);
     }
 }
 @media (width <= 600px) {
     .top-block {
-        padding-top: calc(28px + 83.4px);
+        padding-top: calc(28px + 150.4px);
     }
 }
 @media (width <= 430px) {
     .top-block {
-        padding-top: calc(28px + 79.9px);
+        padding-top: calc(28px + 150.9px);
     }
 }
 
@@ -809,7 +809,7 @@
         padding: 30px 25px;
         border-radius: 0px;
     }
-    .swiper-slide:nth-child(odd) {
+    .inspiration__slider .swiper-slide:nth-child(odd) {
         display: none;
     }
     .inspiration__slide-image-wrap {

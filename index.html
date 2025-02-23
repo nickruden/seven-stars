@@ -92,7 +92,27 @@
                     </div>
                 </div>
                 <div class="header__mobile-section-links">
-                    <div class="header__mobile-section-link">Наши филиалы</div>
+                    <div class="header__links-slider">
+                        <div class="swiper header__links-swiper">
+                            <div class="swiper-wrapper header__links-swiper-wrapper">
+                                <div class="swiper-slide header__links-swiper-slide">
+                                    <a href="" class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши филиалы</a>
+                                </div>
+                                <div class="swiper-slide header__links-swiper-slide">
+                                    <a href="" class="my-button my-button_noColor my-button_borderOval header__link-slide">Реджио</a>
+                                </div>
+                                <div class="swiper-slide header__links-swiper-slide">
+                                    <a href="" class="my-button my-button_noColor my-button_borderOval header__link-slide">Проектная деятельность</a>
+                                </div>
+                                <div class="swiper-slide header__links-swiper-slide">
+                                    <a href="" class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши филиалы</a>
+                                </div>
+                                <div class="swiper-slide header__links-swiper-slide">
+                                    <a href="" class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши филиалы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 </div>
             </div>
@@ -1930,6 +1950,14 @@
 
             // Инициализация активной кнопки при загрузке страницы
             updateActiveButton(developmentSwiper.realIndex);
+
+        const headerLinksSwiper = new Swiper('.header__links-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+            freeMode: true, // Позволяет слайдам свободно прокручиваться
+            watchSlidesProgress: true, // Включает отслеживание прогресса слайдов
+        });
 
         const holidaysSwiper = new Swiper('.holidays__swiper', {
             direction: 'horizontal',
