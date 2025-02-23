@@ -1603,19 +1603,15 @@
 .lifestyle-item {
     padding-top: 120px;
 }
-
 .lifestyle-item:nth-of-type(even) .lifestyle-item__slider {
     order: 2;
-    margin-right: 0px;
 }
-
 .lifestyle-item:nth-of-type(even) .lifestyle-item__body {
     order: 1;
-    margin-right: 92px;
-}
-
+}  
 .lifestyle-item__container {
     display: flex;
+    gap: 92px;
 }
 .lifestyle-item__container {
 
@@ -1624,7 +1620,6 @@
     max-height: 600px;
     max-width: 560px;
     position: relative;
-    margin-right: 92px;
 }
 .lifestyle-item__swiper {
 }
@@ -1661,8 +1656,6 @@
     bottom: 0;
 }
 .lifestyle-item__swiper-button-prev {
-    right: auto;
-    margin-right: 16px;
 }
 .lifestyle-item__swiper-button-next {
 }
@@ -1693,15 +1686,185 @@
 .lifestyle-item__swiper-notes {
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
 .lifestyle-item__footnote {
     font-size: 14px;
     line-height: 130%;
     color: #4E6932;
-    margin-bottom: 24px;
 }
 .lifestyle-item__swiper-navigation {
     position: static;
+}
+.lifestyle-item__pre-title-mobile {
+    display: none;
+}
+
+@media (width < 1341px) {
+
+}
+@media (width < 1281px) {
+    .lifestyle-item__container {
+        gap: 78px;
+    }
+    .lifestyle-item__slider {
+        max-height: 580px;
+        max-width: 500px;
+    }
+    .lifestyle-item__slide {
+        max-width: none;
+        max-height: none;
+        width: 100%;
+        height: 100%;
+    }
+    .lifestyle-item__slide-img-wrap {
+        width: 100%;
+        height: 100%;
+    }
+    .lifestyle-item__title {
+        margin-bottom: 60px;
+        font-size: 38px;
+    }
+    .lifestyle-item__texts {
+        max-width: 490px;
+    }
+    .lifestyle-item__pre-title {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    .lifestyle-item__text {
+        font-size: 15px;
+        margin-bottom: 45px;
+    }
+    .lifestyle-item__swiper-notes {
+        gap: 18px;
+    }
+}
+@media (width < 1100px) {
+    .lifestyle-item__container {
+        gap: 50px;
+        justify-content: space-between;
+    }
+}
+@media (width < 992px) {
+    .lifestyle-item__container {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .lifestyle-item .lifestyle-item__slider {
+        order: 2;
+    }
+    
+    .lifestyle-item .lifestyle-item__body {
+        order: 1;
+    }
+    .lifestyle-item__slider {
+        max-height: none;
+        max-width: none;
+        width: 100%;
+    }
+    .lifestyle-item__swiper {
+        overflow: visible;
+    }
+    .lifestyle-item__swiper-pagination {
+        display: none;
+    }
+    .lifestyle-item__slide {
+        height: auto;
+        width: auto;
+        aspect-ratio: 560 / 600;
+    }
+    .lifestyle-item__title {
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+    .lifestyle-item__texts {
+        max-width: 640px;
+    }
+    .lifestyle-item__text {
+        max-width: none;
+    }
+}
+@media (width < 769px) {
+    .lifestyle-item__container {
+        padding: 0px;
+    }
+    .lifestyle-item__body {
+        padding: 0px 30px;
+    }
+    .lifestyle-item__title {
+        font-size: 46px;
+    }
+    .lifestyle-item__slider {
+        padding: 23px 30px 30px 30px;
+        background-color: #F8F8F8;
+    }
+    .lifestyle-item__swiper {
+        margin-bottom: 30px;
+    }
+    .lifestyle-item__slide {
+        aspect-ratio: 628 / 540;
+    }
+    .lifestyle-item__pre-title-mobile {
+        display: block;
+        font-size: 20px;
+        line-height: 130%;
+        color: #4E6932;
+    }
+    .lifestyle-item__swiper-navigation {
+        display: none;
+    }
+    .lifestyle-item__footnote-mobile {
+        font-size: 15px;
+        line-height: 130%;
+        color: #4E6932;
+        margin-bottom: 18px;
+    }
+    .lifestyle-item__pre-title {
+        display: none;
+    }
+    .lifestyle-item__text {
+        margin-bottom: 0;
+    }
+    .lifestyle-item__footnote {
+        display: none;
+    }
+}
+@media (width < 651px) {
+    .lifestyle-item__swiper {
+        margin-bottom: 25px;
+    }
+    .lifestyle-item__title {
+        font-size: 38px;
+        margin-bottom: 48px;
+    }
+    .lifestyle-item__container {
+        gap: 48px;
+    }
+}
+@media (width < 551px) {
+    .lifestyle-item__swiper {
+        margin-bottom: 20px;
+    }
+    .lifestyle-item__footnote-mobile {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .lifestyle-item__container {
+        gap: 45px;
+    }
+    .lifestyle-item__title {
+        font-size: 35px;
+        margin-bottom: 45px;
+    }
+    .lifestyle-item__text {
+        font-size: 14px;
+    }
+}
+@media (width < 431px) {
+    .lifestyle-item__title {
+        font-size: 32px;
+    }
 }
 
 
@@ -2891,32 +3054,32 @@
 }
 
 @media (width < 1281px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
         padding-top: 115px;
     }
 }
 @media (width < 992px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
         padding-top: 111px;
     }
 }
 @media (width < 769px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
         padding-top: 107px;
     }
 }
 @media (width < 651px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
         padding-top: 104px;
     }
 }
 @media (width < 551px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
         padding-top: 95px;
     }
 }
 @media (width < 431px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
         padding-top: 90px;
     }
 }

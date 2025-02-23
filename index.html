@@ -974,6 +974,7 @@
                     <div class="lifestyle__block-nutrition lifestyle-item">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
+                                <div class="lifestyle-item__footnote-mobile">осмотр педиатром</div>
                                 <div class="swiper block-nutrition__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
@@ -1020,6 +1021,11 @@
                                 </div>
                                 <div class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
+                                <div class="lifestyle-item__pre-title-mobile">
+                                    В каждом детском саду оборудован профессиональный пищеблок, в котором трудится повар и
+                                    помощник
+                                    повара
+                                </div>
                             </div>
                             <div class="lifestyle-item__body">
                                 <h2 class="block-title lifestyle-item__title">
@@ -1056,6 +1062,7 @@
                     <div class="lifestyle__block-walk lifestyle-item">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
+                                <div class="lifestyle-item__footnote-mobile">осмотр педиатром</div>
                                 <div class="swiper block-walk__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
@@ -1102,6 +1109,10 @@
                                 </div>
                                 <div class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
+                                <div class="lifestyle-item__pre-title-mobile">
+                                    Детские площадки — это отличная возможность для ребёнка еще больше узнать об окружающем миреик
+                                    повара
+                                </div>
                             </div>
                             <div class="lifestyle-item__body">
                                 <h2 class="block-title lifestyle-item__title">
@@ -1136,6 +1147,7 @@
                     <div class="lifestyle__block-health lifestyle-item">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
+                                <div class="lifestyle-item__footnote-mobile">осмотр педиатром</div>
                                 <div class="swiper block-health__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
@@ -1181,6 +1193,10 @@
                                     </div>
                                 </div>
                                 <div class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
+                                </div>
+                                <div class="lifestyle-item__pre-title-mobile">
+                                    Врач-педиатр регулярно осматривает детей в соответствии с требованиями в сфере
+                                    здравоохранения
                                 </div>
                             </div>
                             <div class="lifestyle-item__body">
@@ -2113,8 +2129,8 @@
 
         const blockNutritionSwiper = new Swiper('.block-nutrition__swiper', {
             direction: 'horizontal',
-            slidesPerView: 1,
-            spaceBetween: 24,
+            slidesPerView: 1.15,
+            spaceBetween: 20,
             pagination: {
                 el: '.block-nutrition__swiper-pagination',
             },
@@ -2122,12 +2138,22 @@
                 nextEl: '.block-nutrition__swiper-button-next',
                 prevEl: '.block-nutrition__swiper-button-prev',
             },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+            },
         });
 
         const blockWalkSwiper = new Swiper('.block-walk__swiper', {
             direction: 'horizontal',
-            slidesPerView: 1,
-            spaceBetween: 24,
+            slidesPerView: 1.15,
+            spaceBetween: 20,
             pagination: {
                 el: '.block-walk__swiper-pagination',
             },
@@ -2135,18 +2161,38 @@
                 nextEl: '.block-walk__swiper-button-next',
                 prevEl: '.block-walk__swiper-button-prev',
             },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+            },
         });
 
         const blockHealthSwiper = new Swiper('.block-health__swiper', {
             direction: 'horizontal',
-            slidesPerView: 1,
-            spaceBetween: 24,
+            slidesPerView: 1.15,
+            spaceBetween: 20,
             pagination: {
                 el: '.block-health__swiper-pagination',
             },
             navigation: {
                 nextEl: '.block-health__swiper-button-next',
                 prevEl: '.block-health__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
             },
         });
 
