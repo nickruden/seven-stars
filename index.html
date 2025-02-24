@@ -1902,6 +1902,7 @@
     <script src="./assets/libs/bootstrap/popper.min.js"></script>
 
     <script src="./assets/js/phone-mask.js"></script>
+    <script src="./assets/js/header.js"></script>
 
     <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1956,12 +1957,13 @@
             function updateActiveButton(index) {
                 buttons.forEach(button => {
                     button.classList.remove('active');
+                    console.log(1)
                 });
 
                 const activeButton = document.querySelector(`.development__button[data-slide="${index}"]`);
-        if (activeButton) {
-            activeButton.classList.add('active');
-        }
+                if (activeButton) {
+                    activeButton.classList.add('active');
+                }
             }
 
             // Инициализация активной кнопки при загрузке страницы

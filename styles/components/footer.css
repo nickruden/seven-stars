@@ -47,12 +47,12 @@
     color: #FFF;
 }
 
-@media (width < 1281px) {
+@media (max-width: 1281px) {
     .footer {
         padding: 32px 0px 60px 0px;
     }
 }
-@media (width < 1101px) {
+@media (max-width: 1101px) {
     .footer {
         padding: 45px 0px 47px 0px;
     }
@@ -65,7 +65,7 @@
     }
 }
 
-@media (width < 992px) {
+@media (max-width: 992px) {
     .footer {
         padding: 50px 0px 25px 0px;
     }
@@ -78,7 +78,7 @@
     }
 }
 
-@media (width < 769px) {
+@media (max-width: 769px) {
     .footer {
         padding: 71px 0px 0px 0px;
     }
@@ -108,13 +108,13 @@
     }
 }
 
-@media (width < 651px) {
+@media (max-width: 651px) {
     .footer {
         padding: 85px 0px 0px 0px;
     }
 }
 
-@media (width < 501px) {
+@media (max-width: 501px) {
     .footer {
         padding: 90px 0px 0px 0px;
     }
@@ -136,7 +136,7 @@
     }
 }
 
-@media (width < 431px) {
+@media (max-width: 431px) {
     .footer__inner {
         gap: 24px;
     }

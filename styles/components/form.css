@@ -23,33 +23,33 @@
     padding-bottom: 18px;
 }
 
-@media (width < 1281px) {
+@media (max-width: 1281px) {
 
 }
 
-@media (width < 992px) {
+@media (max-width: 992px) {
     .feedback-form {
         padding: 25px 30px 30px 30px;
     }
 }
 
-@media (width < 769px) {
+@media (max-width: 769px) {
     .feedback-form {
         padding: 25px 30px 30px 30px;
     }
 }
 
-@media (width < 651px) {
+@media (max-width: 651px) {
     
 }
 
-@media (width < 551px) {
+@media (max-width: 551px) {
     .feedback-form {
         padding: 25px 25px 30px 25px;
     }
 }
 
-@media (width < 431px) {
+@media (max-width: 431px) {
     .feedback-form {
         padding: 20px 20px 30px 20px;
     }
