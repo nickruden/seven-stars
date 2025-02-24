@@ -2999,6 +2999,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .reviews__slide > a {
+        order: 2;
+    }
     .reviews__slide-img-wrap {
         height: 320px;
         width: 100%;
