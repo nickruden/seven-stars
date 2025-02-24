@@ -44,4 +44,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', handleScroll);
 
+        const burgerButton = document.querySelector('.mobile-menu__burger-button');
+        const mobileMenu = document.querySelector('.mobile-menu__content');
+        const overlay = document.getElementById('burger-menu-overlay');
+        const body = document.body;
+    
+        burgerButton.addEventListener('click', function() {
+            const isMenuVisible = mobileMenu.classList.contains('visible');
+    
+            if (isMenuVisible) {
+                // Закрываем меню
+                mobileMenu.classList.remove('visible');
+                burgerButton.classList.remove('show');
+                overlay.classList.remove('visible');
+                body.classList.remove('no-scroll');
+            } else {
+                // Открываем меню
+                mobileMenu.classList.add('visible');
+                burgerButton.classList.add('show');
+                overlay.classList.add('visible');
+                body.classList.add('no-scroll');
+            }
+        });
+    
+        // Закрытие меню при клике на оверлей
+        overlay.addEventListener('click', function() {
+            mobileMenu.classList.remove('visible');
+            burgerButton.classList.remove('show');
+            overlay.classList.remove('visible');
+            body.classList.remove('no-scroll');
+        });
 });

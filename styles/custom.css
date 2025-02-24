@@ -65,7 +65,7 @@
     left: auto;
     user-select: none;
     margin-top: 0px;
-    opacity: 0.5;
+    opacity: 1;
 }
 .swiper-button-prev::after, .swiper-button-next::after {
     content: '';
@@ -93,4 +93,25 @@
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #4E6932;
+}
+
+.my-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.my-overlay.visible {
+    display: block;
+    opacity: 1;
+}
+
+.no-scroll {
+    overflow: hidden; 
 }

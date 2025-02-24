@@ -21,9 +21,9 @@
 }
 .footer__info-text {
     color: #FFF;
-    width: 208px;
+    width: 245px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 120%;
 }
 .footer__right {
@@ -111,6 +111,9 @@
 @media (max-width: 651px) {
     .footer {
         padding: 85px 0px 0px 0px;
+    }
+    .footer__info-text {
+        font-size: 12px;
     }
 }
 
