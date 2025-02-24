@@ -192,12 +192,6 @@
         transition: transform 0.3s ease;
         overflow-x: hidden;
     }
-    /* .header__mobile-top.visible {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-    } */
     .header__mobile-top.hidden {
         transform: translateY(-100%);
     }
