@@ -1242,41 +1242,41 @@
                                     <div class="swiper-slide dev-environment__text-swiper-slide" id="slide1">
                                         <div class="dev-environment__text-slide">
                                             <div class="dev-environment__slide-title">Сенсорные зоны</div>
-                                            <div class="dev-environment__slide-text">Для стимуляции познавательной и двигательной
-                                                активности, развития мелкой моторики</div>
+                                            <div class="dev-environment__slide-text"><p>У маленьких детей процесс познания осуществляется не через рациональное мышление, а через чувственный опыт и впечатления. Именно поэтому наши помещения насыщены сенсорными зонами, способствующими всестороннему развитию ребёнка.</p>
+                                                <p>Чем более насыщенная и разнообразная сенсорная информация поступает к ребёнку из окружающей среды, тем легче ему сравнивать, анализировать и осваивать окружающий мир, тем быстрее развиваются его когнитивные способности.</p></div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide dev-environment__text-swiper-slide" id="slide2">
                                         <div class="dev-environment__text-slide">
                                             <div class="dev-environment__slide-title">Множество обучающих предметов и интересных
                                                 пособий</div>
-                                            <div class="dev-environment__slide-text">мотивирует детей на получение информации</div>
+                                            <div class="dev-environment__slide-text"><p>Игра — лучший способ обучения. Игра великолепно мотивирует детей получать и активно запоминать информацию. Поэтому мы используем на наших повседневных занятиях, помимо типовых, разнообразные пособия с яркими иллюстрациями и необычные обучающие предметы.</p></div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide dev-environment__text-swiper-slide" id="slide3">
                                         <div class="dev-environment__text-slide">
                                             <div class="dev-environment__slide-title">Все необходимое для творческой деятельности
                                             </div>
-                                            <div class="dev-environment__slide-text">огромное количество природных и бросовых
-                                                материалов</div>
+                                            <div class="dev-environment__slide-text"><p>Огромное количество природных и бросовых материалов, чтобы пробудить в ребёнке природную любознательность и познакомить его с миром</p></div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide dev-environment__text-swiper-slide" id="slide4">
                                         <div class="dev-environment__text-slide">
                                             <div class="dev-environment__slide-title">Продуманная планировка помещений</div>
-                                            <div class="dev-environment__slide-text">способствует активному взаимодействию детей с
-                                                окружающим миром</div>
+                                            <div class="dev-environment__slide-text"><p>Способствует активному взаимодействию детей с окружающей средой, пробуждает в них исследовательский и творческий интерес</p></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="dev-environment__text-swiper-controls">
                             <div class="swiper-pagination dev-environment__text-swiper-pagination"></div>
-                            <div class="swiper-navigation">
-                                <div class="swiper-button-prev dev-environment__text-swiper-button-prev">
-                                    <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
-                                </div>
-                                <div class="swiper-button-next dev-environment__text-swiper-button-next">
-                                    <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                <div class="swiper-navigation dev-environment__text-swiper-navigation">
+                                    <div class="swiper-button-prev dev-environment__text-swiper-button-prev">
+                                        <img src="./assets/images/slider/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                                    </div>
+                                    <div class="swiper-button-next dev-environment__text-swiper-button-next">
+                                        <img src="./assets/images/slider/arrow-next.svg" alt="" class="swiper-button-next-img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2190,6 +2190,7 @@
             },
         });
 
+        const devEnvTextSlider = document.querySelector('.dev-environment__text-slider');
         const devEnvironmenTextSwiper = new Swiper('.dev-environment__text-swiper', {
             direction: 'horizontal',
             slidesPerView: 1,
@@ -2211,7 +2212,22 @@
                 nextEl: '.dev-environment__text-swiper-button-next',
                 prevEl: '.dev-environment__text-swiper-button-prev',
             },
+            on: {
+                slideChange: function () {
+                    updateSwiperHeight();
+                },
+                resize: function () {
+                    updateSwiperHeight();
+                }
+            }
         });
+        function updateSwiperHeight() {
+            console.log(122)
+        const activeSlide = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex];
+        const slideHeight = activeSlide.offsetHeight;
+        devEnvTextSlider.style.height = `${slideHeight}px`;
+    }
+
 
         const sliders = document.querySelectorAll('.dev-environment__image-slider');
         const imageSwipers = [];
