@@ -2089,10 +2089,11 @@
     .dev-environment__image-slide {
         max-width: none;
         max-height: 490px;
+        height: 100%;
     }
     .dev-environment__image-slide-wrap {
         width: 100%;
-        height: auto;
+        height: 100%;
         aspect-ratio: 0;
     }
     .dev-environment__image-swiper-pagination {
