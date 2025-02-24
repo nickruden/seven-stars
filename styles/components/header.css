@@ -203,7 +203,8 @@
     }
     .header__mobile-section-links.visible {
         position: fixed;
-        top: 0px;;
+        top: 0px;
+        background-color: #F8F8F8;
     }
     .header__links-slider {
         max-width: 769px;
