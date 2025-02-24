@@ -199,6 +199,7 @@
     }
     .header__mobile-section-links.active {
         position: fixed;
+        background-color: #F8F8F8;
     }
     .header__mobile-section-links {
         position: absolute;

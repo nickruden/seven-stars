@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 headerTop.classList.add('active');
                 headerLinks.classList.add('active');
             }
+            if (scrollTop < 95) {
+                headerTop.classList.remove('active');
+                headerLinks.classList.remove('active');
+            }
             headerTop.classList.remove('hidden');
             headerLinks.classList.remove('visible');
             flag = false;
