@@ -2122,15 +2122,15 @@
         padding: 0px 30px 30px 30px;
     }
     .dev-environment__text-swiper {
-        height: auto; /* Разрешаем слайдеру адаптироваться по высоте */
+        height: auto;
     }
     
     .dev-environment__text-swiper-slide {
-        height: auto; /* Разрешаем слайдам адаптироваться по высоте */
+        height: auto;
     }
     
     .dev-environment__text-slide {
-        height: auto; /* Разрешаем содержимому слайда адаптироваться по высоте */
+        height: auto;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -2148,7 +2148,7 @@
         height: 100%;
     }
     .dev-environment__image-swiper-pagination {
-        bottom: 18px !important;
+        bottom: 16px !important;
     }
 }
 @media (max-width: 431px) {
