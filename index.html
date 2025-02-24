@@ -2221,12 +2221,13 @@
                 }
             }
         });
+        
         function updateSwiperHeight() {
             console.log(122)
-        const activeSlide = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex];
-        const slideHeight = activeSlide.offsetHeight;
-        devEnvTextSlider.style.height = `${slideHeight}px`;
-    }
+            const activeSlide = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex];
+            const slideHeight = activeSlide.offsetHeight;
+            devEnvTextSlider.style.height = `${slideHeight}px`;
+        }
 
 
         const sliders = document.querySelectorAll('.dev-environment__image-slider');
