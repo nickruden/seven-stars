@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleScroll() {
         let scrollTop = window.scrollY || document.documentElement.scrollTop;
-        console.log(document.documentElement.scrollTop)
 
         if (scrollTop > lastScrollTop) {
             if (scrollTop > 95) {
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        console.log(1, lastScrollTop)
     }
 
     window.addEventListener('scroll', handleScroll);
