@@ -1,7 +1,8 @@
 .footer {
-    padding: 24px 0px 81px 0px;
 }
 .footer__container {
+    padding-top: 24px;
+    padding-bottom: 81px;
 }
 .footer__inner {
     background: #4E6932;
@@ -45,6 +46,16 @@
 .footer__menu-link {
     font-size: 16px;
     color: #FFF;
+}
+
+@media (max-width: 1340px) {
+    .footer {
+        padding: 24px 0px 81px 0px;
+    }
+    .footer__container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 @media (max-width: 1281px) {

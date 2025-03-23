@@ -1,7 +1,8 @@
 .header {
-    padding: 59px 0px;
 }
 .header__container {
+    padding-top: 59px;
+    padding-bottom: 59px;
 }
 .header__desktop {
     display: flex;
@@ -135,6 +136,16 @@
 .mobile-menu__contact-link {
     line-height: 100%;
     color: #4E6932;
+}
+
+@media (max-width: 1340px) {
+    .header {
+        padding: 59px 0px;
+    }
+    .header__container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 @media (max-width: 1318px) {
