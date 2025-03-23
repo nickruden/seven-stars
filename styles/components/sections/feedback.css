@@ -1,0 +1,12 @@
+.feedback {
+}
+.main__feedback {
+}
+.feedback__container {
+}
+
+@media (max-width: 769px) {
+    .feedback__container {
+        padding: 0px;
+    }
+}

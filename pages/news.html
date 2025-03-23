@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 звёзд</title>
+
+
+    <!-- БИБЛИОТЕКИ -->
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+
+
+    <!-- СТИЛИ ОБЩИХ ЭЛЕМЕНТОВ -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+
+    <link rel="stylesheet" href="../styles/UI/button.css">
+    <link rel="stylesheet" href="../styles/UI/input.css">
+    <link rel="stylesheet" href="../styles/UI/checkbox.css">
+
+    <link rel="stylesheet" href="../styles/components/form.css">
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
+    <link rel="stylesheet" href="../styles/components/feedback-block.css">
+
+    <link rel="stylesheet" href="../styles/components/sections/hero-section.css">
+    <link rel="stylesheet" href="../styles/components/sections/contacts-section.css">
+    <link rel="stylesheet" href="../styles/components/sections/feedback.css">
+
+
+    <!-- СТИЛИ СТРАНИЦЫ -->
+    <link rel="stylesheet" href="../styles/pages/news.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="my-container header__container">
+                <div class="header__desktop">
+                    <div class="header__left">
+                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt="logo"
+                                class="header__logo-img"></a>
+                        <div class="pre-mobile-menu header__pre-mobile-menu">
+                            <div class="dropdown pre-mobile-menu__dropdown">
+                                <button class="burger-button" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-target="#header-pre-mobile">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <ul class="dropdown-menu pre-mobile-menu__dropdown-menu" id="header-pre-mobile">
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">О нас</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Детские
+                                            сады</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Центр
+                                            развития</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./news.html">Новости</a>
+                                    </li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Блог</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Сведения...</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="" class="header__menu-link">О нас</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Детские сады</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Центр развития</a></li>
+                            <li class="header__menu-item"><a href="./news.html" class="header__menu-link">Новости</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Блог</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Сведения...</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <div class="header__smp">
+                            <a href="" class="header__smp-link">
+                                <img src="../assets/images/social-media-icons/WA.svg" alt="Tg-icon"
+                                    class="header__smp-img">
+                            </a>
+                            <a href="" class="header__smp-link">
+                                <img src="../assets/images/social-media-icons/tg.svg" alt="WA-icon"
+                                    class="header__smp-img">
+                            </a>
+                        </div>
+                        <div class="header__buttons">
+                            <button
+                                class="my-button my-button_noColor my-button_borderOval header__button">ЗАПИСАТЬСЯ</button>
+                            <a href="tel:+73952738200"
+                                class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7
+                                (3952) 738-200</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__mobile-top">
+                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt="logo"
+                                class="header__logo-img"></a>
+                        <div class="header__buttons">
+                            <a href="tel:+73952738200"
+                                class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7 (3952)
+                                738-200</a>
+                        </div>
+                        <div class="mobile-menu header__mobile-menu">
+                            <button class="burger-button mobile-menu__burger-button"
+                                data-toggle="#header-mobile-navbar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="mobile-menu__content" id="header-mobile-navbar">
+                                <div class="mobile-menu__content-inner">
+                                    <ul class="mobile-menu__links">
+                                        <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">О
+                                                нас</a></li>
+                                        <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">Детские
+                                                сады</a></li>
+                                        <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">Центр
+                                                развития</a></li>
+                                        <li class="mobile-menu__link-item"><a href=""
+                                                class="mobile-menu__link">Новости</a></li>
+                                        <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">Блог</a>
+                                        </li>
+                                        <li class="mobile-menu__link-item"><a href=""
+                                                class="mobile-menu__link">Сведения...</a></li>
+                                    </ul>
+                                    <div class="mobile-menu__buttons">
+                                        <a href="tel:+73952738200"
+                                            class="my-button my-button_lightGreen my-button_borderOval header__mobile-link-phone">+7
+                                            (3952) 738-200</a>
+                                        <button
+                                            class="my-button my-button_noColor my-button_borderOval header__mobile-button">ЗАПИСАТЬСЯ</button>
+                                    </div>
+                                    <div class="mobile-menu__contacts">
+                                        <a href="" class="mobile-menu__contact-link">Telegram</a>
+                                        <a href="" class="mobile-menu__contact-link">WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="header__mobile-section-links">
+                        <div class="header__links-slider">
+                            <div class="swiper header__links-swiper">
+                                <div class="swiper-wrapper header__links-swiper-wrapper">
+                                    <div class="swiper-slide header__links-swiper-slide">
+                                        <a href=""
+                                            class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
+                                            филиалы</a>
+                                    </div>
+                                    <div class="swiper-slide header__links-swiper-slide">
+                                        <a href="#inspiration"
+                                            class="my-button my-button_noColor my-button_borderOval header__link-slide">Реджио</a>
+                                    </div>
+                                    <div class="swiper-slide header__links-swiper-slide">
+                                        <a href=""
+                                            class="my-button my-button_noColor my-button_borderOval header__link-slide">Проектная
+                                            деятельность</a>
+                                    </div>
+                                    <div class="swiper-slide header__links-swiper-slide">
+                                        <a href=""
+                                            class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
+                                            филиалы</a>
+                                    </div>
+                                    <div class="swiper-slide header__links-swiper-slide">
+                                        <a href=""
+                                            class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
+                                            филиалы</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </header>
+
+        <div class="my-overlay" id="burger-menu-overlay"></div>
+
+        <main class="main">
+            <section class="hero-section main__hero-section">
+                <div class="my-container hero-section__container">
+                    <div class="hero-section__body">
+                        <div class="hero-section__body-texts">
+                        <div class="hero-section__title">Новости
+                            <!-- <div class="hero-section__location">
+                                <div class="hero-section__location-img">
+                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C7.582 2 4 5.35813 4 9.5C4 11.1309 4.57033 12.6275 5.51833 13.8531C5.53533 13.8825 5.538 13.9153 5.55733 13.9434L10.8907 21.4434C11.138 21.7913 11.5547 22 12 22C12.4453 22 12.862 21.7913 13.1093 21.4434L18.4427 13.9434C18.4623 13.9153 18.4647 13.8825 18.4817 13.8531C19.4297 12.6275 20 11.1309 20 9.5C20 5.35813 16.418 2 12 2ZM12 12C10.5273 12 9.33333 10.8806 9.33333 9.5C9.33333 8.11937 10.5273 7 12 7C13.4727 7 14.6667 8.11937 14.6667 9.5C14.6667 10.8806 13.4727 12 12 12Z"
+                                            fill="black" />
+                                    </svg>
+                                </div> <span class="hero-section__location-text"> В Иркутске</span>
+                            </div> -->
+                        </div>
+                        <div class="hero-section__text">Мы наполняем повседневную жизнь ребенка творчеством и интересными открытиями. С нами дети не просто учатся получать удовольствие от взаимодействия с окружающим миром: они учатся смотреть на обычные вещи под совершенно разным углом, составлять о них собственное мнение и делать определенные выводы.</div>
+                    </div>
+                        <div class="hero-section__links">
+                            <a href="" class="hero-section__link active">записаться <br> на экскурсию</a>
+                            <a href="" class="hero-section__link">выбрать <br> садик</a>
+                        </div>
+                    </div>
+                    <div class="hero-section__right-content">
+                        <div class="hero-section__title">Новости
+                            <!-- <div class="hero-section__location">
+                                <div class="hero-section__location-img">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C7.582 2 4 5.35813 4 9.5C4 11.1309 4.57033 12.6275 5.51833 13.8531C5.53533 13.8825 5.538 13.9153 5.55733 13.9434L10.8907 21.4434C11.138 21.7913 11.5547 22 12 22C12.4453 22 12.862 21.7913 13.1093 21.4434L18.4427 13.9434C18.4623 13.9153 18.4647 13.8825 18.4817 13.8531C19.4297 12.6275 20 11.1309 20 9.5C20 5.35813 16.418 2 12 2ZM12 12C10.5273 12 9.33333 10.8806 9.33333 9.5C9.33333 8.11937 10.5273 7 12 7C13.4727 7 14.6667 8.11937 14.6667 9.5C14.6667 10.8806 13.4727 12 12 12Z"
+                                            fill="black" />
+                                    </svg>
+                                </div> <span class="hero-section__location-text"> В Иркутске</span>
+                            </div> -->
+                        </div>
+                        <div class="hero-section__wrap-img"></div>
+                    </div>
+                </div>
+                <img src="./assets/images/pages/main/background/cones-7.png" alt="" class="hero-section__background-img">
+            </section>
+
+            <section class="feedback main__feedback">
+                <div class="my-container feedback__container">
+                    <article class="feedback-block reviews__feedback-block">
+                        <div class="my-container feedback-block__container">
+                            <div class="feedback-block__inner">
+                                <div class="feedback-block__description">
+                                    <div class="feedback-block__main-text">Хотите записаться на экскурсию в один из
+                                        наших садов,
+                                        <br> попасть в центр развития <br> или уточнить информацию?
+                                    </div>
+                                    <div class="feedback-block__pre-text">Оставьте Ваш телефон, <br> и мы перезвоним в
+                                        ближайшее
+                                        время</div>
+                                </div>
+                                <form action="" class="feedback-form feedback-block__form">
+                                    <div class="feedback-form__elements">
+                                        <input type="text" name="input-name" id="inputName" class="my-input feedback-form__input"
+                                            placeholder="Ваше имя">
+                                        <input type="tel" name="input-phone" id="inputPhone" class="my-input feedback-form__input"
+                                            placeholder="+7 (999) 999 99 99">
+                                        <label for="agreementCheck" class="my-checkbox feedback-form__checkbox">
+                                            <input type="checkbox" name="agreement-checkbox" id="agreementCheck"
+                                                class="my-checkbox__old">
+                                            <span class="my-checkbox__new"></span>
+                                            <span class="my-checkbox__text">согласие на <a
+                                                    href="https://7zvezd-irk.ru/include/licenses_detail.php"
+                                                    class="my-checkbox__text-link">обработку персональных
+                                                    данных</a></span>
+                                        </label>
+                                        <button class="my-button my-button_borderSquare feedback-form__button">отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="contacts main__contacts">
+                <div class="my-container contacts__container">
+                    <div class="contacts__inner">
+                        <div class="contacts__body">
+                            <div class="contacts__desc">
+                                <div class="contacts__smd">
+                                    <h2 class="contacts__title">Контакты</h2>
+                                    <div class="contacts__info">
+                                        <a href="tel:+73952738200" class="contacts__phone">
+                                            <img src="../assets/images/social-media-icons/phone.svg" alt=""
+                                                class="contacts__phone-icon"> <span class="contacts__phone-text"> +7
+                                                (395) 273 82 00</span> </a>
+                                        <a href="mailto:7stars07@mail.ru" class="contacts__email">
+                                            <img src="../assets/images/social-media-icons/email.svg" alt=""
+                                                class="contacts__email-icon">
+                                            <span class="contacts__email-text">7stars07@mail.ru</span></a>
+                                    </div>
+                                </div>
+                                <div class="contacts__addresses">
+                                    <div class="contacts__address-block">
+                                        <div class="contacts__address-title">Детские сады</div>
+                                        <ul class="contacts__address-items">
+                                            <li class="contacts__address-item">ул. Алмазная, 5 (м-н Первомайский)</li>
+                                            <li class="contacts__address-item">ул. Декабрьских событий, 102</li>
+                                            <li class="contacts__address-item">ул. Александра Невского, 60</li>
+                                            <li class="contacts__address-item">ул. Каландаришвили, 7</li>
+                                            <li class="contacts__address-item">ул. Березовая, 8 (м-н Солнечный)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="contacts__address-block">
+                                        <div class="contacts__address-title">Центр развития</div>
+                                        <ul class="contacts__address-items">
+                                            <li class="contacts__address-item">ул. Александра Невского, 60</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="my-button my-button_noColor my-button_borderSquare contacts__button">задать
+                                вопрос</button>
+                        </div>
+                        <div class="contacts__map-wrap">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa492017f50e8e42aaae25d9b0ac6e2d6bf8701ce1c04ebd58da068a3b99b603a&amp;source=constructor"
+                                width="500" height="400" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="my-container footer__container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <a href="" class="footer__logo-link">
+                            <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
+                        </a>
+                        <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
+                            лицензией № 9378 от 29.07.2016 </div>
+                    </div>
+                    <div class="footer__right">
+                        <nav class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Сведения об
+                                        организации</a>
+                                </li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">О нас</a></li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Центр развития</a>
+                                </li>
+                                <li class="footer__menu-item"><a href="./news.html" class="footer__menu-link">Новости</a></li>
+                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Блог</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- БИБЛИОТЕКИ -->
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/bootstrap/popper.min.js"></script>
+    <script src="./assets/libs/fancybox/fancybox.umd.js"></script>
+
+
+    <!-- ОБЩИЕ СКРИПТЫ -->
+    <script src="./assets/js/phone-mask.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/section-links.js"></script>
+
+
+    <!-- СКРИПТ ДЛЯ ТУЛПТИПА -->
+    <script>
+        const updateTippyTrigger = () => {
+            const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+            document.querySelectorAll(".development__button").forEach((button) => {
+                const instance = button._tippy; // Получаем экземпляр tippy для кнопки
+
+                if (instance) {
+                    instance.setProps({
+                        trigger: isMobile ? 'click' : 'mouseenter', // Обновляем триггер
+                        hideOnClick: isMobile ? false : true, // Обновляем поведение закрытия
+                    });
+                }
+            });
+        };
+
+        // Обновляем поведение при изменении размера окна
+        window.addEventListener('resize', updateTippyTrigger);
+
+        // Инициализация тултипов при загрузке страницы
+        document.querySelectorAll(".development__button").forEach((button) => {
+            const popupContent = button.querySelector(".development__slide-popup").innerHTML;
+
+            tippy(button, {
+                content: popupContent,
+                placement: 'top',
+                flip: true,
+                allowHTML: true,
+                theme: 'custom-popup-theme',
+                trigger: window.matchMedia("(max-width: 767px)").matches ? 'click' : 'mouseenter',
+                arrow: false,
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Fancybox.bind('[data-fancybox="reviews-gallery"]', {
+
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.branches__button');
+            const contents = document.querySelectorAll('.branches__content-item');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetContentId = this.getAttribute('data-content');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents.forEach(content => content.classList.remove('active'));
+
+                    this.classList.add('active');
+                    document.getElementById(targetContentId).classList.add('active');
+                });
+            });
+
+            const defaultActiveButton = document.querySelector('.branches__button.active');
+            if (defaultActiveButton) {
+                const defaultContentId = defaultActiveButton.getAttribute('data-content');
+                document.getElementById(defaultContentId).classList.add('active');
+            }
+        });
+
+        const buttons = document.querySelectorAll('.development__button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const slideIndex = parseInt(this.getAttribute('data-slide'));
+                developmentSwiper.slideTo(slideIndex);
+                updateActiveButton(slideIndex);
+            });
+        });
+
+        const developmentSwiper = new Swiper('.development__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 30000,
+            },
+            on: {
+                slideChange: function () {
+                    updateActiveButton(this.realIndex);
+                },
+            },
+        });
+
+        // Функция для обновления активной кнопки
+        function updateActiveButton(index) {
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                console.log(1)
+            });
+
+            const activeButton = document.querySelector(`.development__button[data-slide="${index}"]`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+
+        // Инициализация активной кнопки при загрузке страницы
+        updateActiveButton(developmentSwiper.realIndex);
+
+        const holidaysSwiper = new Swiper('.holidays__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1.15,
+            spaceBetween: 24,
+            pagination: {
+                el: '.holidays__swiper-pagination',
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    return `${String(current).padStart(2, '0')}`;
+                },
+            },
+            navigation: {
+                nextEl: '.holidays__swiper-button-next',
+                prevEl: '.holidays__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    allowTouchMove: true,
+                },
+                991: {
+                    allowTouchMove: false,
+                    slidesPerView: 2,
+                }
+            }
+        });
+
+        const reviewsSwiper = new Swiper('.reviews__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.rewiews__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.reviews__swiper-button-next',
+                prevEl: '.reviews__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        const teachersSwiper = new Swiper('.teachers__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.teachers__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.teachers__swiper-button-next',
+                prevEl: '.teachers__swiper-button-prev',
+            },
+            breakpoints: {
+                551: {
+                    slidesPerView: 2,
+                },
+                769: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+
+        const inspirationSwiper = new Swiper('.inspiration__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.inspiration__swiper-pagination',
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    return `${String(current).padStart(2, '0')}`;
+                },
+            },
+            navigation: {
+                nextEl: '.inspiration__swiper-button-next',
+                prevEl: '.inspiration__swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        const projectActivitySwiper = new Swiper('.project-activity__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1.15,
+            spaceBetween: 20,
+            pagination: {
+                el: '.project-activity__swiper-pagination',
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    return `${String(current).padStart(2, '0')}`;
+                },
+            },
+            navigation: {
+                nextEl: '.project-activity__swiper-button-next',
+                prevEl: '.project-activity__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                1341: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                }
+            }
+        });
+
+        const modernToolsSwiper = new Swiper('.modern-tools__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1.15,
+            spaceBetween: 20,
+            pagination: {
+                el: '.modern-tools__swiper-pagination',
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    return `${String(current).padStart(2, '0')}`;
+                },
+            },
+            navigation: {
+                nextEl: '.modern-tools__swiper-button-next',
+                prevEl: '.modern-tools__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                1341: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                }
+            }
+        });
+
+        const blockNutritionSwiper = new Swiper('.block-nutrition__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1.15,
+            spaceBetween: 20,
+            pagination: {
+                el: '.block-nutrition__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.block-nutrition__swiper-button-next',
+                prevEl: '.block-nutrition__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+            },
+        });
+
+        const blockWalkSwiper = new Swiper('.block-walk__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1.15,
+            spaceBetween: 20,
+            pagination: {
+                el: '.block-walk__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.block-walk__swiper-button-next',
+                prevEl: '.block-walk__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+            },
+        });
+
+        const blockHealthSwiper = new Swiper('.block-health__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1.15,
+            spaceBetween: 20,
+            pagination: {
+                el: '.block-health__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.block-health__swiper-button-next',
+                prevEl: '.block-health__swiper-button-prev',
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+            },
+        });
+
+        
+        // СКРИПТ БЛОКА РАЗВИВАЮЩАЯ СРЕДА
+        const devEnvTextSlider = document.querySelector('.dev-environment__text-slider');
+        const devEnvironmenTextSwiper = new Swiper('.dev-environment__text-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.dev-environment__text-swiper-pagination',
+                type: 'fraction',
+                formatFractionCurrent: number => {
+                    return ('0' + number).slice(-2);
+                },
+                formatFractionTotal: number => {
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: (currentClass, totalClass) => {
+                    return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+                }
+            },
+            navigation: {
+                nextEl: '.dev-environment__text-swiper-button-next',
+                prevEl: '.dev-environment__text-swiper-button-prev',
+            },
+            on: {
+                slideChange: function () {
+                    updateSwiperHeight();
+                },
+                resize: function () {
+                    updateSwiperHeight();
+                }
+            }
+        });
+
+        function updateSwiperHeight() {
+            const activeSlide = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex];
+            const slideHeight = activeSlide.firstElementChild .offsetHeight;
+            devEnvTextSlider.style.height = `${slideHeight}px`;
+        }
+
+
+        const sliders = document.querySelectorAll('.dev-environment__image-slider');
+        const imageSwipers = [];
+
+        sliders.forEach(slider => {
+            const dataId = slider.getAttribute('data-id');
+            const swiperContainer = slider.querySelector('.dev-environment__image-swiper');
+            const paginationContainer = slider.querySelector('.dev-environment__image-swiper-pagination');
+
+            const swiper = new Swiper(swiperContainer, {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 24,
+                pagination: {
+                    el: paginationContainer,
+                },
+            });
+            imageSwipers.push({ dataId, slider });
+        });
+        console.log(imageSwipers)
+
+        function showImageSlider(activeSlideId) {
+            console.log(activeSlideId)
+            imageSwipers.forEach(imageSwiper => {
+                if (imageSwiper.dataId === activeSlideId) {
+                    imageSwiper.slider.style.display = 'block';
+                } else {
+                    imageSwiper.slider.style.display = 'none';
+                }
+            });
+        }
+
+        showImageSlider(devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id);
+
+        devEnvironmenTextSwiper.on('slideChange', function () {
+            const activeSlideId = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id;
+            showImageSlider(activeSlideId);
+        });
+
+
+        // СКРИПТ РАСКРЫТИЯ БЛОКА С ТЕКТОМ
+        const accordionButtons = document.querySelectorAll('.avantage-descripion__accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const contentId = button.id;
+                const accordionContentHidden = document.getElementById(contentId);
+                const accordionButtonText = button.querySelector('.avantage-descripion__accordion-button-text');
+
+                if (accordionContentHidden.classList.contains('open')) {
+                    accordionContentHidden.style.maxHeight = '0';
+                    accordionButtonText.textContent = 'больше';
+                } else {
+                    accordionContentHidden.style.maxHeight = accordionContentHidden.scrollHeight + 'px';
+                    accordionButtonText.textContent = 'меньше';
+                }
+                accordionContentHidden.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

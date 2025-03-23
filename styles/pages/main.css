@@ -8,11 +8,11 @@
     left: 0;
     z-index: 3;
 }
-@media (max-width: 1318px) {
+/* @media (max-width: 1318px) {
     [class$="background-img"] {
         display: none;
     }
-}
+} */
 .main__hero-section {
 }
 .hero-section__container {
@@ -309,7 +309,7 @@
         gap: 28px;
     }
     .hero-section__body {
-        gap: 54px;
+        gap: 45px;
     }
     .hero-section__right-content > .hero-section__title {
         margin-bottom: 40px;
@@ -612,7 +612,6 @@
 
 /* БЛОК МЫ ВДОХНОВЛЯЕМСЯ РЕДЖИО */
 .inspiration {
-    padding-top: 120px;
 }
 .main__inspiration {
 }
@@ -871,9 +870,6 @@
 }
 
 @media (max-width: 431px) {
-    .modern-tools {
-        padding-top: 90px;
-    }
     .inspiration__slide-image-wrap {
         height: 275px;
     }
@@ -1025,7 +1021,6 @@
 
 /* БЛОК ЗАНИМАЕМСЯ ПРОЕКТНОЙ ДЕЯТЕЛЬНОСТЬЮ */
 .project-activity {
-    padding-top: 120px;
     /* overflow: hidden; */
     position: relative;
 }
@@ -1133,15 +1128,11 @@
 }
 
 @media (max-width: 431px) {
-    .project-activity {
-        padding-top: 90px;
-    }
 }
 
 
 /* БЛОК ИЗУЧАЕМ МИР ПРИ ПОМОЩИ СОВРЕМЕННЫХ ИНСТРУМЕНТОВ */
 .modern-tools {
-    padding-top: 120px;
     /* overflow: hidden; */
     position: relative;
 }
@@ -1259,15 +1250,11 @@
 }
 
 @media (max-width: 431px) {
-    .modern-tools {
-        padding-top: 90px;
-    }
 }
 
 
 /* БЛОК ГОТОВИМ РЕБЁНКА К ШКОЛЕ */
 .preparing-child {
-    padding-top: 120px;
 }
 .main__project-activity {
 }
@@ -1352,15 +1339,11 @@
 }
 
 @media (max-width: 431px) {
-    .preparing-child {
-        padding-top: 90px;
-    }
 }
 
 
 /* БЛОК ЗА ЧТО НАС ВЫБИРАЮТ */
 .why-choose-us {
-    padding-top: 120px;
     position: relative;
 }
 .main__why-choose-us {
@@ -1622,7 +1605,6 @@
 
 /* БЛОКИ ВНУТРИ ГРУППЫ СТИЛЬ ЖИЗНИ */
 .lifestyle-item {
-    padding-top: 120px;
 }
 .lifestyle-item:nth-of-type(even) .lifestyle-item__slider {
     order: 2;
@@ -1898,7 +1880,6 @@
 
 /* БЛОК РАЗВИВАЮЩАЯ СРЕДА */
 .dev-environment {
-    padding-top: 120px;
     max-height: 783px;
     position: relative;
 }
@@ -2185,7 +2166,6 @@
 
 /* БЛОК ВСЕСТОРОННЕЕ РАЗВИТИЕ */
 .development {
-    padding-top: 120px;
     position: relative;
 }
 .main__development {
@@ -2433,7 +2413,6 @@
 
 /* БЛОК ЯРКИЕ ПРАЗДНИКИ */
 .holidays {
-    padding-top: 120px;
     position: relative;
 }
 .main__holidays {
@@ -2660,15 +2639,11 @@
     }
 }
 @media (max-width: 431px) {
-    .holidays {
-        padding-top: 90px;
-    }
 }
 
 
 /* БЛОК НАШИ ПЕДАГОГИ */
 .teachers {
-    padding-top: 120px;
     position: relative;
 }
 .main__teachers {
@@ -2834,9 +2809,6 @@
 }
 
 @media (max-width: 431px) {
-    .teachers {
-        padding-top: 90px;
-    }
     .teachers__slide-img-wrap {
         margin-bottom: 30px;
     }
@@ -2848,7 +2820,6 @@
 
 /* БЛОК ОТЗЫВОВ */
 .reviews {
-    padding-top: 120px;
     position: relative;
 }
 .reviews__background-img {
@@ -3075,7 +3046,6 @@
 
 /* БЛОК КОНТАКТОВ */
 .contacts {
-    padding-top: 120px;
 }
 .main__contacts {
 }
@@ -3252,9 +3222,6 @@
 }
 
 @media (max-width: 551px) {
-    .contacts {
-        padding-top: 90px;
-    }
     .contacts__inner {
         background-color: transparent;
     }
@@ -3290,56 +3257,4 @@
 }
 
 @media (max-width: 431px) {
-}
-
-.hero-section > [class$='__background-img'], .branches > [class$='__background-img'], .project-activity > [class$='__background-img'], .modern-tools > [class$='__background-img'], .why-choose-us > [class$='__background-img'], .lifestyle > [class$='__background-img'], .dev-environment > [class$='__background-img'], .development > [class$='__background-img'], .holidays > [class$='__background-img'], .teachers > [class$='__background-img'], .reviews > [class$='__background-img'] {
-    display: none;
-}
-
-.branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-    padding-top: 0px;
-}
-
-.branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .teachers__container, .reviews__container, .contacts__container {
-    padding-top: 120px;
-}
-
-@media (max-width: 1340px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 120px;
-    }
-    .branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .teachers__container, .reviews__container, .contacts__container {
-        padding-top: 0px;
-    }
-}
-
-@media (max-width: 1281px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 115px;
-    }
-}
-@media (max-width: 992px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 111px;
-    }
-}
-@media (max-width: 769px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 107px;
-    }
-}
-@media (max-width: 651px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 104px;
-    }
-}
-@media (max-width: 551px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 95px;
-    }
-}
-@media (max-width: 431px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts {
-        padding-top: 90px;
-    }
 }

@@ -143,3 +143,55 @@
         font-size: 14px;
     }
 }
+
+.hero-section > [class$='__background-img'], .branches > [class$='__background-img'], .project-activity > [class$='__background-img'], .modern-tools > [class$='__background-img'], .why-choose-us > [class$='__background-img'], .lifestyle > [class$='__background-img'], .dev-environment > [class$='__background-img'], .development > [class$='__background-img'], .holidays > [class$='__background-img'], .teachers > [class$='__background-img'], .reviews > [class$='__background-img'] {
+    display: none;
+}
+
+.branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+    padding-top: 0px;
+}
+
+.branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .teachers__container, .reviews__container, .contacts__container, .feedback__container {
+    padding-top: 120px;
+}
+
+@media (max-width: 1360px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 120px;
+    }
+    .branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .teachers__container, .reviews__container, .contacts__container, .feedback__container {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 115px;
+    }
+}
+@media (max-width: 992px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 111px;
+    }
+}
+@media (max-width: 769px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 107px;
+    }
+}
+@media (max-width: 651px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 104px;
+    }
+}
+@media (max-width: 551px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 95px;
+    }
+}
+@media (max-width: 431px) {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .teachers, .reviews, .contacts, .feedback {
+        padding-top: 90px;
+    }
+}

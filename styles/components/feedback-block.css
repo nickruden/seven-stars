@@ -1,7 +1,7 @@
 .feedback-block {
 }
 .feedback-block__container {
-    padding: 32px 40px;
+    padding: 40px;
     background-color: #CCDBAC;
     border-radius: 24px;
     overflow: hidden;
@@ -27,7 +27,7 @@
     gap: 50px;
 }
 .feedback-block__description {
-    padding-top: 58px;
+    padding-top: 61px;
 }
 .feedback-block__main-text {
     font-size: 24px;
