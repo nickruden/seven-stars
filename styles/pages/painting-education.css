@@ -6,3 +6,376 @@
         max-width: 300px;
     }
 }
+
+/* БЛОК "КАК ПОСТРОЕНЫ УРОКИ ЖИВОПИСИ" */
+.lesson-structure {
+}
+.main__lesson-structure {
+}
+.my-container {
+}
+.lesson-structure__container {
+}
+.block-title {
+}
+.lesson-structure__title {
+}
+.lesson-structure__lesson-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.lesson-structure__lesson-stage {
+    display: flex;
+    gap: 28px;
+}
+.lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-info {
+    order: 2;
+}
+.lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-image-wrap {
+    order: 1;
+}
+.lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-texts {
+    order: 3;
+}
+.lesson-structure__lesson-stage > * {
+    flex: 1 1 calc(33.333% - 28px);
+    height: 300px;
+    overflow: hidden;
+    max-height: 300px;
+}
+.lesson-structure__lesson-stage-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #F6F6F6;
+    position: relative;
+    border-radius: 16px;
+}
+.lesson-structure__lesson-stage-info.--textImage_visible .lesson-structure__lesson-stage-mini-img {
+    display: block;
+}
+.lesson-structure__lesson-stage-number {
+    font-size: 32px;
+    line-height: 120%;
+    color: #CFCFCF;
+    margin-bottom: 30px;
+}
+.lesson-structure__lesson-stage-pre-title {
+    font-size: 20px;
+    line-height: 120%;
+    color: #4E6932;
+}
+.lesson-structure__lesson-stage-mini-img {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 99px;
+    height: 80px;
+}
+.lesson-structure__lesson-stage-image-wrap {
+    max-width: 408px;
+    width: 100%;
+    border-radius: 16px;
+}
+.lesson-structure__lesson-stage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lesson-structure__lesson-stage-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.lesson-structure__lesson-stage-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@media (max-width: 1361px) { 
+    .lesson-structure__lesson-stage > * {
+        height: auto;
+        aspect-ratio: 408 / 300;
+    }
+    .lesson-structure__lesson-stage-image-wrap {
+        width: auto;
+    }
+}
+@media (max-width: 1281px) {
+    .lesson-structure__lesson-stages {
+        gap: 38px;
+    }
+    .lesson-structure__lesson-stage-info {
+        padding: 25px;
+    }
+    .lesson-structure__lesson-stage-text {
+        font-size: 15px;
+    }
+    .lesson-structure__lesson-stage-pre-title {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1100px) {
+    .lesson-structure__lesson-stage {
+        gap: 18px;
+    }
+    .lesson-structure__lesson-stage > * {
+        flex: 1 1 calc(33.333% - 18px);
+    }
+    .lesson-structure__lesson-stage-pre-title {
+        font-size: 16px;
+    }
+    .lesson-structure__lesson-stage-mini-img {
+        width: 79px;
+        height: 60px;
+    }
+}
+@media (max-width: 992px) {
+    .lesson-structure__lesson-stages {
+        gap: 45px;
+    }
+    .lesson-structure__lesson-stage {
+        gap: 25px;
+    }
+    .lesson-structure__lesson-stage > * {
+        flex: 1 1 calc(50% - 25px);
+    }
+    .lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-info {
+        order: 2;
+    }
+    .lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-texts {
+        order: 1;
+    }
+    .lesson-structure__lesson-stage-image-wrap {
+        display: none;
+    }
+    .lesson-structure__lesson-stage-info {
+        padding: 32px;
+    }
+    .lesson-structure__lesson-stage-mini-img {
+        width: 99px;
+        height: 80px;
+    }
+}
+@media (max-width: 902px) {
+
+}
+@media (max-width: 769px) {
+    .lesson-structure__lesson-stage {
+        gap: 18px;
+    }
+    .lesson-structure__lesson-stage > * {
+        flex: 1 1 calc(33.333% - 18px);
+    }
+    .lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-info {
+        order: 2;
+    }
+    .lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-texts {
+        order: 1;
+    }
+    .lesson-structure__lesson-stage-mini-img {
+        width: 79px;
+        height: 60px;
+    }
+}
+@media (max-width: 651px) {
+    .lesson-structure__lesson-stages {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 35px;
+    }
+    .lesson-structure__lesson-stage {
+        flex-direction: column;
+        flex: 1 0 100%;
+    }
+    .lesson-structure__lesson-stage > * {
+        height: auto;
+        aspect-ratio: auto;
+        flex: auto;
+    }
+    .lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-info {
+        order: 1;
+    }
+    .lesson-structure__lesson-stage:nth-of-type(2n) .lesson-structure__lesson-stage-texts {
+        order: 2;
+    }    
+    .lesson-structure__lesson-stage-info {
+        aspect-ratio: 408 / 300;
+    }
+    .lesson-structure__lesson-stage-mini-img {
+        width: 99px;
+        height: 80px;
+    }
+}
+@media (max-width: 551px) {
+    .lesson-structure__lesson-stages {
+        gap: 40px;
+    }
+    .lesson-structure__lesson-stage {
+        gap: 20px;
+    }
+    .lesson-structure__lesson-stage-info {
+        aspect-ratio: auto;
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@media (max-width: 431px) {
+    .lesson-structure__lesson-stage-info {
+        height: 240px;
+    }
+    .lesson-structure__lesson-stage-text {
+        font-size: 14px;
+    }
+}
+
+
+/* БЛОК "ЗАНЯТИЯ ВЕДЁТ" */
+.lesson-teacher {
+}
+.main__lesson-teacher {
+}
+.lesson-teacher__container {
+    display: flex;
+    gap: 60px;
+}
+.lesson-teacher__img-slider {
+    max-width: 610px;
+    width: 100%;
+}
+.lesson-teacher__swiper-controls {
+    display: none;
+}
+.lesson-teacher__swiper-pagination {
+}
+.lesson-teacher__swiper-navigation {
+}
+.lesson-teacher__swiper-button-prev {
+}
+.lesson-teacher__swiper-button-next {
+}
+.lesson-teacher__swiper {
+}
+.lesson-teacher__swiper-wrapper {
+}
+.lesson-teacher__swiper-slide {
+}
+.lesson-teacher__slide {
+    max-height: 600px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+    background-color: #F6F6F6;
+}
+.lesson-teacher__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lesson-teacher__body {
+    max-width: 610px;
+    width: 100%;
+}
+.lesson-teacher__title {
+}
+.lesson-teacher__text-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.lesson-teacher__name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+}
+.lesson-teacher__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@media (max-width: 1361px) { 
+
+}
+@media (max-width: 1281px) {
+    .lesson-teacher__container {
+        gap: 40px;
+    }
+    .lesson-teacher__text-info {
+        gap: 35px;
+    }
+    .lesson-teacher__name {
+        font-size: 22px;
+    }
+}
+@media (max-width: 992px) {
+    .lesson-teacher__text-info {
+        gap: 30px;
+    }
+    .lesson-teacher__text {
+        font-size: 15px;
+    }
+}
+@media (max-width: 902px) {
+
+}
+@media (max-width: 769px) {
+    .lesson-teacher__container {
+        flex-direction: column;
+        gap: 45px;
+    }
+    .lesson-teacher__img-slider {
+        order: 2;
+        align-self: center;
+    }
+    .lesson-teacher__slide {
+        max-height: 560px;
+    }
+    .lesson-teacher__text-info {
+        align-items: center;
+        gap: 25px;
+    }
+    .lesson-teacher__name {
+        font-size: 23px;
+    }
+}
+@media (max-width: 651px) {
+    .lesson-teacher__container {
+        gap: 48px;
+    }
+    .lesson-teacher__text-info {
+        align-items: flex-start;
+        gap: 28px;
+    }
+    .lesson-teacher__name {
+        font-size: 22px;
+    }
+}
+@media (max-width: 551px) {
+    .lesson-teacher__container {
+        gap: 45px;
+    }
+    .lesson-teacher__text-info {
+        gap: 30px;
+    }
+    .lesson-teacher__name {
+        font-size: 20px;
+    }
+    .lesson-teacher__text {
+        font-size: 14px;
+    }
+    .lesson-teacher__slide {
+        height: 417px;
+    }
+}
+
+@media (max-width: 431px) {
+    .lesson-teacher__slide {
+        height: 385px;
+    }
+}

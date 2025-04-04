@@ -148,50 +148,50 @@
     display: none;
 }
 
-.branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+.branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
     padding-top: 0px;
 }
 
-.branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .about-info__container, .awards__container {
+.branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .about-info__container, .awards__container, .lesson-structure__container, .lesson-teacher__container {
     padding-top: 120px;
 }
 
 @media (max-width: 1360px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 120px;
     }
-    .branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .about-info__container, .awards__container {
+    .branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .about-info__container, .awards__container, .lesson-structure__container, .lesson-teacher__container {
         padding-top: 0px;
     }
 }
 
 @media (max-width: 1281px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 115px;
     }
 }
 @media (max-width: 992px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 111px;
     }
 }
 @media (max-width: 769px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 107px;
     }
 }
 @media (max-width: 651px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 104px;
     }
 }
 @media (max-width: 551px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 95px;
     }
 }
 @media (max-width: 431px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher {
         padding-top: 90px;
     }
 }
