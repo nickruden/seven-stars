@@ -4,6 +4,9 @@
 .hero-section.--no-links .hero-section__links {
     display: none
 }
+.hero-section.--no-location .hero-section__title > .hero-section__location {
+    display: none
+}
 /* .hero-section__background-img {
     position: absolute;
     top: 0;
@@ -29,6 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 610px;
 }
 .hero-section__body-texts {
 }
@@ -72,6 +76,7 @@
 }
 .hero-section__text {
     font-size: 16px;
+    line-height: 130%;
     max-width: 504px;
     width: 504px;
 }
@@ -94,15 +99,18 @@
     left: 0;
     margin-right: 20px;
     border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
 }
 .hero-section__list-item {
     font-size: 16px;
     line-height: 130%;
     color: #303030;
     text-transform: lowercase;
+    display: flex;
+    align-items: flex-start;
 }
 .hero-section__links {
-    align-self: flex-end;
     display: flex;
     gap: 24px;
 }
@@ -110,9 +118,9 @@
     width: 293px;
     height: 160px;
     font-family: 'Jost';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 150%;
     text-transform: uppercase;
     background-color: #F8F8F8;
     padding: 20px;
@@ -238,6 +246,7 @@
         gap: 20px;
         justify-content: space-between;
         align-items: center;
+        max-width: none;
     }
     .hero-section__title {
         font-size: 36px;
@@ -305,7 +314,7 @@
 }
 @media (max-width: 903px) {
     .hero-section__link {
-        width: 218px;
+        width: 230px;
     }
 }
 @media (max-width: 769px) {
@@ -395,11 +404,12 @@
         font-size: 20px;
         line-height: 120%;
     }
-    .hero-section.--no-links .hero-section__pre-title {
-        font-size: 20px;
-    }
-    .hero-section.--no-links .hero-section__text {
+    .hero-section__text {
         font-size: 14px;
+    }
+    .hero-section__text {
+        font-size: 14px;
+        line-height: 120%;
     }
     .hero-section__list-item {
         font-size: 14px;
@@ -416,8 +426,12 @@
 }
 
 @media (max-width: 431px) {
-    .hero-section__title {
+    .hero-section__right-content .hero-section__title {
         font-size: 22px;
+        line-height: 30px;
+    }
+    .hero-section__body-texts {
+        align-self: flex-start;
     }
 }
 

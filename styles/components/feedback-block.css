@@ -119,9 +119,6 @@
     .feedback-block__inner {
         gap: 30px;
     }
-    .feedback-block__description {
-        padding-left: 10px;
-    }
     .feedback-block__main-text {
         font-size: 20px;
         margin-bottom: 20px;
@@ -145,7 +142,6 @@
     .feedback-block__description {
         padding-top: 0px;
         margin-right: 0px;
-        padding-left: 10px;
     }
     .feedback-block__main-text {
         font-size: 20px;
