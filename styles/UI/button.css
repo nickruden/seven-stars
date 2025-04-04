@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 10px;
+    padding: 16px 24px;
     font-family: 'Jost';
     font-size: 16px;
     font-weight: 600;
-    line-height: 100%;
+    line-height: 150%;
     color: #FFF;
     text-transform: uppercase;
     background-color: #4E6932;
@@ -16,9 +16,9 @@
 
 }
 @media (max-width: 1281px) {
-    .my-button {
+    /* .my-button {
         padding: 16px 10px;
-    }
+    } */
 }
 @media (max-width: 992px) {
 
@@ -27,17 +27,17 @@
 
 }
 @media (max-width: 769px) {
-    .my-button {
+    /* .my-button {
         padding: 17px 10px;
-    }
+    } */
 }
 @media (max-width: 651px) {
 
 }
 @media (max-width: 551px) {
-    .my-button {
+    /* .my-button {
         padding: 18px 10px;
-    }
+    } */
 }
 
 @media (max-width: 431px) {
