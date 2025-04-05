@@ -220,6 +220,17 @@
     width: 100%;
     object-fit: cover;
 }
+.awards__swiper-controls {
+    display: none;
+}
+.awards__swiper-pagination {
+}
+.awards__swiper-navigation {
+}
+.awards__swiper-button-prev {
+}
+.awards__swiper-button-next {
+}
 
 @media (max-width: 1341px) {
     .awards__slide-wrap-img {

@@ -148,30 +148,33 @@
     display: none;
 }
 
-.branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher, .why-need-school, .child-age {
+
+/* ЕСЛИ БЛОК НЕ ШАБЛОННЫЙ(УНИКАЛЬНЫЙ ДЛЯ СТРАНИЦЫ ПО ОФОРЛЕНИЮ) И НАХОДИТСЯ СВЕРХУ ПОД СТОРИС, НАДО ДОБАВЛЯТЬ ЕГО СЮДА НАЧИНАЯ ТОЛЬКО С ШИРИНЫ 769px */
+/* ЕСЛИ БЛОК ШАБЛОННЫЙ СНИЗУ НАПИСАНО ЧТО ДЕЛАТЬ */
+.branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .awards, .lesson-structure, .lesson-teacher, .child-age {
     padding-top: 0px;
 }
 
-.branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .about-info__container, .awards__container, .lesson-structure__container, .lesson-teacher__container, .why-need-school__container, .child-age__container {
+.branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .awards__container, .lesson-structure__container, .lesson-teacher__container, .child-age__container {
     padding-top: 120px;
 }
 
 @media (max-width: 1360px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher, .why-need-school, .child-age {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .awards, .lesson-structure, .lesson-teacher, .child-age {
         padding-top: 120px;
     }
-    .branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .about-info__container, .awards__container, .lesson-structure__container, .lesson-teacher__container, .why-need-school__container, .child-age__container {
+    .branches__container, .inspiration__container, .project-activity__container, .modern-tools__container, .preparing-child__container, .why-choose-us__container, .lifestyle-item__container, .dev-environment__container, .development__container, .holidays__container, .staff__container, .reviews__container, .contacts__container, .feedback__container, .simple-slider-section__container, .awards__container, .lesson-structure__container, .lesson-teacher__container, .child-age__container {
         padding-top: 0px;
     }
 }
 
 @media (max-width: 1281px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher, .why-need-school, .child-age {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .awards, .lesson-structure, .lesson-teacher, .child-age {
         padding-top: 115px;
     }
 }
 @media (max-width: 992px) {
-    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .about-info, .awards, .lesson-structure, .lesson-teacher, .why-need-school, .child-age {
+    .branches, .inspiration, .project-activity, .modern-tools, .preparing-child, .why-choose-us, .lifestyle-item, .dev-environment, .development, .holidays, .staff, .reviews, .contacts, .feedback, .simple-slider-section, .awards, .lesson-structure, .lesson-teacher, .child-age {
         padding-top: 111px;
     }
 }
@@ -195,6 +198,38 @@
         padding-top: 90px;
     }
 }
+
+
+/* ЕСЛИ БЛОК НАХОДИТЬСЯ ПОД СТОРИСАМИ И ОН ЯВЛЯЕТСЯ ШАБЛОННЫМ, ТО ЕСТЬ МОЖЕТ БЫТЬ НЕ ТОЛЬКО ПОД СТОРИСАМИ, А ГДЕ-ТО ВНУТРИ СТРАНИЦЫ (НАПРИМЕР, simple-slider), ТО НАДО ДОБАВИТЬ В ОБЩИЙ СПИСОК ОТСТУПОВ СВЕРХУ, НАЗНАЧИТЬ ЕМУ id(ЕСЛИ У НЕГО ЕШЁ НЕТ АТРИБУТА УНИКАЛЬНОГО)И ДОПОЛНИТЕЛЬНЮ ДОБАВИТЬ СЮДА ПО id */
+/* В ОБЩИЙ СПИСОК ОТСТУПОВ ДОБАВЛЯТЬ БЕЗ id */
+.simple-slider-section[data-simpleSlider-id="slider1"] {
+    padding-top: 0;
+}
+.simple-slider-section[data-simpleSlider-id="slider1"] .simple-slider-section__container {
+    padding-top: 0;
+}
+
+@media (max-width: 769px) {
+    .simple-slider-section[data-simpleSlider-id="slider1"] {
+        padding-top: 107px;
+    }
+}
+@media (max-width: 651px) {
+    .simple-slider-section[data-simpleSlider-id="slider1"] {
+        padding-top: 104px;
+    }
+}
+@media (max-width: 551px) {
+    .simple-slider-section[data-simpleSlider-id="slider1"] {
+        padding-top: 95px;
+    }
+}
+@media (max-width: 431px) {
+    .simple-slider-section[data-simpleSlider-id="slider1"] {
+        padding-top: 90px;
+    }
+}
+
 
 .nowrap {
     white-space: nowrap;
