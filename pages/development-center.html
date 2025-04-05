@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../styles/components/header.css">
     <link rel="stylesheet" href="../styles/components/footer.css">
     <link rel="stylesheet" href="../styles/components/feedback-block.css">
+    <link rel="stylesheet" href="../styles/components/double-slider.css">
 
     <!-- вот этот компонент не подключать лучше к главной странице -->
     <link rel="stylesheet" href="../styles/components/sections/hero-section.css">
@@ -61,7 +62,8 @@
                                             нас</a></li>
                                     <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Детские
                                             сады</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./development-center.html">Центр
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
+                                            href="./development-center.html">Центр
                                             развития</a></li>
                                     <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
                                             href="./news.html">Новости</a>
@@ -79,7 +81,8 @@
                             <li class="header__menu-item"><a href="./about.html" class="header__menu-link">О нас</a>
                             </li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Детские сады</a></li>
-                            <li class="header__menu-item"><a href="./development-center.html" class="header__menu-link">Центр развития</a></li>
+                            <li class="header__menu-item"><a href="./development-center.html"
+                                    class="header__menu-link">Центр развития</a></li>
                             <li class="header__menu-item"><a href="./news.html" class="header__menu-link">Новости</a>
                             </li>
                             <li class="header__menu-item"><a href="./blog.html" class="header__menu-link">Блог</a></li>
@@ -130,7 +133,8 @@
                                                 нас</a></li>
                                         <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">Детские
                                                 сады</a></li>
-                                        <li class="mobile-menu__link-item"><a href="./development-center.html" class="mobile-menu__link">Центр
+                                        <li class="mobile-menu__link-item"><a href="./development-center.html"
+                                                class="mobile-menu__link">Центр
                                                 развития</a></li>
                                         <li class="mobile-menu__link-item"><a href="./news.html"
                                                 class="mobile-menu__link">Новости</a></li>
@@ -199,7 +203,8 @@
                 <div class="my-container hero-section__container">
                     <div class="hero-section__body">
                         <div class="hero-section__body-texts">
-                            <div class="hero-section__title">Центр развития детей «Семь&nbsp;Звёзд» <br> <span>В&nbsp;иркутске</span>
+                            <div class="hero-section__title">Центр развития детей «Семь&nbsp;Звёзд» <br>
+                                <span>В&nbsp;иркутске</span>
                                 <div class="hero-section__location">
                                     <div class="hero-section__location-img">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -211,7 +216,8 @@
                                     </div> <span class="hero-section__location-text"> В Иркутске</span>
                                 </div>
                             </div>
-                            <div class="hero-section__pre-title">Большой путь начинается <br> с&nbsp;маленьких шагов</div>
+                            <div class="hero-section__pre-title">Большой путь начинается <br> с&nbsp;маленьких шагов
+                            </div>
                             <ul class="hero-section__list">
                                 <li class="hero-section__list-item">пробные занятия — бесплатно!</li>
                                 <li class="hero-section__list-item">принимаем с 9 месяцев</li>
@@ -224,10 +230,12 @@
                         </div>
                     </div>
                     <div class="hero-section__right-content">
-                        <div class="hero-section__title">Центр развития детей «Семь&nbsp;Звёзд» <span>В&nbsp;иркутске</span>
+                        <div class="hero-section__title">Центр развития детей «Семь&nbsp;Звёзд»
+                            <span>В&nbsp;иркутске</span>
                             <div class="hero-section__location">
                                 <div class="hero-section__location-img">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12 2C7.582 2 4 5.35813 4 9.5C4 11.1309 4.57033 12.6275 5.51833 13.8531C5.53533 13.8825 5.538 13.9153 5.55733 13.9434L10.8907 21.4434C11.138 21.7913 11.5547 22 12 22C12.4453 22 12.862 21.7913 13.1093 21.4434L18.4427 13.9434C18.4623 13.9153 18.4647 13.8825 18.4817 13.8531C19.4297 12.6275 20 11.1309 20 9.5C20 5.35813 16.418 2 12 2ZM12 12C10.5273 12 9.33333 10.8806 9.33333 9.5C9.33333 8.11937 10.5273 7 12 7C13.4727 7 14.6667 8.11937 14.6667 9.5C14.6667 10.8806 13.4727 12 12 12Z"
                                             fill="black" />
@@ -238,10 +246,465 @@
                         <div class="hero-section__wrap-img"></div>
                     </div>
                 </div>
-                <img src="../assets/images/pages/main/background/cones-7.png" alt="" class="hero-section__background-img">
+                <img src="../assets/images/pages/main/background/cones-7.png" alt=""
+                    class="hero-section__background-img">
             </section>
-        
-            <!-- ... -->
+
+
+            <!-- ВНУТРИ ЕСТЬ dobule-slider ВЫНЕС ЛОГИКУ ДВОЙНОГО СЛАЙДЕРА И СТИЛИ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
+            <section class="center-advantages main__center-advantages">
+                <div class="my-container center-advantages__container">
+                    <div class="center-advantages__links">
+                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link active">Развивающие занятия</a>
+                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link">логопед</a>
+                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link">Живопись22</a>
+                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link">Летние кани3кулы</a>
+                    </div>
+                    <div class="center-advantages__advantage-blocks">
+                        <div class="advantage-item center-advantages__advantage-item --no-descButton --no-preTitle" data-advantageBlock-id="educational-lessons">
+                            <div class="my-container advantage-item__container">
+                                <div class="advantage-item__desc">
+                                    <div class="block-title advantage-item__desc__title">Развивающие занятия с&nbsp;9&nbsp;месяцев до&nbsp;5&nbsp;лет</div>
+                                    <div class="advantage-item__desc-elements">
+                                        <div class="advantage-item__desc-pre-title">Обучение живописи детей приносит множество пользы как для творческого развития, так и для формирования важных жизненных навыков.</div>
+                                        <div class="advantage-item__desc-text">Программа направлена на&nbsp;развитие интеллектуальных, физических,&nbsp;эмоциональных и&nbsp;социальных навыков у&nbsp;детей в&nbsp;игровой и&nbsp;комфортной атмосфере. Опытные педагоги помогают раскрыть потенциал ребёнка, закладывают крепкий фундамент знаний и&nbsp;навыков, необходимых дошкольнику. Для&nbsp;посещения открыты две&nbsp;основные возрастные группы.</div>
+                                        <div class="advantage-item__desc-buttons">
+                                            <button class="my-button my-button_borderSquare advantage-item__desc-button">записаться</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advantage-item__content">
+                                    <div class="advantage-item__slider">
+                                        <div class="advantage-item__swiper-controls">
+                                            <div class="swiper-pagination advantage-item__swiper-pagination"></div>
+                                            <div class="swiper-navigation advantage-item__swiper-navigation">
+                                                <div class="swiper-button-prev advantage-item__swiper-button-prev">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_92_1209)">
+                                                            <path
+                                                                d="M21.0908 13.915L5.78616 13.915M5.78616 13.915L12.1631 20.292M5.78616 13.915L12.1631 7.53809"
+                                                                stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_92_1209">
+                                                                <rect width="26" height="26" fill="white"
+                                                                    transform="translate(0.438477 0.915039)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-button-next advantage-item__swiper-button-next">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2050_215)">
+                                                            <path
+                                                                d="M5.78616 13.9151L21.0908 13.9151M21.0908 13.9151L14.7139 7.53811M21.0908 13.9151L14.7139 20.292"
+                                                                stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2050_215">
+                                                                <rect width="26" height="26" fill="white"
+                                                                    transform="translate(0.438477 0.915039)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper advantage-item__swiper">
+                                            <div class="swiper-wrapper advantage-item__swiper-wrapper">
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap --video-poster">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Занятия раз в неделю</div>
+                                                            <div class="advantage-item__slide-text">Занятия длятся 1&nbsp;час&nbsp;20&nbsp;минут, проходят по&nbsp;субботам</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Оплата — раз в месяц</div>
+                                                            <div class="advantage-item__slide-text">Стоимость абонемента — <span class="nowrap">2800&nbsp;₽/месяц</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Опытные педагоги</div>
+                                                            <div class="advantage-item__slide-text">Занятия ведет педагог с&nbsp;высшей категорией и&nbsp;многолетним опытом работы в&nbsp;худ.&nbsp;школе</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap --video-poster">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Занятия раз в неделю</div>
+                                                            <div class="advantage-item__slide-text">Занятия длятся 1&nbsp;час&nbsp;20&nbsp;минут, проходят по&nbsp;субботам</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advantage-item__buttons">
+                                    <button class="my-button my-button_borderSquare advantage-item__button">ЗАПИСАТЬСЯ НА ЗАНЯТИЯ</button>
+                                    <button class="my-button my-button_borderSquare my-button_noColor advantage-item__button">УЗНАТЬ БОЛЬШЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantage-item center-advantages__advantage-item --no-descButton" data-advantageBlock-id="painting">
+                            <div class="my-container advantage-item__container">
+                                <div class="advantage-item__desc">
+                                    <div class="block-title advantage-item__desc__title">Живопись <br> с&nbsp;5&nbsp;лет</div>
+                                    <div class="advantage-item__desc-elements">
+                                        <div class="advantage-item__desc-pre-title">Обучение живописи детей приносит множество пользы как для творческого развития, так и для формирования важных жизненных навыков.</div>
+                                        <div class="advantage-item__desc-text">А регулярные занятия и работа с&nbsp;художественными инструментами стимулирует мелкую моторику и&nbsp;развитие центральной нервной системы</div>
+                                        <div class="advantage-item__desc-buttons">
+                                            <button class="my-button my-button_borderSquare advantage-item__desc-button">записаться</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advantage-item__content">
+                                    <div class="advantage-item__slider">
+                                        <div class="advantage-item__swiper-controls">
+                                            <div class="swiper-pagination advantage-item__swiper-pagination"></div>
+                                            <div class="swiper-navigation advantage-item__swiper-navigation">
+                                                <div class="swiper-button-prev advantage-item__swiper-button-prev">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_92_1209)">
+                                                            <path
+                                                                d="M21.0908 13.915L5.78616 13.915M5.78616 13.915L12.1631 20.292M5.78616 13.915L12.1631 7.53809"
+                                                                stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_92_1209">
+                                                                <rect width="26" height="26" fill="white"
+                                                                    transform="translate(0.438477 0.915039)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-button-next advantage-item__swiper-button-next">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2050_215)">
+                                                            <path
+                                                                d="M5.78616 13.9151L21.0908 13.9151M21.0908 13.9151L14.7139 7.53811M21.0908 13.9151L14.7139 20.292"
+                                                                stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2050_215">
+                                                                <rect width="26" height="26" fill="white"
+                                                                    transform="translate(0.438477 0.915039)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper advantage-item__swiper">
+                                            <div class="swiper-wrapper advantage-item__swiper-wrapper">
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap --video-poster">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Занятия раз в неделю</div>
+                                                            <div class="advantage-item__slide-text">Занятия длятся 1&nbsp;час&nbsp;20&nbsp;минут, проходят по&nbsp;субботам</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Оплата — раз в месяц</div>
+                                                            <div class="advantage-item__slide-text">Стоимость абонемента — <span class="nowrap">2800&nbsp;₽/месяц</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Опытные педагоги</div>
+                                                            <div class="advantage-item__slide-text">Занятия ведет педагог с&nbsp;высшей категорией и&nbsp;многолетним опытом работы в&nbsp;худ.&nbsp;школе</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide advantage-item__swiper-slide">
+                                                    <div class="advantage-item__slide">
+                                                        <div class="advantage-item__slide-img-wrap --video-poster">
+                                                            <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                        </div>
+                                                        <div class="advantage-item__slide-body">
+                                                            <div class="advantage-item__slide-title">Занятия раз в неделю</div>
+                                                            <div class="advantage-item__slide-text">Занятия длятся 1&nbsp;час&nbsp;20&nbsp;минут, проходят по&nbsp;субботам</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advantage-item__buttons">
+                                    <button class="my-button my-button_borderSquare advantage-item__button">ЗАПИСАТЬСЯ НА ЗАНЯТИЯ</button>
+                                    <button class="my-button my-button_borderSquare my-button_noColor advantage-item__button">УЗНАТЬ БОЛЬШЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantage-item center-advantages__advantage-item --no-descButton" data-advantageBlock-id="summerHolidays">
+                            <div class="my-container advantage-item__container">
+                                <div class="advantage-item__desc">
+                                    <div class="block-title advantage-item__desc__title">Летние каникулы
+                                        с&nbsp;6&nbsp;до&nbsp;12&nbsp;лет</div>
+                                    <div class="advantage-item__desc-elements">
+                                        <div class="advantage-item__desc-pre-title">Как ребенку провести лето с пользой?
+                                        </div>
+                                        <div class="advantage-item__desc-text">Отправиться на отдых в центр детского
+                                            развития “Семь Звезд”! Ваш ребёнок будет находиться в безопасной, комфортной,
+                                            развивающей среде. Узнает много интересного, обретёт новых друзей и зарядится
+                                            яркими и позитивными эмоциями!</div>
+                                        <div class="advantage-item__desc-buttons">
+                                            <button class="my-button my-button_borderSquare advantage-item__desc-button">записаться</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advantage-item__content">
+                                    <!-- ВОТ ЭТОТ БЛОК ДВОЙНОГО СЛАЙДЕРА (класс dev-environment__content для доп стилизации в блоке и не является частью double-slider) -->
+                                    <div class="double-slider">
+                                        <div class="double-slider__text-slider">
+                                            <div class="swiper double-slider__text-swiper">
+                                                <div class="swiper-wrapper double-slider__text-swiper-wrapper">
+                                                    <div class="swiper-slide double-slider__text-swiper-slide" id="slide1">
+                                                        <div class="double-slider__text-slide">
+                                                            <div class="double-slider__slide-title">Сенсорные зоны</div>
+                                                            <div class="double-slider__slide-text">
+                                                                <p>У маленьких детей процесс познания осуществляется не через
+                                                                    рациональное мышление, а через чувственный опыт и впечатления.
+                                                                    Именно поэтому наши помещения насыщены сенсорными зонами,
+                                                                    способствующими всестороннему развитию ребёнка.</p>
+                                                                <p>Чем более насыщенная и разнообразная сенсорная информация поступает
+                                                                    к ребёнку из окружающей среды, тем легче ему сравнивать,
+                                                                    анализировать и осваивать окружающий мир, тем быстрее развиваются
+                                                                    его когнитивные способности.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide double-slider__text-swiper-slide" id="slide2">
+                                                        <div class="double-slider__text-slide">
+                                                            <div class="double-slider__slide-title">Множество обучающих предметов и
+                                                                интересных
+                                                                пособий</div>
+                                                            <div class="double-slider__slide-text">
+                                                                <p>Игра — лучший способ обучения. Игра великолепно мотивирует детей
+                                                                    получать и активно запоминать информацию. Поэтому мы используем
+                                                                    на наших повседневных занятиях, помимо типовых, разнообразные
+                                                                    пособия с яркими иллюстрациями и необычные обучающие предметы.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide double-slider__text-swiper-slide" id="slide3">
+                                                        <div class="double-slider__text-slide">
+                                                            <div class="double-slider__slide-title">Все необходимое для творческой
+                                                                деятельности
+                                                            </div>
+                                                            <div class="double-slider__slide-text">
+                                                                <p>Огромное количество природных и бросовых материалов, чтобы пробудить
+                                                                    в ребёнке природную любознательность и познакомить его с миром</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="double-slider__text-swiper-controls">
+                                                <div class="swiper-pagination double-slider__text-swiper-pagination"></div>
+                                                <div class="swiper-navigation double-slider__text-swiper-navigation">
+                                                    <div class="swiper-button-prev double-slider__text-swiper-button-prev">
+                                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_92_1209)">
+                                                                <path
+                                                                    d="M21.0908 13.915L5.78616 13.915M5.78616 13.915L12.1631 20.292M5.78616 13.915L12.1631 7.53809"
+                                                                    stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_92_1209">
+                                                                    <rect width="26" height="26" fill="white"
+                                                                        transform="translate(0.438477 0.915039)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="swiper-button-next double-slider__text-swiper-button-next">
+                                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_2050_215)">
+                                                                <path
+                                                                    d="M5.78616 13.9151L21.0908 13.9151M21.0908 13.9151L14.7139 7.53811M21.0908 13.9151L14.7139 20.292"
+                                                                    stroke="#4E6932" stroke-width="1.4" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_2050_215">
+                                                                    <rect width="26" height="26" fill="white"
+                                                                        transform="translate(0.438477 0.915039)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="double-slider__img-sliders">
+                                            <div class="double-slider__image-slider" data-imageSlider-id="slide1">
+                                                <div class="swiper double-slider__image-swiper">
+                                                    <div class="swiper-wrapper double-slider__image-swiper-wrapper">
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img-2.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img-3.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img-4.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img-5.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-pagination double-slider__image-swiper-pagination"></div>
+                                            </div>
+                                            <div class="double-slider__image-slider" data-imageSlider-id="slide2">
+                                                <div class="swiper double-slider__image-swiper">
+                                                    <div class="swiper-wrapper double-slider__image-swiper-wrapper">
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img-3.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-pagination double-slider__image-swiper-pagination"></div>
+                                            </div>
+                                            <div class="double-slider__image-slider" data-imageSlider-id="slide3">
+                                                <div class="swiper double-slider__image-swiper">
+                                                    <div class="swiper-wrapper double-slider__image-swiper-wrapper">
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img-4.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide double-slider__image-swiper-slide">
+                                                            <div class="double-slider__image-slide">
+                                                                <div class="double-slider__image-slide-wrap">
+                                                                    <img src="../assets/images/pages/main/dev-environment/slide-img.jpg"
+                                                                        alt="" class="double-slider__image-slide-photo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-pagination double-slider__image-swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advantage-item__buttons">
+                                    <button class="my-button my-button_borderSquare advantage-item__button">ЗАПИСАТЬСЯ НА ЗАНЯТИЯ</button>
+                                    <button class="my-button my-button_borderSquare my-button_noColor advantage-item__button">УЗНАТЬ БОЛЬШЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
             <section class="why-choose-us main__why-choose-us">
@@ -253,19 +716,23 @@
                                 <button class="accordion-button why-choose-us__accordion-button" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Профессиональный
+                                    <span
+                                        class="accordion-button-title why-choose-us__accordion-button-title">Профессиональный
                                         подход</span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text">Образовательная
+                                    <span
+                                        class="accordion-button-text why-choose-us__accordion-button-text">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse why-choose-us__accordion-collapse collapse show"
+                            <div id="collapseOne"
+                                class="accordion-collapse why-choose-us__accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span
+                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -292,7 +759,8 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span
+                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -315,11 +783,13 @@
                                         безопасной мебели с закругленными краями до спокойной цветовой гаммы.</span>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse why-choose-us__accordion-collapse collapse"
+                            <div id="collapseThree"
+                                class="accordion-collapse why-choose-us__accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span
+                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -335,7 +805,8 @@
                                 <button class="accordion-button why-choose-us__accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
-                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Компетентность</span>
+                                    <span
+                                        class="accordion-button-title why-choose-us__accordion-button-title">Компетентность</span>
                                     <span class="accordion-button-text why-choose-us__accordion-button-text">Весь наш
                                         педагогический состав тщательно подобран, не только по образованию, но и по
                                         отношению к воспитательному процессу. Все педагоги регулярно повышают
@@ -346,7 +817,8 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span
+                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -362,7 +834,8 @@
                                 <button class="accordion-button why-choose-us__accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseFive">
-                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Ответственность
+                                    <span
+                                        class="accordion-button-title why-choose-us__accordion-button-title">Ответственность
                                         и безопасность</span>
                                     <span class="accordion-button-text why-choose-us__accordion-button-text">Все
                                         помещения оснащены системами пожарной безопасности, видеонаблюдения, охранной
@@ -373,7 +846,8 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span
+                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -386,9 +860,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/images/pages/main/background/cones-5.png" alt="" class="why-choose-us__background-img">
+                <img src="../assets/images/pages/main/background/cones-5.png" alt=""
+                    class="why-choose-us__background-img">
             </section>
-            
+
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ). ГЛАВНОЕ ЧТОБ data АТРИБУТ БЫЛ УНИКАЛЬНЫМ ДЛЯ РАЗНЫХ ТАКИХ БЛОКОВ И ССЫЛКИ НА КАРТИНКИ СЛАЙДОВ -->
             <section class="staff main__staff" data-staff-type="teachers">
                 <div class="my-container staff__container">
@@ -398,7 +873,8 @@
                             <div class="swiper-pagination staff__swiper-pagination"></div>
                             <div class="swiper-navigation staff__swiper-navigation">
                                 <div class="swiper-button-prev staff__swiper-button-prev">
-                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_92_1209)">
                                             <path
                                                 d="M21.0908 13.915L5.78616 13.915M5.78616 13.915L12.1631 20.292M5.78616 13.915L12.1631 7.53809"
@@ -414,7 +890,8 @@
                                     </svg>
                                 </div>
                                 <div class="swiper-button-next staff__swiper-button-next">
-                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_2050_215)">
                                             <path
                                                 d="M5.78616 13.9151L21.0908 13.9151M21.0908 13.9151L14.7139 7.53811M21.0908 13.9151L14.7139 20.292"
@@ -504,7 +981,7 @@
                 </div>
                 <img src="../assets/images/pages/main/background/cones-1.png" alt="" class="staff__background-img">
             </section>
-            
+
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
             <section class="reviews main__reviews">
                 <div class="my-container reviews__container">
@@ -558,17 +1035,9 @@
                                             <div class="reviews__slide">
                                                 <a href="../assets/images/pages/main/reviews/video-1.mp4"
                                                     data-fancybox="reviews-gallery">
-                                                    <div class="reviews__slide-img-wrap">
+                                                    <div class="reviews__slide-img-wrap --video-poster">
                                                         <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
                                                             class="reviews__slide-img">
-                                                        <div class="reviws__slide-play-button-wrap">
-                                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z"
-                                                                    fill="#4E6932" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Березовая, 8</div>
@@ -578,17 +1047,9 @@
                                             <div class="reviews__slide">
                                                 <a href="../assets/images/pages/main/reviews/video-2.mp4"
                                                     data-fancybox="reviews-gallery">
-                                                    <div class="reviews__slide-img-wrap">
+                                                    <div class="reviews__slide-img-wrap --video-poster">
                                                         <img src="../assets/images/pages/main/reviews/vide-img-2.jpg" alt=""
                                                             class="reviews__slide-img">
-                                                        <div class="reviws__slide-play-button-wrap">
-                                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z"
-                                                                    fill="#4E6932" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">ул. Александра Невского, 60</div>
@@ -598,17 +1059,9 @@
                                             <div class="reviews__slide">
                                                 <a href="../assets/images/pages/main/reviews/video-1.mp4"
                                                     data-fancybox="reviews-gallery">
-                                                    <div class="reviews__slide-img-wrap">
+                                                    <div class="reviews__slide-img-wrap --video-poster">
                                                         <img src="../assets/images/pages/main/reviews/vide-img-3.jpg" alt=""
                                                             class="reviews__slide-img">
-                                                        <div class="reviws__slide-play-button-wrap">
-                                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z"
-                                                                    fill="#4E6932" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Алмазная, 5</div>
@@ -618,17 +1071,9 @@
                                             <div class="reviews__slide">
                                                 <a href="../assets/images/pages/main/reviews/video-2.mp4"
                                                     data-fancybox="reviews-gallery">
-                                                    <div class="reviews__slide-img-wrap">
+                                                    <div class="reviews__slide-img-wrap --video-poster">
                                                         <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
                                                             class="reviews__slide-img">
-                                                        <div class="reviws__slide-play-button-wrap">
-                                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z"
-                                                                    fill="#4E6932" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Березовая, 8</div>
@@ -638,17 +1083,9 @@
                                             <div class="reviews__slide">
                                                 <a href="../assets/images/pages/main/reviews/video-1.mp4"
                                                     data-fancybox="reviews-gallery">
-                                                    <div class="reviews__slide-img-wrap">
+                                                    <div class="reviews__slide-img-wrap --video-poster">
                                                         <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
                                                             class="reviews__slide-img">
-                                                        <div class="reviws__slide-play-button-wrap">
-                                                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M24.4385 3.91504C12.832 3.91504 3.43848 13.3074 3.43848 24.915C3.43848 36.5216 12.8306 45.915 24.4385 45.915C36.0451 45.915 45.4385 36.5227 45.4385 24.915C45.4385 13.3084 36.0461 3.91504 24.4385 3.91504ZM32.0049 27.2462L22.137 32.9479C21.3046 33.429 20.2781 33.4298 19.4442 32.9487C18.611 32.4678 18.0977 31.5788 18.0977 30.6169V19.2133C18.0977 18.2512 18.6111 17.3623 19.4442 16.8815C19.8606 16.6411 20.3253 16.5209 20.7901 16.5209C21.2552 16.5209 21.7204 16.6414 22.137 16.882L32.005 22.5838C32.8375 23.0648 33.3503 23.9534 33.3503 24.915C33.3503 25.8766 32.8374 26.7651 32.0049 27.2462Z"
-                                                                    fill="#4E6932" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Березовая, 8</div>
@@ -773,7 +1210,8 @@
                                 </li>
                                 <li class="footer__menu-item"><a href="./about.html" class="footer__menu-link">О нас</a>
                                 </li>
-                                <li class="footer__menu-item"><a href="./development-center.html" class="footer__menu-link">Центр развития</a>
+                                <li class="footer__menu-item"><a href="./development-center.html"
+                                        class="footer__menu-link">Центр развития</a>
                                 </li>
                                 <li class="footer__menu-item"><a href="./news.html"
                                         class="footer__menu-link">Новости</a></li>
@@ -804,6 +1242,133 @@
 
     <script src="../assets/js/sections/staff.js"></script>
     <script src="../assets/js/sections/reviews.js"></script>
+    
+
+    <!-- СКРИПТЫ СТРАНИЦЫ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const advantageItems = Array.from(document.querySelectorAll(".advantage-item"));
+
+            advantageItems.forEach(item => {
+                const itemId = item.getAttribute("data-advantageBlock-id");
+                staffSwiperInit(itemId);
+            })
+
+            function staffSwiperInit(id) {
+                const staffSwiper = new Swiper(`[data-advantageBlock-id=${id}] .advantage-item__swiper`, {
+                    direction: 'horizontal',
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    pagination: {
+                        el: `[data-advantageBlock-id=${id}] .advantage-item__swiper-pagination`,
+                    },
+                    navigation: {
+                        nextEl: `[data-advantageBlock-id=${id}] .advantage-item__swiper-button-next`,
+                        prevEl: `[data-advantageBlock-id=${id}] .advantage-item__swiper-button-prev`,
+                    },
+                    breakpoints: {
+                        551: {
+                            slidesPerView: 2,
+                        },
+                        769: {
+                            slidesPerView: 2,
+                            spaceBetween: 28,
+                            allowTouchMove: true,
+                            noSwiping: false,
+                            mousewheel: true,
+                        },
+                        991: {
+                            slidesPerView: 3,
+                            allowTouchMove: false, // Отключает свайп мышью и касаниями
+                            noSwiping: true,      // Блокирует перетаскивание полностью
+                            mousewheel: false,
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+
+    <!-- СКРИПТ БЛОКА РАЗВИВАЮЩАЯ СРЕДА (ВЫНЕСТИ ЛОГИКУ double-slider ОТДЕЛЬНО И ОТДЕЛИТЬ ЛОГИКУ ПОСТРОЕНИЯ КОНТЕНТА СЛАЙДЕРОВ ПОД ВЫСОТУ, ДОБАВИТЬ В ЭТОТ СКРИПТ ВЫСОТЫ ПРОСТО НАХОЖДЕНИЕ ОПРЕДЕЛЁННЫХ СЛАЙДЕРОВ ВСЕХ И ПРИМЕНЯТЬ К НИМ ЭТОТ СКРИПТ ВЫСОТЫ) -->
+    <script>
+        const devEnvTextSlider = document.querySelector('.double-slider__text-slider');
+        const devEnvironmenTextSwiper = new Swiper('.double-slider__text-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.double-slider__text-swiper-pagination',
+                type: 'fraction',
+                formatFractionCurrent: number => {
+                    return ('0' + number).slice(-2);
+                },
+                formatFractionTotal: number => {
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: (currentClass, totalClass) => {
+                    return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
+                }
+            },
+            navigation: {
+                nextEl: '.double-slider__text-swiper-button-next',
+                prevEl: '.double-slider__text-swiper-button-prev',
+            },
+            on: {
+                slideChange: function () {
+                    updateSwiperHeight();
+                },
+                resize: function () {
+                    updateSwiperHeight();
+                }
+            }
+        });
+
+        function updateSwiperHeight() {
+            const activeSlide = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex];
+            const slideHeight = activeSlide.firstElementChild.offsetHeight;
+            devEnvTextSlider.style.height = `${slideHeight}px`;
+        }
+
+
+        const sliders = document.querySelectorAll('.double-slider__image-slider');
+        const imageSwipers = [];
+
+        sliders.forEach(slider => {
+            const dataId = slider.getAttribute('data-imageSlider-id');
+            const swiperContainer = slider.querySelector('.double-slider__image-swiper');
+            const paginationContainer = slider.querySelector('.double-slider__image-swiper-pagination');
+
+            const swiper = new Swiper(swiperContainer, {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 24,
+                pagination: {
+                    el: paginationContainer,
+                },
+            });
+            imageSwipers.push({ dataId, slider });
+        });
+        console.log(imageSwipers)
+
+        function showImageSlider(activeSlideId) {
+            console.log(activeSlideId)
+            imageSwipers.forEach(imageSwiper => {
+                if (imageSwiper.dataId === activeSlideId) {
+                    imageSwiper.slider.style.display = 'block';
+                } else {
+                    imageSwiper.slider.style.display = 'none';
+                }
+            });
+        }
+
+        showImageSlider(devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id);
+
+        devEnvironmenTextSwiper.on('slideChange', function () {
+            const activeSlideId = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id;
+            showImageSlider(activeSlideId);
+        });
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-// СКРИПТ ИНИЦИАЛИЗАЦИИ СЛАЙДЕРА ДЛЯ БЛОКА ОТЗЫВОВ, ТАК КАК ОН ШАБЛОННЫЙ
 const reviewsSwiper = new Swiper('.reviews__swiper', {
     direction: 'horizontal',
     slidesPerView: 1,
