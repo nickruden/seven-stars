@@ -74,11 +74,17 @@
     left: -2px;
     top: -97px;
 }
-.reviws__slide-play-button-wrap {
-    position: absolute;
-    top: 24px;
-    right: 32px;
-    cursor: pointer;
+.--video-poster::before {
+    top: 20px;
+    right: 20px;
+    left: auto;
+    transform: none;
+    width: 42px;
+    height: 42px;
+}
+.--video-poster:hover::before {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 .reviews__slide-img-wrap:hover path {
     fill: #2f3f1d;

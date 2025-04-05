@@ -1,3 +1,4 @@
+// СКРИПТ ДЛЯ СЛАЙДЕРА ПО ТИПУ "НАШИ УЧИТЕЛЯ"
 document.addEventListener('DOMContentLoaded', function() {
     const staffSections = Array.from(document.querySelectorAll(".staff"));
 

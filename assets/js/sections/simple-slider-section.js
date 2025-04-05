@@ -1,3 +1,4 @@
+// СКРИПТ ДЛЯ ПРОСТОГО СЛАЙДЕРА
 document.addEventListener('DOMContentLoaded', function() {
     const staffSections = Array.from(document.querySelectorAll(".simple-slider-section"));
 

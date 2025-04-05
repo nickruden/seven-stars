@@ -3,3 +3,394 @@
         display: block;
     }
 }
+
+
+/* БЛОК "ЗАЧЕМ НУЖНА ШКОЛА РАННЕГО РАЗВИТИЯ" */
+.why-need-school {
+}
+.main__why-need-school {
+}
+.why-need-school__container {
+}
+.why-need-school__title {
+}
+.why-need-school__info-cards {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+.why-need-school__card {
+    max-width: 302px;
+    flex: 1 1 calc(25% - 24px);
+    display: flex;
+    flex-direction: column;
+}
+.why-need-school__card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    flex-grow: 1;
+}
+.why-need-school__card-img-wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: #FCFCFC;
+    height: 320px;
+    width: 100%;
+}
+.why-need-school__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.why-need-school__card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.why-need-school__card-title {
+    font-size: 20px;
+    line-height: 120%;
+    color: #4E6932;
+    margin-bottom: 16px;
+}
+.why-need-school__card-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #303030;
+    max-width: none;
+}
+
+@media (max-width: 1361px) {
+    .why-need-school__card-inner {
+        gap: 20px;
+    }
+    .why-need-school__card-img-wrap {
+        height: auto;
+        width: auto;
+        aspect-ratio: 302 / 320;
+    }
+    .why-need-school__card-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 1281px) {
+    .why-need-school__info-cards {
+        gap: 22px;
+    }
+    .why-need-school__card {
+        flex: 1 1 calc(25% - 22px);
+    }
+    .why-need-school__card-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .why-need-school__info-cards {
+        row-gap: 40px;
+        column-gap: 20px;
+        flex-wrap: wrap;
+    }
+    .why-need-school__card {
+        flex: 0 1 calc(33.333% - 20px);
+        display: flex;
+        flex-direction: column;
+    }
+    .why-need-school__card-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .why-need-school__card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: none;
+    }
+    .why-need-school__card-inner {
+        gap: 22px;
+    }
+    .why-need-school__card-title {
+        margin-bottom: 16px;
+    }
+    .why-need-school__card-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 651px) {
+    .why-need-school__info-cards {
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 551px) {
+    .why-need-school__card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+    .why-need-school__info-cards {
+        gap: 40px;
+    }
+    .why-need-school__card-title {
+    }
+    .why-need-school__card-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 431px) {
+    .why-need-school__info-cards {
+        gap: 45px;
+    }
+    .why-need-school__card-inner {
+        gap: 24px;
+    }
+    .why-need-school__card-title {
+        font-size: 16px;
+    }
+    .why-need-school__card-text {
+        font-size: 12px;
+    }
+}
+
+
+/* БЛОК "ОТ 3 ДО 5 ЛЕТ" */
+.child-age {
+}
+.main__reviews {
+}
+.child-age__container {
+}
+.child-age__title {
+}
+.child-age__content {
+}
+.child-age__content-inner {
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #F6F6F6;
+    border-radius: 24px;
+}
+.child-age__content-title {
+    font-size: 24px;
+    line-height: 130%;
+    max-width: 607px;
+}
+.child-age__slider {
+    position: relative;
+    width: 100%;
+}
+.child-age__swiper {
+}
+.child-age__swiper-wrapper {
+    align-items: stretch;
+}
+.child-age__swiper-slide {
+    height: auto;
+    display: flex;  
+}
+.child-age__slide {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    flex-grow: 1;
+}
+.child-age__slide-img-wrap {
+    height: 300px;
+    width: 381px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.child-age__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.child-age__slide-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.child-age__slide-pre-title {
+    font-size: 20px;
+    line-height: 120%;
+    color: #4E6932;
+    margin-bottom: 16px;
+}
+.child-age__slide-text {
+    font-size: 16px;
+    line-height: 130%;
+}
+.child-age__swiper-controls {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+.child-age__swiper-pagination {
+    display: none;
+    font-size: 32px;
+    line-height: 120%;
+    color: #CFCFCF;
+    width: auto;
+}
+.child-age__swiper-navigation {
+}
+.child-age__swiper-button-prev {
+}
+.child-age__swiper-button-next {
+}
+
+@media (max-width: 1361px) {
+    .child-age__content-inner {
+        padding: 35px;
+        gap: 35px;
+    }
+    .child-age__content-title {
+        font-size: 22px;
+        max-width: 570px;
+    }
+    .child-age__slide{
+        gap: 20px;
+    }
+    .child-age__slide-img-wrap {
+        height: auto;
+        width: auto;
+        aspect-ratio: 381 / 300;
+    }
+    .child-age__slide-pre-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .child-age__slide-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .child-age__swiper-controls {
+        display: flex;
+    }
+    .child-age__content-inner {
+        padding: 30px;
+        gap: 30px;
+    }
+    .child-age__swiper-navigation {
+        top: -85px;
+    }
+}
+
+@media (max-width: 797px) {
+    .child-age__content-title {
+        font-size: 20px;
+    }
+    .child-age__swiper-navigation {
+        top: -79px;
+    }
+}
+@media (max-width: 769px) {
+    .child-age__container {
+        padding: 0px;
+    }
+    .child-age__content-inner {
+        padding: 30px;
+        gap: 35px;
+    }
+    .child-age__title {
+        padding-left: 30px;
+    }
+    .child-age__content-title {
+        max-width: 400px;
+    }
+    .child-age__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews__swiper-navigation {
+        top: -80px;
+    }
+
+}
+
+@media (max-width: 651px) {
+    .child-age__slide {
+        gap: 24px;
+        width: 100%;
+    }
+    .child-age__slide-img-wrap {
+        width: 100%;
+    }
+    .child-age__slide-pre-title {
+        max-width: 350px;
+        font-size: 20px;
+    }
+    .child-age__slide-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 551px) {
+    .child-age__slide-img-wrap {
+        height: 320px;
+        width: 100%;
+    }
+    .child-age__content-inner {
+        padding: 0px;
+        gap: 30px;
+        background-color: transparent;
+    }
+    .child-age__content-title {
+        padding-left: 30px;
+    }
+    .child-age__slider {
+        max-height: none;
+        background-color: #F6F6F6;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .child-age__swiper-controls {
+        margin-bottom: 30px;
+        justify-content: flex-end;
+    }
+    .child-age__swiper-pagination {
+        display: block;
+        bottom: auto!important;
+        top: 350px!important;
+    }
+    .child-age__swiper-navigation {
+        position: static;
+    }
+    .child-age__swiper-button-prev, .child-age__swiper-button-next {
+        position: static;
+    }
+}
+
+@media (max-width: 431px) {
+    .child-age__slide-img-wrap {
+        height: 300px;
+    }
+    .child-age__swiper-controls {
+        margin-bottom: 20px;
+    }
+    .child-age__swiper-pagination {
+        top: 327px !important;
+    }
+    .child-age__swiper-navigation {
+        gap: 5px;
+    }
+}

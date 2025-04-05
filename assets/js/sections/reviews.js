@@ -1,3 +1,4 @@
+// СКРИПТ ИНИЦИАЛИЗАЦИИ СЛАЙДЕРА ДЛЯ БЛОКА ОТЗЫВОВ, ТАК КАК ОН ШАБЛОННЫЙ
 const reviewsSwiper = new Swiper('.reviews__swiper', {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -19,10 +20,4 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
             spaceBetween: 28,
         }
     }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    Fancybox.bind('[data-fancybox="reviews-gallery"]', {
-
-    });
 });
