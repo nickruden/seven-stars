@@ -9,7 +9,7 @@
 .my-stories__inner {
 }
 .my-stories__swiper {
-    overflow: hidden!important;
+    overflow: hidden;
 }
 .my-stories__swiper-wrapper {
 }
@@ -49,7 +49,6 @@
 /* ИЗМЕНЕНИЕ СТИЛЕЙ БИБЛИОТЕКИ */
 .stories.carousel {
     display: flex;
-    gap: 18px;
 }
 .stories.carousel .story {
     max-width: 100px;
@@ -79,7 +78,7 @@
         padding-bottom: 0px;
     }
     .my-stories__swiper {
-        overflow: visible!important;
+        overflow: visible;
     }
 }
 
@@ -93,9 +92,6 @@
     .my-stories__slide-img-wrap {
         height: 94px;
         max-width: 94px;
-    }
-    .stories.carousel {
-        gap: 16px;
     }
     .stories.carousel .story {
         max-width: 94px;
@@ -126,9 +122,6 @@
         height: 91px;
         max-width: 91px;
     }
-    .stories.carousel {
-        gap: 17px;
-    }
     .stories.carousel .story {
         max-width: 91px;
         width: 91px;
@@ -143,9 +136,6 @@
 }
 
 @media (max-width: 651px) {
-    .stories.carousel {
-        gap: 16px;
-    }
 }
 
 @media (max-width: 551px) {
@@ -155,9 +145,6 @@
     .my-stories__slide-img-wrap {
         height: 88px;
         max-width: 88px;
-    }
-    .stories.carousel {
-        gap: 15px;
     }
     .stories.carousel .story {
         max-width: 88px;
