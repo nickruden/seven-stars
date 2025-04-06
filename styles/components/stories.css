@@ -67,6 +67,10 @@
     margin-top: 12px;
 }
 
+#zuck-modal-content .story-viewer .head .right .close, #zuck-modal-content .story-viewer .head .back {
+    color: #fff;
+}
+
 
 @media (max-width: 1361px) {
     .my-stories {

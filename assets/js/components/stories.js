@@ -6,7 +6,7 @@ const options = {
   rtl: false, // Направление слева направо
   paginationArrows: true, // Стрелки навигации (если много историй)
   paginationArrowSize: 24, // Размер стрелок
-  localStorage: true,
+  openEffect: true,
   stories: [
     {
       id: "john_doe",
@@ -281,12 +281,7 @@ const options = {
         },
       ],
     },
-    // другие сторис...
   ],
-  backNative: true,
-  backButton: true,
-  previousTap: true,
-  localStorage: true,
 }; // See ./src/options.ts
 
 const element = document.querySelector("#stories");
