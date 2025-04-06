@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/zuck.js/dist/zuck.css" />
+    <link rel="stylesheet" href="https://unpkg.com/zuck.js/dist/skins/snapgram.css" />
 
 
     <!-- СТИЛИ ОБЩИХ ЭЛЕМЕНТОВ -->
@@ -246,109 +248,110 @@
             </section>
             
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <div class="stories main__stories">
-                <div class="my-container stories__container">
-                    <div class="stories__inner">
-                        <div class="swiper stories__swiper">
-                            <div class="swiper-wrapper stories__swiper-wrapper">
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+            <div class="my-stories main__my-stories">
+                <div class="my-container my-stories__container">
+                    <div class="my-stories__inner">
+                        <!-- <div class="swiper my-stories__swiper">
+                            <div class="swiper-wrapper my-stories__swiper-wrapper">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide stories__swiper-slide">
-                                    <div class="stories__slide">
-                                        <div class="stories__slide-img-wrap">
-                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="stories__slide-img">
+                                <div class="swiper-slide my-stories__swiper-slide">
+                                    <div class="my-stories__slide">
+                                        <div class="my-stories__slide-img-wrap">
+                                            <img src="../assets/images/7dfed08c6154ea9cb55b42bfd0ba19f8.jpg" alt="" class="my-stories__slide-img">
                                         </div>
-                                        <div class="stories__title">Подпись</div>
+                                        <div class="my-stories__title">Подпись</div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <div id="stories"></div>
                     </div>
                 </div>
             </div>
@@ -360,7 +363,7 @@
                         <div class="why-need-school__card">
                             <div class="why-need-school__card-inner">
                                 <div class="why-need-school__card-img-wrap">
-                                    <img src="../assets/images/pages/main/holidays/card-img-2.jpg" alt="" class="why-need-school__card-img">
+                                    <img src="../assets/images/pages/early-development-school/why-need-school/slide-img-1.jpg" alt="" class="why-need-school__card-img">
                                 </div>
                                 <div class="why-need-school__card-body">
                                     <div class="why-need-school__card-title">Социализация детей</div>
@@ -371,7 +374,7 @@
                         <div class="why-need-school__card">
                             <div class="why-need-school__card-inner">
                                 <div class="why-need-school__card-img-wrap">
-                                    <img src="../assets/images/pages/main/holidays/card-img-2.jpg" alt="" class="why-need-school__card-img">
+                                    <img src="../assets/images/pages/early-development-school/why-need-school/slide-img-2.jpg" alt="" class="why-need-school__card-img">
                                 </div>
                                 <div class="why-need-school__card-body">
                                     <div class="why-need-school__card-title">Эмоциональное развитие</div>
@@ -382,7 +385,7 @@
                         <div class="why-need-school__card">
                             <div class="why-need-school__card-inner">
                                 <div class="why-need-school__card-img-wrap">
-                                    <img src="../assets/images/pages/main/holidays/card-img-2.jpg" alt="" class="why-need-school__card-img">
+                                    <img src="../assets/images/pages/early-development-school/why-need-school/slide-img-3.jpg" alt="" class="why-need-school__card-img">
                                 </div>
                                 <div class="why-need-school__card-body">
                                     <div class="why-need-school__card-title">Развитие интеллекта</div>
@@ -393,7 +396,7 @@
                         <div class="why-need-school__card">
                             <div class="why-need-school__card-inner">
                                 <div class="why-need-school__card-img-wrap">
-                                    <img src="../assets/images/pages/main/holidays/card-img-2.jpg" alt="" class="why-need-school__card-img">
+                                    <img src="../assets/images/pages/early-development-school/why-need-school/slide-img-4.jpg" alt="" class="why-need-school__card-img">
                                 </div>
                                 <div class="why-need-school__card-body">
                                     <div class="why-need-school__card-title">Обучение важным навыкам</div>
@@ -463,7 +466,7 @@
                                         <div class="advantage-item__slide">
                                             <div class="advantage-item__slide-title">Возрастные группы (разница в 3 месяца)</div>
                                             <div class="advantage-item__slide-img-wrap">
-                                                <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                <img src="../assets/images/pages/early-development-school/department-for-little/slide-img-1.jpg" alt="" class="advantage-item__slide-img">
                                             </div>
                                         </div>
                                     </div>
@@ -471,7 +474,7 @@
                                         <div class="advantage-item__slide">
                                             <div class="advantage-item__slide-title">До 6 детей в&nbsp;группе</div>
                                             <div class="advantage-item__slide-img-wrap">
-                                                <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                <img src="../assets/images/pages/early-development-school/department-for-little/slide-img-2.jpg" alt="" class="advantage-item__slide-img">
                                             </div>
                                         </div>
                                     </div>
@@ -479,7 +482,7 @@
                                         <div class="advantage-item__slide">
                                             <div class="advantage-item__slide-title">Музыкальные и&nbsp;спортивные паузы</div>
                                             <div class="advantage-item__slide-img-wrap">
-                                                <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                <img src="../assets/images/pages/early-development-school/department-for-little/slide-img-3.jpg" alt="" class="advantage-item__slide-img">
                                             </div>
                                         </div>
                                     </div>
@@ -487,7 +490,7 @@
                                         <div class="advantage-item__slide">
                                             <div class="advantage-item__slide-title">Творческая работа</div>
                                             <div class="advantage-item__slide-img-wrap">
-                                                <img src="../assets/images/pages/main/inspiration/slide-img-5.jpg" alt="" class="advantage-item__slide-img">
+                                                <img src="../assets/images/pages/early-development-school/department-for-little/slide-img-4.jpg" alt="" class="advantage-item__slide-img">
                                             </div>
                                         </div>
                                     </div>
@@ -553,9 +556,9 @@
                                         <div class="swiper-slide child-age__swiper-slide">
                                             <div class="child-age__slide">
                                                 <div class="child-age__slide-img-wrap">
-                                                    <a href="../assets/images/pages/main/reviews/video-1.mp4"
-                                                data-fancybox="child-age-gallery1">
-                                                    <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
+                                                    <a href="../assets/images/pages/early-development-school/child-age/slide-img-1.jpg"
+                                                data-fancybox="child-age-gallery">
+                                                    <img src="../assets/images/pages/early-development-school/child-age/slide-img-1.jpg" alt=""
                                                         class="child-age__slide-img">
                                                     </a>
                                                     </div>
@@ -568,9 +571,9 @@
                                         <div class="swiper-slide child-age__swiper-slide">
                                             <div class="child-age__slide">
                                                 <div class="child-age__slide-img-wrap">
-                                                    <a href="../assets/images/pages/main/reviews/video-1.mp4"
-                                                data-fancybox="child-age-gallery1">
-                                                    <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
+                                                    <a href="../assets/images/pages/early-development-school/child-age/slide-img-2.jpg"
+                                                data-fancybox="child-age-gallery">
+                                                    <img src="../assets/images/pages/early-development-school/child-age/slide-img-2.jpg" alt=""
                                                         class="child-age__slide-img">
                                                     </a>
                                                     </div>
@@ -583,30 +586,15 @@
                                         <div class="swiper-slide child-age__swiper-slide">
                                             <div class="child-age__slide">
                                                     <div class="child-age__slide-img-wrap">
-                                                        <a href="../assets/images/pages/main/reviews/video-1.mp4"
-                                                    data-fancybox="child-age-gallery1">
-                                                        <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
+                                                        <a href="../assets/images/pages/early-development-school/child-age/slide-img-3.jpg"
+                                                    data-fancybox="child-age-gallery">
+                                                        <img src="../assets/images/pages/early-development-school/child-age/slide-img-3.jpg" alt=""
                                                             class="child-age__slide-img">
                                                         </a>
                                                         </div>
                                                 <div class="child-age__slide-body">
                                                     <div class="child-age__slide-pre-title">Игры-психогимнастики</div>
                                                     <div class="child-age__slide-text">На развитие коммуникативных навыков, навыков сотрудничества, повышение уверенности, самооценки.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide child-age__swiper-slide">
-                                            <div class="child-age__slide">
-                                                <div class="child-age__slide-img-wrap">
-                                                    <a href="../assets/images/pages/main/reviews/video-1.mp4"
-                                                data-fancybox="child-age-gallery1">
-                                                    <img src="../assets/images/pages/main/reviews/vide-img-1.jpg" alt=""
-                                                        class="child-age__slide-img">
-                                                    </a>
-                                                    </div>
-                                                <div class="child-age__slide-body">
-                                                    <div class="child-age__slide-pre-title">Обогащение знаний об&nbsp;окружающем мире</div>
-                                                    <div class="child-age__slide-text">Развитие математических представлений, развитие мышления, памяти, слухового, зрительного внимания.</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1126,6 +1114,7 @@
     <script src="../assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../assets/libs/bootstrap/popper.min.js"></script>
     <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/zuck.js/dist/zuck.js"></script>
 
 
     <!-- ОБЩИЕ СКРИПТЫ -->
@@ -1266,6 +1255,301 @@
     });
 </script>
 
+<!-- СКРИПТ СТОРИСОВ -->
+<script>
+    const options = {
+        skin: 'snapgram', // стиль сторис (используется CSS из snapgram.css)
+        avatars: true,          // Показывать аватарки
+  list: false,            // Горизонтальный скролл (не вертикальный список)
+  rtl: false,             // Направление слева направо
+  paginationArrows: true, // Стрелки навигации (если много историй)
+  paginationArrowSize: 24,// Размер стрелок
+  localStorage: true,
+        stories: [
+            {
+                id: 'john_doe',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe212',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe29',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe294',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe293',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe292',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe28',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe27',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe26',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe25',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe24',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe32',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            {
+                id: 'john_doe22',
+                photo: 'https://i.pravatar.cc/150?img=1',
+                name: 'Подпись',
+                items: [
+                    {
+                        id: 'john_1',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=1',
+                        preview: 'https://picsum.photos/200/400?random=1',
+                        time: Date.now() / 1000
+                    },
+                    {
+                        id: 'john_2',
+                        type: 'photo',
+                        src: 'https://picsum.photos/800/1600?random=2',
+                        preview: 'https://picsum.photos/200/400?random=2',
+                        time: Date.now() / 1000
+                    }
+                ]
+            },
+            // другие сторис...
+        ],
+        backNative: true,
+        backButton: true,
+        previousTap: true,
+        localStorage: true 
+    }; // See ./src/options.ts
+
+    const element = document.querySelector("#stories");
+    const stories = Zuck(element, options);
+</script>
 
 <script>
     const childAgeSwiper = new Swiper('.child-age__swiper', {

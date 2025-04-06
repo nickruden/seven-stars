@@ -1,5 +1,5 @@
 // СКРИПТ ИНИЦИАЛИЗАЦИИ СЛАЙДЕРА ДЛЯ БЛОКА СТОРИСОВ
-const storiesSwiper = new Swiper('.stories__swiper', {
+const storiesSwiper = new Swiper('.my-stories__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 15,

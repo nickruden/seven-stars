@@ -1,3 +1,8 @@
+.hero-section__wrap-img {
+    background: url('../../assets/images/no-photo.png') 100% no-repeat;
+    background-size: cover;
+}
+
 @media (max-width: 431px) {
     .hero-section__link > br {
         display: block;
@@ -267,7 +272,7 @@
 .lesson-teacher__swiper-slide {
 }
 .lesson-teacher__slide {
-    max-height: 600px;
+    height: 600px;
     width: 100%;
     overflow: hidden;
     border-radius: 24px;
@@ -301,7 +306,11 @@
 }
 
 @media (max-width: 1361px) { 
-
+    .lesson-teacher__slide {
+        height: auto;
+        width: auto;
+        aspect-ratio: 610 / 600;
+    }
 }
 @media (max-width: 1281px) {
     .lesson-teacher__container {
@@ -372,6 +381,7 @@
     }
     .lesson-teacher__slide {
         height: 417px;
+        aspect-ratio: auto;
     }
 }
 
