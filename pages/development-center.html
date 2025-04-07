@@ -252,18 +252,17 @@
                     class="hero-section__background-img">
             </section>
 
-
             <!-- ВНУТРИ ЕСТЬ dobule-slider ВЫНЕС ЛОГИКУ ДВОЙНОГО СЛАЙДЕРА И СТИЛИ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
             <section class="center-advantages main__center-advantages">
                 <div class="my-container center-advantages__container">
                     <div class="center-advantages__links">
-                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link active">Развивающие занятия</a>
+                        <a href="#educational-lessons" class="my-button my-button_borderOval my-button_noColor center-advantages__link active">Развивающие занятия</a>
                         <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link">логопед</a>
-                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link">Живопись22</a>
-                        <a href="" class="my-button my-button_borderOval my-button_noColor center-advantages__link">Летние кани3кулы</a>
+                        <a href="#painting" class="my-button my-button_borderOval my-button_noColor center-advantages__link">Живопись</a>
+                        <a href="#summer-holidays" class="my-button my-button_borderOval my-button_noColor center-advantages__link">Летние каникулы</a>
                     </div>
                     <div class="center-advantages__advantage-blocks">
-                        <div class="advantage-item center-advantages__advantage-item --no-descButton --no-preTitle" data-advantageBlock-id="educational-lessons">
+                        <div class="advantage-item center-advantages__advantage-item --no-descButton --no-preTitle" data-advantageBlock-id="educational-lessons" id="educational-lessons">
                             <div class="my-container advantage-item__container">
                                 <div class="advantage-item__desc">
                                     <div class="block-title advantage-item__desc__title">Развивающие занятия с&nbsp;9&nbsp;месяцев до&nbsp;5&nbsp;лет</div>
@@ -372,7 +371,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="advantage-item center-advantages__advantage-item --no-descButton" data-advantageBlock-id="painting">
+                        <div class="advantage-item center-advantages__advantage-item --no-descButton" data-advantageBlock-id="painting" id="painting">
                             <div class="my-container advantage-item__container">
                                 <div class="advantage-item__desc">
                                     <div class="block-title advantage-item__desc__title">Живопись <br> с&nbsp;5&nbsp;лет</div>
@@ -470,7 +469,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="advantage-item center-advantages__advantage-item --no-descButton" data-advantageBlock-id="summer-holidays">
+                        <div class="advantage-item center-advantages__advantage-item --no-descButton" data-advantageBlock-id="summer-holidays" id="summer-holidays">
                             <div class="my-container advantage-item__container">
                                 <div class="advantage-item__desc">
                                     <div class="block-title advantage-item__desc__title">Летние каникулы
@@ -1264,6 +1263,30 @@
                     }
                 });
             }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const centerAdvantagesLinks = document.querySelectorAll('.center-advantages__link');
+
+            centerAdvantagesLinks.forEach(link => {
+                link.classList.remove('active');
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    links.forEach(elem => elem.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const targetId = this.getAttribute('href');
+
+                    const targetElement = document.querySelector(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
         });
     </script>
 
