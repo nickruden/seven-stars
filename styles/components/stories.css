@@ -17,6 +17,9 @@
     max-width: 99px;
     cursor: pointer;
 }
+.my-stories__swiper-slide:not(:last-child) {
+    margin-right: 18px!important;
+}
 .my-stories__slide {
     max-width: 99px;
     display: flex;
@@ -122,6 +125,9 @@
     .my-stories__swiper-slide {
         max-width: 91px;
     }
+    .my-stories__swiper-slide:not(:last-child) {
+        margin-right: 16px!important;
+    }
     .my-stories__slide-img-wrap {
         height: 91px;
         max-width: 91px;
@@ -145,6 +151,9 @@
 @media (max-width: 551px) {
     .my-stories__swiper-slide {
         max-width: 88px;
+    }
+    .my-stories__swiper-slide:not(:last-child) {
+        margin-right: 15px!important;
     }
     .my-stories__slide-img-wrap {
         height: 88px;
