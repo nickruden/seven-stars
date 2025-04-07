@@ -46,8 +46,8 @@
 }
 .why-choose-us__accordion-button::after {
     background-image: url('../../../assets/images/slider/arrow-next.svg')!important;
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
     background-size: auto;
     margin-bottom: auto;
     transition: transform 500ms;
@@ -201,6 +201,8 @@
         position: relative;
         top: 10%;
         transform-origin: center;
+        height: 24px;
+        width: 24px;
     }
     .why-choose-us__accordion-button:not(.collapsed)::after {
         transform: rotate(-90deg);
@@ -213,7 +215,7 @@
         align-items: center;
     }
     .why-choose-us__accordion-item {
-        padding: 20px 0px;
+        padding: 29px 0px;
     }
     .why-choose-us__accordion-button-title {
         max-width: 230px;

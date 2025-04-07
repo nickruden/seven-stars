@@ -73,8 +73,8 @@
     position: absolute;
     top: 32px;
     right: 32px;
-    width: 99px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 .lesson-structure__lesson-stage-image-wrap {
     max-width: 408px;
@@ -131,8 +131,8 @@
         font-size: 16px;
     }
     .lesson-structure__lesson-stage-mini-img {
-        width: 79px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 }
 @media (max-width: 992px) {
@@ -158,8 +158,8 @@
         padding: 32px;
     }
     .lesson-structure__lesson-stage-mini-img {
-        width: 99px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 }
 @media (max-width: 902px) {
@@ -179,8 +179,8 @@
         order: 1;
     }
     .lesson-structure__lesson-stage-mini-img {
-        width: 79px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 }
 @media (max-width: 651px) {
@@ -206,8 +206,11 @@
     }    
     .lesson-structure__lesson-stage-info {
         aspect-ratio: 408 / 300;
+        padding: 27px;
     }
     .lesson-structure__lesson-stage-mini-img {
+        top: 20px;
+        right: 10px;
         width: 99px;
         height: 80px;
     }

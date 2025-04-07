@@ -58,6 +58,9 @@
     color: #303030;
     max-width: none;
 }
+.simple-slider-section__swiper-navigation {
+    display: none;
+}
 .simple-slider-section__swiper-button-prev {
 }
 .simple-slider-section__swiper-button-next {
@@ -104,6 +107,9 @@
     .simple-slider-section__slide-img-wrap {
         height: auto;
         width: auto;
+    }
+    .simple-slider-section__swiper-navigation {
+        display: flex;
     }
 }
 
