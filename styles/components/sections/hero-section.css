@@ -154,11 +154,11 @@
 .hero-section__link.active::before {
     content: '';
     display: inline-block;
-    height: 220%;
-    width: 300%;
+    height: 242%;
+    width: 205%;
     position: absolute;
-    top: -180px;
-    left: -20px;
+    top: -218px;
+    left: 0px;
     background: url('../../../assets/images/patterns.png') 100% / cover;
     z-index: 2;
     opacity: .1;
@@ -191,6 +191,13 @@
     }
     .hero-section__container {
         padding-top: 0px;
+    }
+    .hero-section__link.active::before {
+        height: 220%;
+        width: 300%;
+        position: absolute;
+        top: -118px;
+        left: -20px;
     }
 }
 
@@ -361,6 +368,13 @@
     .hero-section__link {
         width: 100%;
     }
+    .hero-section__link.active::before {
+        height: 327%;
+        width: 108%;
+        position: absolute;
+        top: -138px;
+        left: 0px;
+    }
     .hero-section__right-content > .hero-section__title {
         font-size: 30px;
         margin-bottom: 31px;
@@ -437,6 +451,13 @@
     }
     .hero-section__body-texts {
         align-self: flex-start;
+    }
+    .hero-section__link.active::before {
+        height: 285%;
+        width: 143%;
+        position: absolute;
+        top: -142px;
+        left: 0px;
     }
 }
 
