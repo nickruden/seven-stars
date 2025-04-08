@@ -1,8 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
     const headerTop = document.querySelector('.header__mobile-top');
     const headerLinks = document.querySelector('.header__mobile-section-links');
     let lastScrollTop = 0;
     let flag = true;
+
+        // Только для десктопной версии
+  if (window.innerWidth > 768) {
+    function handleDesktopScroll() {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop > 100) {
+        header.classList.add("fixed");
+        header.style.top = "0";
+        header.style.transition = "top 0.3s ease";
+      } else {
+        header.classList.remove("fixed");
+      }
+    }
+
+    window.addEventListener("scroll", handleDesktopScroll);
+  }
 
     const headerLinksSwiper = new Swiper('.header__links-swiper', {
         direction: 'horizontal',

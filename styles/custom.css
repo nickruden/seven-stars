@@ -117,10 +117,11 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 16px;
+    border: 1px solid #4E6932;
 }
 .tippy-content {
     padding: 0px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 120%;
     color: #4E6932;
 }
