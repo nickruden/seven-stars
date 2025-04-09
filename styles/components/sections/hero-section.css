@@ -453,10 +453,10 @@
         align-self: flex-start;
     }
     .hero-section__link.active::before {
-        height: 285%;
-        width: 143%;
+        height: 301%;
+        width: 119%;
         position: absolute;
-        top: -142px;
+        top: -117px;
         left: 0px;
     }
 }

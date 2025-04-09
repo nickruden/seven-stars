@@ -119,11 +119,11 @@
 .hero-section__link.active::before {
     content: '';
     display: inline-block;
-    height: 220%;
-    width: 300%;
+    height: 242%;
+    width: 205%;
     position: absolute;
-    top: -180px;
-    left: -20px;
+    top: -218px;
+    left: 0px;
     background: url('../../assets/images/patterns.png') 100% / cover;
     z-index: 2;
     opacity: .1;
@@ -156,6 +156,13 @@
     }
     .hero-section__container {
         padding-top: 0px;
+    }
+    .hero-section__link.active::before {
+        height: 220%;
+        width: 300%;
+        position: absolute;
+        top: -118px;
+        left: -20px;
     }
 }
 @media (max-width: 1281px) {
@@ -250,6 +257,11 @@
         width: 335%;
         top: -34px;
     }
+    .hero-section__link.active::before {
+        height: 200%;
+        width: 335%;
+        top: -34px;
+    }
 }
 @media (max-width: 903px) {
     .hero-section__link {
@@ -286,6 +298,13 @@
     }
     .hero-section__wrap-img {
         max-height: 390px;
+    }
+    .hero-section__link.active::before {
+        height: 327%;
+        width: 108%;
+        position: absolute;
+        top: -138px;
+        left: 0px;
     }
 }
 @media (max-width: 651px) {
@@ -343,6 +362,13 @@
 @media (max-width: 431px) {
     .hero-section__title {
         font-size: 22px;
+    }
+    .hero-section__link.active::before {
+        height: 301%;
+        width: 119%;
+        position: absolute;
+        top: -117px;
+        left: 0px;
     }
 }
 
