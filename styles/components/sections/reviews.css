@@ -67,12 +67,9 @@
     background-color: rgba(255, 255, 255, 0.068);
 }
 .reviews__slide-img {
-    /* height: 100%; */
-    width: 102%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    position: relative;
-    left: -2px;
-    top: -97px;
 }
 .reviews .--video-poster::before {
     top: 20px;

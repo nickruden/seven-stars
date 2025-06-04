@@ -261,7 +261,7 @@
             </div>
             
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ). ЕСЛИ ТАКИХ БЛОКОВ БУДЕТ НЕСКОЛЬКО НА СТРАНИЦЕ, ВАЖНО ЧТОБ data АТРИБУТ БЫЛ РАЗНЫХ ДЛЯ КАЖДОГО -->
-            <section class="simple-slider-section main__simple-slider-section" data-simpleSlider-id="slider1">
+            <section class="simple-slider-section main__simple-slider-section --sectionPadding-underStories" data-simpleSlider-id="slider1">
                 <div class="my-container simple-slider-section__container">
                     <h2 class="block-title simple-slider-section__title">Зачем ребенку учиться рисовать?</h2>
                     <div class="simple-slider-section__slider">
@@ -370,7 +370,7 @@
                 </div>
             </section>
 
-            <section class="lesson-structure main__lesson-structure">
+            <section class="lesson-structure main__lesson-structure --sectionPadding">
                 <div class="my-container lesson-structure__container">
                     <div class="block-title lesson-structure__title">Как построены уроки живописи <br> в&nbsp;нашем центре</div>
                     <div class="lesson-structure__lesson-stages">
@@ -433,7 +433,7 @@
                     </div>
                 </div>
             </section>
-            <section class="lesson-teacher main__lesson-teacher">
+            <section class="lesson-teacher main__lesson-teacher --sectionPadding">
                 <div class="my-container lesson-teacher__container">
                     <div class="lesson-teacher__img-slider">
                         <div class="lesson-teacher__swiper-controls">
@@ -494,7 +494,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="reviews main__reviews">
+            <section class="reviews main__reviews --sectionPadding">
                 <div class="my-container reviews__container">
                     <h2 class="block-title reviews__title">отзывы</h2>
                     <div class="reviews__content">
@@ -612,7 +612,7 @@
             </section>
             
             <!-- ЕСЛИ feedback-block НАХОДИТЬСЯ ВНЕ КАКОЙ-ЛИБО СЕКЦИИ, ТО НАДО ЕГО ОБЕРНУТЬ ВНУТРЬ БЛОКА feedback, ЕСЛИ ОН ЧАСТЬ СЕКЦИИ (КАК НА ГЛАВНОЙ), ТАМ СВОЯ УНИКАЛЬНАЯ ОБЁРТКА -->
-            <section class="feedback main__feedback">
+            <section class="feedback main__feedback --sectionPadding">
                 <div class="my-container feedback__container">
                     <article class="feedback-block">
                         <div class="my-container feedback-block__container">
@@ -652,7 +652,7 @@
             
             
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (МОЖНО ВНЕСТИ БЛОК В LAYOUT) -->
-            <section class="contacts main__contacts">
+            <section class="contacts main__contacts --sectionPadding">
                 <div class="my-container contacts__container">
                     <div class="contacts__inner">
                         <div class="contacts__body">
@@ -706,11 +706,15 @@
             <div class="my-container footer__container">
                 <div class="footer__inner">
                     <div class="footer__left">
-                        <a href="../index.html" class="footer__logo-link">
+                        <div class="footer-left__top">
+                        <a href="" class="footer__logo-link">
                             <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
                         </a>
+                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                        </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
+                        <button class="my-button footer__button-reviews --mobile">оставить отзыв</button>
                     </div>
                     <div class="footer__right">
                         <nav class="footer__menu">
@@ -743,6 +747,8 @@
     <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
     <script src="../assets/libs/stories/zuck.js"></script>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
+
 
     <!-- ОБЩИЕ СКРИПТЫ -->
     <script src="../assets/js/phone-mask.js"></script>
@@ -754,6 +760,7 @@
 
     <script src="../assets/js/sections/simple-slider-section.js"></script>
     <script src="../assets/js/sections/reviews.js"></script>
+    <script src="./assets//js/sections/contacts.js"></script>
 </body>
 
 </html>

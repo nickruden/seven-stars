@@ -36,6 +36,9 @@
     font-size: 16px;
     line-height: 130%;
     max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .double-slider__text-swiper-controls {
     display: flex;
@@ -223,10 +226,16 @@
     }
     .double-slider__slide-title {
         font-size: 20px;
-        padding-right: 85px;
+        line-height: 120%;
+    }
+    .double-slider.--single-slide .double-slider__slide-title {
+        padding-right: 0px;
     }
     .double-slider__text-slide {
         padding: 30px 30px 0px 30px;
+    }
+    .double-slider__slide-text {
+        gap: 15px;
     }
     .double-slider__img-sliders {
         padding: 0px 30px 30px 30px;
@@ -255,6 +264,9 @@
 @media (max-width: 551px) {
     .double-slider {
         gap: 30px;
+    }
+    .double-slider.--single-slide .double-slider__slide-title {
+        max-width: 310px;
     }
     .double-slider__image-slide {
         height: 275px;

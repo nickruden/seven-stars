@@ -389,7 +389,7 @@
             </section>
 
             <!-- ЕСЛИ feedback-block НАХОДИТЬСЯ ВНЕ КАКОЙ-ЛИБО СЕКЦИИ, ТО НАДО ЕГО ОБЕРНУТЬ ВНУТРЬ БЛОКА feedback, ЕСЛИ ОН ЧАСТЬ СЕКЦИИ (КАК НА ГЛАВЙНОЙ), ТАМ СВОЯ УНИКАЛЬНАЯ ОБЁРТКА -->
-            <section class="feedback main__feedback">
+            <section class="feedback main__feedback --sectionPadding">
                 <div class="my-container feedback__container">
                     <article class="feedback-block reviews__feedback-block">
                         <div class="my-container feedback-block__container">
@@ -430,7 +430,7 @@
 
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (МОЖНО ВНЕСТИ БЛОК В LAYOUT) -->
-            <section class="contacts main__contacts">
+            <section class="contacts main__contacts --sectionPadding">
                 <div class="my-container contacts__container">
                     <div class="contacts__inner">
                         <div class="contacts__body">
@@ -484,11 +484,15 @@
             <div class="my-container footer__container">
                 <div class="footer__inner">
                     <div class="footer__left">
-                        <a href="../index.html" class="footer__logo-link">
+                        <div class="footer-left__top">
+                        <a href="" class="footer__logo-link">
                             <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
                         </a>
+                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                        </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
+                        <button class="my-button footer__button-reviews --mobile">оставить отзыв</button>
                     </div>
                     <div class="footer__right">
                         <nav class="footer__menu">
@@ -521,11 +525,14 @@
     <script src="../assets/libs/bootstrap/popper.min.js"></script>
     <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
+
 
     <!-- ОБЩИЕ СКРИПТЫ -->
     <script src="../assets/js/phone-mask.js"></script>
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/fancybox-init.js"></script>
+    <script src="./assets//js/sections/contacts.js"></script>
 
 
     

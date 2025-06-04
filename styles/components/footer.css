@@ -12,13 +12,34 @@
 }
 .footer__left {
 }
+.footer-left__top {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 38px;
+}
 .footer__logo-link {
     display: inline-block;
-    margin-bottom: 38px;
     max-height: 49px;
 }
 .footer__logo-img {
     height: 100%;
+}
+.footer__button-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 13px;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #303030;
+    text-transform: uppercase;
+    background-color: #C9DAA4;
+    border-radius: 12px;
+}
+.footer__button-reviews.--mobile {
+    display: none;
 }
 .footer__info-text {
     color: #FFF;
@@ -28,7 +49,7 @@
     line-height: 120%;
 }
 .footer__right {
-    width: 100%;
+    width: 78%;
     align-self: flex-end;
 }
 .footer__menu {
@@ -58,6 +79,12 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .footer-left__top {
+        gap: 30px;
+    }
+}
+
 @media (max-width: 1281px) {
     .footer {
         padding: 32px 0px 60px 0px;
@@ -66,6 +93,9 @@
 @media (max-width: 1101px) {
     .footer {
         padding: 45px 0px 47px 0px;
+    }
+    .footer-left__top {
+        gap: 40px;
     }
     .footer__menu {
         justify-content: flex-end;
@@ -104,7 +134,7 @@
     .footer__menu {
         justify-content: flex-end;
     }
-    .footer__logo-link {
+    .footer-left__top {
         margin-bottom: 31px;
     }
     .footer__menu-list {
@@ -139,11 +169,21 @@
         flex-direction: column;
         gap: 27px;
     }
+    .footer__right {
+        width: 100%;
+    }
     .footer__menu {
         justify-content: flex-start;
     }
-    .footer__logo-link {
+    .footer-left__top {
         margin-bottom: 27px;
+    }
+    .footer__button-reviews {
+        display: none;
+    }
+    .footer__button-reviews.--mobile {
+        margin-top: 27px;
+        display: flex;
     }
     .footer__menu-list {
         flex-direction: column;
@@ -154,8 +194,11 @@
     .footer__inner {
         gap: 24px;
     }
-    .footer__logo-link {
-        margin-bottom: 24px;
+    .footer-left__top {
+        margin-bottom: 24x;
+    }
+    .footer__button-reviews.--mobile {
+        margin-top: 24px;
     }
     .footer__menu-list {
         flex-direction: column;

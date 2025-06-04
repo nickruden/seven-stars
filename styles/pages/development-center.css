@@ -77,7 +77,7 @@
     }
     
     .center-advantages__links {
-        padding: 0px 30px 0px 30px;
+        padding: 0px 30px 60px 30px;
     }
 
     .center-advantages__link {
@@ -89,6 +89,7 @@
 
 @media (max-width: 651px) {
     .center-advantages__links {
+        padding: 0px 30px 80px 30px;
         gap: 15px;
     }
 }
@@ -101,6 +102,9 @@
     }
 }
 @media (max-width: 431px) {
+    .center-advantages__links {
+        padding: 0px 30px 90px 30px;
+    }
     .center-advantages__link {
         padding: 12px 19px;
     }

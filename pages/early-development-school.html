@@ -267,7 +267,7 @@
                 </div>
             </div>
 
-            <section class="why-need-school main__why-need-school">
+            <section class="why-need-school main__why-need-school --sectionPadding-underStories">
                 <div class="my-container why-need-school__container">
                     <h2 class="block-title why-need-school__title">Зачем ребенку нужна <br> школа раннего развития?</h2>
                     <div class="why-need-school__info-cards">
@@ -326,7 +326,7 @@
                     </div>
                 </div>
             </section>
-            <div class="advantage-item main__advantage-item --no-button --nowrap-slider"
+            <div class="advantage-item main__advantage-item --sectionPadding --no-button --nowrap-slider"
                 data-advantageBlock-id="department-for-little">
                 <div class="my-container advantage-item__container">
                     <div class="advantage-item__desc">
@@ -439,7 +439,7 @@
                 </div>
             </div>
 
-            <section class="child-age main__reviews">
+            <section class="child-age main__reviews --sectionPadding">
                 <div class="my-container child-age__container">
                     <h2 class="block-title child-age__title">От 3 до 5 лет</h2>
                     <div class="child-age__content">
@@ -549,7 +549,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="why-choose-us main__why-choose-us">
+            <section class="why-choose-us main__why-choose-us --sectionPadding">
                 <div class="my-container why-choose-us__container">
                     <h2 class="block-title why-choose-us__title">за что нас выбирают</h2>
                     <div class="accordion why-choose-us__accordion" id="accordionExample">
@@ -703,7 +703,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ). ГЛАВНОЕ ЧТОБ data АТРИБУТ БЫЛ УНИКАЛЬНЫМ ДЛЯ РАЗНЫХ ТАКИХ БЛОКОВ И ССЫЛКИ НА КАРТИНКИ СЛАЙДОВ -->
-            <section class="staff main__staff" data-staff-type="teachers">
+            <section class="staff main__staff --sectionPadding" data-staff-type="teachers">
                 <div class="my-container staff__container">
                     <h2 class="block-title staff__title">наши педагоги</h2>
                     <div class="staff__slider">
@@ -821,7 +821,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="reviews main__reviews">
+            <section class="reviews main__reviews --sectionPadding">
                 <div class="my-container reviews__container">
                     <h2 class="block-title reviews__title">отзывы</h2>
                     <div class="reviews__content">
@@ -939,7 +939,7 @@
             </section>
 
             <!-- ЕСЛИ feedback-block НАХОДИТЬСЯ ВНЕ КАКОЙ-ЛИБО СЕКЦИИ, ТО НАДО ЕГО ОБЕРНУТЬ ВНУТРЬ БЛОКА feedback, ЕСЛИ ОН ЧАСТЬ СЕКЦИИ (КАК НА ГЛАВНОЙ), ТАМ СВОЯ УНИКАЛЬНАЯ ОБЁРТКА -->
-            <section class="feedback main__feedback">
+            <section class="feedback main__feedback --sectionPadding">
                 <div class="my-container feedback__container">
                     <article class="feedback-block">
                         <div class="my-container feedback-block__container">
@@ -980,7 +980,7 @@
 
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (МОЖНО ВНЕСТИ БЛОК В LAYOUT) -->
-            <section class="contacts main__contacts">
+            <section class="contacts main__contacts --sectionPadding">
                 <div class="my-container contacts__container">
                     <div class="contacts__inner">
                         <div class="contacts__body">
@@ -1034,11 +1034,15 @@
             <div class="my-container footer__container">
                 <div class="footer__inner">
                     <div class="footer__left">
-                        <a href="../index.html" class="footer__logo-link">
+                        <div class="footer-left__top">
+                        <a href="" class="footer__logo-link">
                             <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
                         </a>
+                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                        </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
+                        <button class="my-button footer__button-reviews --mobile">оставить отзыв</button>
                     </div>
                     <div class="footer__right">
                         <nav class="footer__menu">
@@ -1072,6 +1076,8 @@
     <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
     <script src="../assets/libs/stories/zuck.js"></script>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
+
 
     <!-- ОБЩИЕ СКРИПТЫ -->
     <script src="../assets/js/phone-mask.js"></script>
@@ -1083,6 +1089,7 @@
 
     <script src="../assets/js/sections/staff.js"></script>
     <script src="../assets/js/sections/reviews.js"></script>
+    <script src="./assets//js/sections/contacts.js"></script>
 
 
     

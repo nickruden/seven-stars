@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/libs/fancybox/fancybox.css">
     <link rel="stylesheet" href="./assets/libs/tippy/scale.css">
+    <link rel="stylesheet" href="./assets/libs/stories/zuck.css">
+    <link rel="stylesheet" href="./assets/libs/stories/snapgram.css">
 
 
     <!-- СТИЛИ ОБЩИХ ЭЛЕМЕНТОВ -->
@@ -27,6 +29,7 @@
     <link rel="stylesheet" href="./styles/components/footer.css">
     <link rel="stylesheet" href="./styles/components/feedback-block.css">
     <link rel="stylesheet" href="./styles/components/double-slider.css">
+    <link rel="stylesheet" href="./styles/components/stories.css">
 
     <link rel="stylesheet" href="./styles/components/sections/branches-section.css">
     <link rel="stylesheet" href="./styles/components/sections/why-choose-us.css">
@@ -34,6 +37,7 @@
     <link rel="stylesheet" href="./styles/components/sections/reviews.css">
     <link rel="stylesheet" href="./styles/components/sections/contacts-section.css">
     <link rel="stylesheet" href="./styles/components/button-up.css">
+    <link rel="stylesheet" href="./styles/components/sections/inspiration-section.css">
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
@@ -167,7 +171,7 @@
                                             филиалы</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href="#inspiration"
+                                        <a href="#inspiration-section"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Реджио</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
@@ -216,7 +220,7 @@
 
 
         <main class="main">
-            <!-- ОФОРМЛЕНИЕ ВЫНЕС ОТДЕЛЬНО, НО ДЛЯ ГЛАВНОЙ СТИЛИ ОТСЛИЧАЮТСЯ, ВАЖНО СОХРАНИТЬ СТИЛИ ДЛЯ ЭТОГО БЛОКА НА ГЛАВНОЙ
+            <!-- ОФОРМЛЕНИЕ ВЫНЕС ОТДЕЛЬНО, НО ДЛЯ ГЛАВНОЙ СТИЛИ ОТСЛИЧАЮТСЯ, ВАЖНО СОХРАНИТЬ СТИЛИ ДЛЯ ЭТОГО БЛОКА ОТДЕЛЬНО
              И НЕ ПОДКЛЮЧАТЬ ЖЕЛАТЕЛЬНО СЮДА ./styles/components/sections/hero-section.css (подключать его опционально на внутренние страницы) -->
             <section class="hero-section main__hero-section">
                 <div class="my-container hero-section__container">
@@ -266,7 +270,18 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="branches main__branches">
+            <div class="my-stories main__my-stories">
+                <div class="my-container my-stories__container">
+                    <div class="my-stories__inner">
+                        <div class="swiper my-stories__swiper">
+                            <div id="stories" class="swiper-wrapper my-stories__swiper-wrapper"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
+            <section class="branches main__branches --sectionPadding-underStories">
                 <div class="my-container branches__container">
                     <h2 class="block-title branches__title">Наши филиалы</h2>
                     <div class="branches__body">
@@ -543,24 +558,25 @@
                 <img src="./assets/images/pages/main/background/cones-2.png" alt="" class="branches__background-img">
             </section>
 
-            <section class="inspiration main__inspiration" id="inspiration">
-                <div class="my-container inspiration__container">
-                    <div class="inspiration__inner">
-                        <div class="inspiration__desc">
-                            <h2 class="block-title inspiration__title">Мы <br> вдохновляемся <br> реджио</h2>
-                            <div class="inspiration__desc-text">
-                                <span class="inspiration__text">У нас нет случайных людей в коллективе. Наши педагоги
+            <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО -->
+            <section class="inspiration-section main__inspiration-section --sectionPadding" id="inspiration-section">
+                <div class="my-container inspiration-section__container">
+                    <div class="inspiration-section__inner">
+                        <div class="inspiration-section__desc">
+                            <h2 class="block-title inspiration-section__title">Мы <br> вдохновляемся <br> реджио</h2>
+                            <div class="inspiration-section__desc-text">
+                                <span class="inspiration-section__text">У нас нет случайных людей в коллективе. Наши педагоги
                                     вкладывают всю свою
                                     искреннюю любовь и уважение в каждую минуту жизни детей: от исследования окружающего
                                     мира до
                                     создания интересных крупных проектов.</span>
                             </div>
                         </div>
-                        <div class="inspiration__slider">
-                            <div class="inspiration__swiper-controls">
-                                <div class="swiper-pagination inspiration__swiper-pagination"></div>
-                                <div class="swiper-navigation inspiration__swiper-navigation">
-                                    <div class="swiper-button-prev inspiration__swiper-button-prev">
+                        <div class="inspiration-section__slider">
+                            <div class="inspiration-section__swiper-controls">
+                                <div class="swiper-pagination inspiration-section__swiper-pagination"></div>
+                                <div class="swiper-navigation inspiration-section__swiper-navigation">
+                                    <div class="swiper-button-prev inspiration-section__swiper-button-prev">
                                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_92_1209)">
@@ -577,7 +593,7 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="swiper-button-next inspiration__swiper-button-next">
+                                    <div class="swiper-button-next inspiration-section__swiper-button-next">
                                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_2050_215)">
@@ -596,181 +612,181 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper inspiration__swiper">
-                                <div class="swiper-wrapper inspiration__swiper-wrapper">
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">01</div>
-                                            <div class="inspiration__slide-text">Видим в каждом ребёнке личность</div>
+                            <div class="swiper inspiration-section__swiper">
+                                <div class="swiper-wrapper inspiration-section__swiper-wrapper">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">01</div>
+                                            <div class="inspiration-section__slide-text">Видим в каждом ребёнке личность</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-1.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Видим в каждом ребёнке личность
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">02</div>
-                                            <div class="inspiration__slide-text">Не даем готовых ответов, но исследуем
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">02</div>
+                                            <div class="inspiration-section__slide-text">Не даем готовых ответов, но исследуем
                                                 любой вопрос вместе </div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-2.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-2.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Не даем готовых ответов, но исследуем любой вопрос вместе
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">03</div>
-                                            <div class="inspiration__slide-text">Слушаем и слышим детей</div>
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">03</div>
+                                            <div class="inspiration-section__slide-text">Слушаем и слышим детей</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-3.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-3.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Слушаем и слышим детей
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">04</div>
-                                            <div class="inspiration__slide-text">Учим работать в команде</div>
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">04</div>
+                                            <div class="inspiration-section__slide-text">Учим работать в команде</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-4.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-4.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Учим работать в команде
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">05</div>
-                                            <div class="inspiration__slide-text">Предлагаем детям разные пути для
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">05</div>
+                                            <div class="inspiration-section__slide-text">Предлагаем детям разные пути для
                                                 самовыражения</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-5.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-5.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Предлагаем детям разные пути для самовыражения
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">06</div>
-                                            <div class="inspiration__slide-text">Помогаем ребенку раскрыть свой
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">06</div>
+                                            <div class="inspiration-section__slide-text">Помогаем ребенку раскрыть свой
                                                 потенциал в проектной работе</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-6.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-6.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Помогаем ребенку раскрыть свой потенциал в проектной работе
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">07</div>
-                                            <div class="inspiration__slide-text">Учимся рассуждать в моменте, всегда и
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">07</div>
+                                            <div class="inspiration-section__slide-text">Учимся рассуждать в моменте, всегда и
                                                 везде</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-7.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-7.png" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Учимся рассуждать в моменте, всегда и везде
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">08</div>
-                                            <div class="inspiration__slide-text">Говоря о правилах, объясняем, откуда
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">08</div>
+                                            <div class="inspiration-section__slide-text">Говоря о правилах, объясняем, откуда
                                                 они берутся</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-8.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-8.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Говоря о правилах, объясняем, откуда они берутся
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide --textImage_visible">
-                                            <div class="inspiration__slide-number">09</div>
-                                            <div class="inspiration__slide-text">Способствуем пробуждению интереса и
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide --textImage_visible">
+                                            <div class="inspiration-section__slide-number">09</div>
+                                            <div class="inspiration-section__slide-text">Способствуем пробуждению интереса и
                                                 мотивации к знаниям</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-9.png"
-                                                alt="" class="inspiration__slide-text-img">
+                                                alt="" class="inspiration-section__slide-text-img">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide inspiration__swiper-slide">
-                                        <div class="inspiration__slide-image">
-                                            <div class="inspiration__slide-image-wrap">
+                                    <div class="swiper-slide inspiration-section__swiper-slide">
+                                        <div class="inspiration-section__slide-image">
+                                            <div class="inspiration-section__slide-image-wrap">
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-9.jpg" alt=""
-                                                    class="inspiration__slide-image-photo">
+                                                    class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text">
                                                 Способствуем пробуждению интереса и мотивации к знаниям
                                             </div>
                                         </div>
@@ -781,7 +797,8 @@
                     </div>
                 </div>
             </section>
-            <section class="project-activity main__project-activity">
+
+            <section class="project-activity main__project-activity --sectionPadding">
                 <div class="my-container project-activity__container">
                     <div class="avantage-descripion project-activity__description">
                         <h2 class="block-title avantage-descripion__title">занимаемся проектной деятельностью</h2>
@@ -1000,7 +1017,7 @@
                 <img src="./assets/images/pages/main/background/cones-9.png" alt=""
                     class="project-activity__background-img">
             </section>
-            <section class="modern-tools main__modern-tools">
+            <section class="modern-tools main__modern-tools --sectionPadding">
                 <div class="my-container modern-tools__container">
                     <div class="avantage-descripion modern-tools__description">
                         <h2 class="block-title avantage-descripion__title">изучаем мир <br> при помощи современных
@@ -1132,7 +1149,7 @@
                 <img src="./assets/images/pages/main/background/cones-6.png" alt=""
                     class="modern-tools__background-img">
             </section>
-            <section class="preparing-child main__project-activity">
+            <section class="preparing-child main__project-activity --sectionPadding">
                 <div class="my-container preparing-child__container">
                     <div class="avantage-descripion preparing-child__description">
                         <h2 class="block-title avantage-descripion__title">Готовим ребенка к&nbsp;школе</h2>
@@ -1229,7 +1246,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="why-choose-us main__why-choose-us">
+            <section class="why-choose-us main__why-choose-us --sectionPadding">
                 <div class="my-container why-choose-us__container">
                     <h2 class="block-title why-choose-us__title">за что нас выбирают</h2>
                     <div class="accordion why-choose-us__accordion" id="accordionExample">
@@ -1423,7 +1440,7 @@
             
             <div class="lifestyle main__lifestyle">
                 <div class="lifestyle__items">
-                    <div class="lifestyle__block-nutrition lifestyle-item">
+                    <div class="lifestyle__block-nutrition lifestyle-item --sectionPadding">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
                                 <div class="lifestyle-item__footnote-mobile">сертифицировано по СанПину</div>
@@ -1531,7 +1548,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lifestyle__block-walk lifestyle-item">
+                    <div class="lifestyle__block-walk lifestyle-item --sectionPadding">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
                                 <div class="lifestyle-item__footnote-mobile">удивляться всему, подмечать
@@ -1646,7 +1663,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lifestyle__block-health lifestyle-item">
+                    <div class="lifestyle__block-health lifestyle-item --sectionPadding">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
                                 <div class="lifestyle-item__footnote-mobile">осмотр педиатром</div>
@@ -1762,7 +1779,7 @@
             </div>
 
             <!-- ВНУТРИ ЕСТЬ dobule-slider ВЫНЕС ЛОГИКУ ДВОЙНОГО СЛАЙДЕРА И СТИЛИ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="dev-environment main__dev-environment">
+            <section class="dev-environment main__dev-environment --sectionPadding">
                 <div class="my-container dev-environment__container">
                     <h2 class="block-title dev-environment__title">развивающая среда</h2>
 
@@ -2026,7 +2043,7 @@
                     class="dev-environment__background-img">
             </section>
 
-            <section class="development main__development">
+            <section class="development main__development --sectionPadding">
                 <div class="my-container development__container">
                     <div class="avantage-descripion development__description">
                         <h2 class="block-title avantage-descripion__title">всестороннее развитие</h2>
@@ -2197,7 +2214,7 @@
                 </div>
                 <img src="./assets/images/pages/main/background/cones-6.png" alt="" class="development__background-img">
             </section>
-            <section class="holidays main__holidays">
+            <section class="holidays main__holidays --sectionPadding">
                 <div class="my-container holidays__container">
                     <div class="holidays__description">
                         <h2 class="block-title holidays__title">яркие <br> праздники</h2>
@@ -2281,7 +2298,7 @@
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ). ГЛАВНОЕ ЧТОБ data АТРИБУТ БЫЛ УНИКАЛЬНЫМ ДЛЯ РАЗНЫХ ТАКИХ БЛОКОВ И ССЫЛКИ НА КАРТИНКИ СЛАЙДОВ -->
             <!-- ЕСЛИ ПРИДУЕМАЕТЕ БОЛЕЕ ЛОГИЧНОЕ НАЗВАНИЕ (ТАКОЙ БЛОК НЕ ТОЛЬКО ДЛЯ СОТРУНИКОВ ЕСТЬ) ЗАМЕНИТЬ НЕ ПРОБЛЕМА -->
-            <section class="staff main__staff" data-staff-type="teachers">
+            <section class="staff main__staff --sectionPadding" data-staff-type="teachers">
                 <div class="my-container staff__container">
                     <h2 class="block-title staff__title">наши педагоги</h2>
                     <div class="staff__slider">
@@ -2399,7 +2416,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="reviews main__reviews">
+            <section class="reviews main__reviews --sectionPadding">
                 <div class="my-container reviews__container">
                     <h2 class="block-title reviews__title">отзывы</h2>
                     <div class="reviews__content">
@@ -2553,7 +2570,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (МОЖНО ВНЕСТИ БЛОК В LAYOUT) -->
-            <section class="contacts main__contacts">
+            <section class="contacts main__contacts --sectionPadding">
                 <div class="my-container contacts__container">
                     <div class="contacts__inner">
                         <div class="contacts__body">
@@ -2594,9 +2611,9 @@
                                 вопрос</button>
                         </div>
                         <div class="contacts__map-wrap">
-                            <iframe
+                            <!-- <iframe
                                 src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa492017f50e8e42aaae25d9b0ac6e2d6bf8701ce1c04ebd58da068a3b99b603a&amp;source=constructor"
-                                width="500" height="400" frameborder="0"></iframe>
+                                width="500" height="400" frameborder="0"></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -2609,11 +2626,15 @@
             <div class="my-container footer__container">
                 <div class="footer__inner">
                     <div class="footer__left">
+                        <div class="footer-left__top">
                         <a href="" class="footer__logo-link">
                             <img src="./assets/images/logo-white.svg" alt="" class="footer__logo-img">
                         </a>
+                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                        </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
+                        <button class="my-button footer__button-reviews --mobile">оставить отзыв</button>
                     </div>
                     <div class="footer__right">
                         <nav class="footer__menu">
@@ -2645,6 +2666,9 @@
     <script src="./assets/libs/fancybox/fancybox.umd.js"></script>
     <script src="./assets/libs/tippy/popper.min.js"></script>
     <script src="./assets/libs/tippy/tippy-bundle.umd.js"></script>
+    <script src="./assets/libs/stories/zuck.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
 
 
     <!-- ОБЩИЕ СКРИПТЫ -->
@@ -2656,7 +2680,10 @@
 
     <script src="./assets/js/sections/staff.js"></script>
     <script src="./assets/js/sections/reviews.js"></script>
+    <script src="./assets//js/sections/contacts.js"></script>
 
+    <script src="./assets/js/components/stories.js"></script>
+    
 
     <!-- СКИПТ ОТКРЫТИЯ ТУЛТИПА -->
     <script>
@@ -2706,7 +2733,8 @@
             });
         });
     </script>
-
+    
+    <!-- СКРИПТ БЛОКА РАЗВИВАЮЩАЯ СРЕДА -->
     <script>
         const buttons = document.querySelectorAll('.development__button');
 
@@ -2748,7 +2776,30 @@
 
         // Инициализация активной кнопки при загрузке страницы
         updateActiveButton(developmentSwiper.realIndex);
+    </script>
 
+    <!-- СКРИПТ РАСКРЫТИЯ БЛОКА С ТЕКТОМ  -->
+    <script>
+        const accordionButtons = document.querySelectorAll('.avantage-descripion__accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const contentId = button.id;
+                const accordionContentHidden = document.getElementById(contentId);
+                const accordionButtonText = button.querySelector('.avantage-descripion__accordion-button-text');
+
+                if (accordionContentHidden.classList.contains('open')) {
+                    accordionContentHidden.style.maxHeight = '0';
+                    accordionButtonText.textContent = 'больше';
+                } else {
+                    accordionContentHidden.style.maxHeight = accordionContentHidden.scrollHeight + 'px';
+                    accordionButtonText.textContent = 'меньше';
+                }
+                accordionContentHidden.classList.toggle('open');
+            });
+        });
+    </script>
+    
+    <script>
         const holidaysSwiper = new Swiper('.holidays__swiper', {
             direction: 'horizontal',
             slidesPerView: 1.15,
@@ -2776,20 +2827,20 @@
             }
         });
 
-        const inspirationSwiper = new Swiper('.inspiration__swiper', {
+        const inspirationSectionSwiper = new Swiper('.inspiration-section__swiper', {
             direction: 'horizontal',
             slidesPerView: 1,
             spaceBetween: 24,
             pagination: {
-                el: '.inspiration__swiper-pagination',
+                el: '.inspiration-section__swiper-pagination',
                 type: 'custom',
                 renderCustom: function (swiper, current, total) {
                     return `${String(current).padStart(2, '0')}`;
                 },
             },
             navigation: {
-                nextEl: '.inspiration__swiper-button-next',
-                prevEl: '.inspiration__swiper-button-prev',
+                nextEl: '.inspiration-section__swiper-button-next',
+                prevEl: '.inspiration-section__swiper-button-prev',
             },
             breakpoints: {
                 768: {
@@ -2925,28 +2976,6 @@
         });
     </script>
 
-    <!-- СКРИПТ РАСКРЫТИЯ БЛОКА С ТЕКТОМ (ТАКИХ БЛОКОВ НЕТ НИГДЕ БОЛЬШЕ КРОМЕ ГЛАВНОЙ, ПОЭТОМУ НЕ ДЕЛАЮ ИЗ ЭТОГО МОДУЛЬ) -->
-    <script>
-        const accordionButtons = document.querySelectorAll('.avantage-descripion__accordion-button');
-        accordionButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const contentId = button.id;
-                const accordionContentHidden = document.getElementById(contentId);
-                const accordionButtonText = button.querySelector('.avantage-descripion__accordion-button-text');
-
-                if (accordionContentHidden.classList.contains('open')) {
-                    accordionContentHidden.style.maxHeight = '0';
-                    accordionButtonText.textContent = 'больше';
-                } else {
-                    accordionContentHidden.style.maxHeight = accordionContentHidden.scrollHeight + 'px';
-                    accordionButtonText.textContent = 'меньше';
-                }
-                accordionContentHidden.classList.toggle('open');
-            });
-        });
-    </script>
-
-    <!-- СКРИПТ БЛОКА РАЗВИВАЮЩАЯ СРЕДА (ВЫНЕСТИ ЛОГИКУ double-slider ОТДЕЛЬНО И ОТДЕЛИТЬ ЛОГИКУ ПОСТРОЕНИЯ КОНТЕНТА СЛАЙДЕРОВ ПОД ВЫСОТУ, ДОБАВИТЬ В ЭТОТ СКРИПТ ВЫСОТЫ ПРОСТО НАХОЖДЕНИЕ ОПРЕДЕЛЁННЫХ СЛАЙДЕРОВ ВСЕХ И ПРИМЕНЯТЬ К НИМ ЭТОТ СКРИПТ ВЫСОТЫ) -->
     <script>
         const devEnvTextSlider = document.querySelector('.double-slider__text-slider');
         const devEnvironmenTextSwiper = new Swiper('.double-slider__text-swiper', {
