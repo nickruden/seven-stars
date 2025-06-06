@@ -15,7 +15,7 @@
 }
 .contacts__body {
     margin-right: 39px;
-    max-width: 533px;
+    max-width: 570px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@
     margin-bottom: 16px;
 }
 .contacts__button {
-    max-width: 511px;
+    max-width: 570px;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;

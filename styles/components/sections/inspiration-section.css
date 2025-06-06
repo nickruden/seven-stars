@@ -34,14 +34,19 @@
 }
 .inspiration-section__title {
     margin-bottom: 0px;
-    margin-right: 99px;
+    margin-right: 60px;
     max-width: 570px;
+    width: 100%;
 }
 .inspiration-section__left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-end;
+}
+.--withButton .inspiration-section__left-content {
     justify-content: space-between;
+    max-width: 570px;
 }
 .inspiration-section__desc-text {
     display: flex;
@@ -146,7 +151,7 @@
     align-items: flex-end;
     gap: 16px;
     position: absolute;
-    top: -109px;
+    top: -100px;
 }
 .inspiration-section__swiper-button-prev {
     position: static;
@@ -187,7 +192,7 @@
 }
 @media (max-width: 1281px) {
     .inspiration-section__title {
-        margin-right: 60px;
+        max-width: 500px;
     }
     .--bgColor-green .inspiration-section__desc-text {
         margin-bottom: 40px;
@@ -203,9 +208,22 @@
         font-size: 18px;
     }
 }
+@media (max-width: 1090px) {
+    .inspiration-section__title {
+        max-width: 418px;
+    }
+}
 @media (max-width: 992px) {
+    .inspiration-section__desc {
+        flex-direction: column;
+        margin-bottom: 50px;
+        gap: 50px;
+    }
     .inspiration-section__title {
         margin-right: 40px;
+    }
+    .inspiration-section__text {
+        max-width: 530px;
     }
     .--bgColor-green .inspiration-section__desc-text {
         margin-bottom: 30px;
@@ -215,11 +233,6 @@
     }
 }
 @media (max-width: 902px) {
-    .inspiration-section__desc {
-        flex-direction: column;
-        margin-bottom: 50px;
-        gap: 50px;
-    }
     .inspiration-section__title {
         margin-right: 0px;
     }

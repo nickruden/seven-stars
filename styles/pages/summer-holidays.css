@@ -1,113 +1,29 @@
-@media (max-width: 431px) {
-    .hero-section__link > br {
-        display: block;
-    }
+.schedule {
 }
-
-/* ШАБЛОН ДЛЯ БЛОКОВ ПРЕИМУЩЕСТВ (РАЗВИВАЮЩИЕ ЗАНЯТИЯ, ЖИВОПИСЬ, ЛЕТНИЕ КАНИКУЛЫ) */
-.center-advantages {
+.schedule__slider {
 }
-.main__center-advantages {
+.schedule__swiper {
 }
-.center-advantages__container {
-    padding: 0px;
-    padding-top: 80px;
-    background-color: #FFF;
-    max-width: 1360px;
+.schedule__swiper-wrapper {
 }
-.center-advantages__links {
-    padding: 0px 40px 40px 40px;
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+.schedule__swiper-slide {
 }
-.center-advantages__link {
-    display: inline-block;
+.schedule__slide {
+}
+.schedule__slide-img-wrap {
+    position: relative;
+}
+.schedule__date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
     color: #303030;
-    border-color: #BACC92;
-}
-.center-advantages__link:hover, .center-advantages__link.active {
-    border-color: #4E6932!important;
-    color: #FFF!important;
-    background-color: #4E6932!important;
-}
-.center-advantages__advantage-blocks {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 1361px) {
-    .center-advantages {
-        padding-top: 80px;
-    }
-    .center-advantages__container {
-        padding-top: 0px;
-    }
-}
-@media (max-width: 1281px) {
-    .center-advantages {
-        padding-top: 70px;
-    }
-    
-    .center-advantages__links {
-        padding: 0px 40px 40px 40px;
-        gap: 15px;
-    }
-
-    .center-advantages__link {
-        font-size: 14px;
-        line-height: 130%;
-        padding: 15px 22px;
-    }
-}
-@media (max-width: 992px) {
-    .center-advantages {
-        padding-top: 65px;
-    }
-    
-    .center-advantages__links {
-        padding: 0px 40px 40px 40px;
-        gap: 16px;
-    }
-}
-
-@media (max-width: 769px) {
-    .center-advantages {
-        padding-top: 60px;
-    }
-    
-    .center-advantages__links {
-        padding: 0px 30px 60px 30px;
-    }
-
-    .center-advantages__link {
-        font-size: 14px;
-        line-height: 130%;
-        padding: 15px 22px;
-    }
-}
-
-@media (max-width: 651px) {
-    .center-advantages__links {
-        padding: 0px 30px 80px 30px;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 551px) {
-    .center-advantages__link {
-        font-size: 12px;
-        line-height: 100%;
-        padding: 14px 19px;
-    }
-}
-@media (max-width: 431px) {
-    .center-advantages__links {
-        padding: 0px 30px 90px 30px;
-    }
-    .center-advantages__link {
-        padding: 12px 19px;
-    }
 }
 
 
@@ -216,7 +132,6 @@
     }
     .advantage-item__desc-text {
         font-size: 15px;
-        padding-right: 50px;
     }
     .advantage-item__desc-text:not(:last-child) {
         margin-bottom: 20px;
@@ -253,6 +168,7 @@
     }
     .advantage-item__desc-text {
         font-size: 16px;
+        padding-right: 0px;
     }
     .advantage-item__desc-button {
         max-width: 400px;

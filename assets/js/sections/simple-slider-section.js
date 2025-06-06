@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     function staffSwiperInit(id) {
+        const isWrap = document.querySelector(`.simple-slider-section.--desktopMode-wrap[data-simpleSlider-id="${id}"]`) !== null;
+
         const staffSwiper = new Swiper(`[data-simpleSlider-id=${id}] .simple-slider-section__swiper`, {
             direction: 'horizontal',
             slidesPerView: 1,
@@ -22,12 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
             breakpoints: {
                 551: {
                     slidesPerView: 2,
+                    spaceBetween: 24,
+                    simulateTouch: true,
+                    allowTouchMove: true,
                 },
                 769: {
                     slidesPerView: 3,
+                    spaceBetween: 24,
+                    simulateTouch: true,
+                    allowTouchMove: true,
                 },
                 991: {
                     slidesPerView: 4,
+                    spaceBetween: isWrap ? 0 : 24,
+                    simulateTouch: isWrap ? false : true,
+                    allowTouchMove: isWrap ? false : true,
                 }
             }
         });

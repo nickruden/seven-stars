@@ -1,0 +1,148 @@
+.my-overlay.active {
+    display: block;
+    z-index: 1000;
+}
+
+/* Основной контейнер для скролла */
+.my-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1005;
+    display: none;
+    overflow-y: auto;
+    padding: 6% 0;
+}
+
+.my-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Контейнер с контентом */
+.my-modal__container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+@media (max-height: 700px) {
+    .my-modal.active {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+}
+
+.my-modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4E6932;
+}
+
+.my-modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.my-modal__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.my-modal__title {
+    font-size: 24px;
+    line-height: 130%;
+    color: #303030;
+}
+
+.my-modal__subtitle {
+    font-size: 16px;
+    line-height: 130%;
+    color: #303030;
+    max-width: 530px;
+}
+
+.my-modal__form {
+    padding: 0px !important;
+}
+
+@media (max-width: 1341px) {}
+
+@media (max-width: 1281px) {}
+
+@media (max-width: 992px) {
+    .my-modal__container {
+        padding: 36px;
+    }
+
+    .my-modal__close {
+        top: 18px;
+        right: 18px;
+    }
+
+    .my-modal__content {
+        gap: 22px;
+    }
+
+    .my-modal__texts {
+        gap: 35px;
+    }
+
+    .my-modal__title {
+        font-size: 22px;
+    }
+
+    .my-modal__subtitle {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 769px) {}
+
+@media (max-width: 651px) {
+    .my-modal__container {
+        padding: 30px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .my-modal__close {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 551px) {
+    .my-modal__content {
+        gap: 20px;
+    }
+
+    .my-modal__texts {
+        gap: 30px;
+    }
+
+    .my-modal__title {
+        font-size: 20px;
+    }
+
+    .my-modal__subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 431px) {}

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./styles/components/feedback-block.css">
     <link rel="stylesheet" href="./styles/components/double-slider.css">
     <link rel="stylesheet" href="./styles/components/stories.css">
+    <link rel="stylesheet" href="./styles/components/modal.css">
 
     <link rel="stylesheet" href="./styles/components/sections/branches-section.css">
     <link rel="stylesheet" href="./styles/components/sections/why-choose-us.css">
@@ -55,19 +56,68 @@
                                 class="header__logo-img"></a>
                         <div class="pre-mobile-menu header__pre-mobile-menu">
                             <div class="dropdown pre-mobile-menu__dropdown">
-                                <button class="burger-button" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false" data-bs-target="#header-pre-mobile">
+                                <button class="burger-button dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </button>
+
                                 <ul class="dropdown-menu pre-mobile-menu__dropdown-menu" id="header-pre-mobile">
                                     <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
-                                            href="./pages/about.html">О нас</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Детские
-                                            сады</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./pages/development-center.html">Центр
-                                            развития</a></li>
+                                            href="./pages/about.html">О нас</a>
+                                    </li>
+
+                                    <!-- Детские сады -->
+                                    <li class="dropend">
+                                        <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
+                                            data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            Детские сады
+                                        </a>
+                                        <ul class="dropdown-menu header__dropdown-menu">
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/kindergarten-page.html">ул.
+                                                    Каландаришвили, 7</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/kindergarten-page.html">ул. Александра
+                                                    Невского, 60</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/kindergarten-page.html">ул. Березовая,
+                                                    8</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/kindergarten-page.html">ул. Декабрьских
+                                                    событий, 102</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/kindergarten-page.html">ул. Алмазная,
+                                                    5</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/kindergarten-page.html">Центр
+                                                    развития</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Центр развития -->
+                                    <li class="dropend">
+                                        <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
+                                            data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            Центр развития
+                                        </a>
+                                        <ul class="dropdown-menu header__dropdown-menu">
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/development-center.html">О Центре развития</a>
+                                            </li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/early-development-school.html">Развивающие занятия</a>
+                                            </li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/painting-education.html">Живопись</a>
+                                            </li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./pages/summer-holidays.html">Летние
+                                                    каникулы</a></li>
+                                        </ul>
+                                    </li>
+
                                     <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
                                             href="./pages/news.html">Новости</a>
                                     </li>
@@ -82,23 +132,58 @@
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li class="header__menu-item"><a href="./pages/about.html" class="header__menu-link">О
-                                    нас</a></li>
-                            <li class="header__menu-item"><a href="" class="header__menu-link">Детские сады</a></li>
-                            <li class="header__menu-item"><a href="./pages/development-center.html" class="header__menu-link">Центр развития</a></li>
+                                    нас</a>
+                            </li>
+                            <li class="header__menu-item dropdown header__dropdown">
+                                <a href="#" class="header__menu-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Детские сады</a>
+                                <ul class="dropdown-menu header__dropdown-menu">
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/kindergarten-page.html">ул. Каландаришвили, 7</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/kindergarten-page.html">ул. Александра Невского, 60</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/kindergarten-page.html">ул. Березовая, 8 (Солнечный)</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/kindergarten-page.html">ул. Декабрьских событий, 102</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/kindergarten-page.html">ул. Алмазная, 5 (Первомайский)</a>
+                                    </li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/kindergarten-page.html">Центр развития</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item dropdown header__dropdown">
+                                <a href="#" class="header__menu-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Центр
+                                    развития</a>
+                                <ul class="dropdown-menu header__dropdown-menu">
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/development-center.html">О Центре развития</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/early-development-school.html">Развивающие занятия</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/painting-education.html">Живопись</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./pages/summer-holidays.html">Летние
+                                            каникулы</a></li>
+                                </ul>
+                            </li>
                             <li class="header__menu-item"><a href="./pages/news.html"
-                                    class="header__menu-link">Новости</a></li>
+                                    class="header__menu-link">Новости</a>
+                            </li>
                             <li class="header__menu-item"><a href="./pages/blog.html" class="header__menu-link">Блог</a>
                             </li>
-                            <li class="header__menu-item"><a href="" class="header__menu-link">Сведения...</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">Сведения...</a></li>
                         </ul>
                     </nav>
                     <div class="header__contacts">
                         <div class="header__smp">
-                            <a href="" class="header__smp-link">
+                            <a href="#" class="header__smp-link">
                                 <img src="./assets/images/social-media-icons/WA.svg" alt="Tg-icon"
                                     class="header__smp-img">
                             </a>
-                            <a href="" class="header__smp-link">
+                            <a href="#" class="header__smp-link">
                                 <img src="./assets/images/social-media-icons/tg.svg" alt="WA-icon"
                                     class="header__smp-img">
                             </a>
@@ -114,7 +199,7 @@
                 </div>
                 <div class="header__mobile">
                     <div class="header__mobile-top">
-                        <a href="" class="header__logo-link"><img src="./assets/images/logo.svg" alt="logo"
+                        <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg" alt="logo"
                                 class="header__logo-img"></a>
                         <div class="header__buttons">
                             <a href="tel:+73952738200"
@@ -134,17 +219,55 @@
                                         <li class="mobile-menu__link-item"><a href="./pages/about.html"
                                                 class="mobile-menu__link">О
                                                 нас</a></li>
-                                        <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">Детские
-                                                сады</a></li>
-                                        <li class="mobile-menu__link-item"><a href="./pages/development-center.html" class="mobile-menu__link">Центр
-                                                развития</a></li>
+                                        <li class="mobile-menu__link-item dropdown header__dropdown">
+                                            <a href="#" class="mobile-menu__link dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Детские сады</a>
+                                            <ul class="dropdown-menu header__dropdown-menu">
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">ул. Каландаришвили, 7</a>
+                                                </li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">ул. Александра Невского,
+                                                        60</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">ул. Березовая, 8
+                                                        (Солнечный)</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">ул. Декабрьских событий,
+                                                        102</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">ул. Алмазная, 5
+                                                        (Первомайский)</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">Центр развития</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile-menu__link-item dropdown header__dropdown">
+                                            <a href="#" class="mobile-menu__link dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Центр
+                                                развития</a>
+                                            <ul class="dropdown-menu header__dropdown-menu">
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/development-center.html">О Центре развития</a>
+                                                </li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/early-development-school.html">Развивающие
+                                                        занятия</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/painting-education.html">Живопись</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/summer-holidays.html">Летние
+                                                        каникулы</a></li>
+                                            </ul>
+                                        </li>
                                         <li class="mobile-menu__link-item"><a href="./pages/news.html"
                                                 class="mobile-menu__link">Новости</a></li>
                                         <li class="mobile-menu__link-item"><a href="./pages/blog.html"
                                                 class="mobile-menu__link">Блог</a>
                                         </li>
-                                        <li class="mobile-menu__link-item"><a href=""
-                                                class="mobile-menu__link">Сведения...</a></li>
+                                        <li class="mobile-menu__link-item"><a href="#"
+                                                class="mobile-menu__link">Сведения...</a>
+                                        </li>
                                     </ul>
                                     <div class="mobile-menu__buttons">
                                         <a href="tel:+73952738200"
@@ -154,8 +277,8 @@
                                             class="my-button my-button_noColor my-button_borderOval header__mobile-button">ЗАПИСАТЬСЯ</button>
                                     </div>
                                     <div class="mobile-menu__contacts">
-                                        <a href="" class="mobile-menu__contact-link">Telegram</a>
-                                        <a href="" class="mobile-menu__contact-link">WhatsApp</a>
+                                        <a href="#" class="mobile-menu__contact-link">Telegram</a>
+                                        <a href="#" class="mobile-menu__contact-link">WhatsApp</a>
                                     </div>
                                 </div>
                             </div>
@@ -166,26 +289,26 @@
                             <div class="swiper header__links-swiper">
                                 <div class="swiper-wrapper header__links-swiper-wrapper">
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
                                             филиалы</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href="#inspiration-section"
+                                        <a href="#inspiration"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Реджио</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Проектная
                                             деятельность</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
                                             филиалы</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
                                             филиалы</a>
                                     </div>
@@ -218,10 +341,40 @@
             </span>
         </a>
 
-
+        <!-- МОДАЛЬНОЕ ОКНО -->
+        <div class="my-modal" id="modal">
+            <div class="my-modal__container">
+                <button class="my-modal__close">&times;</button>
+                <div class="my-modal__content">
+                    <div class="my-modal__texts">
+                        <div class="my-modal__title">Заказать обратный звонок</div>
+                        <p class="my-modal__subtitle">Оставьте свои контактные данные, и&nbsp;мы перезвоним вам в&nbsp;ближайшее
+                            время.</p>
+                    </div>
+        
+                    <form action="" class="feedback-form my-modal__form">
+                        <div class="feedback-form__elements">
+                            <input type="text" name="input-name" id="inputName" class="my-input feedback-form__input"
+                                placeholder="Ваше имя">
+                            <input type="tel" name="input-phone" id="inputPhone" class="my-input feedback-form__input"
+                                placeholder="+7 (999) 999 99 99">
+                            <label for="agreementCheck" class="my-checkbox feedback-form__checkbox">
+                                <input type="checkbox" name="agreement-checkbox" id="agreementCheck" class="my-checkbox__old">
+                                <span class="my-checkbox__new"></span>
+                                <span class="my-checkbox__text">согласие на <a
+                                        href="https://7zvezd-irk.ru/include/licenses_detail.php"
+                                        class="my-checkbox__text-link">обработку персональных данных</a></span>
+                            </label>
+                            <button class="my-button my-button_borderSquare feedback-form__button">ОТПРАВИТЬ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
         <main class="main">
-            <!-- ОФОРМЛЕНИЕ ВЫНЕС ОТДЕЛЬНО, НО ДЛЯ ГЛАВНОЙ СТИЛИ ОТСЛИЧАЮТСЯ, ВАЖНО СОХРАНИТЬ СТИЛИ ДЛЯ ЭТОГО БЛОКА ОТДЕЛЬНО
-             И НЕ ПОДКЛЮЧАТЬ ЖЕЛАТЕЛЬНО СЮДА ./styles/components/sections/hero-section.css (подключать его опционально на внутренние страницы) -->
+            <!-- ОФОРМЛЕНИЕ ВЫНЕС ОТДЕЛЬНО, НО ДЛЯ ГЛАВНОЙ СТИЛИ ОТСЛИЧАЮТСЯ, ВАЖНО СОХРАНИТЬ СТИЛИ ДЛЯ ЭТОГО БЛОКА ОТДЕЛЬНО И НЕ ПОДКЛЮЧАТЬ ЖЕЛАТЕЛЬНО СЮДА ./styles/components/sections/hero-section.css (подключать его опционально на внутренние страницы) -->
             <section class="hero-section main__hero-section">
                 <div class="my-container hero-section__container">
                     <div class="hero-section__body">
@@ -244,8 +397,8 @@
                             <li class="hero-section__list-item">Реджио-подход</li>
                         </ul>
                         <div class="hero-section__links">
-                            <a href="" class="hero-section__link active">экскурсия <br> в детский сад</a>
-                            <a href="" class="hero-section__link">записаться <br> в центр развития</a>
+                            <a href="" class="hero-section__link active" data-modal-id="modal">экскурсия <br> в детский сад</a>
+                            <a href="" class="hero-section__link" data-modal-id="modal">записаться <br> в центр развития</a>
                         </div>
                     </div>
                     <div class="hero-section__right-content">
@@ -261,14 +414,14 @@
                             </div>
                         </div>
                         <div class="hero-section__wrap-img">
-                            <img src="./assets/images/pages/main/hero-section/hero-section-img.png" alt="" class="hero-section__img">
+                            <img src="./assets/images/pages/main/hero-section/hero-section-img.png" alt=""
+                                class="hero-section__img">
                         </div>
                     </div>
                 </div>
-                <img src="./assets/images/pages/main/background/cones-7.png" alt=""
-                    class="hero-section__background-img">
+                <img src="./assets/images/pages/main/background/cones-7.png" alt="" class="hero-section__background-img">
             </section>
-
+        
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
             <div class="my-stories main__my-stories">
                 <div class="my-container my-stories__container">
@@ -565,7 +718,8 @@
                         <div class="inspiration-section__desc">
                             <h2 class="block-title inspiration-section__title">Мы <br> вдохновляемся <br> реджио</h2>
                             <div class="inspiration-section__desc-text">
-                                <span class="inspiration-section__text">У нас нет случайных людей в коллективе. Наши педагоги
+                                <span class="inspiration-section__text">У нас нет случайных людей в коллективе. Наши
+                                    педагоги
                                     вкладывают всю свою
                                     искреннюю любовь и уважение в каждую минуту жизни детей: от исследования окружающего
                                     мира до
@@ -617,7 +771,8 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">01</div>
-                                            <div class="inspiration-section__slide-text">Видим в каждом ребёнке личность</div>
+                                            <div class="inspiration-section__slide-text">Видим в каждом ребёнке личность
+                                            </div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-1.png"
                                                 alt="" class="inspiration-section__slide-text-img">
                                         </div>
@@ -636,7 +791,8 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">02</div>
-                                            <div class="inspiration-section__slide-text">Не даем готовых ответов, но исследуем
+                                            <div class="inspiration-section__slide-text">Не даем готовых ответов, но
+                                                исследуем
                                                 любой вопрос вместе </div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-2.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -694,7 +850,8 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">05</div>
-                                            <div class="inspiration-section__slide-text">Предлагаем детям разные пути для
+                                            <div class="inspiration-section__slide-text">Предлагаем детям разные пути
+                                                для
                                                 самовыражения</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-5.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -734,7 +891,8 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">07</div>
-                                            <div class="inspiration-section__slide-text">Учимся рассуждать в моменте, всегда и
+                                            <div class="inspiration-section__slide-text">Учимся рассуждать в моменте,
+                                                всегда и
                                                 везде</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-7.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -754,7 +912,8 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">08</div>
-                                            <div class="inspiration-section__slide-text">Говоря о правилах, объясняем, откуда
+                                            <div class="inspiration-section__slide-text">Говоря о правилах, объясняем,
+                                                откуда
                                                 они берутся</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-8.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -774,7 +933,8 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">09</div>
-                                            <div class="inspiration-section__slide-text">Способствуем пробуждению интереса и
+                                            <div class="inspiration-section__slide-text">Способствуем пробуждению
+                                                интереса и
                                                 мотивации к знаниям</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-9.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -879,11 +1039,14 @@
                             <div class="swiper-pagination project-activity__swiper-pagination"></div>
                             <div class="swiper-navigation project-activity__swiper-navigation">
                                 <div class="swiper-button-prev project-activity__swiper-button-prev">
-                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_18852_13190)">
                                             <circle cx="26" cy="26" r="25.5" fill="white" stroke="#4E6932" />
-                                            <path d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16" stroke="#4E6932"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16"
+                                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_18852_13190">
@@ -893,15 +1056,20 @@
                                     </svg>
                                 </div>
                                 <div class="swiper-button-next project-activity__swiper-button-next">
-                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_18852_13191)">
-                                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white" stroke="#4E6932" />
-                                            <path d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16" stroke="#4E6932"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)"
+                                                fill="white" stroke="#4E6932" />
+                                            <path
+                                                d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
+                                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_18852_13191">
-                                                <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
+                                                <rect width="52" height="52" fill="white"
+                                                    transform="matrix(-1 0 0 1 52 0)" />
                                             </clipPath>
                                         </defs>
                                     </svg>
@@ -1072,11 +1240,14 @@
                             <div class="swiper-pagination modern-tools__swiper-pagination"></div>
                             <div class="swiper-navigation modern-tools__swiper-navigation">
                                 <div class="swiper-button-prev modern-tools__swiper-button-prev">
-                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_18852_13190)">
                                             <circle cx="26" cy="26" r="25.5" fill="white" stroke="#4E6932" />
-                                            <path d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16" stroke="#4E6932"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16"
+                                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_18852_13190">
@@ -1086,15 +1257,20 @@
                                     </svg>
                                 </div>
                                 <div class="swiper-button-next modern-tools__swiper-button-next">
-                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_18852_13191)">
-                                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white" stroke="#4E6932" />
-                                            <path d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16" stroke="#4E6932"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)"
+                                                fill="white" stroke="#4E6932" />
+                                            <path
+                                                d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
+                                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_18852_13191">
-                                                <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
+                                                <rect width="52" height="52" fill="white"
+                                                    transform="matrix(-1 0 0 1 52 0)" />
                                             </clipPath>
                                         </defs>
                                     </svg>
@@ -1255,23 +1431,19 @@
                                 <button class="accordion-button why-choose-us__accordion-button" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                    <span
-                                        class="accordion-button-title why-choose-us__accordion-button-title">Профессиональный
+                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Профессиональный
                                         подход</span>
-                                    <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text">Образовательная
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
                                 </button>
                             </h2>
-                            <div id="collapseOne"
-                                class="accordion-collapse why-choose-us__accordion-collapse collapse show"
+                            <div id="collapseOne" class="accordion-collapse why-choose-us__accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -1298,8 +1470,7 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -1322,13 +1493,11 @@
                                         безопасной мебели с закругленными краями до спокойной цветовой гаммы.</span>
                                 </button>
                             </h2>
-                            <div id="collapseThree"
-                                class="accordion-collapse why-choose-us__accordion-collapse collapse"
+                            <div id="collapseThree" class="accordion-collapse why-choose-us__accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -1344,8 +1513,7 @@
                                 <button class="accordion-button why-choose-us__accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
-                                    <span
-                                        class="accordion-button-title why-choose-us__accordion-button-title">Компетентность</span>
+                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Компетентность</span>
                                     <span class="accordion-button-text why-choose-us__accordion-button-text">Весь наш
                                         педагогический состав тщательно подобран, не только по образованию, но и по
                                         отношению к воспитательному процессу. Все педагоги регулярно повышают
@@ -1356,8 +1524,7 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -1373,8 +1540,7 @@
                                 <button class="accordion-button why-choose-us__accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseFive">
-                                    <span
-                                        class="accordion-button-title why-choose-us__accordion-button-title">Ответственность
+                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Ответственность
                                         и безопасность</span>
                                     <span class="accordion-button-text why-choose-us__accordion-button-text">Все
                                         помещения оснащены системами пожарной безопасности, видеонаблюдения, охранной
@@ -1385,8 +1551,7 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body why-choose-us__accordion-body">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
-                                    <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -1412,37 +1577,74 @@
                                 </div>
                                 <form action="" class="feedback-form feedback-block__form">
                                     <div class="feedback-form__elements">
-                                        <input type="text" name="input-name" id="inputName"
-                                            class="my-input feedback-form__input" placeholder="Ваше имя">
-                                        <input type="tel" name="input-phone" id="inputPhone"
-                                            class="my-input feedback-form__input" placeholder="+7 (999) 999 99 99">
-                                        <label for="why-choose-us__agreementCheck"
-                                            class="my-checkbox feedback-form__checkbox">
-                                            <input type="checkbox" name="agreement-checkbox"
-                                                id="why-choose-us__agreementCheck" class="my-checkbox__old">
+                                        <input type="text" name="input-name" id="inputName" class="my-input feedback-form__input"
+                                            placeholder="Ваше имя">
+                                        <input type="tel" name="input-phone" id="inputPhone" class="my-input feedback-form__input"
+                                            placeholder="+7 (999) 999 99 99">
+                                        <label for="why-choose-us__agreementCheck" class="my-checkbox feedback-form__checkbox">
+                                            <input type="checkbox" name="agreement-checkbox" id="why-choose-us__agreementCheck"
+                                                class="my-checkbox__old">
                                             <span class="my-checkbox__new"></span>
                                             <span class="my-checkbox__text">согласие на <a
                                                     href="https://7zvezd-irk.ru/include/licenses_detail.php"
                                                     class="my-checkbox__text-link">обработку персональных
                                                     данных</a></span>
                                         </label>
-                                        <button
-                                            class="my-button my-button_borderSquare feedback-form__button">отправить</button>
+                                        <button class="my-button my-button_borderSquare feedback-form__button">отправить</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </article>
                 </div>
-                <img src="./assets/images/pages/main/background/cones-5.png" alt=""
-                    class="why-choose-us__background-img">
+                <img src="./assets/images/pages/main/background/cones-5.png" alt="" class="why-choose-us__background-img">
             </section>
-            
+
             <div class="lifestyle main__lifestyle">
                 <div class="lifestyle__items">
                     <div class="lifestyle__block-nutrition lifestyle-item --sectionPadding">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
+                                <div class="lifestyle-block__swiper-controls">
+                                    <div class="swiper-navigation lifestyle-block__swiper-navigation">
+                                        <div class="swiper-button-prev block-nutrition__swiper-button-next-top">
+                                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_18852_13191)">
+                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                                                        stroke="#4E6932" />
+                                                    <path
+                                                        d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
+                                                        stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_18852_13191">
+                                                        <rect width="52" height="52" fill="white"
+                                                            transform="matrix(-1 0 0 1 52 0)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-next block-nutrition__swiper-button-prev-top">
+                                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_18852_13190)">
+                                                    <circle cx="26" cy="26" r="25.5" fill="white" stroke="#4E6932" />
+                                                    <path
+                                                        d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16"
+                                                        stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_18852_13190">
+                                                        <rect width="52" height="52" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="lifestyle-item__footnote-mobile">сертифицировано по СанПину</div>
                                 <div class="swiper block-nutrition__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
@@ -1472,8 +1674,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
+                                <div class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                                 <div class="lifestyle-item__pre-title-mobile">
                                     В каждом детском саду оборудован профессиональный пищеблок, в котором трудится повар
@@ -1551,6 +1752,46 @@
                     <div class="lifestyle__block-walk lifestyle-item --sectionPadding">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
+                                <div class="lifestyle-block__swiper-controls">
+                                    <div class="swiper-navigation lifestyle-block__swiper-navigation">
+                                        <div class="swiper-button-prev block-walk__swiper-button-next-top">
+                                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_18852_13191)">
+                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                                                        stroke="#4E6932" />
+                                                    <path
+                                                        d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
+                                                        stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_18852_13191">
+                                                        <rect width="52" height="52" fill="white"
+                                                            transform="matrix(-1 0 0 1 52 0)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-next block-walk__swiper-button-prev-top">
+                                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_18852_13190)">
+                                                    <circle cx="26" cy="26" r="25.5" fill="white" stroke="#4E6932" />
+                                                    <path
+                                                        d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16"
+                                                        stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_18852_13190">
+                                                        <rect width="52" height="52" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="lifestyle-item__footnote-mobile">удивляться всему, подмечать
                                     и&nbsp;открывать новое</div>
                                 <div class="swiper block-walk__swiper lifestyle-item__swiper">
@@ -1558,8 +1799,8 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-walk/slide-img.jpg"
-                                                        alt="" class="lifestyle-item__slide-img">
+                                                    <img src="./assets/images/pages/main/lifestyle/block-walk/slide-img.jpg" alt=""
+                                                        class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
                                         </div>
@@ -1589,8 +1830,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
+                                <div class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                                 <div class="lifestyle-item__pre-title-mobile">
                                     Детские площадки — это отличная возможность для ребёнка еще больше узнать об
@@ -1666,6 +1906,46 @@
                     <div class="lifestyle__block-health lifestyle-item --sectionPadding">
                         <div class="my-container lifestyle-item__container">
                             <div class="lifestyle-item__slider">
+                                <div class="lifestyle-block__swiper-controls">
+                                    <div class="swiper-navigation lifestyle-block__swiper-navigation">
+                                        <div class="swiper-button-prev block-health__swiper-button-next-top">
+                                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_18852_13191)">
+                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                                                        stroke="#4E6932" />
+                                                    <path
+                                                        d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
+                                                        stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_18852_13191">
+                                                        <rect width="52" height="52" fill="white"
+                                                            transform="matrix(-1 0 0 1 52 0)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-next block-health__swiper-button-prev-top">
+                                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_18852_13190)">
+                                                    <circle cx="26" cy="26" r="25.5" fill="white" stroke="#4E6932" />
+                                                    <path
+                                                        d="M30 36L20.8137 27.7677C19.7288 26.7955 19.7288 25.2046 20.8137 24.2323L30 16"
+                                                        stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_18852_13190">
+                                                        <rect width="52" height="52" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="lifestyle-item__footnote-mobile">осмотр педиатром</div>
                                 <div class="swiper block-health__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
@@ -1703,8 +1983,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
+                                <div class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                                 <div class="lifestyle-item__pre-title-mobile">
                                     Врач-педиатр регулярно осматривает детей в соответствии с требованиями в сфере
@@ -1777,12 +2056,12 @@
                 </div>
                 <img src="./assets/images/pages/main/background/cones-4.png" alt="" class="lifestyle__background-img">
             </div>
-
+            
             <!-- ВНУТРИ ЕСТЬ dobule-slider ВЫНЕС ЛОГИКУ ДВОЙНОГО СЛАЙДЕРА И СТИЛИ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
             <section class="dev-environment main__dev-environment --sectionPadding">
                 <div class="my-container dev-environment__container">
                     <h2 class="block-title dev-environment__title">развивающая среда</h2>
-
+            
                     <!-- ВОТ ЭТОТ БЛОК ДВОЙНОГО СЛАЙДЕРА (класс dev-environment__content для доп стилизации в блоке и не является частью double-slider) -->
                     <div class="double-slider dev-environment__content">
                         <div class="double-slider__text-slider">
@@ -1886,32 +2165,32 @@
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-2.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-2.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-3.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-3.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-4.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-4.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-5.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-5.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
@@ -1925,24 +2204,24 @@
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-3.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-3.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
@@ -1956,32 +2235,32 @@
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-4.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-4.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
@@ -1995,40 +2274,40 @@
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-5.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img-5.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide double-slider__image-swiper-slide">
                                             <div class="double-slider__image-slide">
                                                 <div class="double-slider__image-slide-wrap">
-                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg"
-                                                        alt="" class="double-slider__image-slide-photo">
+                                                    <img src="./assets/images/pages/main/dev-environment/slide-img.jpg" alt=""
+                                                        class="double-slider__image-slide-photo">
                                                 </div>
                                             </div>
                                         </div>
@@ -2039,8 +2318,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/images/pages/main/background/cones-7.png" alt=""
-                    class="dev-environment__background-img">
+                <img src="./assets/images/pages/main/background/cones-7.png" alt="" class="dev-environment__background-img">
             </section>
 
             <section class="development main__development --sectionPadding">
@@ -2416,10 +2694,52 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (БЛОК ШАБЛОННЫЙ) -->
-            <section class="reviews main__reviews --sectionPadding">
+            <section class="reviews main__reviews --sectionPadding --map-widgets">
                 <div class="my-container reviews__container">
                     <h2 class="block-title reviews__title">отзывы</h2>
                     <div class="reviews__content">
+                        <div class="reviews__map-widgets map-widgets">
+                            <div class="map-widgets__items">
+                                <div class="map-widgets__widget">
+                                    <div class="map-widgets__widget-inner">
+                                        <div class="map-widgets__widget-texts">
+                                            <div class="map-widgets__widget-rating">
+                                                <div class="map-widgets__widget-number">4,8</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей Яндекс</div>
+                                            </div>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на Яндекс.Карты</a>
+                                        </div>
+                                        <div class="map-widgets__widget-icons">
+                                            <div class="map-widgets__widget-stars-wrap">
+                                                <img src="./assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                            </div>
+                                            <div class="map-widgets__widget-map-logo-wrap">
+                                                <img src="./assets/images/pages/main/reviews/Яндекс Карты лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map-widgets__widget">
+                                    <div class="map-widgets__widget-inner">
+                                        <div class="map-widgets__widget-texts">
+                                            <div class="map-widgets__widget-rating">
+                                                <div class="map-widgets__widget-number">4,7</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей 2ГИС</div>
+                                            </div>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на 2ГИС</a>
+                                        </div>
+                                        <div class="map-widgets__widget-icons">
+                                            <div class="map-widgets__widget-stars-wrap">
+                                                <img src="./assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                            </div>
+                                            <div class="map-widgets__widget-map-logo-wrap">
+                                                <img src="./assets/images/pages/main/reviews/2гис лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="reviews__content-inner">
                             <div class="reviews__content-title">Приятные слова родителей о&nbsp;наших садах</div>
                             <div class="reviews__slider">
@@ -2627,10 +2947,10 @@
                 <div class="footer__inner">
                     <div class="footer__left">
                         <div class="footer-left__top">
-                        <a href="" class="footer__logo-link">
-                            <img src="./assets/images/logo-white.svg" alt="" class="footer__logo-img">
-                        </a>
-                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                            <a href="" class="footer__logo-link">
+                                <img src="./assets/images/logo-white.svg" alt="" class="footer__logo-img">
+                            </a>
+                            <button class="my-button footer__button-reviews">оставить отзыв</button>
                         </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
@@ -2642,8 +2962,10 @@
                                 <li class="footer__menu-item"><a href="" class="footer__menu-link">Сведения об
                                         организации</a>
                                 </li>
-                                <li class="footer__menu-item"><a href="./pages/about.html" class="footer__menu-link">О нас</a></li>
-                                <li class="footer__menu-item"><a href="./pages/development-center.html" class="footer__menu-link">Центр развития</a>
+                                <li class="footer__menu-item"><a href="./pages/about.html" class="footer__menu-link">О
+                                        нас</a></li>
+                                <li class="footer__menu-item"><a href="./pages/development-center.html"
+                                        class="footer__menu-link">Центр развития</a>
                                 </li>
                                 <li class="footer__menu-item"><a href="./pages/news.html"
                                         class="footer__menu-link">Новости</a></li>
@@ -2683,16 +3005,17 @@
     <script src="./assets//js/sections/contacts.js"></script>
 
     <script src="./assets/js/components/stories.js"></script>
+    <script src="./assets/js/components/modal.js"></script>
     
-
+    
     <!-- СКИПТ ОТКРЫТИЯ ТУЛТИПА -->
     <script>
         const updateTippyTrigger = () => {
             const isMobile = window.matchMedia("(max-width: 767px)").matches;
-    
+
             document.querySelectorAll(".development__button").forEach((button) => {
                 const instance = button._tippy;
-    
+
                 if (instance) {
                     instance.setProps({
                         trigger: isMobile ? 'click' : 'mouseenter',
@@ -2701,15 +3024,15 @@
                 }
             });
         };
-    
+
         window.addEventListener('resize', updateTippyTrigger);
-    
+
         // Храним ссылку на последний открытый тултип
         let lastOpenedTippy = null;
-    
+
         document.querySelectorAll(".development__button").forEach((button) => {
             const popupContent = button.querySelector(".development__slide-popup").innerHTML;
-    
+
             const instance = tippy(button, {
                 content: popupContent,
                 placement: 'top',
@@ -2733,7 +3056,7 @@
             });
         });
     </script>
-    
+
     <!-- СКРИПТ БЛОКА РАЗВИВАЮЩАЯ СРЕДА -->
     <script>
         const buttons = document.querySelectorAll('.development__button');
@@ -2798,7 +3121,7 @@
             });
         });
     </script>
-    
+
     <script>
         const holidaysSwiper = new Swiper('.holidays__swiper', {
             direction: 'horizontal',
@@ -2914,8 +3237,8 @@
                 el: '.block-nutrition__swiper-pagination',
             },
             navigation: {
-                nextEl: '.block-nutrition__swiper-button-next',
-                prevEl: '.block-nutrition__swiper-button-prev',
+                nextEl: '.block-nutrition__swiper-button-next, .block-nutrition__swiper-button-next-top',
+                prevEl: '.block-nutrition__swiper-button-prev, .block-nutrition__swiper-button-prev-top',
             },
             breakpoints: {
                 769: {
@@ -2937,8 +3260,8 @@
                 el: '.block-walk__swiper-pagination',
             },
             navigation: {
-                nextEl: '.block-walk__swiper-button-next',
-                prevEl: '.block-walk__swiper-button-prev',
+                nextEl: '.block-walk__swiper-button-next, .block-walk__swiper-button-next-top',
+                prevEl: '.block-walk__swiper-button-prev, .block-walk__swiper-button-prev-top',
             },
             breakpoints: {
                 769: {
@@ -2960,8 +3283,8 @@
                 el: '.block-health__swiper-pagination',
             },
             navigation: {
-                nextEl: '.block-health__swiper-button-next',
-                prevEl: '.block-health__swiper-button-prev',
+                nextEl: '.block-health__swiper-button-next, .block-health__swiper-button-next-top',
+                prevEl: '.block-health__swiper-button-prev, .block-health__swiper-button-prev-top',
             },
             breakpoints: {
                 769: {

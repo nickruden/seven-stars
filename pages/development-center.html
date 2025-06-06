@@ -47,31 +47,73 @@
             <div class="my-container header__container">
                 <div class="header__desktop">
                     <div class="header__left">
-                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg"
-                                alt="logo" class="header__logo-img"></a>
+                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt="logo"
+                                class="header__logo-img"></a>
                         <div class="pre-mobile-menu header__pre-mobile-menu">
                             <div class="dropdown pre-mobile-menu__dropdown">
-                                <button class="burger-button" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false" data-bs-target="#header-pre-mobile">
+                                <button class="burger-button dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </button>
+        
                                 <ul class="dropdown-menu pre-mobile-menu__dropdown-menu" id="header-pre-mobile">
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./about.html">О
-                                            нас</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Детские
-                                            сады</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
-                                            href="./development-center.html">Центр
-                                            развития</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
-                                            href="./news.html">Новости</a>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./about.html">О нас</a>
                                     </li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
-                                            href="./blog.html">Блог</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Сведения...</a>
+        
+                                    <!-- Детские сады -->
+                                    <li class="dropend">
+                                        <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
+                                            data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            Детские сады
+                                        </a>
+                                        <ul class="dropdown-menu header__dropdown-menu">
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./kindergarten-page.html">ул.
+                                                    Каландаришвили, 7</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./kindergarten-page.html">ул. Александра
+                                                    Невского, 60</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./kindergarten-page.html">ул. Березовая,
+                                                    8</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./kindergarten-page.html">ул. Декабрьских
+                                                    событий, 102</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./kindergarten-page.html">ул. Алмазная,
+                                                    5</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./kindergarten-page.html">Центр
+                                                    развития</a></li>
+                                        </ul>
                                     </li>
+        
+                                    <!-- Центр развития -->
+                                    <li class="dropend">
+                                        <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
+                                            data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            Центр развития
+                                        </a>
+                                        <ul class="dropdown-menu header__dropdown-menu">
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./development-center.html">О Центре</a>
+                                            </li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./early-development-school.html">Развивающие занятия</a></li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./painting-education.html">Живопись</a>
+                                            </li>
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item" href="./summer-holidays.html">Летние
+                                                    каникулы</a></li>
+                                        </ul>
+                                    </li>
+        
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./news.html">Новости</a>
+                                    </li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./blog.html">Блог</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Сведения...</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,29 +122,56 @@
                         <ul class="header__menu-list">
                             <li class="header__menu-item"><a href="./about.html" class="header__menu-link">О нас</a>
                             </li>
-                            <li class="header__menu-item"><a href="" class="header__menu-link">Детские сады</a></li>
-                            <li class="header__menu-item"><a href="./development-center.html"
-                                    class="header__menu-link">Центр развития</a></li>
+                            <li class="header__menu-item dropdown header__dropdown">
+                                <a href="#" class="header__menu-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Детские сады</a>
+                                <ul class="dropdown-menu header__dropdown-menu">
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./kindergarten-page.html">ул. Каландаришвили, 7</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./kindergarten-page.html">ул. Александра Невского, 60</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./kindergarten-page.html">ул. Березовая, 8 (Солнечный)</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./kindergarten-page.html">ул. Декабрьских событий, 102</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./kindergarten-page.html">ул. Алмазная, 5 (Первомайский)</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./kindergarten-page.html">Центр развития</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item dropdown header__dropdown">
+                                <a href="#" class="header__menu-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Центр
+                                    развития</a>
+                                <ul class="dropdown-menu header__dropdown-menu">
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./development-center.html">О Центре развития</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./early-development-school.html">Развивающие занятия</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./painting-education.html">Живопись</a></li>
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item" href="./summer-holidays.html">Летние
+                                            каникулы</a></li>
+                                </ul>
+                            </li>
                             <li class="header__menu-item"><a href="./news.html" class="header__menu-link">Новости</a>
                             </li>
                             <li class="header__menu-item"><a href="./blog.html" class="header__menu-link">Блог</a></li>
-                            <li class="header__menu-item"><a href="" class="header__menu-link">Сведения...</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">Сведения...</a></li>
                         </ul>
                     </nav>
                     <div class="header__contacts">
                         <div class="header__smp">
-                            <a href="" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/WA.svg" alt="Tg-icon"
-                                    class="header__smp-img">
+                            <a href="#" class="header__smp-link">
+                                <img src="../assets/images/social-media-icons/WA.svg" alt="Tg-icon" class="header__smp-img">
                             </a>
-                            <a href="" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/tg.svg" alt="WA-icon"
-                                    class="header__smp-img">
+                            <a href="#" class="header__smp-link">
+                                <img src="../assets/images/social-media-icons/tg.svg" alt="WA-icon" class="header__smp-img">
                             </a>
                         </div>
                         <div class="header__buttons">
-                            <button
-                                class="my-button my-button_noColor my-button_borderOval header__button">ЗАПИСАТЬСЯ</button>
+                            <button class="my-button my-button_noColor my-button_borderOval header__button">ЗАПИСАТЬСЯ</button>
                             <a href="tel:+73952738200"
                                 class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7
                                 (3952) 738-200</a>
@@ -111,16 +180,15 @@
                 </div>
                 <div class="header__mobile --no-sectionsLinks">
                     <div class="header__mobile-top">
-                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg"
-                                alt="logo" class="header__logo-img"></a>
+                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt="logo"
+                                class="header__logo-img"></a>
                         <div class="header__buttons">
                             <a href="tel:+73952738200"
                                 class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7 (3952)
                                 738-200</a>
                         </div>
                         <div class="mobile-menu header__mobile-menu">
-                            <button class="burger-button mobile-menu__burger-button"
-                                data-toggle="#header-mobile-navbar">
+                            <button class="burger-button mobile-menu__burger-button" data-toggle="#header-mobile-navbar">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -128,21 +196,48 @@
                             <div class="mobile-menu__content" id="header-mobile-navbar">
                                 <div class="mobile-menu__content-inner">
                                     <ul class="mobile-menu__links">
-                                        <li class="mobile-menu__link-item"><a href="./about.html"
-                                                class="mobile-menu__link">О
+                                        <li class="mobile-menu__link-item"><a href="./about.html" class="mobile-menu__link">О
                                                 нас</a></li>
-                                        <li class="mobile-menu__link-item"><a href="" class="mobile-menu__link">Детские
-                                                сады</a></li>
-                                        <li class="mobile-menu__link-item"><a href="./development-center.html"
-                                                class="mobile-menu__link">Центр
-                                                развития</a></li>
+                                        <li class="mobile-menu__link-item dropdown header__dropdown">
+                                            <a href="#" class="mobile-menu__link dropdown-toggle" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Детские сады</a>
+                                            <ul class="dropdown-menu header__dropdown-menu">
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./kindergarten-page.html">ул. Каландаришвили, 7</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./kindergarten-page.html">ул. Александра Невского, 60</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./kindergarten-page.html">ул. Березовая, 8 (Солнечный)</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./kindergarten-page.html">ул. Декабрьских событий, 102</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./kindergarten-page.html">ул. Алмазная, 5 (Первомайский)</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./kindergarten-page.html">Центр развития</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile-menu__link-item dropdown header__dropdown">
+                                            <a href="#" class="mobile-menu__link dropdown-toggle" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Центр
+                                                развития</a>
+                                            <ul class="dropdown-menu header__dropdown-menu">
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./development-center.html">О Центре развития</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./early-development-school.html">Развивающие занятия</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./painting-education.html">Живопись</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item" href="./summer-holidays.html">Летние
+                                                        каникулы</a></li>
+                                            </ul>
+                                        </li>
                                         <li class="mobile-menu__link-item"><a href="./news.html"
                                                 class="mobile-menu__link">Новости</a></li>
                                         <li class="mobile-menu__link-item"><a href="./blog.html"
                                                 class="mobile-menu__link">Блог</a>
                                         </li>
-                                        <li class="mobile-menu__link-item"><a href=""
-                                                class="mobile-menu__link">Сведения...</a></li>
+                                        <li class="mobile-menu__link-item"><a href="#" class="mobile-menu__link">Сведения...</a>
+                                        </li>
                                     </ul>
                                     <div class="mobile-menu__buttons">
                                         <a href="tel:+73952738200"
@@ -152,8 +247,8 @@
                                             class="my-button my-button_noColor my-button_borderOval header__mobile-button">ЗАПИСАТЬСЯ</button>
                                     </div>
                                     <div class="mobile-menu__contacts">
-                                        <a href="" class="mobile-menu__contact-link">Telegram</a>
-                                        <a href="" class="mobile-menu__contact-link">WhatsApp</a>
+                                        <a href="#" class="mobile-menu__contact-link">Telegram</a>
+                                        <a href="#" class="mobile-menu__contact-link">WhatsApp</a>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +259,7 @@
                             <div class="swiper header__links-swiper">
                                 <div class="swiper-wrapper header__links-swiper-wrapper">
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
                                             филиалы</a>
                                     </div>
@@ -173,17 +268,17 @@
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Реджио</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Проектная
                                             деятельность</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
                                             филиалы</a>
                                     </div>
                                     <div class="swiper-slide header__links-swiper-slide">
-                                        <a href=""
+                                        <a href="#"
                                             class="my-button my-button_noColor my-button_borderOval header__link-slide">Наши
                                             филиалы</a>
                                     </div>
@@ -962,6 +1057,48 @@
                 <div class="my-container reviews__container">
                     <h2 class="block-title reviews__title">отзывы</h2>
                     <div class="reviews__content">
+                        <div class="reviews__map-widgets map-widgets">
+                            <div class="map-widgets__items">
+                                <div class="map-widgets__widget">
+                                    <div class="map-widgets__widget-inner">
+                                        <div class="map-widgets__widget-texts">
+                                            <div class="map-widgets__widget-rating">
+                                                <div class="map-widgets__widget-number">4,8</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей Яндекс</div>
+                                            </div>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на Яндекс.Карты</a>
+                                        </div>
+                                        <div class="map-widgets__widget-icons">
+                                            <div class="map-widgets__widget-stars-wrap">
+                                                <img src="../assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                            </div>
+                                            <div class="map-widgets__widget-map-logo-wrap">
+                                                <img src="../assets/images/pages/main/reviews/Яндекс Карты лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map-widgets__widget">
+                                    <div class="map-widgets__widget-inner">
+                                        <div class="map-widgets__widget-texts">
+                                            <div class="map-widgets__widget-rating">
+                                                <div class="map-widgets__widget-number">4,7</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей 2ГИС</div>
+                                            </div>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на 2ГИС</a>
+                                        </div>
+                                        <div class="map-widgets__widget-icons">
+                                            <div class="map-widgets__widget-stars-wrap">
+                                                <img src="../assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                            </div>
+                                            <div class="map-widgets__widget-map-logo-wrap">
+                                                <img src="../assets/images/pages/main/reviews/2гис лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="reviews__content-inner">
                             <div class="reviews__content-title">Приятные слова родителей о&nbsp;наших садах</div>
                             <div class="reviews__slider">
@@ -1011,8 +1148,8 @@
                                                 <a href="../assets/images/pages/main/reviews/video-1.mp4"
                                                     data-fancybox="reviews-gallery">
                                                     <div class="reviews__slide-img-wrap --video-poster">
-                                                        <img src="../assets/images/pages/main/reviews/video-img-1.jpg" alt=""
-                                                            class="reviews__slide-img">
+                                                        <img src="../assets/images/pages/main/reviews/video-img-1.jpg"
+                                                            alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Березовая, 8</div>
@@ -1023,8 +1160,8 @@
                                                 <a href="../assets/images/pages/main/reviews/video-2.mp4"
                                                     data-fancybox="reviews-gallery">
                                                     <div class="reviews__slide-img-wrap --video-poster">
-                                                        <img src="../assets/images/pages/main/reviews/video-img-2.jpg" alt=""
-                                                            class="reviews__slide-img">
+                                                        <img src="../assets/images/pages/main/reviews/video-img-2.jpg"
+                                                            alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">ул. Александра Невского, 60</div>
@@ -1035,8 +1172,8 @@
                                                 <a href="../assets/images/pages/main/reviews/video-1.mp4"
                                                     data-fancybox="reviews-gallery">
                                                     <div class="reviews__slide-img-wrap --video-poster">
-                                                        <img src="../assets/images/pages/main/reviews/video-img-3.jpg" alt=""
-                                                            class="reviews__slide-img">
+                                                        <img src="../assets/images/pages/main/reviews/video-img-3.jpg"
+                                                            alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Алмазная, 5</div>
@@ -1047,8 +1184,8 @@
                                                 <a href="../assets/images/pages/main/reviews/video-2.mp4"
                                                     data-fancybox="reviews-gallery">
                                                     <div class="reviews__slide-img-wrap --video-poster">
-                                                        <img src="../assets/images/pages/main/reviews/video-img-1.jpg" alt=""
-                                                            class="reviews__slide-img">
+                                                        <img src="../assets/images/pages/main/reviews/video-img-1.jpg"
+                                                            alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Березовая, 8</div>
@@ -1059,8 +1196,8 @@
                                                 <a href="../assets/images/pages/main/reviews/video-1.mp4"
                                                     data-fancybox="reviews-gallery">
                                                     <div class="reviews__slide-img-wrap --video-poster">
-                                                        <img src="../assets/images/pages/main/reviews/video-img-1.jpg" alt=""
-                                                            class="reviews__slide-img">
+                                                        <img src="../assets/images/pages/main/reviews/video-img-1.jpg"
+                                                            alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
                                                 <div class="reviews__slide-text">Березовая, 8</div>

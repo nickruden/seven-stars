@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="../assets/libs/tippy/scale.css">
+    <link rel="stylesheet" href="../assets/libs/stories/zuck.css">
+    <link rel="stylesheet" href="../assets/libs/stories/snapgram.css">
 
 
     <!-- СТИЛИ ОБЩИХ ЭЛЕМЕНТОВ -->
@@ -25,14 +28,24 @@
     <link rel="stylesheet" href="../styles/components/header.css">
     <link rel="stylesheet" href="../styles/components/footer.css">
     <link rel="stylesheet" href="../styles/components/feedback-block.css">
+    <link rel="stylesheet" href="../styles/components/stories.css">
+    <link rel="stylesheet" href="../styles/components/double-slider.css">
 
+    <!-- вот этот компонент не подключать лучше к главной странице -->
     <link rel="stylesheet" href="../styles/components/sections/hero-section.css">
-    <link rel="stylesheet" href="../styles/components/sections/contacts-section.css">
+
+    <link rel="stylesheet" href="../styles/components/sections/staff-section.css">
+    <link rel="stylesheet" href="../styles/components/sections/branches-section.css">
+    <link rel="stylesheet" href="../styles/components/sections/why-choose-us.css">
+    <link rel="stylesheet" href="../styles/components/sections/reviews.css">
     <link rel="stylesheet" href="../styles/components/sections/feedback.css">
+    <link rel="stylesheet" href="../styles/components/sections/contacts-section.css">
+    <link rel="stylesheet" href="../styles/components/button-up.css">
+    <link rel="stylesheet" href="../styles/components/sections/inspiration-section.css">
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
-    <link rel="stylesheet" href="../styles/pages/news.css">
+    <link rel="stylesheet" href="../styles/pages/news-page.css">
 </head>
 
 <body>
@@ -286,13 +299,32 @@
 
         <div class="my-overlay" id="burger-menu-overlay"></div>
 
+        <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
+        <a href="#" class="button-up">
+            <span class="button-up__img">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_18852_13195)">
+                        <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                            stroke="#4E6932" />
+                        <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
+                            stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_18852_13195">
+                            <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </span>
+        </a>
+
         <main class="main">
             <!-- СТИЛИ ВЫНЕС ОТДЕЛЬНО -->
             <section class="hero-section main__hero-section --no-location">
                 <div class="my-container hero-section__container">
                     <div class="hero-section__body">
                         <div class="hero-section__body-texts">
-                            <div class="hero-section__title">Новости
+                            <div class="hero-section__title">ГОРОД ПРОФЕССИЙ
                                 <div class="hero-section__location">
                                     <div class="hero-section__location-img">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -304,18 +336,16 @@
                                     </div> <span class="hero-section__location-text"> В Иркутске</span>
                                 </div>
                             </div>
-                            <div class="hero-section__text">Мы наполняем повседневную жизнь ребенка творчеством
-                                и интересными открытиями. С нами дети не просто учатся получать удовольствие от
-                                взаимодействия с окружающим миром: они учатся смотреть на обычные вещи под совершенно
-                                разным углом, составлять о них собственное мнение и делать определенные выводы.</div>
+                            <div class="hero-section__pre-title">Мероприятие Город Профессий прошло&nbsp;29.06.2024</div>
+                            <div class="hero-section__text">Реджио-подход зародился в небольшом городке Реджио Эмилия на севере Италии. Основатель и вдохновитель идей «100 языков ребенка» является Лорис Малагуцци. Ис&nbsp;уже на протяжении более 50 лет педагоги разных стран</div>
                         </div>
-                        <div class="hero-section__links">
-                            <a href="" class="hero-section__link active">записаться <br> на экскурсию</a>
-                            <a href="" class="hero-section__link">выбрать <br> садик</a>
+                        <div class="hero-section__desc-img-wrap">
+                            <img src="../assets/images/pages/about/hero-section/block-img.jpg" alt="" class="hero-section__desc-img">
                         </div>
                     </div>
                     <div class="hero-section__right-content">
-                        <div class="hero-section__title">Новости
+                        <div class="hero-section__title">Детский сад «Семь&nbsp;Звёзд» <br>
+                            <span>в&nbsp;солнечном</span>
                             <div class="hero-section__location">
                                 <div class="hero-section__location-img">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -328,247 +358,15 @@
                             </div>
                         </div>
                         <div class="hero-section__wrap-img">
-                            <img src="../assets/images/pages/about/hero-section/block-img.jpg" alt="" class="hero-section__img">
+                            <img src="../assets/images/pages/kindergarten-page/hero-section/block-img.png" alt=""
+                                class="hero-section__img">
                         </div>
                     </div>
                 </div>
-                <img src="./assets/images/pages/main/background/cones-7.png" alt=""
+                <img src="../assets/images/pages/main/background/cones-7.png" alt=""
                     class="hero-section__background-img">
             </section>
 
-            <section class="news-list main__news-list --sectionPadding">
-                <div class="my-container news-list__container">
-                    <div class="news-list__sort-buttons">
-                        <div class="swiper news-list__sort-button-swiper">
-                            <div class="swiper-wrapper news-list__sort-buttons-swiper-wrapper">
-                                <div class="swiper-slide news-list__sort-buttons-swiper-slide">
-                                    <button
-                                        class="my-button my-button_borderOval my-button_noColor news-list__button active">все</button>
-                                </div>
-                                <div class="swiper-slide news-list__sort-buttons-swiper-slide">
-                                    <button
-                                        class="my-button my-button_borderOval my-button_noColor news-list__button">праздники</button>
-                                </div>
-                                <div class="swiper-slide news-list__sort-buttons-swiper-slide">
-                                    <button
-                                        class="my-button my-button_borderOval my-button_noColor news-list__button">праздники</button>
-                                </div>
-                                <div class="swiper-slide news-list__sort-buttons-swiper-slide">
-                                    <button class="my-button my-button_borderOval my-button_noColor news-list__button">участие в
-                                        мероприятиях</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-list__items">
-                        <div class="news-list__item-wrapper">
-                            <div class="news-list__item-top">
-                                <a href="" class="news-list__item --big-item --video-poster">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-1.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">город профессий</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" class="news-list__item --small-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-2.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">занятия робототехникой</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" class="news-list__item --small-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-3.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">пикник на острове юность</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-list__item-bottom">
-                                <a href="" class="news-list__item --bottom-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-4.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">выставка в&nbsp;филиале <br> на&nbsp;каландарашвили</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" class="news-list__item --bottom-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-5.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">час реджио</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" class="news-list__item --bottom-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-6.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">выставка в&nbsp;филиале <br> в&nbsp;солнечном</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="news-list__item-wrapper">
-                            <div class="news-list__item-top">
-                                <div class="news-list__item --big-item --text-news">
-                                    <a href="./news-page.html" class="news-list__item-inner">
-                                        <img src="../assets/images/pages/news/news-list/news-list-img-7.jpg" alt="" class="news-list__item-img">
-                                        <div class="news-list__item-content">
-                                            <div class="my-button my-button_borderSquare news-list__item-title">провокации на
-                                                декабрьских событий</div>
-                                            <div class="news-list__item-text-content">
-                                                <div class="news-list__item-date">01.01.2025</div>
-                                                <div class="news-list__item-texts">
-                                                    <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                    <div class="news-list__item-text">Наборный текст</div>
-                                                </div>
-                                                <div class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать новость</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-list__item --small-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-7.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">развивающие занятия</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div href="" class="news-list__item --small-item">
-                                    <img src="../assets/images/pages/news/news-list/news-list-img-8.jpg" alt=""
-                                        class="news-list__item-img">
-                                    <div class="news-list__item-content">
-                                        <div class="my-button my-button_borderSquare news-list__item-title">провокации на декабрьских событий</div>
-                                        <div class="news-list__item-text-content">
-                                            <div class="news-list__item-date">01.01.2025</div>
-                                            <div class="news-list__item-texts">
-                                                <div class="news-list__item-text-title">Выпускной-2024</div>
-                                                <div class="news-list__item-text">Наборный текст</div>
-                                            </div>
-                                            <a href=""
-                                                class="my-button my-button_noColor my-button_borderSquare news-list__item-link">Читать
-                                                новость</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ЕСЛИ feedback-block НАХОДИТЬСЯ ВНЕ КАКОЙ-ЛИБО СЕКЦИИ, ТО НАДО ЕГО ОБЕРНУТЬ ВНУТРЬ БЛОКА feedback, ЕСЛИ ОН ЧАСТЬ СЕКЦИИ (КАК НА ГЛАВЙНОЙ), ТАМ СВОЯ УНИКАЛЬНАЯ ОБЁРТКА -->
-            <section class="feedback main__feedback --sectionPadding">
-                <div class="my-container feedback__container">
-                    <article class="feedback-block">
-                        <div class="my-container feedback-block__container">
-                            <div class="feedback-block__inner">
-                                <div class="feedback-block__description">
-                                    <div class="feedback-block__main-text">Хотите записаться на экскурсию в один из
-                                        наших садов,
-                                        <br> попасть в центр развития <br> или уточнить информацию?
-                                    </div>
-                                    <div class="feedback-block__pre-text">Оставьте Ваш телефон, <br> и мы перезвоним в
-                                        ближайшее
-                                        время</div>
-                                </div>
-                                <form action="" class="feedback-form feedback-block__form">
-                                    <div class="feedback-form__elements">
-                                        <input type="text" name="input-name" id="inputName"
-                                            class="my-input feedback-form__input" placeholder="Ваше имя">
-                                        <input type="tel" name="input-phone" id="inputPhone"
-                                            class="my-input feedback-form__input" placeholder="+7 (999) 999 99 99">
-                                        <label for="agreementCheck" class="my-checkbox feedback-form__checkbox">
-                                            <input type="checkbox" name="agreement-checkbox" id="agreementCheck"
-                                                class="my-checkbox__old">
-                                            <span class="my-checkbox__new"></span>
-                                            <span class="my-checkbox__text">согласие на <a
-                                                    href="https://7zvezd-irk.ru/include/licenses_detail.php"
-                                                    class="my-checkbox__text-link">обработку персональных
-                                                    данных</a></span>
-                                        </label>
-                                        <button
-                                            class="my-button my-button_borderSquare feedback-form__button">отправить</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            
-            
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (МОЖНО ВНЕСТИ БЛОК В LAYOUT) -->
             <section class="contacts main__contacts --sectionPadding">
                 <div class="my-container contacts__container">
@@ -611,9 +409,9 @@
                                 вопрос</button>
                         </div>
                         <div class="contacts__map-wrap">
-                            <iframe
+                            <!-- <iframe
                                 src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa492017f50e8e42aaae25d9b0ac6e2d6bf8701ce1c04ebd58da068a3b99b603a&amp;source=constructor"
-                                width="500" height="400" frameborder="0"></iframe>
+                                width="500" height="400" frameborder="0"></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -625,10 +423,10 @@
                 <div class="footer__inner">
                     <div class="footer__left">
                         <div class="footer-left__top">
-                        <a href="" class="footer__logo-link">
-                            <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
-                        </a>
-                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                            <a href="#" class="footer__logo-link">
+                                <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
+                            </a>
+                            <button class="my-button footer__button-reviews">оставить отзыв</button>
                         </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
@@ -637,11 +435,13 @@
                     <div class="footer__right">
                         <nav class="footer__menu">
                             <ul class="footer__menu-list">
-                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Сведения об
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Сведения об
                                         организации</a>
                                 </li>
-                                <li class="footer__menu-item"><a href="./about.html" class="footer__menu-link">О нас</a></li>
-                                <li class="footer__menu-item"><a href="./development-center.html" class="footer__menu-link">Центр развития</a>
+                                <li class="footer__menu-item"><a href="./about.html" class="footer__menu-link">О нас</a>
+                                </li>
+                                <li class="footer__menu-item"><a href="./development-center.html"
+                                        class="footer__menu-link">Центр развития</a>
                                 </li>
                                 <li class="footer__menu-item"><a href="./news.html"
                                         class="footer__menu-link">Новости</a></li>
@@ -662,40 +462,25 @@
     <script src="../assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../assets/libs/bootstrap/popper.min.js"></script>
     <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
+    <script src="../assets/libs/tippy/popper.min.js"></script>
+    <script src="../assets/libs/tippy/tippy-bundle.umd.js"></script>
+    <script src="../assets/libs/stories/zuck.js"></script>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
-    
-    
+
+
     <!-- ОБЩИЕ СКРИПТЫ -->
     <script src="../assets/js/phone-mask.js"></script>
-    <script src="../assets/js/components/header.js"></script>
+    <script src="../assets/js/open-content.js"></script>
     <script src="../assets/js/fancybox-init.js"></script>
-    <script src="./assets//js/sections/contacts.js"></script>
 
+    <script src="../assets/js/components/header.js"></script>
+    <script src="../assets/js/components/button-up.js"></script>
+    <script src="../assets/js/components/stories.js"></script>
 
-    
-    <!-- СКРИПТЫ СТРАНИЦЫ -->
-    <script>
-        const sortButtonsSwiper = new Swiper('.news-list__sort-button-swiper', {
-            direction: 'horizontal',
-            slidesPerView: 'auto',
-            spaceBetween: 15,
-            freeMode: true, // Позволяет слайдам свободно прокручиваться
-            watchSlidesProgress: true, // Включает отслеживание прогресса слайдов
-            watchSlidesVisibility: true,
-            breakpoints: {
-                651: {
-                    spaceBetween: 16,
-                },
-                991: {
-                    spaceBetween: 15,
-                },
-                1281: {
-                    spaceBetween: 16,
-                }
-            }
-        });
-    </script>
+    <script src="../assets/js/sections/staff.js"></script>
+    <script src="../assets/js/sections/reviews.js"></script>
+    <script src="../assets//js/sections/contacts.js"></script>
 </body>
 
 </html>
