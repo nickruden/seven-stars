@@ -251,6 +251,7 @@
     }
     .hero-section__desc-img-wrap {
         max-height: 210px;
+        max-width: 470px;
     }
     .hero-section__right-content {
         width: 100%;
@@ -392,7 +393,8 @@
     }
     .hero-section__desc-img-wrap {
         max-height: 255px;
-        width: 100%;;
+        max-width: none;
+        width: 100%;
     }
     .hero-section__right-content > .hero-section__title {
         font-size: 30px;

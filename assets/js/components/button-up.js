@@ -3,7 +3,7 @@ let topBlockDesctop = document.querySelector(".header");
 let topBlockMobile = document.querySelector(".main").firstElementChild;
 
 
-let topBlock = topBlockDesctop;
+let topBlock = topBlockMobile;
 
 if (window.innerWidth <= 768) {
     topBlock.removeAttribute("id");

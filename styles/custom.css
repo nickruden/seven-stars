@@ -241,9 +241,16 @@
     transition: all 0.3s ease;
 }
 
-@media (max-width: 551px) {
+@media (max-width: 1281px) {
     .--video-poster::before {
         width: 80px;
         height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .--video-poster::before {
+        height: 42px;
+        width: 42px;
     }
 }
