@@ -1,5 +1,4 @@
 let buttonUp = document.querySelector(".button-up");
-let topBlockDesctop = document.querySelector(".header");
 let topBlockMobile = document.querySelector(".main").firstElementChild;
 
 
@@ -12,7 +11,6 @@ if (window.innerWidth <= 768) {
     console.log(buttonUp, topBlock);
 } else {
     topBlock.removeAttribute("id");
-    topBlock = topBlockDesctop;
     topBlock.setAttribute("id", "topBlock");
     console.log(buttonUp, topBlock);
 }
