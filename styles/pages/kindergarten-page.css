@@ -86,6 +86,7 @@
     height: 540px;
     border-radius: 16px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 
 .consists__slide-img {
@@ -437,8 +438,12 @@
     z-index: 5;
     max-width: 399px;
     max-height: 270px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 270 / 399;
     border-radius: 24px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 
 .daily-schedule__video-poster-img {
@@ -447,7 +452,8 @@
     object-fit: cover;
 }
 
-@media (max-width: 1361px) {}
+@media (max-width: 1361px) {
+}
 
 @media (max-width: 1281px) {
     .daily-schedule__item-bg-image-wrap {
@@ -644,6 +650,7 @@
 .lifestyle-item__slide-img-wrap {
     height: 600px;
     width: 560px;
+    background-color: #CFCFCF;
 }
 
 .lifestyle-item__slide-img {
@@ -1164,6 +1171,7 @@
     width: 100%;
     border-radius: 24px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 
 .development__image-card-img {
@@ -1219,6 +1227,12 @@
     margin-right: 40px;
     height: 32px;
     width: 32px;
+}
+
+.development__button-img svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .development__button:hover,
@@ -1431,7 +1445,7 @@
     max-height: 100px;
 }
 
-.how-to-get__item-icon {
+.how-to-get__item-icon-wrap svg {
     width: 100%;
     height: 100%;
     object-fit: cover;

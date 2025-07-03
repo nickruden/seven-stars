@@ -119,6 +119,9 @@
     top: 32px;
     right: 32px;
 }
+.wrapper.no-images .inspiration-section__slide-text-img {
+    display: none!important;
+}
 .inspiration-section__slide-text::first-letter {
     text-transform: uppercase;
 }
@@ -130,6 +133,7 @@
 .inspiration-section__slide-image-wrap {
     width: 100%;
     height: 100%;
+    background-color: #CFCFCF;
 }
 .inspiration-section__slide-image-photo {
     height: 100%;

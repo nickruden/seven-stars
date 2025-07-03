@@ -64,6 +64,14 @@
     height: 26px;
     width: 26px;
 }
+.branches__address-icon svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.wrapper.no-images .branches__address-icon {
+    display: block;
+}
 .branches__address-text {
     font-size: 24px;
     line-height: 130%;
@@ -100,6 +108,7 @@
     width: 100%;
     border-radius: 24px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 .branches__img {
     height: 100%;

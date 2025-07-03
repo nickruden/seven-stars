@@ -262,6 +262,7 @@
     height: 540px;
     border-radius: 16px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 .advantage-item__slide-img {
     width: 100%;

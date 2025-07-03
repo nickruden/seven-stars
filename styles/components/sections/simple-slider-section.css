@@ -34,9 +34,9 @@
 .simple-slider-section__slide-img-wrap {
     border-radius: 24px;
     overflow: hidden;
-    background-color: #FCFCFC;
     height: 320px;
     width: 302px;
+    background-color: #CFCFCF;
 }
 @media (min-width: 992px) {
     .--desktopMode-wrap .simple-slider-section__swiper-wrapper {
@@ -193,7 +193,6 @@
         flex-direction: column;
     }
     .simple-slider-section__slide-img-wrap {
-        background-color: #F6F6F6;
         height: 350px;
         /* max-width: 430px; */
         width: 100%;
@@ -218,7 +217,6 @@
         gap: 30px;
     }
     .simple-slider-section__slide-img-wrap {
-        background-color: #F6F6F6;
         height: 275px;
     }
     .--desktopMode-wrap .simple-slider-section__slide-img-wrap {

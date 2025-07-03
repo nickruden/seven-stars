@@ -24,6 +24,7 @@
 }
 .footer__logo-img {
     height: 100%;
+    display: block!important;
 }
 .footer__button-reviews {
     display: flex;

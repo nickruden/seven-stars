@@ -66,6 +66,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: block!important;
 }
 
 .pre-mobile-menu {
@@ -106,7 +107,14 @@
 
 .header__smp-link {}
 
-.header__smp-img {}
+.header__smp-img {
+}
+
+.header__smp-img svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .header__buttons {
     display: flex;

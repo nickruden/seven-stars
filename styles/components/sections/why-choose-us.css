@@ -98,9 +98,11 @@
 }
 .why-choose-us__accordion-body-img-wrap {
     max-width: 410px;
+    width: 100%;
     border-radius: 20px!important;
     overflow: hidden;
     aspect-ratio: 410 / 200;
+    background-color: #CFCFCF;
 }
 .why-choose-us__accordion-body-img {
     height: 100%;

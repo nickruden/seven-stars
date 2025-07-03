@@ -31,10 +31,11 @@
     <link rel="stylesheet" href="../styles/components/stories.css">
     <link rel="stylesheet" href="../styles/components/double-slider.css">
     <link rel="stylesheet" href="../styles/components/button-up.css">
+    <link rel="stylesheet" href="../styles/components/add-features-button.css">
+    <link rel="stylesheet" href="../styles/components/additional-feature-panel.css">
 
-    <!-- вот этот компонент не подключать лучше к главной странице -->
+
     <link rel="stylesheet" href="../styles/components/sections/hero-section.css">
-
     <link rel="stylesheet" href="../styles/components/sections/staff-section.css">
     <link rel="stylesheet" href="../styles/components/sections/branches-section.css">
     <link rel="stylesheet" href="../styles/components/sections/why-choose-us.css">
@@ -50,12 +51,145 @@
 
 <body>
     <div class="wrapper">
+        <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
+         <div class="additional-feature-panel">
+            <div class="my-container additional-feature-panel__container">
+                <div class="additional-feature-panel__inner">
+                    <div class="additional-feature-panel__controls">
+                        <div class="additional-feature-panel__option" id="image-controls">
+                            <div class="additional-feature-panel__option-title">Изображения</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs" role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="on-images" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.32374 7.83721C7.64788 7.31859 8.40319 7.31859 8.72732 7.83721L13.441 15.3792C13.7855 15.9304 13.3893 16.6454 12.7392 16.6454H3.31182C2.6618 16.6454 2.26552 15.9304 2.61003 15.3792L7.32374 7.83721Z"
+                                                    fill="black" />
+                                                <path
+                                                    d="M13.2778 1.49273C13.8344 0.60606 15.1314 0.60606 15.688 1.49273L23.7817 14.3873C24.3729 15.3296 23.6927 16.5513 22.5767 16.5513H15.6147L9.71924 7.1607L13.2778 1.49273Z"
+                                                    fill="black" />
+                                                <circle cx="3.31034" cy="3.31034" r="3.31034" fill="black" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="off-images" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10.5" stroke="black" stroke-width="3"/>
+                                                <path d="M6 18.5L19 5.5" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="text-size-controls">
+                            <div class="additional-feature-panel__option-title">Размер шрифта</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs" role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="small-size-texts" data-bs-toggle="pill" type="button" role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="medium-size-texts" data-bs-toggle="pill" type="button" role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="large-size-texts" data-bs-toggle="pill" type="button" role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="color-theme-controls">
+                            <div class="additional-feature-panel__option-title">Цвет фона и текста</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs" role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="white-color-theme" data-bs-toggle="pill" type="button" role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="yellow-color-theme" data-bs-toggle="pill" type="button" role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blackWhite-color-theme" data-bs-toggle="pill" type="button" role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blackGreen-color-theme" data-bs-toggle="pill" type="button" role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blue-color-theme" data-bs-toggle="pill" type="button" role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="sound-controls">
+                            <div class="additional-feature-panel__option-title">Озвучивание текста</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs" role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="on-sound" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.32275 7.1841C5.32291 6.47365 5.69967 5.81613 6.31299 5.45753L13.7036 1.1382C14.3703 0.748497 15.2085 1.22928 15.2085 2.00148V20.0894C15.2085 20.8616 14.3703 21.3424 13.7036 20.9527L6.31299 16.6323C5.69971 16.2736 5.32275 15.6163 5.32275 14.9058V7.1841Z"
+                                                    fill="black" />
+                                                <rect y="6.14493" width="4.56255" height="9.88553" rx="1" fill="black" />
+                                                <path
+                                                    d="M18.1572 7.08246C18.6622 7.58754 19.0629 8.18716 19.3362 8.84708C19.6096 9.507 19.7503 10.2143 19.7503 10.9286C19.7503 11.6429 19.6096 12.3502 19.3362 13.0101C19.0629 13.67 18.6622 14.2696 18.1572 14.7747"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M20.191 4.46029C21.0404 5.30972 21.7142 6.31814 22.1739 7.42797C22.6336 8.5378 22.8702 9.72732 22.8702 10.9286C22.8702 12.1299 22.6336 13.3194 22.1739 14.4292C21.7142 15.539 21.0404 16.5475 20.191 17.3969"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M22.2738 1.20219C23.5511 2.47948 24.5643 3.99584 25.2555 5.6647C25.9468 7.33356 26.3026 9.12223 26.3026 10.9286C26.3026 12.7349 25.9468 14.5236 25.2555 16.1925C24.5643 17.8613 23.5511 19.3777 22.2738 20.655"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="off-sound" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10.5" stroke="black" stroke-width="3"/>
+                                                <path d="M6 18.5L19 5.5" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="my-button my-button_noColor my-button_borderOval additional-feature-panel__button-off">Обычная версия сайта</button>
+                </div>
+            </div>
+            <button class="additional-feature-panel__close">
+                <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00006 26L24.3525 2" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M24.9999 26L1.64746 2" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+         </div>
+
         <header class="header">
             <div class="my-container header__container">
                 <div class="header__desktop">
                     <div class="header__left">
-                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt="logo"
-                                class="header__logo-img"></a>
+                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg"
+                                alt="logo" class="header__logo-img"></a>
                         <div class="pre-mobile-menu header__pre-mobile-menu">
                             <div class="dropdown pre-mobile-menu__dropdown">
                                 <button class="burger-button dropdown-toggle" data-bs-toggle="dropdown"
@@ -64,11 +198,12 @@
                                     <span></span>
                                     <span></span>
                                 </button>
-        
+
                                 <ul class="dropdown-menu pre-mobile-menu__dropdown-menu" id="header-pre-mobile">
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./about.html">О нас</a>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./about.html">О
+                                            нас</a>
                                     </li>
-        
+
                                     <!-- Детские сады -->
                                     <li class="dropend">
                                         <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
@@ -96,7 +231,7 @@
                                                     развития</a></li>
                                         </ul>
                                     </li>
-        
+
                                     <!-- Центр развития -->
                                     <li class="dropend">
                                         <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
@@ -112,15 +247,19 @@
                                             <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                     href="./painting-education.html">Живопись</a>
                                             </li>
-                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item" href="./summer-holidays.html">Летние
+                                            <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                    href="./summer-holidays.html">Летние
                                                     каникулы</a></li>
                                         </ul>
                                     </li>
-        
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./news.html">Новости</a>
+
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
+                                            href="./news.html">Новости</a>
                                     </li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./blog.html">Блог</a></li>
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Сведения...</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
+                                            href="./blog.html">Блог</a></li>
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="#">Сведения...</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -158,7 +297,8 @@
                                             href="./early-development-school.html">Развивающие занятия</a></li>
                                     <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                             href="./painting-education.html">Живопись</a></li>
-                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item" href="./summer-holidays.html">Летние
+                                    <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                            href="./summer-holidays.html">Летние
                                             каникулы</a></li>
                                 </ul>
                             </li>
@@ -171,14 +311,56 @@
                     <div class="header__contacts">
                         <div class="header__smp">
                             <a href="#" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/WA.svg" alt="Tg-icon" class="header__smp-img">
+                                <div class="header__smp-img">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_129_518" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="48" height="49">
+                                            <rect y="0.5" width="48" height="48" fill="url(#pattern0_129_518)" />
+                                        </mask>
+                                        <g mask="url(#mask0_129_518)">
+                                            <rect x="-2" y="0.5" width="54" height="48" fill="#BACC92" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_129_518" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_129_518" transform="scale(0.01)" />
+                                            </pattern>
+                                            <image id="image0_129_518" width="100" height="100"
+                                                preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+                                </div>
                             </a>
                             <a href="#" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/tg.svg" alt="WA-icon" class="header__smp-img">
+                                <div class="header__smp-img">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_129_515" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="48" height="49">
+                                            <rect y="0.5" width="48" height="48" fill="url(#pattern0_129_515)" />
+                                        </mask>
+                                        <g mask="url(#mask0_129_515)">
+                                            <rect y="0.5" width="50" height="48" fill="#BACC92" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_129_515" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_129_515" transform="scale(0.01)" />
+                                            </pattern>
+                                            <image id="image0_129_515" width="100" height="100"
+                                                preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+
+                                </div>
                             </a>
                         </div>
                         <div class="header__buttons">
-                            <button class="my-button my-button_noColor my-button_borderOval header__button">ЗАПИСАТЬСЯ</button>
+                            <button
+                                class="my-button my-button_noColor my-button_borderOval header__button">ЗАПИСАТЬСЯ</button>
                             <a href="tel:+73952738200"
                                 class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7
                                 (3952) 738-200</a>
@@ -187,15 +369,16 @@
                 </div>
                 <div class="header__mobile --no-sectionsLinks">
                     <div class="header__mobile-top">
-                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt="logo"
-                                class="header__logo-img"></a>
+                        <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg"
+                                alt="logo" class="header__logo-img"></a>
                         <div class="header__buttons">
                             <a href="tel:+73952738200"
                                 class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7 (3952)
                                 738-200</a>
                         </div>
                         <div class="mobile-menu header__mobile-menu">
-                            <button class="burger-button mobile-menu__burger-button" data-toggle="#header-mobile-navbar">
+                            <button class="burger-button mobile-menu__burger-button"
+                                data-toggle="#header-mobile-navbar">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -203,38 +386,45 @@
                             <div class="mobile-menu__content" id="header-mobile-navbar">
                                 <div class="mobile-menu__content-inner">
                                     <ul class="mobile-menu__links">
-                                        <li class="mobile-menu__link-item"><a href="./about.html" class="mobile-menu__link">О
+                                        <li class="mobile-menu__link-item"><a href="./about.html"
+                                                class="mobile-menu__link">О
                                                 нас</a></li>
                                         <li class="mobile-menu__link-item dropdown header__dropdown">
-                                            <a href="#" class="mobile-menu__link dropdown-toggle" data-bs-toggle="dropdown"
-                                                aria-expanded="false">Детские сады</a>
+                                            <a href="#" class="mobile-menu__link dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Детские сады</a>
                                             <ul class="dropdown-menu header__dropdown-menu">
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                         href="./kindergarten-page.html">ул. Каландаришвили, 7</a></li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./kindergarten-page.html">ул. Александра Невского, 60</a></li>
+                                                        href="./kindergarten-page.html">ул. Александра Невского, 60</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./kindergarten-page.html">ул. Березовая, 8 (Солнечный)</a></li>
+                                                        href="./kindergarten-page.html">ул. Березовая, 8 (Солнечный)</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./kindergarten-page.html">ул. Декабрьских событий, 102</a></li>
+                                                        href="./kindergarten-page.html">ул. Декабрьских событий, 102</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./kindergarten-page.html">ул. Алмазная, 5 (Первомайский)</a></li>
+                                                        href="./kindergarten-page.html">ул. Алмазная, 5
+                                                        (Первомайский)</a></li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                         href="./kindergarten-page.html">Центр развития</a></li>
                                             </ul>
                                         </li>
                                         <li class="mobile-menu__link-item dropdown header__dropdown">
-                                            <a href="#" class="mobile-menu__link dropdown-toggle" data-bs-toggle="dropdown"
-                                                aria-expanded="false">Центр
+                                            <a href="#" class="mobile-menu__link dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Центр
                                                 развития</a>
                                             <ul class="dropdown-menu header__dropdown-menu">
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                         href="./development-center.html">О Центре развития</a></li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./early-development-school.html">Развивающие занятия</a></li>
+                                                        href="./early-development-school.html">Развивающие занятия</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                         href="./painting-education.html">Живопись</a></li>
-                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item" href="./summer-holidays.html">Летние
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./summer-holidays.html">Летние
                                                         каникулы</a></li>
                                             </ul>
                                         </li>
@@ -243,7 +433,8 @@
                                         <li class="mobile-menu__link-item"><a href="./blog.html"
                                                 class="mobile-menu__link">Блог</a>
                                         </li>
-                                        <li class="mobile-menu__link-item"><a href="#" class="mobile-menu__link">Сведения...</a>
+                                        <li class="mobile-menu__link-item"><a href="#"
+                                                class="mobile-menu__link">Сведения...</a>
                                         </li>
                                     </ul>
                                     <div class="mobile-menu__buttons">
@@ -300,23 +491,35 @@
         <div class="my-overlay" id="burger-menu-overlay"></div>
 
         <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
-        <a href="#topBlock" class="button-up">
-            <span class="button-up__img">
-                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_18852_13195)">
-                        <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
-                            stroke="#4E6932" />
-                        <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
-                            stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_18852_13195">
-                            <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </span>
-        </a>
+        <div class="my-container addon-buttons__cotainer">
+            <a href="#topBlock" class="button-up">
+                <span class="button-up__img">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18852_13195)">
+                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                                stroke="#4E6932" />
+                            <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
+                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_18852_13195">
+                                <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+            </a>
+            <button class="button-add-features">
+                <div class="button-add-features__img">
+                    <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M27.6672 5.51499C27.6672 4.40542 27.7318 4.04225 28.3724 3.56411C30.6801 1.84135 39.6379 1.46359 42.3798 2.27204C46.4765 3.48017 45.4375 10.5044 42.7154 13.0064C41.1255 14.2365 38.5182 14.377 36.381 14.377C34.1864 14.377 31.6293 13.5521 30.0771 11.9261C29.0687 10.8676 27.6672 7.60275 27.6672 5.51499ZM48 3.09145V4.56237C48 5.60624 47.3558 5.54784 47.1153 6.52055C46.5932 8.65027 46.708 9.88942 45.8844 12.3203C44.3699 16.7805 35.4084 16.3863 31.9882 15.2238C28.9 14.1726 28.0781 12.7272 26.7915 10.0281C25.4923 7.30345 26.2765 5.46937 24.0209 5.53324C22.571 5.57339 22.4544 6.01321 22.2695 6.79064C21.7581 8.94591 20.886 11.1961 19.5689 12.9079C16.9024 16.3753 9.87892 16.4885 5.94551 15.4081C1.11129 14.0795 1.89546 10.3256 0.89057 6.4439C0.682415 5.63909 0.0238553 5.56609 0.0238553 4.56237C0.0238553 2.74288 -0.288377 1.45629 1.34636 0.855877C4.00033 -0.120476 14.5516 -0.36137 18.3505 0.797478C20.9111 1.57856 22.1349 2.81953 24.0119 2.81953C25.6162 2.81953 27.4716 1.61141 28.6829 1.11685C32.1515 -0.302971 40.5118 -0.153325 44.2371 0.385038C47.5586 0.866827 47.9623 1.17159 48 3.09145ZM11.6446 14.377C7.18008 14.377 3.94471 13.6561 3.14259 8.92037C2.6886 6.24863 2.88958 3.1316 5.57226 2.29577C8.3698 1.42344 16.4717 1.93625 19.0485 3.22467C20.0139 3.70829 20.3584 4.02583 20.3584 5.4201C20.3584 7.23045 19.2369 10.5263 17.9934 11.8768C16.4896 13.512 13.8841 14.377 11.6446 14.377Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </button>
+        </div>
 
         <main class="main">
             <!-- СТИЛИ ВЫНЕС ОТДЕЛЬНО -->
@@ -843,7 +1046,8 @@
                         <div class="daily-schedule__items">
                             <div class="daily-schedule__item">
                                 <div class="daily-schedule__item-bg-image-wrap">
-                                    <img src="../assets/images/pages/kindergarten-page/daily-schedule/morning-icon.svg" alt="" class="daily-schedule__item-bg-img">
+                                    <img src="../assets/images/pages/kindergarten-page/daily-schedule/morning-icon.svg"
+                                        alt="" class="daily-schedule__item-bg-img">
                                 </div>
                                 <div class="daily-schedule__times">
                                     <div class="daily-schedule__time-item">
@@ -864,7 +1068,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    8.45 
+                                                    8.45
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -878,7 +1082,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    9.00 
+                                                    9.00
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -892,7 +1096,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    9.15 
+                                                    9.15
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -906,7 +1110,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    9.30 
+                                                    9.30
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -914,16 +1118,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="daily-schedule__time-text">проектная деятельность/дополнительное образование</div>
+                                        <div class="daily-schedule__time-text">проектная деятельность/дополнительное
+                                            образование</div>
                                     </div>
                                 </div>
                                 <div class="daily-schedule__video-poster-wrap --video-poster">
-                                    <img src="../assets/images/no-photo.png" alt="" class="daily-schedule__video-poster-img">
+                                    <img src="../assets/images/no-photo.png" alt=""
+                                        class="daily-schedule__video-poster-img">
                                 </div>
                             </div>
                             <div class="daily-schedule__item">
                                 <div class="daily-schedule__item-bg-image-wrap">
-                                    <img src="../assets/images/pages/kindergarten-page/daily-schedule/day-icon.svg" alt="" class="daily-schedule__item-bg-img">
+                                    <img src="../assets/images/pages/kindergarten-page/daily-schedule/day-icon.svg"
+                                        alt="" class="daily-schedule__item-bg-img">
                                 </div>
                                 <div class="daily-schedule__times">
                                     <div class="daily-schedule__time-item">
@@ -944,7 +1151,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    10.40 
+                                                    10.40
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -972,7 +1179,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    12.30 
+                                                    12.30
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -980,13 +1187,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="daily-schedule__time-text">подготовка ко сну, чтение&nbsp;художественной литературы</div>
+                                        <div class="daily-schedule__time-text">подготовка ко сну,
+                                            чтение&nbsp;художественной литературы</div>
                                     </div>
                                     <div class="daily-schedule__time-item">
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    13.00 
+                                                    13.00
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -1000,7 +1208,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    15.00 
+                                                    15.00
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -1012,12 +1220,14 @@
                                     </div>
                                 </div>
                                 <div class="daily-schedule__video-poster-wrap --video-poster">
-                                    <img src="../assets/images/no-photo.png" alt="" class="daily-schedule__video-poster-img">
+                                    <img src="../assets/images/no-photo.png" alt=""
+                                        class="daily-schedule__video-poster-img">
                                 </div>
                             </div>
                             <div class="daily-schedule__item">
                                 <div class="daily-schedule__item-bg-image-wrap">
-                                    <img src="../assets/images/pages/kindergarten-page/daily-schedule/evening-icon.svg" alt="" class="daily-schedule__item-bg-img">
+                                    <img src="../assets/images/pages/kindergarten-page/daily-schedule/evening-icon.svg"
+                                        alt="" class="daily-schedule__item-bg-img">
                                 </div>
                                 <div class="daily-schedule__times">
                                     <div class="daily-schedule__time-item">
@@ -1038,7 +1248,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    15.30 
+                                                    15.30
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -1046,13 +1256,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="daily-schedule__time-text">проектная деятельность/дополнительное образование/прогулка</div>
+                                        <div class="daily-schedule__time-text">проектная деятельность/дополнительное
+                                            образование/прогулка</div>
                                     </div>
                                     <div class="daily-schedule__time-item">
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    17.20 
+                                                    17.20
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -1066,7 +1277,7 @@
                                         <div class="daily-schedule__time-parts">
                                             <div class="daily-schedule__time-parts">
                                                 <div class="daily-schedule__time-start">
-                                                    17.40 
+                                                    17.40
                                                 </div>
                                                 <div class="daily-schedule__time-divider"></div>
                                                 <div class="daily-schedule__time-end">
@@ -1092,14 +1303,15 @@
                                     </div>
                                 </div>
                                 <div class="daily-schedule__video-poster-wrap --video-poster">
-                                    <img src="../assets/images/no-photo.png" alt="" class="daily-schedule__video-poster-img">
+                                    <img src="../assets/images/no-photo.png" alt=""
+                                        class="daily-schedule__video-poster-img">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             <div class="lifestyle main__lifestyle">
                 <div class="lifestyle__items">
                     <div class="lifestyle__block-nutrition lifestyle-item --sectionPadding">
@@ -1111,8 +1323,8 @@
                                             <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_18852_13191)">
-                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
-                                                        stroke="#4E6932" />
+                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)"
+                                                        fill="white" stroke="#4E6932" />
                                                     <path
                                                         d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
                                                         stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
@@ -1182,7 +1394,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
+                                <div
+                                    class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                                 <div class="lifestyle-item__pre-title-mobile">
                                     В каждом детском саду оборудован профессиональный пищеблок, в котором трудится повар
@@ -1266,8 +1479,8 @@
                                             <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_18852_13191)">
-                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
-                                                        stroke="#4E6932" />
+                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)"
+                                                        fill="white" stroke="#4E6932" />
                                                     <path
                                                         d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
                                                         stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
@@ -1307,8 +1520,8 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="../assets/images/pages/kindergarten-page/lifestyle/block-walk/slide-1.jpg" alt=""
-                                                        class="lifestyle-item__slide-img">
+                                                    <img src="../assets/images/pages/kindergarten-page/lifestyle/block-walk/slide-1.jpg"
+                                                        alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
                                         </div>
@@ -1338,7 +1551,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
+                                <div
+                                    class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                                 <div class="lifestyle-item__pre-title-mobile">
                                     Детские площадки — это отличная возможность для ребёнка еще больше узнать об
@@ -1420,8 +1634,8 @@
                                             <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_18852_13191)">
-                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
-                                                        stroke="#4E6932" />
+                                                    <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)"
+                                                        fill="white" stroke="#4E6932" />
                                                     <path
                                                         d="M22 36L31.1863 27.7677C32.2712 26.7955 32.2712 25.2046 31.1863 24.2323L22 16"
                                                         stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
@@ -1491,7 +1705,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
+                                <div
+                                    class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
                                 <div class="lifestyle-item__pre-title-mobile">
                                     Врач-педиатр регулярно осматривает детей в соответствии с требованиями в сфере
@@ -1681,54 +1896,107 @@
                             </div>
                         </div>
                         <div class="development__buttons">
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"
-                                data-slide="0">
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="0">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
-                                <img src="../assets/images/pages/main/development/svg_robot.svg" alt=""
-                                    class="development__button-img"> Робототехника
+                                <div class="development__button-img">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_101_476)">
+                                            <path
+                                                d="M23.84 3.50817C23.6934 3.52629 23.5622 3.60559 23.4725 3.72567L21.7925 5.93692C21.4775 5.51324 20.9831 5.23004 20.4275 5.23004H18.8525C17.9009 5.23004 17.12 6.03887 17.12 7.02442V11.5557C17.12 12.5412 17.9009 13.35 18.8525 13.35H20.4275C20.9831 13.35 21.4775 13.0668 21.7925 12.6432L23.4725 14.8544C23.6366 15.0674 23.9231 15.1286 24.155 14.9994L29.7025 11.8638C29.9344 11.7346 30.0416 11.4537 29.9606 11.1954C29.8775 10.9349 29.6303 10.7763 29.37 10.8125C29.3022 10.8239 29.2366 10.8488 29.1775 10.885L24.05 13.8032L22.16 11.32V7.27817L24.05 4.79504L29.1775 7.69504C29.3481 7.81512 29.5691 7.82418 29.7484 7.71996C29.9278 7.61574 30.035 7.41637 30.0241 7.2034C30.0153 6.99043 29.8906 6.80238 29.7025 6.71629L24.155 3.58067C24.0588 3.52403 23.9494 3.4991 23.84 3.50817ZM7.04 4.07004C4.26188 4.07004 2 6.4127 2 9.29004C2 12.1674 4.26188 14.51 7.04 14.51C9.81813 14.51 12.08 12.1674 12.08 9.29004C12.08 6.4127 9.81813 4.07004 7.04 4.07004ZM12.465 6.39004C12.9091 7.27137 13.2 8.22973 13.2 9.29004C13.2 10.3504 12.9091 11.8887 12.465 12.77H15.9825C15.9409 12.5684 15.9475 11.823 15.9475 11.61V6.97004C15.9475 6.75707 15.9409 6.59168 15.9825 6.39004H12.465ZM7.04 6.58942C8.47281 6.58942 9.6475 7.80606 9.6475 9.29004C9.6475 10.774 8.47281 11.9907 7.04 11.9907C5.60719 11.9907 4.4325 10.774 4.4325 9.29004C4.4325 7.80606 5.60719 6.58942 7.04 6.58942ZM11.975 13.0963C10.8506 14.6505 9.05688 15.67 7.04 15.67C6.35313 15.67 5.69688 15.5409 5.08 15.3257L9.9975 24.9319H18.4325L11.975 13.0963ZM5.85 26.11C4.94219 26.11 4.24 26.8736 4.24 27.85V30.75C4.24 31.0876 4.47406 31.33 4.8 31.33H23.84C24.1659 31.33 24.4 31.0876 24.4 30.75V27.85C24.4 26.8736 23.6978 26.11 22.79 26.11H5.85Z"
+                                                fill="#4E6932" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_101_476">
+                                                <rect width="28" height="29" fill="white" transform="translate(2 2.33008)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div> Робототехника
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"
-                                data-slide="1">
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="1">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
-                                <img src="../assets/images/pages/main/development/svg_dance.svg" alt=""
-                                    class="development__button-img"> Ритмика
+                                <div class="development__button-img">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2050_459)">
+                                            <path
+                                                d="M27.5842 6.73757C25.4208 7.52815 23.1683 8.01698 20.8747 8.26312C20.6046 8.29265 20.365 8.36846 20.1585 8.47873C19.5903 8.26656 18.9605 8.21241 18.404 8.35615C18.3654 8.36649 18.3293 8.38028 18.2886 8.39209C15.152 7.51289 12.3696 5.81702 10.3684 3.26065C9.12265 1.66865 6.30202 3.23013 7.5666 4.84577C9.87092 7.78857 12.8655 9.92355 16.4044 11.1094C16.4085 11.2802 16.4243 11.453 16.4532 11.6258C16.6023 12.506 16.7681 13.3862 16.8663 14.2728C16.9019 14.5868 16.9187 14.9024 16.9299 15.2179C16.9345 15.3134 16.8678 16.0489 16.8983 15.9883C16.6735 16.9507 15.8164 17.7659 14.7695 18.7677C11.5562 16.8912 8.26298 15.1308 4.95402 13.4275C2.92336 12.3829 1.11958 15.3646 3.15278 16.4102C6.40884 18.0854 9.62523 19.8364 12.7958 21.6613C13.4764 22.0516 14.1449 22.4661 14.8092 22.885C14.9852 23.0258 15.1775 23.1479 15.3809 23.2469C16.672 24.0729 17.9559 24.9107 19.2876 25.6595C19.9921 26.0577 20.5329 26.2133 21.1423 26.7489C21.2298 26.8267 21.301 26.8631 21.3539 26.8823C21.3162 26.9044 21.2679 26.9399 21.2104 26.9955C20.4159 27.7792 18.4396 28.1366 17.6883 28.9749C16.1877 30.6487 18.3445 32.726 20.2119 31.4176C22.3158 29.9432 25.992 29.0109 24.9935 26.1532C24.4548 24.6149 22.9013 23.6353 21.5039 22.8988C20.7938 22.5247 20.1381 22.1142 19.5053 21.7016C20.6778 20.4813 21.7089 19.1536 22.1907 17.5163C22.7451 15.628 22.3865 13.5353 22.0238 11.5781C24.2417 11.2881 26.4244 10.8377 28.5314 10.0668C30.6627 9.28852 29.74 5.94846 27.5842 6.73757Z"
+                                                fill="#4E6932" />
+                                            <path
+                                                d="M18.2575 7.25097C19.8044 7.25097 21.0583 6.03746 21.0583 4.54052C21.0583 3.04359 19.8044 1.83008 18.2575 1.83008C16.7107 1.83008 15.4567 3.04359 15.4567 4.54052C15.4567 6.03746 16.7107 7.25097 18.2575 7.25097Z"
+                                                fill="#4E6932" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2050_459">
+                                                <rect width="31" height="30" fill="white" transform="translate(0.5 1.83008)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div> Ритмика
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"
-                                data-slide="2">
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="2">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
-                                <img src="../assets/images/pages/main/development/svg_music.svg" alt=""
-                                    class="development__button-img"> Музыка
+                                <div class="development__button-img">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.8984 4.18933C17.3142 4.00455 15.8111 4.93351 15.268 6.43296C15.1456 6.77089 15.1026 7.13624 15.0825 7.5192C15.0674 7.80811 15.0636 8.1525 15.0629 8.5581L15.0625 9.12684C15.0625 9.13285 15.0625 9.13885 15.0625 9.14483V19.228C14.0004 18.2311 12.5715 17.6206 11 17.6206C7.72081 17.6206 5.0625 20.2789 5.0625 23.5581C5.0625 26.8374 7.72081 29.4956 11 29.4956C14.2792 29.4956 16.9375 26.8374 16.9375 23.5581V12.5713C17.0685 12.6412 17.2104 12.7121 17.3659 12.7897L20.7502 14.4819C21.2731 14.7432 21.6986 14.956 22.0472 15.108C22.3987 15.2612 22.7447 15.3862 23.1017 15.4279C24.6857 15.6126 26.1889 14.6836 26.732 13.1842C26.8545 12.8463 26.8974 12.4809 26.9176 12.098C26.9375 11.7182 26.9375 11.2425 26.9375 10.658L26.9376 10.5544C26.9377 10.1197 26.9379 9.77968 26.8762 9.45743C26.7175 8.62791 26.2589 7.88589 25.588 7.37291C25.3272 7.17363 25.0231 7.0217 24.6342 6.82748L21.2499 5.13534C20.727 4.8739 20.3015 4.66115 19.9529 4.50918C19.6014 4.35593 19.2554 4.23096 18.8984 4.18933Z"
+                                            fill="#4E6932" />
+                                    </svg>
+                                </div> Музыка
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"
-                                data-slide="3">
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="3">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
-                                <img src="../assets/images/pages/main/development/svg_book.svg" alt=""
-                                    class="development__button-img"> Английский
+                                <div class="development__button-img">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M28.5 7.89414V22.7567C28.5 23.9692 27.5125 25.0817 26.3 25.2317L25.9125 25.2817C23.8625 25.5567 20.975 26.4067 18.65 27.3817C17.8375 27.7192 16.9375 27.1067 16.9375 26.2192V8.83164C16.9375 8.36914 17.2 7.94414 17.6125 7.71914C19.9 6.48164 23.3625 5.38164 25.7125 5.18164H25.7875C27.2875 5.18164 28.5 6.39414 28.5 7.89414Z"
+                                            fill="#4E6932" />
+                                        <path
+                                            d="M14.3844 7.71914C12.0969 6.48164 8.63438 5.38164 6.28437 5.18164H6.19687C4.69687 5.18164 3.48438 6.39414 3.48438 7.89414V22.7567C3.48438 23.9692 4.47187 25.0817 5.68438 25.2317L6.07187 25.2817C8.12187 25.5567 11.0094 26.4067 13.3344 27.3817C14.1469 27.7192 15.0469 27.1067 15.0469 26.2192V8.83164C15.0469 8.35664 14.7969 7.94414 14.3844 7.71914ZM7.24688 11.5066H10.0594C10.5719 11.5066 10.9969 11.9316 10.9969 12.4441C10.9969 12.9691 10.5719 13.3816 10.0594 13.3816H7.24688C6.73438 13.3816 6.30938 12.9691 6.30938 12.4441C6.30938 11.9316 6.73438 11.5066 7.24688 11.5066ZM10.9969 17.1317H7.24688C6.73438 17.1317 6.30938 16.7192 6.30938 16.1942C6.30938 15.6817 6.73438 15.2567 7.24688 15.2567H10.9969C11.5094 15.2567 11.9344 15.6817 11.9344 16.1942C11.9344 16.7192 11.5094 17.1317 10.9969 17.1317Z"
+                                            fill="#4E6932" />
+                                    </svg>
+                                </div> Английский
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button"
-                                data-slide="4">
+                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="4">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
-                                <img src="../assets/images/pages/main/development/svg_brush.svg" alt=""
-                                    class="development__button-img"> Творчество
+                                <div class="development__button-img">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M28.2593 7.08606C26.6218 11.0373 22.8843 16.1968 19.3218 19.5681C18.8093 16.4506 16.2343 14.0098 12.9844 13.5748C16.4843 10.119 21.8593 6.45772 25.9593 4.86272C26.6843 4.59689 27.4093 4.80231 27.8593 5.23731C28.3343 5.69647 28.5593 6.38522 28.2593 7.08606Z"
+                                            fill="#4E6932" />
+                                        <path
+                                            d="M18.2234 20.5627C17.9734 20.7681 17.7234 20.9735 17.4734 21.1668L15.2359 22.8948C15.2359 22.8585 15.2234 22.8102 15.2234 22.7618C15.0484 21.4689 14.4234 20.2727 13.4109 19.2939C12.3859 18.3031 11.1109 17.6989 9.71094 17.5298C9.67344 17.5298 9.62344 17.5177 9.58594 17.5177L11.3984 15.3064C11.5734 15.0889 11.7609 14.8835 11.9609 14.666L12.8109 14.7748C15.4984 15.1373 17.6609 17.1793 18.0859 19.7652L18.2234 20.5627Z"
+                                            fill="#4E6932" />
+                                        <path
+                                            d="M14.0353 23.6199C14.0353 24.9491 13.5103 26.2178 12.5103 27.1724C11.7478 27.9216 10.7228 28.4291 9.47276 28.5741L6.41025 28.9003C4.73525 29.0816 3.29775 27.692 3.48525 26.0608L3.82275 23.0883C4.12275 20.442 6.41025 18.7503 8.83525 18.702C9.07275 18.6899 9.33525 18.702 9.58525 18.7262C10.6478 18.8591 11.6728 19.3303 12.5353 20.152C13.3728 20.9616 13.8478 21.9162 13.9853 22.9191C14.0103 23.1608 14.0353 23.3903 14.0353 23.6199Z"
+                                            fill="#4E6932" />
+                                    </svg>
+                                </div> Творчество
                             </button>
-                            <button
-                                class="my-button my-button_noColor my-button_noBorder development__button development__button_isIndivid"
+                            <button class="my-button my-button_noColor my-button_noBorder development__button development__button_isIndivid"
                                 data-slide="5">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
-                                <img src="../assets/images/pages/main/development/svg_teacher.svg" alt=""
-                                    class="development__button-img"> Логопед
+                                <div class="development__button-img">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.633 21.2325C22.4147 20.7008 23.4414 21.2808 23.4414 22.2475V23.8063C23.4414 25.3408 22.2864 26.9842 20.898 27.4675L17.1764 28.7483C16.523 28.9779 15.4614 28.9779 14.8197 28.7483L11.098 27.4675C9.69802 26.9842 8.55469 25.3408 8.55469 23.8063V22.2354C8.55469 21.2808 9.58135 20.7008 10.3514 21.2204L12.7547 22.8396C13.6764 23.48 14.843 23.7942 16.0097 23.7942C17.1764 23.7942 18.343 23.48 19.2647 22.8396L21.633 21.2325Z"
+                                            fill="#4E6932" />
+                                        <path
+                                            d="M25.3127 10.1363L18.3243 5.38758C17.0643 4.52966 14.9877 4.52966 13.7277 5.38758L6.70437 10.1363C4.45271 11.6467 4.45271 15.0663 6.70437 16.5888L8.57104 17.8455L13.7277 21.3255C14.9877 22.1834 17.0643 22.1834 18.3243 21.3255L23.446 17.8455L25.0443 16.758V20.4555C25.0443 20.9509 25.441 21.3618 25.9193 21.3618C26.3977 21.3618 26.7943 20.9509 26.7943 20.4555V14.5105C27.261 12.9517 26.7827 11.1392 25.3127 10.1363Z"
+                                            fill="#4E6932" />
+                                    </svg>
+                                </div> Логопед
                             </button>
                         </div>
                     </div>
@@ -1742,8 +2010,16 @@
                     <div class="how-to-get__items">
                         <div class="how-to-get__item">
                             <div class="how-to-get__item-icon-wrap">
-                                <img src="../assets/images/pages/kindergarten-page/how-to-get/icon-1.svg" alt=""
-                                    class="how-to-get__item-icon">
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_20014_12708)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64.8193 0H95.1807C97.8313 0 100 2.16867 100 4.81928V44.0964C100 46.747 97.8313 48.9157 95.1807 48.9157H64.8193C62.1687 48.9157 60 46.747 60 44.0964V4.81928C60 2.16867 62.1687 0 64.8193 0ZM67.7108 11.3253C66.747 11.3253 65.7831 10.3614 65.7831 9.39759C65.7831 8.19277 66.747 7.22892 67.7108 7.22892H92.2892C93.253 7.22892 94.2169 8.19277 94.2169 9.39759C94.2169 10.3614 93.253 11.3253 92.2892 11.3253H67.7108ZM67.7108 20C66.747 20 65.7831 19.0361 65.7831 17.8313C65.7831 16.6265 66.747 15.9036 67.7108 15.9036H92.2892C93.253 15.9036 94.2169 16.6265 94.2169 17.8313C94.2169 19.0361 93.253 20 92.2892 20H67.7108ZM67.7108 28.4337C66.747 28.4337 65.7831 27.4699 65.7831 26.506C65.7831 25.3012 66.747 24.3373 67.7108 24.3373H80C81.2048 24.3373 82.1687 25.3012 82.1687 26.506C82.1687 27.4699 81.2048 28.4337 80 28.4337H67.7108ZM80.9639 39.5181C80 38.5542 80 37.3494 80.7229 36.3855C81.4458 35.6627 82.8916 35.6627 83.6145 36.3855L86.2651 38.5542L90.6024 32.5301C91.3253 31.8072 92.5301 31.5663 93.494 32.2892C94.4578 32.7711 94.4578 34.2169 93.9759 35.1807L87.9518 43.1325C87.2289 43.8554 86.0241 43.8554 85.0602 43.1325L80.9639 39.5181Z" fill="#4E6932"/>
+</g>
+<defs>
+<clipPath id="clip0_20014_12708">
+<rect width="40" height="48.9157" fill="white" transform="translate(60)"/>
+</clipPath>
+</defs>
+</svg>
                             </div>
                             <div class="how-to-get__item-inner">
                                 <div class="how-to-get__item-number">01</div>
@@ -1753,8 +2029,16 @@
                         </div>
                         <div class="how-to-get__item">
                             <div class="how-to-get__item-icon-wrap">
-                                <img src="../assets/images/pages/kindergarten-page/how-to-get/icon-2.svg" alt=""
-                                    class="how-to-get__item-icon">
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_20014_9048)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M90.2785 45.2771C90.2785 46.1772 89.5584 46.8973 88.6582 46.8973C87.7581 46.8973 87.038 46.1772 87.038 45.2771V23.4037C86.5879 23.6737 86.1378 23.8537 85.5978 23.9437V21.3333C85.5978 20.0731 84.9677 19.083 83.9775 18.4529L75.6062 12.962C76.3263 11.1617 77.5865 9.6315 79.2068 8.64135C79.2068 8.37131 79.2068 8.10126 79.2068 7.74121C79.2068 4.95077 81.4571 2.70042 84.2475 2.70042C84.3376 2.70042 84.5176 2.70042 84.6976 2.79044C85.1477 1.17018 86.6779 0 88.3882 0C90.5485 0 92.2588 1.71027 92.2588 3.8706C92.2588 4.23066 92.2588 4.5007 92.1688 4.77074C92.4388 4.77074 92.7089 4.68073 92.9789 4.68073C95.4093 4.68073 97.3896 6.66104 97.3896 9.09142C97.3896 9.90155 97.1195 10.7117 96.6695 11.4318C98.6498 12.602 100 14.7623 100 17.2827C100 20.9733 96.9395 24.0338 93.1589 24.0338C92.1688 24.0338 91.1786 23.7637 90.2785 23.4037V45.2771ZM46.9817 46.2672C46.9817 47.1674 46.2616 47.8875 45.3615 47.8875C44.4613 47.8875 43.7412 47.1674 43.7412 46.2672V27.5443C43.0211 27.9044 42.301 28.0844 41.4008 28.0844C38.4304 28.0844 36 25.654 36 22.6835C36 21.2433 36.5401 19.8931 37.4402 18.993C36.5401 18.0928 36 16.8326 36 15.3924C36 12.692 38.2504 10.4416 41.0408 10.4416C41.1308 10.4416 41.3108 10.4416 41.4008 10.4416C41.7609 8.10126 43.8312 6.30098 46.2616 6.30098C48.782 6.30098 50.8523 8.19128 51.2124 10.5316C51.5724 10.5316 51.9325 10.4416 52.2925 10.4416C54.6329 10.4416 56.6132 12.0619 57.2433 14.2222L50.7623 18.4529L50.6723 18.5429H50.5823V18.6329H50.4923L50.4023 18.7229H50.3122V18.8129H50.2222V18.903H50.1322V18.993H50.0422V19.083H49.9522V19.173H49.8622V19.263L49.7722 19.353L49.6821 19.443V19.5331H49.5921V19.6231L49.5021 19.7131V19.8031H49.4121V19.8931V19.9831L49.3221 20.0731V20.1631V20.2532H49.2321V20.3432V20.4332V20.5232L49.1421 20.6132V20.7032V20.7932V20.8833V20.9733V21.0633V21.1533V21.2433V21.3333V28.5345C48.3319 28.3544 47.7018 28.1744 46.9817 27.8143V46.2672ZM82.3572 24.5738V46.0872C82.3572 46.9873 81.6371 47.7075 80.737 47.7075H70.0253V36.5457H64.6245V47.7075H54.0028C53.1027 47.7075 52.3826 46.9873 52.3826 46.0872V24.5738H82.3572ZM55.8931 36.5457H61.294V42.6667H55.8931V36.5457ZM55.8931 27.0042H61.294V33.2152H55.8931V27.0042ZM64.6245 27.0042H70.0253V33.2152H64.6245V27.0042ZM73.4459 27.0042H78.7567V33.2152H73.4459V27.0042ZM73.4459 36.5457H78.7567V42.6667H73.4459V36.5457ZM67.3249 11.4318L74.7961 16.3826L82.3572 21.3333H67.3249H52.3826L59.8537 16.3826L67.3249 11.4318Z" fill="#4E6932"/>
+</g>
+<defs>
+<clipPath id="clip0_20014_9048">
+<rect width="64" height="47.8875" fill="white" transform="translate(36)"/>
+</clipPath>
+</defs>
+</svg>
                             </div>
                             <div class="how-to-get__item-inner">
                                 <div class="how-to-get__item-number">02</div>
@@ -1764,8 +2048,16 @@
                         </div>
                         <div class="how-to-get__item">
                             <div class="how-to-get__item-icon-wrap">
-                                <img src="../assets/images/pages/kindergarten-page/how-to-get/icon-3.svg" alt=""
-                                    class="how-to-get__item-icon">
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_20014_12288)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.2099 6.22222L60.5926 0V38.8889L45.2099 45.1111C44.5185 45.4568 44 44.9383 44 44.2469V8.2963C44 7.4321 44.5185 6.5679 45.2099 6.22222ZM98.7901 0.518519L83.4074 6.91358V45.8025L98.7901 39.4074C99.4815 39.0617 100 38.1975 100 37.3333V1.38272C100 0.691358 99.4815 0.17284 98.7901 0.518519ZM88.0741 12.7901L95.1605 9.85185C96.5432 9.33333 97.5802 10.0247 97.5802 11.5802V22.9877C97.5802 24.5432 96.5432 26.2716 95.1605 26.7901L88.0741 29.7284C86.8642 30.4198 85.6543 29.5556 85.6543 28V16.5926C85.6543 15.037 86.8642 13.3086 88.0741 12.7901ZM63.7037 0L80.2963 6.39506V45.1111L63.7037 38.8889V0ZM67.1605 12.7901C66.1235 12.4444 65.6049 11.2346 65.9506 10.1975C66.2963 9.16049 67.5062 8.46914 68.716 8.98765L76.321 11.9259C77.358 12.2716 77.8765 13.4815 77.5309 14.5185C77.1852 15.5556 75.9753 16.2469 74.7654 15.7284L67.1605 12.7901ZM67.1605 21.7778C66.1235 21.2593 65.6049 20.0494 65.9506 19.0123C66.4691 17.9753 67.679 17.4568 68.716 17.8025L73.9012 19.8765C74.9383 20.2222 75.4568 21.4321 75.1111 22.4691C74.7654 23.5062 73.5556 24.0247 72.3457 23.679L67.1605 21.7778Z" fill="#4E6932"/>
+</g>
+<defs>
+<clipPath id="clip0_20014_12288">
+<rect width="56" height="45.8025" fill="white" transform="translate(44)"/>
+</clipPath>
+</defs>
+</svg>
                             </div>
                             <div class="how-to-get__item-inner">
                                 <div class="how-to-get__item-number">03</div>
@@ -1775,8 +2067,16 @@
                         </div>
                         <div class="how-to-get__item">
                             <div class="how-to-get__item-icon-wrap">
-                                <img src="../assets/images/pages/kindergarten-page/how-to-get/icon-4.svg" alt=""
-                                    class="how-to-get__item-icon">
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_20014_11969)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M52 38.6295V13.7689H100V38.6295C100 41.1155 97.8964 43.2191 95.4104 43.2191H56.5896C54.1036 43.2191 52 41.1155 52 38.6295ZM89.8645 2.10359C89.8645 0.956175 90.8207 0 91.9681 0C93.1155 0 94.0717 0.956175 94.0717 2.10359V4.01594H95.4104C97.8964 4.01594 100 6.11952 100 8.60558V9.75299H52V8.60558C52 6.11952 54.1036 4.01594 56.5896 4.01594H57.9283V2.10359C57.9283 0.956175 58.8845 0 60.0319 0C61.1793 0 62.1355 0.956175 62.1355 2.10359V4.01594H63.2829V2.10359C63.2829 0.956175 64.239 0 65.3865 0C66.5339 0 67.2988 0.956175 67.2988 2.10359V4.01594H84.7012V2.10359C84.7012 0.956175 85.4661 0 86.6135 0C87.761 0 88.7171 0.956175 88.7171 2.10359V4.01594H89.8645V2.10359ZM59.4582 19.1235H62.1355C63.2829 19.1235 64.0478 19.8884 64.0478 20.8446V23.5219C64.0478 24.6693 63.2829 25.4343 62.1355 25.4343H59.4582C58.502 25.4343 57.7371 24.6693 57.7371 23.5219V20.8446C57.7371 19.8884 58.502 19.1235 59.4582 19.1235ZM69.5936 19.1235H72.2709C73.2271 19.1235 74.1833 19.8884 74.1833 20.8446V23.5219C74.1833 24.6693 73.2271 25.4343 72.2709 25.4343H69.5936C68.6375 25.4343 67.6813 24.6693 67.6813 23.5219V20.8446C67.6813 19.8884 68.6375 19.1235 69.5936 19.1235ZM79.7291 19.1235H82.4064C83.3626 19.1235 84.3187 19.8884 84.3187 20.8446V23.5219C84.3187 24.6693 83.3626 25.4343 82.4064 25.4343H79.7291C78.7729 25.4343 77.8167 24.6693 77.8167 23.5219V20.8446C77.8167 19.8884 78.7729 19.1235 79.7291 19.1235ZM89.8645 19.1235H92.5418C93.498 19.1235 94.263 19.8884 94.263 20.8446V23.5219C94.263 24.6693 93.498 25.4343 92.5418 25.4343H89.8645C88.7171 25.4343 87.9522 24.6693 87.9522 23.5219V20.8446C87.9522 19.8884 88.7171 19.1235 89.8645 19.1235ZM59.4582 31.1713H62.1355C63.2829 31.1713 64.0478 32.1275 64.0478 33.0837V35.761C64.0478 36.7171 63.2829 37.6733 62.1355 37.6733H59.4582C58.502 37.6733 57.7371 36.7171 57.7371 35.761V33.0837C57.7371 32.1275 58.502 31.1713 59.4582 31.1713ZM69.5936 31.1713H72.2709C73.2271 31.1713 74.1833 32.1275 74.1833 33.0837V35.761C74.1833 36.7171 73.2271 37.6733 72.2709 37.6733H69.5936C68.6375 37.6733 67.6813 36.7171 67.6813 35.761V33.0837C67.6813 32.1275 68.6375 31.1713 69.5936 31.1713ZM79.7291 31.1713H82.4064C83.3626 31.1713 84.3187 32.1275 84.3187 33.0837V35.761C84.3187 36.7171 83.3626 37.6733 82.4064 37.6733H79.7291C78.7729 37.6733 77.8167 36.7171 77.8167 35.761V33.0837C77.8167 32.1275 78.7729 31.1713 79.7291 31.1713ZM89.8645 31.1713H92.5418C93.498 31.1713 94.263 32.1275 94.263 33.0837V35.761C94.263 36.7171 93.498 37.6733 92.5418 37.6733H89.8645C88.7171 37.6733 87.9522 36.7171 87.9522 35.761V33.0837C87.9522 32.1275 88.7171 31.1713 89.8645 31.1713Z" fill="#4E6932"/>
+</g>
+<defs>
+<clipPath id="clip0_20014_11969">
+<rect width="48" height="43.2191" fill="white" transform="translate(52)"/>
+</clipPath>
+</defs>
+</svg>
                             </div>
                             <div class="how-to-get__item-inner">
                                 <div class="how-to-get__item-number">04</div>
@@ -1947,8 +2247,7 @@
             </section>
 
             <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО -->
-            <section
-                class="inspiration-section main__inspiration-section --sectionPadding --bgColor-green --withButton">
+            <section class="inspiration-section main__inspiration-section --sectionPadding --bgColor-green --withButton">
                 <div class="my-container inspiration-section__container">
                     <div class="inspiration-section__inner">
                         <div class="inspiration-section__desc">
@@ -2329,16 +2628,57 @@
                                         <div class="map-widgets__widget-texts">
                                             <div class="map-widgets__widget-rating">
                                                 <div class="map-widgets__widget-number">4,8</div>
-                                                <div class="map-widgets__widget-rating-text">по мнению пользователей Яндекс</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей
+                                                    Яндекс</div>
                                             </div>
-                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на Яндекс.Карты</a>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на
+                                                Яндекс.Карты</a>
                                         </div>
                                         <div class="map-widgets__widget-icons">
                                             <div class="map-widgets__widget-stars-wrap">
-                                                <img src="../assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                                <svg width="222" height="32" viewBox="0 0 222 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16 0L20.7023 9.52786L31.2169 11.0557L23.6085 18.4721L25.4046 28.9443L16 24L6.59544 28.9443L8.39155 18.4721L0.783095 11.0557L11.2977 9.52786L16 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M63.5 0L68.0553 9.52786L78.2414 11.0557L70.8707 18.4721L72.6107 28.9443L63.5 24L54.3893 28.9443L56.1293 18.4721L48.7586 11.0557L58.9447 9.52786L63.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M111 0L115.702 9.52786L126.217 11.0557L118.608 18.4721L120.405 28.9443L111 24L101.595 28.9443L103.392 18.4721L95.7831 11.0557L106.298 9.52786L111 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M158.5 0L163.055 9.52786L173.241 11.0557L165.871 18.4721L167.611 28.9443L158.5 24L149.389 28.9443L151.129 18.4721L143.759 11.0557L153.945 9.52786L158.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M206 0L210.702 9.52786L221.217 11.0557L213.608 18.4721L215.405 28.9443L206 24L196.595 28.9443L198.392 18.4721L190.783 11.0557L201.298 9.52786L206 0Z"
+                                                        fill="#4E6932" />
+                                                </svg>
                                             </div>
                                             <div class="map-widgets__widget-map-logo-wrap">
-                                                <img src="../assets/images/pages/main/reviews/Яндекс Карты лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                                <svg width="158" height="32" viewBox="0 0 158 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_20014_12021)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M31.4002 15.659C31.4002 7.01089 24.3712 0 15.7007 0C7.03016 0 0 7.01089 0 15.659C0 24.3072 7.02902 31.3192 15.7007 31.3192C24.3724 31.3192 31.4002 24.3072 31.4002 15.659Z"
+                                                            fill="#FC3F1D" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M17.7941 8.87461H16.3551C13.6727 8.87461 12.2997 10.2441 12.2997 12.2025C12.2997 14.4207 13.2814 15.4646 15.2437 16.8341L16.8795 17.9437L12.1689 24.9909H8.63672L12.8889 18.7266C10.4682 16.9657 9.09516 15.2683 9.09516 12.4623C9.09516 8.87348 11.5807 6.45898 16.3562 6.45898H21.0658V25.0545H17.7953L17.7941 8.87461Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M49.6171 0.0292969C42.6552 0.0292969 37.0117 5.6582 37.0117 12.6021C37.0117 16.073 38.4223 19.2148 40.702 21.4908C42.9828 23.7669 48.3567 27.0607 48.6718 30.5191C48.7196 31.0376 49.0961 31.462 49.6171 31.462C50.1381 31.462 50.5146 31.0376 50.5624 30.5191C50.8775 27.0619 56.2514 23.768 58.5322 21.4908C60.8119 19.2148 62.2225 16.073 62.2225 12.6021C62.2225 5.6582 56.579 0.0292969 49.6171 0.0292969Z"
+                                                            fill="#FF4433" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M49.6166 17.0045C52.0532 17.0045 54.028 15.0347 54.028 12.6044C54.028 10.174 52.0532 8.20312 49.6166 8.20312C47.1799 8.20312 45.2051 10.174 45.2051 12.6044C45.2051 15.0347 47.1799 17.0045 49.6166 17.0045Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M145.427 23.9065H143.551V18.4433H145.524C147.26 18.4433 148.278 19.2239 148.278 21.1913C148.278 23.1588 147.152 23.9065 145.427 23.9065ZM153.949 10.0413V27.0926H158V10.0413H153.949ZM139.511 10.0413V27.0926H145.663C149.64 27.0926 152.457 25.0616 152.457 21.0529C152.457 17.2576 149.939 15.2584 145.726 15.2584H143.55V10.0413H139.511ZM137.131 13.2274V10.0413H123.572V13.2274H128.332V27.0937H132.373V13.2274H137.132H137.131ZM115.223 24.239C113.079 24.239 111.986 22.5177 111.986 18.5828C111.986 14.6173 113.143 12.896 115.426 12.896C117.634 12.896 118.717 14.6173 118.717 18.5511C118.717 22.5177 117.559 24.239 115.223 24.239ZM111.686 10.0413H107.946V31.9998H111.986V25.0933C113.015 26.6115 114.505 27.4239 116.242 27.4239C120.176 27.4239 122.898 24.2809 122.898 18.5511C122.898 12.8529 120.251 9.71 116.446 9.71C114.538 9.71 112.973 10.5859 111.891 12.2436L111.686 10.0413ZM100.646 23.0204C100.132 23.7681 99.1772 24.3785 97.7519 24.3785C96.058 24.3785 95.2015 23.4277 95.2015 21.9731C95.2015 20.0386 96.595 19.3328 100.068 19.3328H100.647V23.0215L100.646 23.0204ZM104.686 15.4614C104.686 11.3348 102.575 9.77354 98.2979 9.77354C95.6178 9.77354 93.5076 10.6188 92.2847 11.3348V14.691C93.3677 13.8684 95.7475 12.9914 97.8258 12.9914C99.7551 12.9914 100.645 13.6653 100.645 15.5034V16.444H99.9906C93.8057 16.444 91.0619 18.4864 91.0619 21.9391C91.0619 25.3917 93.1629 27.3274 96.2924 27.3274C98.671 27.3274 99.6903 26.5468 100.472 25.7344H100.644C100.675 26.1724 100.814 26.7499 100.944 27.0926H104.888C104.749 25.7026 104.684 24.3127 104.684 22.9228V15.4603L104.686 15.4614ZM86.1009 27.0926H90.8924L82.4994 14.7239L90.1097 3.54102H85.9292L78.6192 14.3813V3.54102H74.5137V27.0926H78.6192V16.0378L86.1009 27.0926Z"
+                                                            fill="black" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_20014_12021">
+                                                            <rect width="158" height="32" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
@@ -2348,16 +2688,57 @@
                                         <div class="map-widgets__widget-texts">
                                             <div class="map-widgets__widget-rating">
                                                 <div class="map-widgets__widget-number">4,7</div>
-                                                <div class="map-widgets__widget-rating-text">по мнению пользователей 2ГИС</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей
+                                                    2ГИС</div>
                                             </div>
-                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на 2ГИС</a>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на
+                                                2ГИС</a>
                                         </div>
                                         <div class="map-widgets__widget-icons">
                                             <div class="map-widgets__widget-stars-wrap">
-                                                <img src="../assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                                <svg width="222" height="32" viewBox="0 0 222 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16 0L20.7023 9.52786L31.2169 11.0557L23.6085 18.4721L25.4046 28.9443L16 24L6.59544 28.9443L8.39155 18.4721L0.783095 11.0557L11.2977 9.52786L16 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M63.5 0L68.0553 9.52786L78.2414 11.0557L70.8707 18.4721L72.6107 28.9443L63.5 24L54.3893 28.9443L56.1293 18.4721L48.7586 11.0557L58.9447 9.52786L63.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M111 0L115.702 9.52786L126.217 11.0557L118.608 18.4721L120.405 28.9443L111 24L101.595 28.9443L103.392 18.4721L95.7831 11.0557L106.298 9.52786L111 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M158.5 0L163.055 9.52786L173.241 11.0557L165.871 18.4721L167.611 28.9443L158.5 24L149.389 28.9443L151.129 18.4721L143.759 11.0557L153.945 9.52786L158.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M206 0L210.702 9.52786L221.217 11.0557L213.608 18.4721L215.405 28.9443L206 24L196.595 28.9443L198.392 18.4721L190.783 11.0557L201.298 9.52786L206 0Z"
+                                                        fill="#4E6932" />
+                                                </svg>
                                             </div>
                                             <div class="map-widgets__widget-map-logo-wrap">
-                                                <img src="../assets/images/pages/main/reviews/2гис лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                                <svg width="114" height="32" viewBox="0 0 114 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="mask0_20014_12041" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                                                        width="32" height="32">
+                                                        <path
+                                                            d="M7.93235 0.0146592L9.29893 0L23.5037 0.00586367C23.7191 0.00781823 23.8536 0.0107501 23.9871 0.0146592C24.6909 0.0332275 25.4024 0.0732959 26.0984 0.199365C26.7953 0.316638 27.4728 0.53848 28.1054 0.854141C28.736 1.17176 29.314 1.5871 29.8141 2.08453C30.3141 2.57904 30.7342 3.15172 31.0549 3.77816C31.3844 4.41534 31.59 5.06817 31.7168 5.7679C31.8425 6.45883 31.8844 7.16247 31.9029 7.86123C31.9117 8.1808 31.9166 8.50037 31.9175 8.82189L31.9195 9.39262V22.0347C31.9195 22.4149 31.9195 22.796 31.9175 23.1771C31.9156 23.4977 31.9127 23.8172 31.9029 24.1378C31.8834 24.8356 31.8425 25.5402 31.7168 26.2301C31.5978 26.9221 31.3746 27.5944 31.0559 28.2199C30.7342 28.8453 30.3131 29.419 29.8151 29.9135C29.314 30.41 28.7351 30.8273 28.1054 31.1449C27.4737 31.4596 26.7944 31.6824 26.0984 31.7997C25.4024 31.9238 24.6909 31.9648 23.9871 31.9834L21.8652 32L8.41485 31.9932C8.25499 31.9941 8.09124 31.9873 7.93333 31.9844C7.22957 31.9668 6.51802 31.9257 5.82206 31.8016C5.12513 31.6824 4.44672 31.4596 3.81607 31.1439C2.54989 30.5067 1.51668 29.4806 0.864586 28.2199C0.545849 27.5944 0.321661 26.9211 0.201769 26.2301C0.076029 25.5402 0.0350903 24.8356 0.0175451 24.1378C0.00779784 23.8182 0.00487365 23.4967 0.00292419 23.1771L0 22.6035V9.96433C0 9.58417 0 9.20303 0.00292419 8.82287C0.00487365 8.50232 0.00877257 8.18275 0.0175451 7.86123C0.0370398 7.16345 0.0770037 6.45883 0.201769 5.76887C0.321661 5.07696 0.545849 4.40459 0.863611 3.77913C1.51473 2.51747 2.54989 1.4923 3.81509 0.854141C4.44672 0.53848 5.12513 0.316638 5.82109 0.198387C6.51802 0.0742731 7.2286 0.0332275 7.93235 0.0146592Z"
+                                                            fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_20014_12041)">
+                                                        <path d="M0.00195312 0H31.9185V32H0.00195312V0Z" fill="#19AA1E" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.00195312 0H31.9185V10.4989L0.00195312 5.49914V0Z" fill="#FFB919" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.00195312 28.4998L31.9185 23.5V31.9994H0.00195312V28.4998Z" fill="#82D714" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.00195312 4.86719L11.1431 6.61261C12.5302 5.73208 14.1794 5.2493 15.9602 5.2493C18.4263 5.2493 20.6428 6.17479 22.256 7.8C22.4588 8.00523 22.6508 8.21925 22.8311 8.44305L31.9185 9.86597V11.1315L23.7542 9.85131C24.3644 11.0221 24.687 12.3258 24.688 13.6471C24.688 15.3612 24.3059 17.0705 23.5144 18.7875L23.491 18.8393L23.1547 19.5606H22.3613C20.7208 19.5606 19.634 20.0521 18.9224 20.9239C18.3639 21.607 18.0413 22.5305 17.9331 23.5371L17.9292 23.5674L17.9136 23.7287L17.9068 23.799L17.8931 23.9349C17.8522 24.3854 17.8249 24.7665 17.8103 25.0763L31.9185 22.8657V24.1313L0.00195312 29.1311V27.8665L14.1268 25.6539L14.1209 25.3695L14.119 25.2903L14.117 25.2483L14.1151 25.1848C14.1024 24.8408 14.0702 24.4 14.0205 23.8645L14.0108 23.7629L13.9932 23.587C13.8928 22.5755 13.5741 21.6412 13.0166 20.9473C12.3138 20.0697 11.2367 19.5703 9.60987 19.5606H8.76575L8.43045 18.8393C7.62337 17.1047 7.23348 15.3788 7.23348 13.6471C7.23348 11.4687 8.11366 9.36267 9.66543 7.8L9.80092 7.66709L0.00195312 6.13081V4.86719Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M15.9596 6.49805C20.416 6.49805 23.4397 9.93709 23.4397 13.6468C23.4397 15.1352 23.116 16.6852 22.3597 18.3104C17.9763 18.3104 16.8934 21.4572 16.6887 23.4392L16.675 23.5701C16.6068 24.2786 16.5659 24.8455 16.5551 25.2725L15.3679 25.4582V25.4191C15.3533 24.7946 15.3065 24.1565 15.2392 23.533L15.2363 23.4988C15.0472 21.5217 13.9877 18.3104 9.55949 18.3104C8.80213 16.6852 8.47852 15.1352 8.47852 13.6468C8.47852 9.93611 11.5041 6.49805 15.9596 6.49805Z"
+                                                            fill="#0073FA" />
+                                                    </g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M47.238 5.78125C42.3263 5.78125 38.6428 8.71015 38.674 13.7959H43.2387C43.1763 11.7622 44.498 9.78809 47.238 9.78809C49.3161 9.78809 50.6388 11.1446 50.6388 12.8714C50.6388 14.6588 49.1894 15.6459 46.8608 16.7561C43.806 18.2044 41.9803 18.8817 38.674 19.9606V25.8174H55.6753V21.8096H44.845C46.4231 21.1656 47.9593 20.458 49.3473 19.8062C53.0308 18.0813 55.2025 16.1384 55.2025 12.6564C55.2025 8.4629 51.9918 5.78223 47.238 5.78223V5.78125ZM62.6027 10.0969H71.4181V6.09007H58.195V25.8174H62.6027V10.0969ZM78.3456 6.09007H73.9368V25.8174H78.3134L86.5313 13.2105V25.8174H90.9391V6.09007H86.5313L78.3456 18.697V6.09007ZM113.074 18.4194H108.509C107.816 20.6085 105.706 22.1184 103.219 22.1184C99.5976 22.1184 97.2358 19.0673 97.2358 15.9537C97.2358 12.8401 99.5352 9.78809 103.344 9.78809C105.864 9.78809 107.816 11.2999 108.509 13.4881H113.074C112.413 9.08054 108.856 5.78125 103.219 5.78125C96.9853 5.78125 92.8281 10.0666 92.8281 15.9537C92.8281 21.8409 96.9853 26.1253 103.219 26.1253C108.856 26.1253 112.413 22.8905 113.074 18.4194Z"
+                                                        fill="#262626" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
@@ -2627,6 +3008,7 @@
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/button-up.js"></script>
     <script src="../assets/js/components/stories.js"></script>
+    <script src="../assets/js/components/additional-features.js"></script>
 
     <script src="../assets/js/sections/staff.js"></script>
     <script src="../assets/js/sections/reviews.js"></script>

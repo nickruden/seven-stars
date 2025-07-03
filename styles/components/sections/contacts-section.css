@@ -53,9 +53,15 @@
 }
 .contacts__phone-icon {
 }
+.wrapper.no-images .contacts__phone-icon {
+    display: block;
+}
 .contacts__email {
 }
 .contacts__email-icon {
+}
+.wrapper.no-images .contacts__email-icon {
+    display: block;
 }
 .contacts__addresses {
     display: flex;

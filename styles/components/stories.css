@@ -43,6 +43,12 @@
     object-fit: cover;
     border-radius: 50%;
 }
+.wrapper.no-images .my-stories__slide .item-preview {
+    background: #CFCFCF!important;
+}
+.wrapper.no-images .my-stories__slide img {
+    display: none!important;
+}
 .my-stories__title {
     font-size: 14px;
     font-weight: 500!important;

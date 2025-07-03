@@ -89,6 +89,7 @@
 .double-slider__image-slide-wrap {
     width: 610px;
     height: 600px;
+    background-color: #CFCFCF;
 }
 .double-slider__image-slide-photo {
     height: 100%;

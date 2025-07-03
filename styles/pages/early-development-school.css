@@ -36,9 +36,9 @@
 .why-need-school__card-img-wrap {
     border-radius: 24px;
     overflow: hidden;
-    background-color: #FCFCFC;
     height: 320px;
     width: 100%;
+    background-color: #CFCFCF;
 }
 .why-need-school__card-img {
     width: 100%;
@@ -375,6 +375,7 @@
     height: 540px;
     overflow: hidden;
     border-radius: 24px;
+    background-color: #CFCFCF;
 }
 .advantage-item.--nowrap-slider .advantage-item__slide-img {
     width: 100%;
@@ -511,6 +512,7 @@
     border-radius: 16px;
     position: relative;
     cursor: pointer;
+    background-color: #CFCFCF;
 }
 .child-age__slide-img {
     width: 100%;

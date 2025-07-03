@@ -61,6 +61,7 @@
     aspect-ratio: 408 / 300;
     border-radius: 16px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 
 .news-info__slide-img {
@@ -210,6 +211,7 @@
     height: 420px;
     border-radius: 16px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 
 .big-images__slide-img {
@@ -284,6 +286,10 @@
 .many-images__item {
     border-radius: 16px;
     overflow: hidden;
+}
+
+.wrapper.no-image .many-images__item {
+    background-color: #CFCFCF;
 }
 
 /* 1-2: 2 больших (610x540) с отступом 60px */

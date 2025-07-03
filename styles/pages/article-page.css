@@ -158,10 +158,13 @@
 .image-text__image-wrap {
     max-width: 610px;
     max-height: 415px;
+    width: 100%;
+    aspect-ratio: 415 / 610;
     border-radius: 24px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    background-color: #CFCFCF;
 }
 
 .image-text__image {
@@ -456,6 +459,7 @@
     height: 540px;
     border-radius: 16px;
     overflow: hidden;
+    background-color: #CFCFCF;
 }
 
 .many-images__slide-img {
@@ -632,6 +636,7 @@
     max-width: 408px;
     max-height: 300px;
     width: 100%;
+    background-color: #CFCFCF;
 }
 
 .quote__slide-img {

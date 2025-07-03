@@ -64,6 +64,7 @@
     border-radius: 16px;
     position: relative;
     cursor: pointer;
+    background-color: #CFCFCF;
 }
 
 .reviews__slide-img-wrap:hover::after {
@@ -211,7 +212,7 @@
     max-width: 222px;
 }
 
-.map-widgets__widget-stars-img {
+.map-widgets__widget-stars-wrap svg {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -221,7 +222,7 @@
     max-height: 32px;
 }
 
-.map-widgets__widget-map-logo-img {
+.map-widgets__widget-map-logo-wrap svg {
     height: 100%;
     object-fit: cover;
 }
@@ -448,6 +449,15 @@
         height: auto;
     }
 
+    .wrapper.no-images .reviews__slide>a {
+        width: 100%;
+    }
+
+    .wrapper.no-images .reviews__slide-img-wrap {
+        height: 290px;
+        width: 100%;
+    }
+
     .reviews__slide-text {
         font-size: 15px;
     }
@@ -503,6 +513,10 @@
 
     .map-widgets__widget-map-logo-wrap {
         max-width: 110px;
+    }
+
+    .map-widgets__widget-map-logo-wrap svg {
+        width: 100%;
     }
 }
 

@@ -31,10 +31,11 @@
     <link rel="stylesheet" href="../styles/components/stories.css">
     <link rel="stylesheet" href="../styles/components/double-slider.css">
     <link rel="stylesheet" href="../styles/components/button-up.css">
+    <link rel="stylesheet" href="../styles/components/add-features-button.css">
+    <link rel="stylesheet" href="../styles/components/additional-feature-panel.css">
 
-    <!-- вот этот компонент не подключать лучше к главной странице -->
+
     <link rel="stylesheet" href="../styles/components/sections/hero-section.css">
-
     <link rel="stylesheet" href="../styles/components/sections/staff-section.css">
     <link rel="stylesheet" href="../styles/components/sections/branches-section.css">
     <link rel="stylesheet" href="../styles/components/sections/why-choose-us.css">
@@ -51,6 +52,161 @@
 
 <body>
     <div class="wrapper">
+        <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
+        <div class="additional-feature-panel">
+            <div class="my-container additional-feature-panel__container">
+                <div class="additional-feature-panel__inner">
+                    <div class="additional-feature-panel__controls">
+                        <div class="additional-feature-panel__option" id="image-controls">
+                            <div class="additional-feature-panel__option-title">Изображения</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="on-images" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.32374 7.83721C7.64788 7.31859 8.40319 7.31859 8.72732 7.83721L13.441 15.3792C13.7855 15.9304 13.3893 16.6454 12.7392 16.6454H3.31182C2.6618 16.6454 2.26552 15.9304 2.61003 15.3792L7.32374 7.83721Z"
+                                                    fill="black" />
+                                                <path
+                                                    d="M13.2778 1.49273C13.8344 0.60606 15.1314 0.60606 15.688 1.49273L23.7817 14.3873C24.3729 15.3296 23.6927 16.5513 22.5767 16.5513H15.6147L9.71924 7.1607L13.2778 1.49273Z"
+                                                    fill="black" />
+                                                <circle cx="3.31034" cy="3.31034" r="3.31034" fill="black" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="off-images" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10.5" stroke="black" stroke-width="3" />
+                                                <path d="M6 18.5L19 5.5" stroke="black" stroke-width="3"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="text-size-controls">
+                            <div class="additional-feature-panel__option-title">Размер шрифта</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="small-size-texts" data-bs-toggle="pill"
+                                            type="button" role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="medium-size-texts" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="large-size-texts" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="color-theme-controls">
+                            <div class="additional-feature-panel__option-title">Цвет фона и текста</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="white-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="yellow-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blackWhite-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blackGreen-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blue-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="sound-controls">
+                            <div class="additional-feature-panel__option-title">Озвучивание текста</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="on-sound" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.32275 7.1841C5.32291 6.47365 5.69967 5.81613 6.31299 5.45753L13.7036 1.1382C14.3703 0.748497 15.2085 1.22928 15.2085 2.00148V20.0894C15.2085 20.8616 14.3703 21.3424 13.7036 20.9527L6.31299 16.6323C5.69971 16.2736 5.32275 15.6163 5.32275 14.9058V7.1841Z"
+                                                    fill="black" />
+                                                <rect y="6.14493" width="4.56255" height="9.88553" rx="1" fill="black" />
+                                                <path
+                                                    d="M18.1572 7.08246C18.6622 7.58754 19.0629 8.18716 19.3362 8.84708C19.6096 9.507 19.7503 10.2143 19.7503 10.9286C19.7503 11.6429 19.6096 12.3502 19.3362 13.0101C19.0629 13.67 18.6622 14.2696 18.1572 14.7747"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M20.191 4.46029C21.0404 5.30972 21.7142 6.31814 22.1739 7.42797C22.6336 8.5378 22.8702 9.72732 22.8702 10.9286C22.8702 12.1299 22.6336 13.3194 22.1739 14.4292C21.7142 15.539 21.0404 16.5475 20.191 17.3969"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M22.2738 1.20219C23.5511 2.47948 24.5643 3.99584 25.2555 5.6647C25.9468 7.33356 26.3026 9.12223 26.3026 10.9286C26.3026 12.7349 25.9468 14.5236 25.2555 16.1925C24.5643 17.8613 23.5511 19.3777 22.2738 20.655"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="off-sound" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10.5" stroke="black" stroke-width="3" />
+                                                <path d="M6 18.5L19 5.5" stroke="black" stroke-width="3"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="my-button my-button_noColor my-button_borderOval additional-feature-panel__button-off">Обычная
+                        версия сайта</button>
+                </div>
+            </div>
+            <button class="additional-feature-panel__close">
+                <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00006 26L24.3525 2" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M24.9999 26L1.64746 2" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
         <header class="header">
             <div class="my-container header__container">
                 <div class="header__desktop">
@@ -178,12 +334,51 @@
                     <div class="header__contacts">
                         <div class="header__smp">
                             <a href="#" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/WA.svg" alt="Tg-icon"
-                                    class="header__smp-img">
+                                <div class="header__smp-img">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_129_518" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="48" height="49">
+                                            <rect y="0.5" width="48" height="48" fill="url(#pattern0_129_518)" />
+                                        </mask>
+                                        <g mask="url(#mask0_129_518)">
+                                            <rect x="-2" y="0.5" width="54" height="48" fill="#BACC92" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_129_518" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_129_518" transform="scale(0.01)" />
+                                            </pattern>
+                                            <image id="image0_129_518" width="100" height="100"
+                                                preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+                                </div>
                             </a>
                             <a href="#" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/tg.svg" alt="WA-icon"
-                                    class="header__smp-img">
+                                <div class="header__smp-img">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_129_515" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="48" height="49">
+                                            <rect y="0.5" width="48" height="48" fill="url(#pattern0_129_515)" />
+                                        </mask>
+                                        <g mask="url(#mask0_129_515)">
+                                            <rect y="0.5" width="50" height="48" fill="#BACC92" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_129_515" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_129_515" transform="scale(0.01)" />
+                                            </pattern>
+                                            <image id="image0_129_515" width="100" height="100"
+                                                preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+
+                                </div>
                             </a>
                         </div>
                         <div class="header__buttons">
@@ -319,23 +514,35 @@
         <div class="my-overlay" id="burger-menu-overlay"></div>
 
         <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
-        <a href="#topBlock" class="button-up">
-            <span class="button-up__img">
-                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_18852_13195)">
-                        <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
-                            stroke="#4E6932" />
-                        <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
-                            stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_18852_13195">
-                            <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </span>
-        </a>
+        <div class="my-container addon-buttons__cotainer">
+            <a href="#topBlock" class="button-up">
+                <span class="button-up__img">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18852_13195)">
+                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                                stroke="#4E6932" />
+                            <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
+                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_18852_13195">
+                                <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+            </a>
+            <button class="button-add-features">
+                <div class="button-add-features__img">
+                    <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M27.6672 5.51499C27.6672 4.40542 27.7318 4.04225 28.3724 3.56411C30.6801 1.84135 39.6379 1.46359 42.3798 2.27204C46.4765 3.48017 45.4375 10.5044 42.7154 13.0064C41.1255 14.2365 38.5182 14.377 36.381 14.377C34.1864 14.377 31.6293 13.5521 30.0771 11.9261C29.0687 10.8676 27.6672 7.60275 27.6672 5.51499ZM48 3.09145V4.56237C48 5.60624 47.3558 5.54784 47.1153 6.52055C46.5932 8.65027 46.708 9.88942 45.8844 12.3203C44.3699 16.7805 35.4084 16.3863 31.9882 15.2238C28.9 14.1726 28.0781 12.7272 26.7915 10.0281C25.4923 7.30345 26.2765 5.46937 24.0209 5.53324C22.571 5.57339 22.4544 6.01321 22.2695 6.79064C21.7581 8.94591 20.886 11.1961 19.5689 12.9079C16.9024 16.3753 9.87892 16.4885 5.94551 15.4081C1.11129 14.0795 1.89546 10.3256 0.89057 6.4439C0.682415 5.63909 0.0238553 5.56609 0.0238553 4.56237C0.0238553 2.74288 -0.288377 1.45629 1.34636 0.855877C4.00033 -0.120476 14.5516 -0.36137 18.3505 0.797478C20.9111 1.57856 22.1349 2.81953 24.0119 2.81953C25.6162 2.81953 27.4716 1.61141 28.6829 1.11685C32.1515 -0.302971 40.5118 -0.153325 44.2371 0.385038C47.5586 0.866827 47.9623 1.17159 48 3.09145ZM11.6446 14.377C7.18008 14.377 3.94471 13.6561 3.14259 8.92037C2.6886 6.24863 2.88958 3.1316 5.57226 2.29577C8.3698 1.42344 16.4717 1.93625 19.0485 3.22467C20.0139 3.70829 20.3584 4.02583 20.3584 5.4201C20.3584 7.23045 19.2369 10.5263 17.9934 11.8768C16.4896 13.512 13.8841 14.377 11.6446 14.377Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </button>
+        </div>
 
         <main class="main">
             <!-- СТИЛИ ВЫНЕС ОТДЕЛЬНО -->
@@ -1169,16 +1376,57 @@
                                         <div class="map-widgets__widget-texts">
                                             <div class="map-widgets__widget-rating">
                                                 <div class="map-widgets__widget-number">4,8</div>
-                                                <div class="map-widgets__widget-rating-text">по мнению пользователей Яндекс</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей
+                                                    Яндекс</div>
                                             </div>
-                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на Яндекс.Карты</a>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на
+                                                Яндекс.Карты</a>
                                         </div>
                                         <div class="map-widgets__widget-icons">
                                             <div class="map-widgets__widget-stars-wrap">
-                                                <img src="../assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                                <svg width="222" height="32" viewBox="0 0 222 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16 0L20.7023 9.52786L31.2169 11.0557L23.6085 18.4721L25.4046 28.9443L16 24L6.59544 28.9443L8.39155 18.4721L0.783095 11.0557L11.2977 9.52786L16 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M63.5 0L68.0553 9.52786L78.2414 11.0557L70.8707 18.4721L72.6107 28.9443L63.5 24L54.3893 28.9443L56.1293 18.4721L48.7586 11.0557L58.9447 9.52786L63.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M111 0L115.702 9.52786L126.217 11.0557L118.608 18.4721L120.405 28.9443L111 24L101.595 28.9443L103.392 18.4721L95.7831 11.0557L106.298 9.52786L111 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M158.5 0L163.055 9.52786L173.241 11.0557L165.871 18.4721L167.611 28.9443L158.5 24L149.389 28.9443L151.129 18.4721L143.759 11.0557L153.945 9.52786L158.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M206 0L210.702 9.52786L221.217 11.0557L213.608 18.4721L215.405 28.9443L206 24L196.595 28.9443L198.392 18.4721L190.783 11.0557L201.298 9.52786L206 0Z"
+                                                        fill="#4E6932" />
+                                                </svg>
                                             </div>
                                             <div class="map-widgets__widget-map-logo-wrap">
-                                                <img src="../assets/images/pages/main/reviews/Яндекс Карты лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                                <svg width="158" height="32" viewBox="0 0 158 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_20014_12021)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M31.4002 15.659C31.4002 7.01089 24.3712 0 15.7007 0C7.03016 0 0 7.01089 0 15.659C0 24.3072 7.02902 31.3192 15.7007 31.3192C24.3724 31.3192 31.4002 24.3072 31.4002 15.659Z"
+                                                            fill="#FC3F1D" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M17.7941 8.87461H16.3551C13.6727 8.87461 12.2997 10.2441 12.2997 12.2025C12.2997 14.4207 13.2814 15.4646 15.2437 16.8341L16.8795 17.9437L12.1689 24.9909H8.63672L12.8889 18.7266C10.4682 16.9657 9.09516 15.2683 9.09516 12.4623C9.09516 8.87348 11.5807 6.45898 16.3562 6.45898H21.0658V25.0545H17.7953L17.7941 8.87461Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M49.6171 0.0292969C42.6552 0.0292969 37.0117 5.6582 37.0117 12.6021C37.0117 16.073 38.4223 19.2148 40.702 21.4908C42.9828 23.7669 48.3567 27.0607 48.6718 30.5191C48.7196 31.0376 49.0961 31.462 49.6171 31.462C50.1381 31.462 50.5146 31.0376 50.5624 30.5191C50.8775 27.0619 56.2514 23.768 58.5322 21.4908C60.8119 19.2148 62.2225 16.073 62.2225 12.6021C62.2225 5.6582 56.579 0.0292969 49.6171 0.0292969Z"
+                                                            fill="#FF4433" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M49.6166 17.0045C52.0532 17.0045 54.028 15.0347 54.028 12.6044C54.028 10.174 52.0532 8.20312 49.6166 8.20312C47.1799 8.20312 45.2051 10.174 45.2051 12.6044C45.2051 15.0347 47.1799 17.0045 49.6166 17.0045Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M145.427 23.9065H143.551V18.4433H145.524C147.26 18.4433 148.278 19.2239 148.278 21.1913C148.278 23.1588 147.152 23.9065 145.427 23.9065ZM153.949 10.0413V27.0926H158V10.0413H153.949ZM139.511 10.0413V27.0926H145.663C149.64 27.0926 152.457 25.0616 152.457 21.0529C152.457 17.2576 149.939 15.2584 145.726 15.2584H143.55V10.0413H139.511ZM137.131 13.2274V10.0413H123.572V13.2274H128.332V27.0937H132.373V13.2274H137.132H137.131ZM115.223 24.239C113.079 24.239 111.986 22.5177 111.986 18.5828C111.986 14.6173 113.143 12.896 115.426 12.896C117.634 12.896 118.717 14.6173 118.717 18.5511C118.717 22.5177 117.559 24.239 115.223 24.239ZM111.686 10.0413H107.946V31.9998H111.986V25.0933C113.015 26.6115 114.505 27.4239 116.242 27.4239C120.176 27.4239 122.898 24.2809 122.898 18.5511C122.898 12.8529 120.251 9.71 116.446 9.71C114.538 9.71 112.973 10.5859 111.891 12.2436L111.686 10.0413ZM100.646 23.0204C100.132 23.7681 99.1772 24.3785 97.7519 24.3785C96.058 24.3785 95.2015 23.4277 95.2015 21.9731C95.2015 20.0386 96.595 19.3328 100.068 19.3328H100.647V23.0215L100.646 23.0204ZM104.686 15.4614C104.686 11.3348 102.575 9.77354 98.2979 9.77354C95.6178 9.77354 93.5076 10.6188 92.2847 11.3348V14.691C93.3677 13.8684 95.7475 12.9914 97.8258 12.9914C99.7551 12.9914 100.645 13.6653 100.645 15.5034V16.444H99.9906C93.8057 16.444 91.0619 18.4864 91.0619 21.9391C91.0619 25.3917 93.1629 27.3274 96.2924 27.3274C98.671 27.3274 99.6903 26.5468 100.472 25.7344H100.644C100.675 26.1724 100.814 26.7499 100.944 27.0926H104.888C104.749 25.7026 104.684 24.3127 104.684 22.9228V15.4603L104.686 15.4614ZM86.1009 27.0926H90.8924L82.4994 14.7239L90.1097 3.54102H85.9292L78.6192 14.3813V3.54102H74.5137V27.0926H78.6192V16.0378L86.1009 27.0926Z"
+                                                            fill="black" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_20014_12021">
+                                                            <rect width="158" height="32" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
@@ -1188,16 +1436,57 @@
                                         <div class="map-widgets__widget-texts">
                                             <div class="map-widgets__widget-rating">
                                                 <div class="map-widgets__widget-number">4,7</div>
-                                                <div class="map-widgets__widget-rating-text">по мнению пользователей 2ГИС</div>
+                                                <div class="map-widgets__widget-rating-text">по мнению пользователей
+                                                    2ГИС</div>
                                             </div>
-                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на 2ГИС</a>
+                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на
+                                                2ГИС</a>
                                         </div>
                                         <div class="map-widgets__widget-icons">
                                             <div class="map-widgets__widget-stars-wrap">
-                                                <img src="../assets/images/pages/main/reviews/Звёздочки.svg" alt="" class="map-widgets__widget-stars-img">
+                                                <svg width="222" height="32" viewBox="0 0 222 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16 0L20.7023 9.52786L31.2169 11.0557L23.6085 18.4721L25.4046 28.9443L16 24L6.59544 28.9443L8.39155 18.4721L0.783095 11.0557L11.2977 9.52786L16 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M63.5 0L68.0553 9.52786L78.2414 11.0557L70.8707 18.4721L72.6107 28.9443L63.5 24L54.3893 28.9443L56.1293 18.4721L48.7586 11.0557L58.9447 9.52786L63.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M111 0L115.702 9.52786L126.217 11.0557L118.608 18.4721L120.405 28.9443L111 24L101.595 28.9443L103.392 18.4721L95.7831 11.0557L106.298 9.52786L111 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M158.5 0L163.055 9.52786L173.241 11.0557L165.871 18.4721L167.611 28.9443L158.5 24L149.389 28.9443L151.129 18.4721L143.759 11.0557L153.945 9.52786L158.5 0Z"
+                                                        fill="#4E6932" />
+                                                    <path
+                                                        d="M206 0L210.702 9.52786L221.217 11.0557L213.608 18.4721L215.405 28.9443L206 24L196.595 28.9443L198.392 18.4721L190.783 11.0557L201.298 9.52786L206 0Z"
+                                                        fill="#4E6932" />
+                                                </svg>
                                             </div>
                                             <div class="map-widgets__widget-map-logo-wrap">
-                                                <img src="../assets/images/pages/main/reviews/2гис лого.svg" alt="" class="map-widgets__widget-map-logo-img">
+                                                <svg width="114" height="32" viewBox="0 0 114 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="mask0_20014_12041" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                                                        width="32" height="32">
+                                                        <path
+                                                            d="M7.93235 0.0146592L9.29893 0L23.5037 0.00586367C23.7191 0.00781823 23.8536 0.0107501 23.9871 0.0146592C24.6909 0.0332275 25.4024 0.0732959 26.0984 0.199365C26.7953 0.316638 27.4728 0.53848 28.1054 0.854141C28.736 1.17176 29.314 1.5871 29.8141 2.08453C30.3141 2.57904 30.7342 3.15172 31.0549 3.77816C31.3844 4.41534 31.59 5.06817 31.7168 5.7679C31.8425 6.45883 31.8844 7.16247 31.9029 7.86123C31.9117 8.1808 31.9166 8.50037 31.9175 8.82189L31.9195 9.39262V22.0347C31.9195 22.4149 31.9195 22.796 31.9175 23.1771C31.9156 23.4977 31.9127 23.8172 31.9029 24.1378C31.8834 24.8356 31.8425 25.5402 31.7168 26.2301C31.5978 26.9221 31.3746 27.5944 31.0559 28.2199C30.7342 28.8453 30.3131 29.419 29.8151 29.9135C29.314 30.41 28.7351 30.8273 28.1054 31.1449C27.4737 31.4596 26.7944 31.6824 26.0984 31.7997C25.4024 31.9238 24.6909 31.9648 23.9871 31.9834L21.8652 32L8.41485 31.9932C8.25499 31.9941 8.09124 31.9873 7.93333 31.9844C7.22957 31.9668 6.51802 31.9257 5.82206 31.8016C5.12513 31.6824 4.44672 31.4596 3.81607 31.1439C2.54989 30.5067 1.51668 29.4806 0.864586 28.2199C0.545849 27.5944 0.321661 26.9211 0.201769 26.2301C0.076029 25.5402 0.0350903 24.8356 0.0175451 24.1378C0.00779784 23.8182 0.00487365 23.4967 0.00292419 23.1771L0 22.6035V9.96433C0 9.58417 0 9.20303 0.00292419 8.82287C0.00487365 8.50232 0.00877257 8.18275 0.0175451 7.86123C0.0370398 7.16345 0.0770037 6.45883 0.201769 5.76887C0.321661 5.07696 0.545849 4.40459 0.863611 3.77913C1.51473 2.51747 2.54989 1.4923 3.81509 0.854141C4.44672 0.53848 5.12513 0.316638 5.82109 0.198387C6.51802 0.0742731 7.2286 0.0332275 7.93235 0.0146592Z"
+                                                            fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_20014_12041)">
+                                                        <path d="M0.00195312 0H31.9185V32H0.00195312V0Z" fill="#19AA1E" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.00195312 0H31.9185V10.4989L0.00195312 5.49914V0Z" fill="#FFB919" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.00195312 28.4998L31.9185 23.5V31.9994H0.00195312V28.4998Z" fill="#82D714" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.00195312 4.86719L11.1431 6.61261C12.5302 5.73208 14.1794 5.2493 15.9602 5.2493C18.4263 5.2493 20.6428 6.17479 22.256 7.8C22.4588 8.00523 22.6508 8.21925 22.8311 8.44305L31.9185 9.86597V11.1315L23.7542 9.85131C24.3644 11.0221 24.687 12.3258 24.688 13.6471C24.688 15.3612 24.3059 17.0705 23.5144 18.7875L23.491 18.8393L23.1547 19.5606H22.3613C20.7208 19.5606 19.634 20.0521 18.9224 20.9239C18.3639 21.607 18.0413 22.5305 17.9331 23.5371L17.9292 23.5674L17.9136 23.7287L17.9068 23.799L17.8931 23.9349C17.8522 24.3854 17.8249 24.7665 17.8103 25.0763L31.9185 22.8657V24.1313L0.00195312 29.1311V27.8665L14.1268 25.6539L14.1209 25.3695L14.119 25.2903L14.117 25.2483L14.1151 25.1848C14.1024 24.8408 14.0702 24.4 14.0205 23.8645L14.0108 23.7629L13.9932 23.587C13.8928 22.5755 13.5741 21.6412 13.0166 20.9473C12.3138 20.0697 11.2367 19.5703 9.60987 19.5606H8.76575L8.43045 18.8393C7.62337 17.1047 7.23348 15.3788 7.23348 13.6471C7.23348 11.4687 8.11366 9.36267 9.66543 7.8L9.80092 7.66709L0.00195312 6.13081V4.86719Z"
+                                                            fill="white" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M15.9596 6.49805C20.416 6.49805 23.4397 9.93709 23.4397 13.6468C23.4397 15.1352 23.116 16.6852 22.3597 18.3104C17.9763 18.3104 16.8934 21.4572 16.6887 23.4392L16.675 23.5701C16.6068 24.2786 16.5659 24.8455 16.5551 25.2725L15.3679 25.4582V25.4191C15.3533 24.7946 15.3065 24.1565 15.2392 23.533L15.2363 23.4988C15.0472 21.5217 13.9877 18.3104 9.55949 18.3104C8.80213 16.6852 8.47852 15.1352 8.47852 13.6468C8.47852 9.93611 11.5041 6.49805 15.9596 6.49805Z"
+                                                            fill="#0073FA" />
+                                                    </g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M47.238 5.78125C42.3263 5.78125 38.6428 8.71015 38.674 13.7959H43.2387C43.1763 11.7622 44.498 9.78809 47.238 9.78809C49.3161 9.78809 50.6388 11.1446 50.6388 12.8714C50.6388 14.6588 49.1894 15.6459 46.8608 16.7561C43.806 18.2044 41.9803 18.8817 38.674 19.9606V25.8174H55.6753V21.8096H44.845C46.4231 21.1656 47.9593 20.458 49.3473 19.8062C53.0308 18.0813 55.2025 16.1384 55.2025 12.6564C55.2025 8.4629 51.9918 5.78223 47.238 5.78223V5.78125ZM62.6027 10.0969H71.4181V6.09007H58.195V25.8174H62.6027V10.0969ZM78.3456 6.09007H73.9368V25.8174H78.3134L86.5313 13.2105V25.8174H90.9391V6.09007H86.5313L78.3456 18.697V6.09007ZM113.074 18.4194H108.509C107.816 20.6085 105.706 22.1184 103.219 22.1184C99.5976 22.1184 97.2358 19.0673 97.2358 15.9537C97.2358 12.8401 99.5352 9.78809 103.344 9.78809C105.864 9.78809 107.816 11.2999 108.509 13.4881H113.074C112.413 9.08054 108.856 5.78125 103.219 5.78125C96.9853 5.78125 92.8281 10.0666 92.8281 15.9537C92.8281 21.8409 96.9853 26.1253 103.219 26.1253C108.856 26.1253 112.413 22.8905 113.074 18.4194Z"
+                                                        fill="#262626" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
@@ -1467,6 +1756,7 @@
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/button-up.js"></script>
     <script src="../assets/js/components/stories.js"></script>
+    <script src="../assets/js/components/additional-features.js"></script>
 
     <script src="../assets/js/sections/staff.js"></script>
     <script src="../assets/js/sections/reviews.js"></script>

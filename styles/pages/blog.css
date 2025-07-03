@@ -49,8 +49,8 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    background-color: #f6f6f6;
     height: auto;
+    background-color: #CFCFCF;
 }
 
 /* Первая строка (элементы 1-3) */

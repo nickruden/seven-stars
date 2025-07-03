@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="../styles/components/footer.css">
     <link rel="stylesheet" href="../styles/components/feedback-block.css">
     <link rel="stylesheet" href="../styles/components/button-up.css">
+    <link rel="stylesheet" href="../styles/components/add-features-button.css">
+    <link rel="stylesheet" href="../styles/components/additional-feature-panel.css">
 
     <link rel="stylesheet" href="../styles/components/sections/hero-section.css">
     <link rel="stylesheet" href="../styles/components/sections/contacts-section.css">
@@ -38,6 +40,161 @@
 
 <body>
     <div class="wrapper">
+        <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
+        <div class="additional-feature-panel">
+            <div class="my-container additional-feature-panel__container">
+                <div class="additional-feature-panel__inner">
+                    <div class="additional-feature-panel__controls">
+                        <div class="additional-feature-panel__option" id="image-controls">
+                            <div class="additional-feature-panel__option-title">Изображения</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="on-images" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.32374 7.83721C7.64788 7.31859 8.40319 7.31859 8.72732 7.83721L13.441 15.3792C13.7855 15.9304 13.3893 16.6454 12.7392 16.6454H3.31182C2.6618 16.6454 2.26552 15.9304 2.61003 15.3792L7.32374 7.83721Z"
+                                                    fill="black" />
+                                                <path
+                                                    d="M13.2778 1.49273C13.8344 0.60606 15.1314 0.60606 15.688 1.49273L23.7817 14.3873C24.3729 15.3296 23.6927 16.5513 22.5767 16.5513H15.6147L9.71924 7.1607L13.2778 1.49273Z"
+                                                    fill="black" />
+                                                <circle cx="3.31034" cy="3.31034" r="3.31034" fill="black" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="off-images" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10.5" stroke="black" stroke-width="3" />
+                                                <path d="M6 18.5L19 5.5" stroke="black" stroke-width="3"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="text-size-controls">
+                            <div class="additional-feature-panel__option-title">Размер шрифта</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="small-size-texts" data-bs-toggle="pill"
+                                            type="button" role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="medium-size-texts" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="large-size-texts" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            Аа
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="color-theme-controls">
+                            <div class="additional-feature-panel__option-title">Цвет фона и текста</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="white-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="yellow-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blackWhite-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blackGreen-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="blue-color-theme" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <span>А</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-feature-panel__option" id="sound-controls">
+                            <div class="additional-feature-panel__option-title">Озвучивание текста</div>
+                            <div class="additional-feature-panel__option-switch">
+                                <ul class="nav nav-pills additional-feature-panel__option-switch-nav" id="fontSizeTabs"
+                                    role="tablist">
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link" id="on-sound" data-bs-toggle="pill" type="button" role="tab">
+                                            <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.32275 7.1841C5.32291 6.47365 5.69967 5.81613 6.31299 5.45753L13.7036 1.1382C14.3703 0.748497 15.2085 1.22928 15.2085 2.00148V20.0894C15.2085 20.8616 14.3703 21.3424 13.7036 20.9527L6.31299 16.6323C5.69971 16.2736 5.32275 15.6163 5.32275 14.9058V7.1841Z"
+                                                    fill="black" />
+                                                <rect y="6.14493" width="4.56255" height="9.88553" rx="1" fill="black" />
+                                                <path
+                                                    d="M18.1572 7.08246C18.6622 7.58754 19.0629 8.18716 19.3362 8.84708C19.6096 9.507 19.7503 10.2143 19.7503 10.9286C19.7503 11.6429 19.6096 12.3502 19.3362 13.0101C19.0629 13.67 18.6622 14.2696 18.1572 14.7747"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M20.191 4.46029C21.0404 5.30972 21.7142 6.31814 22.1739 7.42797C22.6336 8.5378 22.8702 9.72732 22.8702 10.9286C22.8702 12.1299 22.6336 13.3194 22.1739 14.4292C21.7142 15.539 21.0404 16.5475 20.191 17.3969"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M22.2738 1.20219C23.5511 2.47948 24.5643 3.99584 25.2555 5.6647C25.9468 7.33356 26.3026 9.12223 26.3026 10.9286C26.3026 12.7349 25.9468 14.5236 25.2555 16.1925C24.5643 17.8613 23.5511 19.3777 22.2738 20.655"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item additional-feature-panel__option-switch-nav-item" role="presentation">
+                                        <button class="nav-link active" id="off-sound" data-bs-toggle="pill" type="button"
+                                            role="tab">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10.5" stroke="black" stroke-width="3" />
+                                                <path d="M6 18.5L19 5.5" stroke="black" stroke-width="3"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="my-button my-button_noColor my-button_borderOval additional-feature-panel__button-off">Обычная
+                        версия сайта</button>
+                </div>
+            </div>
+            <button class="additional-feature-panel__close">
+                <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00006 26L24.3525 2" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M24.9999 26L1.64746 2" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
         <header class="header">
             <div class="my-container header__container">
                 <div class="header__desktop">
@@ -165,12 +322,51 @@
                     <div class="header__contacts">
                         <div class="header__smp">
                             <a href="#" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/WA.svg" alt="Tg-icon"
-                                    class="header__smp-img">
+                                <div class="header__smp-img">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_129_518" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="48" height="49">
+                                            <rect y="0.5" width="48" height="48" fill="url(#pattern0_129_518)" />
+                                        </mask>
+                                        <g mask="url(#mask0_129_518)">
+                                            <rect x="-2" y="0.5" width="54" height="48" fill="#BACC92" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_129_518" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_129_518" transform="scale(0.01)" />
+                                            </pattern>
+                                            <image id="image0_129_518" width="100" height="100"
+                                                preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+                                </div>
                             </a>
                             <a href="#" class="header__smp-link">
-                                <img src="../assets/images/social-media-icons/tg.svg" alt="WA-icon"
-                                    class="header__smp-img">
+                                <div class="header__smp-img">
+                                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_129_515" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="48" height="49">
+                                            <rect y="0.5" width="48" height="48" fill="url(#pattern0_129_515)" />
+                                        </mask>
+                                        <g mask="url(#mask0_129_515)">
+                                            <rect y="0.5" width="50" height="48" fill="#BACC92" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_129_515" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_129_515" transform="scale(0.01)" />
+                                            </pattern>
+                                            <image id="image0_129_515" width="100" height="100"
+                                                preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGjklEQVR4nO2da6hVRRTHf6lXk4pKoqxI81pWX0ywT0UFpVFaSZBKZFRYBlGIURqVJX1RqTCLikhKfKT5qagvJUTRC1NKDTQte6iZWL7SsqvXMzGxblxO954zZ++ZOWv22X/4f7ncvffMWmce6zFroESJEiVKlCguTgRGAZOB2cBy4AtgI7AN2Ad0CPfJ3zbK/yyXZybJO+y7SjSIfsBoYBawGjgCGE88BqwD5gFjgAGldnpGX2AssBQ47FEB9XgIWCLK6VMqB4YC84GdEZVgeuEOGTm2TS2HdmAh8LcCRZgqHpVRczEtgAuAlcBxBYI3ddgJrJAfT+HQXxZpnwu0icS/gDlF2qFdD3yvQLAmJ7cC15Ew2mSRrCgQpvHIV2XEJ4WhYpiZgnIdMJxEcCNwQIHQTGDuB8ahHHfIttG0CDuBe1CK6QVcL4wDK7ILU4V5CgRjmsy5KMGjCoRhlHBms5UxpUWnKdMLrSymNnM3dUyBEIwyWpmMj62M9hbZ2pocW+JhMS3wIht9xhO/jGXRv6CgsyYRLojhKCwXcZwVUgnpkLTx5y0KfnUmMX4XynU/R0HnTKK0mS9eMTzR4JJRFOTyGnl8S0GnTOJ802ccvFNBh0zitDIc4UMhbyjojCkIF/mI/LVSfOMA8EPAGcHKckgehcxXICQTmF8DM4ALu/V7UMB1c26e9E4NGYUmAG2C3jLg8hr9PyXQznJH1rTVsQoEZzzzZ+Ax4ExHGWwK1I5rsyhkqQIBGk/ui/eBCTLqG8GPgdq0uFFl9I+chR7KBb4gx1azLWC85w95vzOuUiBQk5GbJOHiJPJ7J0K284oi+606gFVyzsMXxmryb32sQMjGgb9Ixsu5+Me0wG3/0LUhA5We2zAeFulGMDdwP464uuVHKRC66YEH5ZBP1kW60fOEKyP0aaRLQyYrEL6pWqTvF0MtC+xJqDXA5gafWxuhbxNdGvKkAiV0Am/LIn1CNj38aw3PkFiEfeeLDT5/MEI/n3BpyPImO/cWekihGSqLZtd7X2vQXXF2pP7as4x18VkTFPGVZPwNJD+miuHV9e6XMoyyqyP1+xOXxnwTcVp616PtcJZMc92/8XLGKe/eSDLY4NKYnwI3YrfYDufhD7cCv1V959kc73smkkJs7KUu9gY8BjbNc0rMaXLmr/pbNo6TB+9EUoj9EdVFh+dpyW4SLsM/bgJ29fBNH4dnNkdSiDXAoylkg6vh0yAG1QgN2FiHj+I3HZoU8ruHD+0BTsc/bu5lVFg+4jHLxmiasnwEZdYTb1RUxN3uC+MiKsRpUd/o6WNPAyd7ENAE4NcayrBuFZ94KKJCNsQ2DA/Iom79Y6dmGBXLarz7uNgLvrEookKcDMNaQshDu1B+ADxQpyZVHynJ19uo6Nq93UUYfB5RIU6uk9kR86GsgXinLNZTJAa+tc5zVhm3Ew77IyrkcZcGTYrYoEZZAW4LqIxzIvfHehiSDVAZ8dqGxJjI/RmZegh3cmCFPBixL84hXIuPFAjfNKF8xSsR++Kc5GDxlALhmx74J3BpOH1EzbZxihZ24UoFwje98KDsyEJgT8R+1Er07jGV9JAC4ZsatMGowR6VMTjyj6qhVFLEaDHKuV9iLL5qt8Rqtz2VVujjCO+JDZEHMbNtrsnSQOvC2K5A2MaR+6TEYFZUx+NDcWeejMsUK8WtBM7I0NftKWzdUz30uRu4pcGMlRjt6sh76NPidQUCNhm5ynG03JeS62dE4oUDdklCRC2sidCOTgkPe8EKBYI1OblMpqZq3BDx+97Q3i1pOWUeljwuO2IukfpfPpI6XFw+5+MZGrLiTaJ0CkRlOfDyrYLOmcS4NeTdI7ZcXVniD2dlVDwfRO0Rzyv41ZlE+BwR0BY5M8MkymhlYhFrM1SWvCkAoxZS7p5yWZYa53/KOCq2TVNg86PKRZ7/lGFlcTdNxkwFU4RRwodRgtBVD0wCVHOhSxemJ3KDp2mFK4+6UF4KphDjIycsmyaGjJu2m8pipxTZeFyb4qXF/Qp49WpFSn8kd/VqtUOy3pmPFLglhqMwFtpkF3Y44eu7B1BAtMstASnE6Dsl7Oo90qcRw2QuPqLUF7UEuIgWxBCxcHcoUMR2aUvuvKkioI+U315cVesqRhb6Ysm1zVSPvRXQFxgNzAJWe57WjklVonmyYyrkQh0aA+TU1ETJ3rAlNj6V8h3bJFDWIdwrf1sv/7NEnpkoByxLBZQoUaJECYqKfwDufzE7pXxWkwAAAABJRU5ErkJggg==" />
+                                        </defs>
+                                    </svg>
+
+                                </div>
                             </a>
                         </div>
                         <div class="header__buttons">
@@ -306,23 +502,35 @@
         <div class="my-overlay" id="burger-menu-overlay"></div>
 
         <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
-        <a href="#topBlock" class="button-up">
-            <span class="button-up__img">
-                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_18852_13195)">
-                        <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
-                            stroke="#4E6932" />
-                        <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
-                            stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_18852_13195">
-                            <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </span>
-        </a>
+        <div class="my-container addon-buttons__cotainer">
+            <a href="#topBlock" class="button-up">
+                <span class="button-up__img">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18852_13195)">
+                            <circle cx="26" cy="26" r="25.5" transform="matrix(-1 0 0 1 52 0)" fill="white"
+                                stroke="#4E6932" />
+                            <path d="M36 31L27.7677 21.8137C26.7955 20.7288 25.2046 20.7288 24.2323 21.8137L16 31"
+                                stroke="#4E6932" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_18852_13195">
+                                <rect width="52" height="52" fill="white" transform="matrix(-1 0 0 1 52 0)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+            </a>
+            <button class="button-add-features">
+                <div class="button-add-features__img">
+                    <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M27.6672 5.51499C27.6672 4.40542 27.7318 4.04225 28.3724 3.56411C30.6801 1.84135 39.6379 1.46359 42.3798 2.27204C46.4765 3.48017 45.4375 10.5044 42.7154 13.0064C41.1255 14.2365 38.5182 14.377 36.381 14.377C34.1864 14.377 31.6293 13.5521 30.0771 11.9261C29.0687 10.8676 27.6672 7.60275 27.6672 5.51499ZM48 3.09145V4.56237C48 5.60624 47.3558 5.54784 47.1153 6.52055C46.5932 8.65027 46.708 9.88942 45.8844 12.3203C44.3699 16.7805 35.4084 16.3863 31.9882 15.2238C28.9 14.1726 28.0781 12.7272 26.7915 10.0281C25.4923 7.30345 26.2765 5.46937 24.0209 5.53324C22.571 5.57339 22.4544 6.01321 22.2695 6.79064C21.7581 8.94591 20.886 11.1961 19.5689 12.9079C16.9024 16.3753 9.87892 16.4885 5.94551 15.4081C1.11129 14.0795 1.89546 10.3256 0.89057 6.4439C0.682415 5.63909 0.0238553 5.56609 0.0238553 4.56237C0.0238553 2.74288 -0.288377 1.45629 1.34636 0.855877C4.00033 -0.120476 14.5516 -0.36137 18.3505 0.797478C20.9111 1.57856 22.1349 2.81953 24.0119 2.81953C25.6162 2.81953 27.4716 1.61141 28.6829 1.11685C32.1515 -0.302971 40.5118 -0.153325 44.2371 0.385038C47.5586 0.866827 47.9623 1.17159 48 3.09145ZM11.6446 14.377C7.18008 14.377 3.94471 13.6561 3.14259 8.92037C2.6886 6.24863 2.88958 3.1316 5.57226 2.29577C8.3698 1.42344 16.4717 1.93625 19.0485 3.22467C20.0139 3.70829 20.3584 4.02583 20.3584 5.4201C20.3584 7.23045 19.2369 10.5263 17.9934 11.8768C16.4896 13.512 13.8841 14.377 11.6446 14.377Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </button>
+        </div>
 
         <main class="main">
             <!-- СТИЛИ ВЫНЕС ОТДЕЛЬНО -->
@@ -736,6 +944,7 @@
 
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/button-up.js"></script>
+    <script src="../assets/js/components/additional-features.js"></script>
 
     <script src="./assets//js/sections/contacts.js"></script>
 
