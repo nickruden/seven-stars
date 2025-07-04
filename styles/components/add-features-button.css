@@ -9,7 +9,7 @@
     bottom: 90px;
     right: 20px;
     cursor: pointer;
-    z-index: 1050;
+    z-index: 900;
 }
 
 .button-add-features__img {

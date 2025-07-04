@@ -72,6 +72,22 @@ a:hover {
     color: #BACC92;
 }
 
+.wrapper.theme-white a:hover {
+    color: #808080!important;
+}
+.wrapper.theme-yellow a:hover {
+    color: #676767!important;
+}
+.wrapper.theme-blue a:hover {
+    color: #558db2!important;
+}
+.wrapper.theme-blackWhite a:hover {
+    color: #969696!important;
+}
+.wrapper.theme-blackGreen a:hover {
+    color: #9aa18c!important;
+}
+
 ol,
 ul {
     padding: 0;
@@ -123,6 +139,10 @@ button {
     padding: 0px 40px;
     box-sizing: content-box;
     background-color: #FFF;
+}
+
+.wrapper[class*="theme"] .my-container {
+    background-color: transparent;
 }
 
 @media (max-width: 769px) {

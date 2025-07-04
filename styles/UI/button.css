@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 20px;
+    padding: 15px 19px;
     font-family: 'Jost';
     font-size: 16px;
     font-weight: 600;
@@ -10,6 +10,44 @@
     color: #FFF;
     text-transform: uppercase;
     background-color: #4E6932;
+    border: 1px solid #4E6932;
+}
+
+.wrapper.theme-white .my-button {
+    color: #FFF!important;
+    background-color: #000000;
+}
+.wrapper.theme-yellow .my-button {
+    color: #FFFF00!important;
+    background-color: #000000;
+}
+.wrapper.theme-blue .my-button {
+    color: #9FD7FF!important;
+    background-color: #133C58;
+}
+.wrapper.theme-blackWhite .my-button {
+    color: #000!important;
+    background-color: #FFF;
+}
+.wrapper.theme-blackGreen .my-button {
+    color: #000!important;
+    background-color: #A9DD38;
+}
+
+.wrapper.theme-white .my-button .my-button__img-arrow path {
+    stroke: #000;
+}
+.wrapper.theme-yellow .my-button .my-button__img-arrow path {
+    stroke: #000;
+}
+.wrapper.theme-blue .my-button .my-button__img-arrow path {
+    stroke: #133C58;
+}
+.wrapper.theme-blackWhite .my-button .my-button__img-arrow path {
+    stroke: #FFF;
+}
+.wrapper.theme-blackGreen .my-button .my-button__img-arrow path {
+    stroke: #A9DD38;
 }
 
 @media (max-width: 1341px) {
@@ -56,6 +94,31 @@
     color: #4E6932;
     background: transparent;
 }
+.wrapper.theme-white .my-button_noColor {
+    color: #000!important;
+    border: 1px solid #000;
+    background: transparent;
+}
+.wrapper.theme-yellow .my-button_noColor {
+    color: #000!important;
+    border: 1px solid #000;
+    background: transparent;
+}
+.wrapper.theme-blue .my-button_noColor {
+    color: #133C58!important;
+    border: 1px solid #133C58;
+    background: transparent;
+}
+.wrapper.theme-blackWhite .my-button_noColor {
+    color: #FFF!important;
+    border: 1px solid #FFF;
+    background: transparent;
+}
+.wrapper.theme-blackGreen .my-button_noColor {
+    color: #A9DD38!important;
+    border: 1px solid #A9DD38;
+    background: transparent;
+}
 
 
 /* РАМКИ */
@@ -66,7 +129,7 @@
     border-radius: 16px;
 }
 .my-button_noBorder {
-    border: none;
+    border: none!important;
     padding: 15px 0px;
     font-weight: 500;
 }
@@ -78,24 +141,108 @@
 /* СОСТОЯНИЯ */
 .my-button:hover {
     background-color: #90AB7B;
+    border: 1px solid #90AB7B;
 }
+.wrapper.theme-white .my-button:hover {
+    color: #000!important;
+    border: 1px solid #000;
+    background: transparent;
+}
+.wrapper.theme-yellow .my-button:hover {
+    color: #000!important;
+    border: 1px solid #000;
+    background: transparent;
+}
+.wrapper.theme-blue .my-button:hover {
+    color: #133C58!important;
+    border: 1px solid #133C58;
+    background: transparent;
+}
+.wrapper.theme-blackWhite .my-button:hover {
+    color: #FFF!important;
+    border: 1px solid #FFF;
+    background: transparent;
+}
+.wrapper.theme-blackGreen .my-button:hover {
+    color: #A9DD38!important;
+    border: 1px solid #A9DD38;
+    background: transparent;
+}
+
 .my-button:hover.my-button_lightGreen {
     border: 1px solid #b4c492;
     color: #FFF;
     background-color: #b4c492;
 }
+
 .my-button:hover.my-button_noColor {
     border: 1px solid #C7D8A5;
     color: #4E6932;
     background: #C7D8A5;
 }
+
+.wrapper.theme-white .my-button:hover.my-button_noColor {
+    color: #FFF!important;
+    background-color: #000000;
+}
+.wrapper.theme-yellow .my-button:hover.my-button_noColor {
+    color: #FFFF00!important;
+    background-color: #000000;
+}
+.wrapper.theme-blue .my-button:hover.my-button_noColor {
+    color: #9FD7FF!important;
+    background-color: #133C58;
+}
+.wrapper.theme-blackWhite .my-button:hover.my-button_noColor {
+    color: #000!important;
+    background-color: #FFF;
+}
+.wrapper.theme-blackGreen .my-button:hover.my-button_noColor {
+    color: #000!important;
+    background-color: #A9DD38;
+}
+
 .my-button:hover.my-button_noColor.my-button_noBorder {
     border: none;
     color: #b4c492;
-    background: transparent;
+    background: transparent!important;
 }
+
 .my-button:hover.my-button_noColor.my-button_noBorder .my-button__img-arrow path {
     stroke: #b4c492;
+}
+
+.wrapper.theme-white .my-button:hover.my-button_noColor.my-button_noBorder {
+    color: #676767!important;
+}
+.wrapper.theme-yellow .my-button:hover.my-button_noColor.my-button_noBorder {
+    color: #676767!important;
+}
+.wrapper.theme-blue .my-button:hover.my-button_noColor.my-button_noBorder {
+    color: #2988c7!important;
+}
+.wrapper.theme-blackWhite .my-button:hover.my-button_noColor.my-button_noBorder {
+    color: #e1e1e1!important;
+}
+.wrapper.theme-blackGreen .my-button:hover.my-button_noColor.my-button_noBorder {
+    color: #bee963!important;
+}
+
+
+.wrapper.theme-white .my-button:hover.my-button_noBorder .my-button__img-arrow path {
+    stroke: #676767;
+}
+.wrapper.theme-yellow .my-button:hover.my-button_noBorder .my-button__img-arrow path {
+    stroke: #676767;
+}
+.wrapper.theme-blue .my-button:hover.my-button_noBorder .my-button__img-arrow path {
+    stroke: #2988c7;
+}
+.wrapper.theme-blackWhite .my-button:hover.my-button_noBorder .my-button__img-arrow path {
+    stroke: #e1e1e1;
+}
+.wrapper.theme-blackGreen .my-button:hover.my-button_noBorder .my-button__img-arrow path {
+    stroke: #bee963;
 }
 
 
@@ -108,6 +255,26 @@
     border: 1px solid #C7D8A5;
     color: #4E6932;
     background: #C7D8A5;
+}
+.wrapper.theme-white .my-button.active.my-button_noColor {
+    color: #FFF!important;
+    background-color: #000000;
+}
+.wrapper.theme-yellow .my-button.active.my-button_noColor {
+    color: #FFFF00!important;
+    background-color: #000000;
+}
+.wrapper.theme-blue .my-button.active.my-button_noColor {
+    color: #9FD7FF!important;
+    background-color: #133C58;
+}
+.wrapper.theme-blackWhite .my-button.active.my-button_noColor {
+    color: #000!important;
+    background-color: #FFF;
+}
+.wrapper.theme-blackGreen .my-button.active.my-button_noColor {
+    color: #000!important;
+    background-color: #A9DD38;
 }
 .my-button.active.my-button_noColor.my-button_noBorder {
     border: none;

@@ -515,6 +515,10 @@
         max-width: 110px;
     }
 
+    .wrapper.no-images .reviews__slide-img-wrap {
+        height: 275px;
+    }
+
     .map-widgets__widget-map-logo-wrap svg {
         width: 100%;
     }

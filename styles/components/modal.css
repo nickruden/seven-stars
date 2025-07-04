@@ -1,6 +1,6 @@
 .my-overlay.active {
     display: block;
-    z-index: 1000;
+    z-index: 999;
 }
 
 /* Основной контейнер для скролла */
