@@ -13,6 +13,9 @@
     justify-content: space-between;
     position: relative;
 }
+.wrapper[class*="theme"] .contacts__inner {
+    background-color: transparent;
+}
 .contacts__body {
     margin-right: 39px;
     max-width: 570px;
@@ -41,11 +44,62 @@
     align-items: center;
     line-height: 130%;
 }
-.contacts__info * img {
+.contacts__info .contacts__phone-img-wrap {
     margin-right: 8px;
     max-height: 24px;
     max-width: 24px;
 }
+.contacts__info .contacts__phone-img-wrap svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.contacts__info .contacts__email-img-wrap {
+    margin-right: 8px;
+    max-height: 24px;
+    max-width: 24px;
+}
+.contacts__info .contacts__email-img-wrap svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper.theme-white .contacts__phone-img-wrap svg path {
+    fill: #000;
+}
+.wrapper.theme-white .contacts__email-img-wrap svg path {
+    fill: #000;
+}
+
+.wrapper.theme-yellow .contacts__phone-img-wrap svg path {
+    fill: #000;
+}
+.wrapper.theme-yellow .contacts__email-img-wrap svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blue .contacts__phone-img-wrap svg path {
+    fill: #133C58;
+}
+.wrapper.theme-blue .contacts__email-img-wrap svg path {
+    fill: #133C58;
+}
+
+.wrapper.theme-blackWhite .contacts__phone-img-wrap svg path {
+    fill: #FFF;
+}
+.wrapper.theme-blackWhite .contacts__email-img-wrap svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-blackGreen .contacts__phone-img-wrap svg path {
+    fill: #A9DD38;
+}
+.wrapper.theme-blackGreen .contacts__email-img-wrap svg path {
+    fill: #A9DD38;
+}
+
 .contacts__info > *:not(:last-child) {
     margin-bottom: 16px;
 }

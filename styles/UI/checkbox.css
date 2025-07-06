@@ -18,6 +18,42 @@
     border: 1px solid #90AB7B;
     border-radius: 4px;
 }
+
+.wrapper.theme-white .my-checkbox__old:checked + .my-checkbox__new {
+    background-color: #000;
+}
+.wrapper.theme-white .my-checkbox__new {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .my-checkbox__old:checked + .my-checkbox__new {
+    background-color: #000;
+}
+.wrapper.theme-yellow .my-checkbox__new {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .my-checkbox__old:checked + .my-checkbox__new {
+    background-color: #133C58;
+}
+.wrapper.theme-blue .my-checkbox__new {
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .my-checkbox__old:checked + .my-checkbox__new {
+    background-color: #FFF;
+}
+.wrapper.theme-blackWhite .my-checkbox__new {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .my-checkbox__old:checked + .my-checkbox__new {
+    background-color: #A9DD38;
+}
+.wrapper.theme-blackGreen .my-checkbox__new {
+    border: 1px solid #A9DD38;
+}
+
 .my-checkbox__text {
     font-size: 14px;
     font-weight: 400;

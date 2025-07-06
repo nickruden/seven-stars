@@ -37,6 +37,7 @@
     padding: 4px;
     background-color: #FFF;
 }
+
 .my-stories__slide-img {
     width: 100%;
     height: 100%;
@@ -70,6 +71,27 @@
     border: 1px solid #4E6932;
     padding: 0px;
 }
+
+.wrapper.theme-white .stories.carousel .story > .item-link > .item-preview {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .stories.carousel .story > .item-link > .item-preview {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .stories.carousel .story > .item-link > .item-preview {
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .stories.carousel .story > .item-link > .item-preview {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .stories.carousel .story > .item-link > .item-preview {
+    border: 1px solid #A9DD38;
+}
+
 .stories.carousel .story > .item-link > .info {
     font-size: 14px;
     line-height: 130%;

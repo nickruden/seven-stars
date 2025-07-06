@@ -22,6 +22,41 @@
     height: 100%;
 }
 
+.wrapper.theme-white .button-add-features {
+    background-color: #000;
+}
+.wrapper.theme-white .button-add-features__img svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-yellow .button-add-features {
+    background-color: #000;
+}
+.wrapper.theme-yellow .button-add-features__img svg path {
+    fill: #FFFF00;
+}
+
+.wrapper.theme-blue .button-add-features {
+    background-color: #133C58;
+}
+.wrapper.theme-blue .button-add-features__img svg path {
+    fill: #9FD7FF;
+}
+
+.wrapper.theme-blackWhite .button-add-features {
+    background-color: #FFF;
+}
+.wrapper.theme-blackWhite .button-add-features__img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blackGreen .button-add-features {
+    background-color: #A9DD38;
+}
+.wrapper.theme-blackGreen .button-add-features__img svg path {
+    fill: #000;
+}
+
 @media (max-width: 1361px) {
     .button-add-features {
         margin-right: 40px;

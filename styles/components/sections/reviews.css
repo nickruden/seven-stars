@@ -30,6 +30,30 @@
     border-radius: 24px;
 }
 
+.wrapper[class*="theme"] .reviews__content-inner {
+    background-color: transparent;
+}
+
+.wrapper.theme-white .reviews__content-inner {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .reviews__content-inner {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .reviews__content-inner {
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .reviews__content-inner {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .reviews__content-inner {
+    border: 1px solid #A9DD38;
+}
+
 .reviews__content:not(:last-child) {
     margin-bottom: 24px;
 }
@@ -161,6 +185,30 @@
     flex: 1 1 50%;
 }
 
+.wrapper[class*="theme"] .map-widgets__widget {
+    background-color: transparent;
+}
+
+.wrapper.theme-white .map-widgets__widget {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .map-widgets__widget {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .map-widgets__widget {
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .map-widgets__widget {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .map-widgets__widget {
+    border: 1px solid #A9DD38;
+}
+
 .map-widgets__widget-inner {
     display: flex;
     justify-content: space-between;
@@ -216,6 +264,26 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.wrapper.theme-white .map-widgets__widget-stars-wrap svg path {
+    fill: #000;
+}
+
+.wrapper.theme-yellow .map-widgets__widget-stars-wrap svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blue .map-widgets__widget-stars-wrap svg path {
+    fill: #133C58;
+}
+
+.wrapper.theme-blackWhite .map-widgets__widget-stars-wrap svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-blackGreen .map-widgets__widget-stars-wrap svg path {
+    fill: #A9DD38;
 }
 
 .map-widgets__widget-map-logo-wrap {
@@ -340,7 +408,7 @@
 
 @media (max-width: 769px) {
     .reviews__container {
-        padding: 0px;
+        padding: 0px 1px;
     }
 
     /* .reviews__content {
@@ -444,6 +512,33 @@
         align-items: center;
         border-radius: 24px;
     }
+
+    .wrapper[class*="theme"] .reviews__content-inner {
+    border: none;
+}
+    .wrapper[class*="theme"] .reviews__slider {
+    background-color: transparent;
+}
+
+    .wrapper.theme-white .reviews__slider {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .reviews__slider {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .reviews__slider {
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .reviews__slider {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .reviews__slider {
+    border: 1px solid #A9DD38;
+}
 
     .reviews__slide-img-wrap {
         height: auto;

@@ -160,10 +160,6 @@
 .header__smp-img {
 }
 
-.header__smp-img g rect {
-    fill: #000;
-}
-
 .wrapper.theme-white .header__smp-img g rect {
     fill: #000;
 }
@@ -463,8 +459,20 @@
         background: #FFF;
     }
 
-    .wrapper[class*="theme"] .header {
-        background: transparent;
+    .wrapper.theme-yellow .header {
+        background: #FFFF00;
+    }
+
+    .wrapper.theme-blue .header {
+        background: #9FD7FF;
+    }
+
+    .wrapper.theme-blackWhite .header {
+        background: #000;
+    }
+    
+    .wrapper.theme-blackGreen .header {
+        background: #000;
     }
 
     .header__left {

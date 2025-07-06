@@ -103,6 +103,135 @@
     background: #4E6932;
 }
 
+.wrapper.theme-white .swiper-button-prev svg path,
+.wrapper.theme-white .swiper-button-next svg path {
+    stroke: #000;
+}
+.wrapper.theme-white .swiper-button-next.swiper-button-disabled svg path,
+.wrapper.theme-white .swiper-button-prev.swiper-button-disabled svg path {
+    stroke: #000;
+}
+.wrapper.theme-white .swiper-button-prev svg circle,
+.wrapper.theme-white .swiper-button-prev svg circle + path,
+.wrapper.theme-white .swiper-button-next svg circle,
+.wrapper.theme-white .swiper-button-next svg circle + path {
+    stroke: #FFF;
+}
+.wrapper.theme-white .swiper-button-prev svg circle,
+.wrapper.theme-white .swiper-button-next svg circle {
+    fill: #000;
+}
+.wrapper.theme-white .swiper-pagination-bullet {
+    background: #FFF;
+}
+.wrapper.theme-white .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #000;
+}
+
+.wrapper.theme-yellow .swiper-button-prev svg path,
+.wrapper.theme-yellow .swiper-button-next svg path {
+    stroke: #000;
+}
+.wrapper.theme-yellow .swiper-button-next.swiper-button-disabled svg path,
+.wrapper.theme-yellow .swiper-button-prev.swiper-button-disabled svg path {
+    stroke: #000;
+}
+.wrapper.theme-yellow .swiper-button-prev svg circle,
+.wrapper.theme-yellow .swiper-button-prev svg circle + path,
+.wrapper.theme-yellow .swiper-button-next svg circle,
+.wrapper.theme-yellow .swiper-button-next svg circle + path {
+    stroke: #000;
+}
+.wrapper.theme-yellow .swiper-button-prev svg circle,
+.wrapper.theme-yellow .swiper-button-next svg circle {
+    fill: #FFFF00;
+}
+.wrapper.theme-yellow .swiper-pagination-bullet {
+    background: #FFFF00;
+}
+.wrapper.theme-yellow .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #000;
+}
+
+.wrapper.theme-blue .swiper-button-prev svg path,
+.wrapper.theme-blue .swiper-button-next svg path {
+    stroke: #133C58;
+}
+.wrapper.theme-blue .swiper-button-next.swiper-button-disabled svg path,
+.wrapper.theme-blue .swiper-button-prev.swiper-button-disabled svg path {
+    stroke: #133C58;
+}
+.wrapper.theme-blue .swiper-button-prev svg circle,
+.wrapper.theme-blue .swiper-button-prev svg circle + path,
+.wrapper.theme-blue .swiper-button-next svg circle, 
+.wrapper.theme-blue .swiper-button-next svg circle + path {
+    stroke: #133C58;
+}
+.wrapper.theme-blue .swiper-button-prev svg circle,
+.wrapper.theme-blue .swiper-button-next svg circle {
+    fill: #9FD7FF;
+}
+.wrapper.theme-blue .swiper-pagination-bullet {
+    background: #9FD7FF;
+}
+.wrapper.theme-blue .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #133C58;
+}
+
+.wrapper.theme-blackWhite .swiper-button-prev svg path,
+.wrapper.theme-blackWhite .swiper-button-next svg path {
+    stroke: #FFF;
+}
+.wrapper.theme-blackWhite .swiper-button-next.swiper-button-disabled svg path,
+.wrapper.theme-blackWhite .swiper-button-prev.swiper-button-disabled svg path {
+    stroke: #FFF;
+}
+.wrapper.theme-blackWhite .swiper-button-prev svg circle,
+.wrapper.theme-blackWhite .swiper-button-prev svg circle + path,
+.wrapper.theme-blackWhite .swiper-button-next svg circle,
+.wrapper.theme-blackWhite .swiper-button-next svg circle + path {
+    stroke: #000;
+}
+.wrapper.theme-blackWhite .swiper-button-prev svg circle,
+.wrapper.theme-blackWhite .swiper-button-next svg circle {
+    fill: #FFF;
+}
+.wrapper.theme-blackWhite .swiper-pagination-bullet {
+    background: #000;
+}
+.wrapper.theme-blackWhite .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #FFF;
+}
+
+.wrapper.theme-blackGreen .swiper-button-prev svg path,
+.wrapper.theme-blackGreen .swiper-button-next svg path {
+    stroke: #A9DD38;
+}
+.wrapper.theme-blackGreen .swiper-button-next.swiper-button-disabled svg path,
+.wrapper.theme-blackGreen .swiper-button-prev.swiper-button-disabled svg path {
+    stroke: #A9DD38;
+}
+.wrapper.theme-blackGreen .swiper-button-prev svg circle,
+.wrapper.theme-blackGreen .swiper-button-prev svg circle + path,
+.wrapper.theme-blackGreen .swiper-button-next svg circle,
+.wrapper.theme-blackGreen .swiper-button-next svg circle + path {
+    stroke: #000;
+}
+.wrapper.theme-blackGreen .swiper-button-prev svg circle,
+.wrapper.theme-blackGreen .swiper-button-next svg circle {
+    fill: #A9DD38;
+}
+.wrapper.theme-blackGreen .swiper-button-next.swiper-button-disabled svg path,
+.wrapper.theme-blackGreen .swiper-button-prev.swiper-button-disabled svg path {
+    stroke: #A9DD38;
+}
+.wrapper.theme-blackGreen .swiper-pagination-bullet {
+    background: #000;
+}
+.wrapper.theme-blackGreen .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #A9DD38;
+}
+
 .my-overlay {
     position: fixed;
     top: 0;
@@ -266,6 +395,26 @@
     z-index: 5;
 }
 
+.wrapper.theme-white .--video-poster::before {
+    content: url('../assets/images/play-button-black.svg');
+}
+
+.wrapper.theme-yellow .--video-poster::before {
+    content: url('../assets/images/play-button-yellow.svg');
+}
+
+.wrapper.theme-blue .--video-poster::before {
+    content: url('../assets/images/play-button-blue.svg');
+}
+
+.wrapper.theme-blackWhite .--video-poster::before {
+    content: url('../assets/images/play-button-blackWhite.svg');
+}
+
+.wrapper.theme-blackGreen .--video-poster::before {
+    content: url('../assets/images/play-button-blackGreen.svg');
+}
+
 .--video-poster:hover::before {
     filter: brightness(0.9);
     transform: translate(-50%, -50%) scale(1.05);
@@ -316,12 +465,15 @@
 }
 
 .wrapper.theme-white * {
-    color: #000000!important;
+    color: #000!important;
 }
 .wrapper.theme-white {
     background: #FFF;
 }
 
+.wrapper.theme-yellow * {
+    color: #000!important;
+}
 .wrapper.theme-yellow {
     background: #FFFF00;
 }

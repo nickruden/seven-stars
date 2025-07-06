@@ -2,7 +2,6 @@
     height: 52px;
     width: 52px;
     border-radius: 50%;
-    background-color: #FFF9F0;
     display: flex;
     justify-content: center;
     bottom: 20px;
@@ -27,6 +26,46 @@
 .button-up__img svg {
     width: 100%;
     height: 100%;
+}
+
+.wrapper.theme-white .button-up__img svg circle {
+    stroke: #FFF;
+    fill: #000;
+}
+.wrapper.theme-white .button-up__img svg path {
+    stroke: #FFF;
+}
+
+.wrapper.theme-yellow .button-up__img svg circle {
+    stroke: #FFFF00;
+    fill: #000;
+}
+.wrapper.theme-yellow .button-up__img svg path {
+    stroke: #FFFF00;
+}
+
+.wrapper.theme-blue .button-up__img svg circle {
+    stroke: #9FD7FF;
+    fill: #133C58;
+}
+.wrapper.theme-blue .button-up__img svg path {
+    stroke: #9FD7FF;
+}
+
+.wrapper.theme-blackWhite .button-up__img svg circle {
+    stroke: #000;
+    fill: #FFF;
+}
+.wrapper.theme-blackWhite .button-up__img svg path {
+    stroke: #000;
+}
+
+.wrapper.theme-blackGreen .button-up__img svg circle {
+    stroke: #000;
+    fill: #A9DD38;
+}
+.wrapper.theme-blackGreen .button-up__img svg path {
+    stroke: #000;
 }
 
 @media (max-width: 1361px) {

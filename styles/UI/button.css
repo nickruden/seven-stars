@@ -15,24 +15,127 @@
 
 .wrapper.theme-white .my-button {
     color: #FFF!important;
-    background-color: #000000;
+    background-color: #000;
+    border: 1px solid #000;
 }
 .wrapper.theme-yellow .my-button {
     color: #FFFF00!important;
-    background-color: #000000;
+    background-color: #000;
+    border: 1px solid #000;
 }
 .wrapper.theme-blue .my-button {
     color: #9FD7FF!important;
     background-color: #133C58;
+    border: 1px solid #133C58;
 }
 .wrapper.theme-blackWhite .my-button {
     color: #000!important;
     background-color: #FFF;
+    border: 1px solid #FFF;
 }
 .wrapper.theme-blackGreen .my-button {
     color: #000!important;
     background-color: #A9DD38;
+    border: 1px solid #A9DD38;
 }
+
+.wrapper.theme-white .my-button.--reverseBorderColors {
+    color: #FFF!important;
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+.wrapper.theme-white .my-button.--reverseBorderColors:hover {
+    color: #000!important;
+    background-color: #FFF;
+}
+.wrapper.theme-yellow .my-button.--reverseBorderColors {
+    color: #FFFF00!important;
+    background-color: transparent;
+    border: 1px solid #FFFF00;
+}
+.wrapper.theme-yellow .my-button.--reverseBorderColors:hover {
+    color: #000!important;
+    background-color: #FFFF00;
+}
+.wrapper.theme-blue .my-button.--reverseBorderColors {
+    color: #9FD7FF!important;
+    background-color: transparent;
+    border: 1px solid #9FD7FF;
+}
+.wrapper.theme-blue .my-button.--reverseBorderColors:hover {
+    color: #133C58!important;
+    background-color: #9FD7FF;
+}
+.wrapper.theme-blackWhite .my-button.--reverseBorderColors {
+    color: #000!important;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.wrapper.theme-blackWhite .my-button.--reverseBorderColors:hover {
+    color: #FFF!important;
+    background-color: #000;
+}
+.wrapper.theme-blackGreen .my-button.--reverseBorderColors {
+    color: #000!important;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.wrapper.theme-blackGreen .my-button.--reverseBorderColors:hover {
+    color: #A9DD38!important;
+    background-color: #000;
+}
+
+.wrapper.theme-white .my-button.--reverseColors {
+    color: #000!important;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+.wrapper.theme-white .my-button.--reverseColors:hover {
+    color: #FFF!important;
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+.wrapper.theme-yellow .my-button.--reverseColors {
+    color: #000!important;
+    background-color: #FFFF00;
+    border: 1px solid #FFFF00;
+}
+.wrapper.theme-yellow .my-button.--reverseColors:hover {
+    color: #FFFF00!important;
+    background-color: transparent;
+    border: 1px solid #FFFF00;
+}
+.wrapper.theme-blue .my-button.--reverseColors {
+    color: #133C58!important;
+    background-color: #9FD7FF;
+    border: 1px solid #9FD7FF;
+}
+.wrapper.theme-blue .my-button.--reverseColors:hover {
+    color: #9FD7FF!important;
+    background-color: transparent;
+    border: 1px solid #9FD7FF;
+}
+.wrapper.theme-blackWhite .my-button.--reverseColors {
+    color: #FFF!important;
+    background-color: #000;
+    border: 1px solid #000;
+}
+.wrapper.theme-blackWhite .my-button.--reverseColors:hover {
+    color: #000!important;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.wrapper.theme-blackGreen .my-button.--reverseColors {
+    color: #A9DD38!important;
+    background-color: #000;
+    border: 1px solid #000;
+}
+.wrapper.theme-blackGreen .my-button.--reverseColors:hover {
+    color: #000!important;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
 
 .wrapper.theme-white .my-button .my-button__img-arrow path {
     stroke: #000;
@@ -257,24 +360,29 @@
     background: #C7D8A5;
 }
 .wrapper.theme-white .my-button.active.my-button_noColor {
+    border: 1px solid #000;
     color: #FFF!important;
-    background-color: #000000;
+    background-color: #000;
 }
 .wrapper.theme-yellow .my-button.active.my-button_noColor {
+    border: 1px solid #000;
     color: #FFFF00!important;
-    background-color: #000000;
+    background-color: #000;
 }
 .wrapper.theme-blue .my-button.active.my-button_noColor {
     color: #9FD7FF!important;
     background-color: #133C58;
+    border: 1px solid #133C58;
 }
 .wrapper.theme-blackWhite .my-button.active.my-button_noColor {
     color: #000!important;
     background-color: #FFF;
+    border: 1px solid #FFF;
 }
 .wrapper.theme-blackGreen .my-button.active.my-button_noColor {
     color: #000!important;
     background-color: #A9DD38;
+    border: 1px solid #A9DD38;
 }
 .my-button.active.my-button_noColor.my-button_noBorder {
     border: none;

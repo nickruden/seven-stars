@@ -61,6 +61,17 @@
     width: 24px;
     vertical-align: top;
 }
+.wrapper.theme-blue .hero-section__location-img path {
+    fill: #133C58;
+}
+
+.wrapper.theme-blackWhite .hero-section__location-img path {
+    fill: #FFF!important;
+}
+
+.wrapper.theme-blackGreen .hero-section__location-img path {
+    fill: #A9DD38!important;
+}
 .hero-section__location-text {
 }
 .hero-section__pre-title {
@@ -102,6 +113,27 @@
     margin-top: 5px;
     flex-shrink: 0;
 }
+
+.wrapper.theme-white .hero-section__list-item::before {
+    background: #000;
+}
+
+.wrapper.theme-yellow .hero-section__list-item::before {
+    background: #000;
+}
+
+.wrapper.theme-blue .hero-section__list-item::before {
+    background: #133C58;
+}
+
+.wrapper.theme-blackWhite .hero-section__list-item::before {
+    background: #FFF;
+}
+
+.wrapper.theme-blackGreen .hero-section__list-item::before {
+    background: #A9DD38;
+}
+
 .hero-section__list-item {
     font-size: 16px;
     line-height: 130%;
@@ -144,6 +176,184 @@
     right: 15px;
     z-index: 5;
 }
+
+.wrapper[class*="theme"] .hero-section__link::before {
+    background: none;
+}
+
+.wrapper.theme-white .hero-section__link.active {
+    background: #000;
+    color: #FFF!important;
+}
+.wrapper.theme-white .hero-section__link:hover.active {
+    color: #000!important;
+    background: #FFF;
+    border: 2px solid #000;
+}
+.wrapper.theme-white .hero-section__link:hover.active::after {
+    content: url('../../../assets/images/icons/arrow-white.svg');
+    background-color: #000;
+}
+.wrapper.theme-white .hero-section__link.active::after {
+    content: url('../../../assets/images/icons/arrow-black.svg');
+    background-color: #FFF;
+}
+.wrapper.theme-white .hero-section__link {
+    background: #FFF;
+    border: 2px solid #000;
+}
+.wrapper.theme-white .hero-section__link:hover {
+    background: #000;
+    color: #FFF!important;
+    border: 2px solid #FFF;
+}
+.wrapper.theme-white .hero-section__link:hover::after {
+    content: url('../../../assets/images/icons/arrow-black.svg');
+    background-color: #FFF;
+}
+.wrapper.theme-white .hero-section__link::after {
+    content: url('../../../assets/images/icons/arrow-white.svg');
+    background-color: #000;
+}
+
+.wrapper.theme-yellow .hero-section__link.active {
+    background: #000;
+    color: #FFFF00!important;
+}
+.wrapper.theme-yellow .hero-section__link:hover.active {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000!important;
+}
+.wrapper.theme-yellow .hero-section__link:hover.active::after {
+    content: url('../../../assets/images/icons/arrow-yellow.svg');
+    background-color: #000;
+}
+.wrapper.theme-yellow .hero-section__link.active::after {
+    content: url('../../../assets/images/icons/arrow-black.svg');
+    background-color: #FFFF00;
+}
+.wrapper.theme-yellow .hero-section__link {
+    background: transparent;
+    border: 2px solid #000;
+}
+.wrapper.theme-yellow .hero-section__link:hover {
+    background: #000;
+    color: #FFFF00!important;
+}
+.wrapper.theme-yellow .hero-section__link:hover::after {
+    content: url('../../../assets/images/icons/arrow-black.svg');
+    background-color: #FFFF00;
+}
+.wrapper.theme-yellow .hero-section__link::after {
+    content: url('../../../assets/images/icons/arrow-yellow.svg');
+    background-color: #000;
+}
+
+.wrapper.theme-blue .hero-section__link.active {
+    background: #133C58;
+    color: #9FD7FF!important;
+}
+.wrapper.theme-blue .hero-section__link:hover.active {
+    background: transparent;
+    border: 2px solid #133C58;
+    color: #133C58!important;
+}
+.wrapper.theme-blue .hero-section__link:hover.active::after {
+    content: url('../../../assets/images/icons/arrow-blue-light.svg');
+    background: #133C58;
+}
+.wrapper.theme-blue .hero-section__link.active::after {
+    content: url('../../../assets/images/icons/arrow-blue.svg');
+    background: #9FD7FF;
+}
+.wrapper.theme-blue .hero-section__link {
+    background: transparent;
+    border: 2px solid #133C58;
+    color: #133C58!important;
+}
+.wrapper.theme-blue .hero-section__link:hover {
+    background: #133C58;
+    color: #9FD7FF!important;
+}
+.wrapper.theme-blue .hero-section__link:hover::after {
+    content: url('../../../assets/images/icons/arrow-blue.svg');
+    background: #9FD7FF;
+}
+.wrapper.theme-blue .hero-section__link::after {
+    content: url('../../../assets/images/icons/arrow-blue-light.svg');
+    background: #133C58;
+}
+
+.wrapper.theme-blackWhite .hero-section__link.active {
+    background: #FFF;
+    color: #000!important;
+}
+.wrapper.theme-blackWhite .hero-section__link:hover.active {
+    background: transparent;
+    border: 2px solid #FFF;
+    color: #FFF!important;
+}
+.wrapper.theme-blackWhite .hero-section__link.active:hover::after {
+   content: url('../../../assets/images/icons/arrow-black.svg');
+    background-color: #FFF;
+}
+.wrapper.theme-blackWhite .hero-section__link.active::after {
+    content: url('../../../assets/images/icons/arrow-white.svg');
+    background-color: #000;
+}
+.wrapper.theme-blackWhite .hero-section__link {
+    background: transparent;
+    border: 2px solid #FFF;
+    color: #FFF!important;
+}
+.wrapper.theme-blackWhite .hero-section__link:hover {
+    background: #FFF;
+    color: #000!important;
+}
+.wrapper.theme-blackWhite .hero-section__link:hover::after {
+    content: url('../../../assets/images/icons/arrow-white.svg');
+    background-color: #000;
+}
+.wrapper.theme-blackWhite .hero-section__link::after {
+    content: url('../../../assets/images/icons/arrow-black.svg');
+    background-color: #FFF;
+}
+
+.wrapper.theme-blackGreen .hero-section__link.active {
+    background: #A9DD38;
+    color: #000!important;
+}
+.wrapper.theme-blackGreen .hero-section__link.active:hover {
+    background: transparent;
+    border: 2px solid #A9DD38;
+    color: #A9DD38!important;
+}
+.wrapper.theme-blackGreen .hero-section__link.active:hover:after {
+    content: url('../../../assets/images/icons/arrow-black.svg');
+    background: #A9DD38;
+}
+.wrapper.theme-blackGreen .hero-section__link.active::after {
+    content: url('../../../assets/images/icons/arrow-green.svg');
+    background: #000;
+}
+.wrapper.theme-blackGreen .hero-section__link {
+    background: transparent;
+    border: 2px solid #A9DD38;
+    color: #A9DD38!important;
+}
+.wrapper.theme-blackGreen .hero-section__link:hover {
+    background: #A9DD38;
+    color: #000!important;
+}
+.wrapper.theme-blackGreen .hero-section__link:hover::after {
+    content: url('../../../assets/images/icons/arrow-green.svg');
+    background: #000;
+}
+.wrapper.theme-blackGreen .hero-section__link::after {
+    background: #A9DD38;
+}
+
 .hero-section__link:hover {
     color: #030303;
     background-color: #C9DAA4;

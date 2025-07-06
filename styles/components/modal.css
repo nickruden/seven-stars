@@ -34,6 +34,31 @@
     padding: 40px;
 }
 
+.wrapper.theme-white .my-modal__container {
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .my-modal__container {
+    background-color: #FFFF00;
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .my-modal__container {
+    background-color: #9FD7FF;
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .my-modal__container {
+    background-color: #000;
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .my-modal__container {
+    background-color: #000;
+    border: 1px solid #A9DD38;
+}
+
 @media (max-height: 700px) {
     .my-modal.active {
         align-items: flex-start;
@@ -52,6 +77,27 @@
     color: #4E6932;
 }
 
+.wrapper.theme-white .my-modal__close {
+    color: #000!important;
+}
+
+.wrapper.theme-yellow .my-modal__close {
+    color: #000!important;
+}
+
+.wrapper.theme-blue .my-modal__close {
+    color: #133C58!important;
+}
+
+.wrapper.theme-blackWhite .my-modal__close {
+    color: #FFF!important;
+}
+
+.wrapper.theme-blackGreen .my-modal__close {
+    color: #A9DD38!important;
+}
+
+
 .my-modal__content {
     display: flex;
     flex-direction: column;
@@ -62,6 +108,26 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.wrapper.theme-white .my-modal__texts * {
+    color: #000!important;
+}
+
+.wrapper.theme-yellow .my-modal__texts * {
+    color: #000!important;
+}
+
+.wrapper.theme-blue .my-modal__texts * {
+    color: #133C58!important;
+}
+
+.wrapper.theme-blackWhite .my-modal__texts * {
+    color: #FFF!important;
+}
+
+.wrapper.theme-blackGreen .my-modal__texts * {
+    color: #A9DD38!important;
 }
 
 .my-modal__title {

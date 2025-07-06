@@ -8,3 +8,43 @@
 .my-input::placeholder {
     color: #CFCFCF;
 }
+
+.wrapper.theme-white .my-input {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.wrapper.theme-white .my-input::placeholder {
+    color: #000;
+}
+
+.wrapper.theme-yellow .my-input {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.wrapper.theme-yellow .my-input::placeholder {
+    color: #000;
+}
+
+.wrapper.theme-blue .my-input {
+    background-color: transparent;
+    border: 1px solid #133C58;
+}
+.wrapper.theme-blue .my-input::placeholder {
+    color: #133C58;
+}
+
+.wrapper.theme-blackWhite .my-input {
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+.wrapper.theme-blackWhite .my-input::placeholder {
+    color: #FFF;
+}
+
+.wrapper.theme-blackGreen .my-input {
+    background-color: transparent;
+    border: 1px solid #A9DD38;
+}
+.wrapper.theme-blackGreen .my-input::placeholder {
+    color: #A9DD38;
+}

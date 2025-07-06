@@ -1438,12 +1438,23 @@
                                     <h2 class="contacts__title">Контакты</h2>
                                     <div class="contacts__info">
                                         <a href="tel:+73952738200" class="contacts__phone">
-                                            <img src="../assets/images/social-media-icons/phone.svg" alt=""
-                                                class="contacts__phone-icon"> <span class="contacts__phone-text"> +7
-                                                (395) 273 82 00</span> </a>
+                                            <div class="contacts__phone-img-wrap">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.4761 5.31617L11.1251 6.4791C11.7108 7.52858 11.4757 8.90532 10.5532 9.8278C10.5532 9.8278 9.43436 10.9468 11.463 12.9755C13.491 15.0035 14.6107 13.8853 14.6107 13.8853C15.5332 12.9628 16.9099 12.7277 17.9594 13.3134L19.1223 13.9624C20.7071 14.8468 20.8942 17.0692 19.5013 18.4622C18.6643 19.2992 17.6389 19.9505 16.5054 19.9934C14.5973 20.0658 11.3568 19.5829 8.10618 16.3323C4.85561 13.0817 4.37269 9.84122 4.44503 7.93309C4.488 6.7996 5.13928 5.77423 5.97629 4.93723C7.36924 3.54428 9.59165 3.73144 10.4761 5.31617Z"
+                                                        fill="#4E6932" />
+                                                </svg>
+                                            </div>
+                                            <span class="contacts__phone-text"> +7 (395) 273 82 00</span>
+                                        </a>
                                         <a href="mailto:7stars07@mail.ru" class="contacts__email">
-                                            <img src="../assets/images/social-media-icons/email.svg" alt=""
-                                                class="contacts__email-icon">
+                                            <div class="contacts__email-img-wrap">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.77181 5.5C5.30221 5.5 4.89203 5.73583 4.65462 6.0916L11.9671 13.2213C12.2364 13.4839 12.6405 13.4839 12.9098 13.2213L20.2223 6.0916C19.9849 5.73583 19.5747 5.5 19.1051 5.5H5.77181ZM4.43848 7.71914V17.2C4.43848 17.9202 5.03314 18.5 5.77181 18.5H19.1051C19.8438 18.5 20.4385 17.9202 20.4385 17.2V7.71914L13.8525 14.1404C13.0772 14.8964 11.7997 14.8964 11.0244 14.1404L4.43848 7.71914Z"
+                                                        fill="#4E6932" />
+                                                </svg>
+                                            </div>
                                             <span class="contacts__email-text">7stars07@mail.ru</span></a>
                                     </div>
                                 </div>
@@ -1470,28 +1481,30 @@
                                 вопрос</button>
                         </div>
                         <div class="contacts__map-wrap">
-                            <iframe
+                            <!-- <iframe
                                 src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa492017f50e8e42aaae25d9b0ac6e2d6bf8701ce1c04ebd58da068a3b99b603a&amp;source=constructor"
-                                width="500" height="400" frameborder="0"></iframe>
+                                width="500" height="400" frameborder="0"></iframe> -->
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
+
+        <!-- ВЫНЕС ОФОРМЛЕНИЕ ОТДЕЛЬНО (МОЖНО ВНЕСТИ БЛОК В LAYOUT) -->
         <footer class="footer">
             <div class="my-container footer__container">
                 <div class="footer__inner">
                     <div class="footer__left">
                         <div class="footer-left__top">
-                        <a href="" class="footer__logo-link">
-                            <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
-                        </a>
-                        <button class="my-button footer__button-reviews">оставить отзыв</button>
+                            <a href="" class="footer__logo-link">
+                                <img src="../assets/images/logo-white.svg" alt="" class="footer__logo-img">
+                            </a>
+                            <button class="my-button footer__button-reviews --reverseColors">оставить отзыв</button>
                         </div>
                         <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
-                        <button class="my-button footer__button-reviews --mobile">оставить отзыв</button>
+                        <button class="my-button footer__button-reviews --mobile --reverseColors">оставить отзыв</button>
                     </div>
                     <div class="footer__right">
                         <nav class="footer__menu">
@@ -1499,13 +1512,13 @@
                                 <li class="footer__menu-item"><a href="" class="footer__menu-link">Сведения об
                                         организации</a>
                                 </li>
-                                <li class="footer__menu-item"><a href="./about.html" class="footer__menu-link">О нас</a>
-                                </li>
+                                <li class="footer__menu-item"><a href="./about.html" class="footer__menu-link">О
+                                        нас</a></li>
                                 <li class="footer__menu-item"><a href="./development-center.html"
                                         class="footer__menu-link">Центр развития</a>
                                 </li>
-                                <li class="footer__menu-item"><a href="./news.html"
-                                        class="footer__menu-link">Новости</a></li>
+                                <li class="footer__menu-item"><a href="./news.html" class="footer__menu-link">Новости</a>
+                                </li>
                                 <li class="footer__menu-item"><a href="./blog.html" class="footer__menu-link">Блог</a>
                                 </li>
                             </ul>
@@ -1540,7 +1553,7 @@
 
     <script src="../assets/js/sections/staff.js"></script>
     <script src="../assets/js/sections/reviews.js"></script>
-    <script src="./assets//js/sections/contacts.js"></script>
+    <script src="../assets//js/sections/contacts.js"></script>
 
 
     

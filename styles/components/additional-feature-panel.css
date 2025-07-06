@@ -4,6 +4,7 @@
     border-bottom: 3px solid #000;
     display: flex;
 }
+
 .additional-feature-panel.--displayNone {
     display: none;
 }
@@ -46,11 +47,15 @@
     gap: 16px;
 }
 
-.additional-feature-panel__option-title, .wrapper[class*="theme"] .additional-feature-panel__option-title {
+.additional-feature-panel__option-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 120%;
-    color: #000!important;
+    color: #000 !important;
+}
+
+.wrapper[class*="theme"] .additional-feature-panel__option-title {
+    color: #000 !important;
 }
 
 .additional-feature-panel__option-switch {
@@ -70,7 +75,7 @@
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link {
-    color: #000!important;
+    color: #000 !important;
     overflow: hidden;
     border-radius: 12px;
     height: 100%;
@@ -85,7 +90,7 @@
 }
 
 .wrapper[class*="theme"] .additional-feature-panel__option-switch-nav-item .nav-link {
-    color: #000!important;
+    color: #000 !important;
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link#small-size-texts {
@@ -113,27 +118,27 @@
 
 .additional-feature-panel__option-switch-nav-item .nav-link[id="white-color-theme"] span {
     background-color: #FFF;
-    color: #000!important;
+    color: #000 !important;
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link[id="yellow-color-theme"] span {
     background-color: #FFFF00;
-    color: #000!important;
+    color: #000 !important;
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link[id="blackWhite-color-theme"] span {
     background-color: #000;
-    color: #FFF!important;
+    color: #FFF !important;
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link[id="blackGreen-color-theme"] span {
     background-color: #000;
-    color: #A9DD38!important;
+    color: #A9DD38 !important;
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link[id="blue-color-theme"] span {
     background-color: #9FD7FF;
-    color: #133C58!important;
+    color: #133C58 !important;
 }
 
 .additional-feature-panel__option-switch-nav-item .nav-link.active {
@@ -142,18 +147,25 @@
     color: #000;
 }
 
-.additional-feature-panel__button-off, .wrapper[class*="theme"] .additional-feature-panel__button-off {
+.additional-feature-panel__button-off {
     width: 260px;
     padding: 16px 24px;
-    color: #000!important;
-    border: 1px solid #000!important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
     font-size: 16px;
     white-space: nowrap;
 }
-.additional-feature-panel__button-off:hover, .wrapper[class*="theme"] .my-button:hover.my-button_noColor.additional-feature-panel__button-off {
-    color: #FFF!important;
-    border: 1px solid #000!important;
-    background-color: #000!important;
+
+.wrapper[class*="theme"] .additional-feature-panel__button-off {
+    color: #000 !important;
+    border: 1px solid #000 !important;
+}
+
+.additional-feature-panel__button-off:hover,
+.wrapper[class*="theme"] .my-button:hover.my-button_noColor.additional-feature-panel__button-off {
+    color: #FFF !important;
+    border: 1px solid #000 !important;
+    background-color: #000 !important;
 }
 
 @media (max-width: 1361px) {

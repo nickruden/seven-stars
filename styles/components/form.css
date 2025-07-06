@@ -3,6 +3,27 @@
     border-radius: 16px;
     padding: 32px 40px 29px 40px;
 }
+
+.wrapper.theme-white .feedback-form {
+    background-color: #FFF;
+}
+
+.wrapper.theme-yellow .feedback-form {
+    background-color: #FFFF00;
+}
+
+.wrapper.theme-blue .feedback-form {
+    background-color: #9FD7FF;
+}
+
+.wrapper.theme-blackWhite .feedback-form {
+    background-color: #000;
+}
+
+.wrapper.theme-blackGreen .feedback-form {
+    background-color: #000;
+}
+
 .feedback-form__elements {
     display: flex;
     flex-direction: column;
@@ -19,8 +40,8 @@
     margin-bottom: 45px;
 }
 .feedback-form__button {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 @media (max-width: 1281px) {

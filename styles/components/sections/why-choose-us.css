@@ -32,14 +32,49 @@
     border-top: 1px solid #4E6932;
     border-bottom: 1px solid #4E6932;
 }
+.wrapper[class*="theme"] .why-choose-us__accordion-item {
+    background: transparent!important;
+}
+
+.wrapper.theme-white .why-choose-us__accordion-item {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.wrapper.theme-yellow .why-choose-us__accordion-item {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.wrapper.theme-blue .why-choose-us__accordion-item {
+    border-top: 1px solid #133C58;
+    border-bottom: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .why-choose-us__accordion-item {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .why-choose-us__accordion-item {
+    border-top: 1px solid #A9DD38;
+    border-bottom: 1px solid #A9DD38;
+}
+
 .why-choose-us__accordion-header {
     display: flex;
 }
 .why-choose-us__accordion-button {
     background-color: #FFF!important;
 }
+.wrapper[class*="theme"] .why-choose-us__accordion-button {
+    background: transparent!important;
+}
 .why-choose-us__accordion-button[aria-expanded="true"] {
     background-color: #FFF;
+}
+.wrapper[class*="theme"] .why-choose-us__accordion-button[aria-expanded="true"] {
+    background: transparent!important;
 }
 .why-choose-us__accordion-button[aria-expanded="true"] .why-choose-us__accordion-button-title {
     color: #4E6932;
@@ -52,6 +87,27 @@
     margin-bottom: auto;
     transition: transform 500ms;
 }
+
+.wrapper.theme-white .why-choose-us__accordion-button::after {
+    background-image: url('../../../assets/images/icons/arrow-black.svg')!important;
+}
+
+.wrapper.theme-yellow .why-choose-us__accordion-button::after {
+    background-image: url('../../../assets/images/icons/arrow-black.svg')!important;
+}
+
+.wrapper.theme-blue .why-choose-us__accordion-button::after {
+    background-image: url('../../../assets/images/icons/arrow-blue.svg')!important;
+}
+
+.wrapper.theme-blackWhite .why-choose-us__accordion-button::after {
+    background-image: url('../../../assets/images/icons/arrow-white.svg')!important;
+}
+
+.wrapper.theme-blackGreen .why-choose-us__accordion-button::after {
+    background-image: url('../../../assets/images/icons/arrow-green.svg')!important;
+}
+
 .why-choose-us__accordion-button:not(.collapsed)::after {
     transform: rotate(-90deg);
 }

@@ -55,6 +55,37 @@
     width: 100%;
     max-width: 590px;
 }
+
+.wrapper.theme-white .branches__info {
+    padding: 39px;
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .branches__info {
+    padding: 39px;
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .branches__info {
+    padding: 39px;
+    background: transparent;
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .branches__info {
+    padding: 39px;
+    background: transparent;
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .branches__info {
+    padding: 39px;
+    background: transparent;
+    border: 1px solid #A9DD38;
+}
+
 .branches__address {
     display: flex;
     align-items: center;
@@ -69,6 +100,27 @@
     width: 100%;
     object-fit: cover;
 }
+
+.wrapper.theme-white .branches__address-icon svg path {
+    fill: #000;
+}
+
+.wrapper.theme-yellow .branches__address-icon svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blue .branches__address-icon svg path {
+    fill: #133C58;
+}
+
+.wrapper.theme-blackWhite .branches__address-icon svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-blackGreen .branches__address-icon svg path {
+    fill: #A9DD38;
+}
+
 .wrapper.no-images .branches__address-icon {
     display: block;
 }
@@ -108,7 +160,14 @@
     width: 100%;
     border-radius: 24px;
     overflow: hidden;
+}
+.branches__img-inner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
     background-color: #CFCFCF;
+    overflow: hidden;
 }
 .branches__img {
     height: 100%;
@@ -158,7 +217,6 @@
     }
     .branches__img-wrap {
         flex-basis: 100%;
-        max-height: 300px;
         display: flex;
         align-items: center;
     }
@@ -180,7 +238,21 @@
         gap: 15px;
     }
 }
+
 @media (max-width: 551px) {
+.wrapper[class*="theme"] .branches__container {
+    padding: 0px 1px;
+}
+.wrapper[class*="theme"] .branches__title {
+    padding: 0px 30px;
+}
+.wrapper[class*="theme"] .branches__buttons {
+    padding: 0px 30px;
+}
+.wrapper[class*="theme"] .branches__img-wrap {
+    padding: 0px 30px;
+}
+
     .branches__body {
         gap: 40px;
     }
@@ -196,6 +268,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .wrapper[class*="theme"] .branches__info {
+        padding: 30px;
+    }
+
     .branches__address-text {
         font-size: 18px;
         color: #303030;
@@ -207,10 +284,12 @@
         text-align: center;
         }
     .branches__img-wrap {
-        max-height: 300px;
         display: flex;
         align-items: center;
     }
+    .branches__img-inner {
+    max-height: 300px;
+}
     .branches__info-link:last-child {
         display: none;
     }

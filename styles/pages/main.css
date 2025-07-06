@@ -1079,7 +1079,7 @@
 
 @media (max-width: 769px) {
     .dev-environment__container {
-        padding: 0px;
+        padding: 0px 1px;
     }
 
     .dev-environment__title {
