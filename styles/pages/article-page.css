@@ -13,6 +13,58 @@
     gap: 40px;
 }
 
+.wrapper.theme-white .principles__inner {
+    background-color: #000;
+}
+
+.wrapper.theme-white .principles__inner * {
+    color: #FFF !important;
+}
+
+.wrapper.theme-white .principles__inner .principles__item::before {
+    background-color: #FFF;
+}
+
+.wrapper.theme-yellow .principles__inner {
+    background-color: #000;
+}
+
+.wrapper.theme-yellow .principles__inner * {
+    color: #FFFF00 !important;
+}
+
+.wrapper.theme-yellow .principles__inner .principles__item::before {
+    background-color: #FFFF00;
+}
+
+.wrapper.theme-blue .principles__inner {
+    background-color: #133C58;
+}
+
+.wrapper.theme-blue .principles__inner * {
+    color: #9FD7FF !important;
+}
+
+.wrapper.theme-blue .principles__inner .principles__item::before {
+    background-color: #9FD7FF;
+}
+
+.wrapper.theme-blackWhite .principles__inner {
+    background-color: #FFF;
+}
+
+.wrapper.theme-blackWhite .principles__inner * {
+    color: #000 !important;
+}
+
+.wrapper.theme-blackGreen .principles__inner {
+    background-color: #A9DD38;
+}
+
+.wrapper.theme-blackGreen .principles__inner * {
+    color: #000 !important;
+}
+
 .principles__title {
     font-size: 24px;
     font-weight: 500;
@@ -566,6 +618,30 @@
     border-radius: 24px;
 }
 
+.wrapper[class*="theme"] .quote__desc-quote-wrap {
+    background-color: transparent;
+}
+
+.wrapper.theme-white .principles__inner {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-yellow .principles__inner * {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blue .principles__inner * {
+    border: 1px solid #133C58;
+}
+
+.wrapper.theme-blackWhite .principles__inner {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-blackGreen .quote__desc-quote-wrap {
+    border: 1px solid #A9DD38;
+}
+
 .quote__desc-quote-text {
     font-size: 24px;
     line-height: 130%;
@@ -781,6 +857,10 @@
 
     .quote__container {
         padding: 0px;
+    }
+
+    .wrapper[class*="theme"] .quote__container {
+        padding: 0px 1px;
     }
 
     .quote__desc-texts {

@@ -543,6 +543,10 @@
         padding: 24px 30px 30px 30px;
     }
 
+    .wrapper[class*="theme"] .modern-tools__slider {
+        background-color: transparent;
+    }
+
     .modern-tools__swiper {
         margin-bottom: 30px;
     }
@@ -605,6 +609,7 @@
     background-size: cover;
     border-radius: 24px;
 }
+
 .wrapper.no-images .preparing-child__content-img {
     background: #CFCFCF;
 }
@@ -956,6 +961,10 @@
         background-color: #F8F8F8;
     }
 
+    .wrapper[class*="theme"] .lifestyle-item__slider {
+        background-color: transparent;
+    }
+
     .lifestyle-item__swiper {
         margin-bottom: 30px;
     }
@@ -1079,6 +1088,10 @@
 
 @media (max-width: 769px) {
     .dev-environment__container {
+        padding: 0px;
+    }
+
+    .wrapper[class*="theme"] .dev-environment__container {
         padding: 0px 1px;
     }
 
@@ -1167,6 +1180,10 @@
     gap: 24px;
 }
 
+.wrapper[class*="theme"] .development__buttons {
+    background-color: transparent;
+}
+
 .development__button {
     flex: 1 0 calc(33.333% - 24px);
     max-width: 389px;
@@ -1177,6 +1194,32 @@
     text-transform: capitalize;
     justify-content: flex-start;
     position: relative;
+    border: none;
+}
+
+.wrapper.theme-white .development__button {
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-yellow .development__button {
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-blue .development__button {
+    background-color: transparent !important;
+    border: 1px solid #133C58 !important;
+}
+
+.wrapper.theme-blackWhite .development__button {
+    background-color: transparent !important;
+    border: 1px solid #FFF !important;
+}
+
+.wrapper.theme-blackGreen .development__button {
+    background-color: transparent !important;
+    border: 1px solid #A9DD38 !important;
 }
 
 .development__button_isIndivid {
@@ -1201,6 +1244,41 @@
     right: -10px;
 }
 
+.wrapper.theme-white .development__button_isIndivid::after {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.04);
+}
+
+.wrapper.theme-yellow .development__button_isIndivid::after {
+    background-color: #FFFF00;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0px 2px 4px 0px #FFFF000a;
+}
+
+.wrapper.theme-blue .development__button_isIndivid::after {
+    background-color: #9FD7FF;
+    color: #133C58;
+    border: 1px solid #133C58;
+    box-shadow: 0px 2px 4px 0px #133C580a;
+}
+
+.wrapper.theme-blackWhite .development__button_isIndivid::after {
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.wrapper.theme-blackGreen .development__button_isIndivid::after {
+    background-color: #000;
+    color: #A9DD38;
+    border: 1px solid #A9DD38;
+    box-shadow: 0px 2px 4px 0px #A9DD380a;
+}
+
 .development__button-img {
     margin-right: 40px;
     height: 32px;
@@ -1213,12 +1291,113 @@
     object-fit: cover;
 }
 
+.wrapper.theme-white .development__button-img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-yellow .development__button-img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blue .development__button-img svg path {
+    fill: #133C58;
+}
+
+.wrapper.theme-blackWhite .development__button-img svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-blackGreen .development__button-img svg path {
+    fill: #A9DD38;
+}
+
 .development__button:hover,
 .development__button:focus,
 .development__button:active,
 .development__button.active {
     color: #4E6932 !Important;
     background-color: #C7D8A5 !Important;
+    border: none !important;
+}
+
+.wrapper.theme-white .development__button:hover,
+.wrapper.theme-white .development__button:focus,
+.wrapper.theme-white .development__button:active,
+.wrapper.theme-white .development__button.active {
+    background-color: #000 !important;
+    color: #FFF !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-white .development__button:hover .development__button-img svg path,
+.wrapper.theme-white .development__button:focus .development__button-img svg path,
+.wrapper.theme-white .development__button:active .development__button-img svg path,
+.wrapper.theme-white .development__button.active .development__button-img svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-yellow .development__button:hover,
+.wrapper.theme-yellow .development__button:focus,
+.wrapper.theme-yellow .development__button:active,
+.wrapper.theme-yellow .development__button.active {
+    background-color: #000 !important;
+    color: #FFFF00 !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-yellow .development__button:hover .development__button-img svg path,
+.wrapper.theme-yellow .development__button:focus .development__button-img svg path,
+.wrapper.theme-yellow .development__button:active .development__button-img svg path,
+.wrapper.theme-yellow .development__button.active .development__button-img svg path {
+    fill: #FFFF00;
+}
+
+.wrapper.theme-blue .development__button:hover,
+.wrapper.theme-blue .development__button:focus,
+.wrapper.theme-blue .development__button:active,
+.wrapper.theme-blue .development__button.active {
+    background-color: #133C58 !important;
+    color: #9FD7FF !important;
+    border: 1px solid #133C58 !important;
+}
+
+.wrapper.theme-blue .development__button:hover .development__button-img svg path,
+.wrapper.theme-blue .development__button:focus .development__button-img svg path,
+.wrapper.theme-blue .development__button:active .development__button-img svg path,
+.wrapper.theme-blue .development__button.active .development__button-img svg path {
+    fill: #9FD7FF;
+}
+
+.wrapper.theme-blackWhite .development__button:hover,
+.wrapper.theme-blackWhite .development__button:focus,
+.wrapper.theme-blackWhite .development__button:active,
+.wrapper.theme-blackWhite .development__button.active {
+    background-color: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #FFF !important;
+}
+
+.wrapper.theme-blackWhite .development__button:hover .development__button-img svg path,
+.wrapper.theme-blackWhite .development__button:focus .development__button-img svg path,
+.wrapper.theme-blackWhite .development__button:active .development__button-img svg path,
+.wrapper.theme-blackWhite .development__button.active .development__button-img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blackGreen .development__button:hover,
+.wrapper.theme-blackGreen .development__button:focus,
+.wrapper.theme-blackGreen .development__button:active,
+.wrapper.theme-blackGreen .development__button.active {
+    background-color: #A9DD38 !important;
+    color: #000 !important;
+    border: 1px solid #A9DD38 !important;
+}
+
+.wrapper.theme-blackGreen .development__button:hover .development__button-img svg path,
+.wrapper.theme-blackGreen .development__button:focus .development__button-img svg path,
+.wrapper.theme-blackGreen .development__button:active .development__button-img svg path,
+.wrapper.theme-blackGreen .development__button.active .development__button-img svg path {
+    fill: #000;
 }
 
 .development__slide-popup {
@@ -1277,6 +1456,10 @@
         padding: 0px;
     }
 
+    .wrapper[class*="theme"] .development__container {
+        padding: 0px 1px;
+    }
+
     .development__description {
         padding: 0px 30px;
     }
@@ -1297,6 +1480,31 @@
         order: 2;
         padding: 30px;
         background-color: rgba(248, 248, 248, 1);
+        border-radius: 24px;
+    }
+
+    .wrapper[class*="theme"] .development__slider {
+        background-color: transparent;
+    }
+
+    .wrapper.theme-white .development__slider {
+        border: 1px solid #000;
+    }
+
+    .wrapper.theme-yellow .development__slider {
+        border: 1px solid #000;
+    }
+
+    .wrapper.theme-blue .development__slider {
+        border: 1px solid #133C58;
+    }
+
+    .wrapper.theme-blackWhite .development__slider {
+        border: 1px solid #FFF;
+    }
+
+    .wrapper.theme-blackGreen .development__slider {
+        border: 1px solid #A9DD38;
     }
 
     .development__image-card-title {
@@ -1618,6 +1826,10 @@
         background-color: #F8F8F8;
         padding: 24px 30px 30px 30px;
         margin-bottom: 28px;
+    }
+
+    .wrapper[class*="theme"] .holidays__slider {
+        background-color: transparent;
     }
 
     .holidays__swiper-slide {

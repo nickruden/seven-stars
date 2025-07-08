@@ -267,6 +267,42 @@
     color: #4E6932;
 }
 
+.wrapper.theme-white ~ [data-tippy-root] .tippy-box {
+    background-color: #000!important;
+    border: 1px solid #FFF!important;
+}
+.wrapper.theme-white ~ [data-tippy-root] .tippy-content {
+    color: #FFF!important;
+}
+.wrapper.theme-yellow ~ [data-tippy-root] .tippy-box {
+    background-color: #000!important;
+    border: 1px solid #FFFF00!important;
+}
+.wrapper.theme-yellow ~ [data-tippy-root] .tippy-content {
+    color: #FFFF00!important;
+}
+.wrapper.theme-blue ~ [data-tippy-root] .tippy-box {
+    background-color: #133C58!important;
+    border: 1px solid #9FD7FF!important;
+}
+.wrapper.theme-blue ~ [data-tippy-root] .tippy-content {
+    color: #9FD7FF!important;
+}
+.wrapper.theme-blackWhite ~ [data-tippy-root] .tippy-box {
+    background-color: #FFF!important;
+    border: 1px solid #000!important;
+}
+.wrapper.theme-blackWhite ~ [data-tippy-root] .tippy-content {
+    color: #000!important;
+}
+.wrapper.theme-blackGreen ~ [data-tippy-root] .tippy-box {
+    background-color: #A9DD38!important;
+    border: 1px solid #000!important;
+}
+.wrapper.theme-blackGreen ~ [data-tippy-root] .tippy-content {
+    color: #000!important;
+}
+
 @media (max-width: 769px) {
     .tippy-box {
         padding: 15px;

@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 991: {
                     slidesPerView: 4,
                     spaceBetween: isWrap ? 0 : 24,
-                    simulateTouch: isWrap ? false : true,
                     allowTouchMove: isWrap ? false : true,
                 }
             }

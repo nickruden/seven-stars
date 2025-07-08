@@ -1684,6 +1684,7 @@
 
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/button-up.js"></script>
+    <script src="../assets/js/components/double-slider.js"></script>
     <script src="../assets/js/components/additional-features.js"></script>
 
     <script src="../assets/js/sections/staff.js"></script>
@@ -1758,85 +1759,6 @@
                     });
                 });
             });
-        });
-    </script>
-
-    <script>
-        const devEnvTextSlider = document.querySelector('.double-slider__text-slider');
-        const devEnvironmenTextSwiper = new Swiper('.double-slider__text-swiper', {
-            direction: 'horizontal',
-            slidesPerView: 1,
-            spaceBetween: 24,
-            pagination: {
-                el: '.double-slider__text-swiper-pagination',
-                type: 'fraction',
-                formatFractionCurrent: number => {
-                    return ('0' + number).slice(-2);
-                },
-                formatFractionTotal: number => {
-                    return ('0' + number).slice(-2);
-                },
-                renderFraction: (currentClass, totalClass) => {
-                    return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
-                }
-            },
-            navigation: {
-                nextEl: '.double-slider__text-swiper-button-next',
-                prevEl: '.double-slider__text-swiper-button-prev',
-            },
-            on: {
-                slideChange: function () {
-                    updateSwiperHeight();
-                },
-                resize: function () {
-                    updateSwiperHeight();
-                }
-            }
-        });
-
-        function updateSwiperHeight() {
-            const activeSlide = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex];
-            const slideHeight = activeSlide.firstElementChild.offsetHeight;
-            devEnvTextSlider.style.height = `${slideHeight}px`;
-        }
-
-
-        const sliders = document.querySelectorAll('.double-slider__image-slider');
-        const imageSwipers = [];
-
-        sliders.forEach(slider => {
-            const dataId = slider.getAttribute('data-imageSlider-id');
-            const swiperContainer = slider.querySelector('.double-slider__image-swiper');
-            const paginationContainer = slider.querySelector('.double-slider__image-swiper-pagination');
-
-            const swiper = new Swiper(swiperContainer, {
-                direction: 'horizontal',
-                slidesPerView: 1,
-                spaceBetween: 24,
-                pagination: {
-                    el: paginationContainer,
-                },
-            });
-            imageSwipers.push({ dataId, slider });
-        });
-        console.log(imageSwipers)
-
-        function showImageSlider(activeSlideId) {
-            console.log(activeSlideId)
-            imageSwipers.forEach(imageSwiper => {
-                if (imageSwiper.dataId === activeSlideId) {
-                    imageSwiper.slider.style.display = 'block';
-                } else {
-                    imageSwiper.slider.style.display = 'none';
-                }
-            });
-        }
-
-        showImageSlider(devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id);
-
-        devEnvironmenTextSwiper.on('slideChange', function () {
-            const activeSlideId = devEnvironmenTextSwiper.slides[devEnvironmenTextSwiper.activeIndex].id;
-            showImageSlider(activeSlideId);
         });
     </script>
 </body>

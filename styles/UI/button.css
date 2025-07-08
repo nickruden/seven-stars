@@ -288,21 +288,36 @@
     color: #FFF!important;
     background-color: #000000;
 }
+.wrapper.theme-white .my-button:hover.my-button_noColor .nowrap {
+    color: #FFF!important;
+}
 .wrapper.theme-yellow .my-button:hover.my-button_noColor {
     color: #FFFF00!important;
     background-color: #000000;
+}
+.wrapper.theme-yellow .my-button:hover.my-button_noColor .nowrap {
+    color: #FFFF00!important;
 }
 .wrapper.theme-blue .my-button:hover.my-button_noColor {
     color: #9FD7FF!important;
     background-color: #133C58;
 }
+.wrapper.theme-blue .my-button:hover.my-button_noColor .nowrap {
+    color: #9FD7FF!important;
+}
 .wrapper.theme-blackWhite .my-button:hover.my-button_noColor {
     color: #000!important;
     background-color: #FFF;
 }
+.wrapper.theme-blackWhite .my-button:hover.my-button_noColor .nowrap {
+    color: #000!important;
+}
 .wrapper.theme-blackGreen .my-button:hover.my-button_noColor {
     color: #000!important;
     background-color: #A9DD38;
+}
+.wrapper.theme-blackGreen .my-button:hover.my-button_noColor .nowrap {
+    color: #000!important;
 }
 
 .my-button:hover.my-button_noColor.my-button_noBorder {

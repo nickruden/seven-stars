@@ -29,11 +29,11 @@
     border-color: #BACC92;
 }
 
-.articles-list__button:hover,
-.articles-list__button.active {
-    border-color: #4E6932 !important;
-    color: #FFF !important;
-    background-color: #4E6932 !important;
+.my-button:hover.articles-list__button,
+.my-button.active.articles-list__button {
+    border-color: #4E6932;
+    color: #FFF;
+    background-color: #4E6932;
 }
 
 .articles-list__items {
@@ -105,9 +105,112 @@
 }
 
 .articles-list__item:hover .my-button {
-    border-color: #4E6932 !important;
+    border-color: #4E6932;
+    color: #FFF;
+    background-color: #4E6932;
+}
+
+.wrapper.theme-white .articles-list__item:hover .my-button {
+    color: #000 !important;
+    border: 1px solid #FFF !important;
+    background: #FFF !important;
+}
+
+.wrapper.theme-white .articles-list__item.--text-news .articles-list__item-link {
+    border: 1px solid #FFF;
+}
+
+.wrapper.theme-white .articles-list__item.--text-news_withImage .articles-list__item-link {
+    border: 1px solid #FFF;
     color: #FFF !important;
-    background-color: #4E6932 !important;
+}
+
+.wrapper.theme-white .articles-list__item:hover.--text-news_withImage .my-button.articles-list__item-link {
+    color: #000 !important;
+    border: 1px solid #FFF !important;
+}
+
+.wrapper.theme-yellow .articles-list__item:hover .my-button {
+    color: #000 !important;
+    border: 1px solid #FFFF00 !important;
+    background: #FFFF00 !important;
+}
+
+.wrapper.theme-yellow .articles-list__item.--text-news .articles-list__item-link {
+    border: 1px solid #FFFF00;
+}
+
+.wrapper.theme-yellow .articles-list__item.--text-news_withImage .articles-list__item-link {
+    border: 1px solid #FFFF00;
+    color: #FFFF00 !important;
+}
+
+.wrapper.theme-yellow .articles-list__item:hover.--text-news_withImage .my-button.articles-list__item-link {
+    color: #000 !important;
+    border: 1px solid #FFFF00 !important;
+}
+
+.wrapper.theme-blue .articles-list__item:hover .my-button {
+    color: #133C58 !important;
+    border: 1px solid #9FD7FF !important;
+    background: #9FD7FF !important;
+}
+
+.wrapper.theme-blue .articles-list__item.--text-news .articles-list__item-link {
+    border: 1px solid #9FD7FF;
+}
+
+.wrapper.theme-blue .articles-list__item.--text-news_withImage .articles-list__item-link {
+    border: 1px solid #9FD7FF;
+    color: #9FD7FF !important;
+}
+
+.wrapper.theme-blue .articles-list__item:hover.--text-news_withImage .my-button.articles-list__item-link {
+    color: #133C58 !important;
+    background-color: #9FD7FF !important;
+    border: 1px solid #9FD7FF !important;
+}
+
+.wrapper.theme-blackWhite .articles-list__item:hover .my-button {
+    color: #FFF !important;
+    border: 1px solid #000 !important;
+    background: #000 !important;
+}
+
+.wrapper.theme-blackWhite .articles-list__item.--text-news .articles-list__item-link {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blackWhite .articles-list__item.--text-news_withImage .articles-list__item-link {
+    border: 1px solid #FFF;
+    color: #FFF !important;
+}
+
+.wrapper.theme-blackWhite .articles-list__item:hover.--text-news_withImage .my-button.articles-list__item-link {
+    color: #000 !important;
+    background-color: #FFF !important;
+    border: 1px solid #FFF !important;
+}
+
+.wrapper.theme-blackGreen .articles-list__item:hover .my-button {
+    color: #A9DD38 !important;
+    border: 1px solid #000 !important;
+    background: #000 !important;
+}
+
+.wrapper.theme-blackGreen .articles-list__item.--text-news .articles-list__item-link {
+    border: 1px solid #000;
+}
+
+.wrapper.theme-blackGreen .articles-list__item.--text-news_withImage .articles-list__item-link {
+    border: 1px solid #A9DD38;
+    color: #A9DD38 !important;
+}
+
+.wrapper.theme-blackGreen .articles-list__item:hover.--text-news_withImage .my-button.articles-list__item-link {
+    color: #000 !important;
+    background-color: #A9DD38 !important;
+    border: 1px solid #A9DD38 !important;
 }
 
 .articles-list__item-img {
@@ -131,6 +234,7 @@
     padding: 12px 20px;
     background-color: #F6F6F6;
     color: #303030;
+    border: none;
     border-radius: 16px;
     display: inline-block;
     position: absolute;
@@ -138,6 +242,10 @@
     left: 40px;
     right: 40px;
     width: fit-content;
+}
+
+.articles-list__item-title:hover {
+    border: none;
 }
 
 .articles-list__item-text-content {
@@ -214,6 +322,50 @@
     opacity: .1;
 }
 
+.wrapper[class*="theme"] .articles-list__item.--text-news::before {
+    background: transparent;
+}
+
+.wrapper.theme-white .articles-list__item.--text-news {
+    background: #000;
+}
+
+.wrapper.theme-white .articles-list__item.--text-news * {
+    color: #FFF !important;
+}
+
+.wrapper.theme-yellow .articles-list__item.--text-news {
+    background: #000;
+}
+
+.wrapper.theme-yellow .articles-list__item.--text-news * {
+    color: #FFFF00 !important;
+}
+
+.wrapper.theme-blue .articles-list__item.--text-news {
+    background: #133C58;
+}
+
+.wrapper.theme-blue .articles-list__item.--text-news * {
+    color: #9FD7FF !important;
+}
+
+.wrapper.theme-blackWhite .articles-list__item.--text-news {
+    background: #FFF;
+}
+
+.wrapper.theme-blackWhite .articles-list__item.--text-news * {
+    color: #000 !important;
+}
+
+.wrapper.theme-blackGreen .articles-list__item.--text-news {
+    background: #A9DD38;
+}
+
+.wrapper.theme-blackGreen .articles-list__item.--text-news * {
+    color: #000 !important;
+}
+
 .articles-list__item.--text-news .articles-list__item-text-content {
     display: flex;
 }
@@ -222,8 +374,24 @@
     position: relative;
 }
 
+.wrapper.theme-white .articles-list__item.--text-news_withImage * {
+    color: #FFF !important;
+}
+
+.wrapper.theme-yellow .articles-list__item.--text-news_withImage * {
+    color: #FFFF00 !important;
+}
+
+.wrapper.theme-blue .articles-list__item.--text-news_withImage * {
+    color: #9FD7FF !important;
+}
+
 .articles-list__item.--text-news_withImage:hover {
     filter: brightness(1);
+}
+
+.articles-list__item.--text-news_withImage:hover .articles-list__item-link {
+    border: 1px solid #4E6932;
 }
 
 .articles-list__item.--text-news_withImage .articles-list__item-title {

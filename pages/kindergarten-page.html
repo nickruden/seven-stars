@@ -1896,7 +1896,7 @@
                             </div>
                         </div>
                         <div class="development__buttons">
-                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="0">
+                            <button class="my-button my-button_noColor development__button" data-slide="0">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
@@ -1915,7 +1915,7 @@
                                     </svg>
                                 </div> Робототехника
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="1">
+                            <button class="my-button my-button_noColor development__button" data-slide="1">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
@@ -1937,7 +1937,7 @@
                                     </svg>
                                 </div> Ритмика
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="2">
+                            <button class="my-button my-button_noColor development__button" data-slide="2">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
@@ -1949,7 +1949,7 @@
                                     </svg>
                                 </div> Музыка
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="3">
+                            <button class="my-button my-button_noColor development__button" data-slide="3">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
@@ -1964,7 +1964,7 @@
                                     </svg>
                                 </div> Английский
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button" data-slide="4">
+                            <button class="my-button my-button_noColor development__button" data-slide="4">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
                                     Алмазная</span>
@@ -1982,7 +1982,7 @@
                                     </svg>
                                 </div> Творчество
                             </button>
-                            <button class="my-button my-button_noColor my-button_noBorder development__button development__button_isIndivid"
+                            <button class="my-button my-button_noColor development__button development__button_isIndivid"
                                 data-slide="5">
                                 <span class="development__slide-popup">2 раза в неделю, в филиалах на ул.
                                     Каландаришвили, ул. Невского, ул. Декабрьских Событий, ул. Березовая, ул.
@@ -3029,6 +3029,7 @@
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/button-up.js"></script>
     <script src="../assets/js/components/stories.js"></script>
+    <script src="../assets/js/components/double-slider.js"></script>
     <script src="../assets/js/components/additional-features.js"></script>
 
     <script src="../assets/js/sections/staff.js"></script>
@@ -3151,106 +3152,6 @@
         updateActiveButton(developmentSwiper.realIndex);
     </script>
 
-    <!-- СКРИПТ ДВОЙНОГО СЛАЙДЕРА -->
-    <script>
-        document.querySelectorAll('.double-slider').forEach(doubleSlider => {
-            const doubleSliderId = doubleSlider.getAttribute('data-doubleSlider-id');
-
-            const textSlider = doubleSlider.querySelector('.double-slider__text-slider');
-            const textSwiperContainer = doubleSlider.querySelector('.double-slider__text-swiper');
-            const textSwiperPagination = doubleSlider.querySelector('.double-slider__text-swiper-pagination');
-            const textSwiperNext = doubleSlider.querySelector('.double-slider__text-swiper-button-next');
-            const textSwiperPrev = doubleSlider.querySelector('.double-slider__text-swiper-button-prev');
-
-            const imageSliders = doubleSlider.querySelectorAll('.double-slider__image-slider');
-            const imageSwipers = [];
-
-            // Инициализация image sliders
-            imageSliders.forEach(slider => {
-                const dataId = slider.getAttribute('data-imageSlider-id');
-                const swiperContainer = slider.querySelector('.double-slider__image-swiper');
-                const paginationContainer = slider.querySelector('.double-slider__image-swiper-pagination');
-
-                const swiper = new Swiper(swiperContainer, {
-                    direction: 'horizontal',
-                    slidesPerView: 1,
-                    spaceBetween: 24,
-                    pagination: {
-                        el: paginationContainer,
-                    },
-                });
-
-                // Сохраняем связь
-                imageSwipers.push({ dataId, slider });
-
-                // Скрываем все image-слайдеры по умолчанию
-                slider.style.display = 'none';
-            });
-
-            // Функция показа нужного image slider
-            function showImageSlider(activeSlideId) {
-                imageSwipers.forEach(imageSwiper => {
-                    if (imageSwiper.dataId === activeSlideId) {
-                        imageSwiper.slider.style.removeProperty('display'); // Показываем
-                    } else {
-                        imageSwiper.slider.style.display = 'none'; // Скрываем остальные
-                    }
-                });
-            }
-
-            // Инициализация текстового слайдера
-            const textSwiper = new Swiper(textSwiperContainer, {
-                direction: 'horizontal',
-                slidesPerView: 1,
-                spaceBetween: 24,
-                pagination: {
-                    el: textSwiperPagination,
-                    type: 'fraction',
-                    formatFractionCurrent: number => ('0' + number).slice(-2),
-                    formatFractionTotal: number => ('0' + number).slice(-2),
-                    renderFraction: (currentClass, totalClass) => {
-                        return '<span class="' + currentClass + '"></span>' + '/' + '<span class="' + totalClass + '"></span>';
-                    }
-                },
-                navigation: {
-                    nextEl: textSwiperNext,
-                    prevEl: textSwiperPrev,
-                },
-                on: {
-                    init: function () {
-                        if (this.slides.length <= 1) {
-                            // Скрыть пагинацию
-                            if (textSwiperPagination) {
-                                textSwiperPagination.style.display = 'none';
-                            }
-
-                            // Добавить класс, если один слайд
-                            doubleSlider.classList.add('--single-slide');
-                        }
-                        updateSwiperHeight(this);
-                        showImageSlider(this.slides[this.activeIndex].id);
-                    },
-                    slideChange: function () {
-                        updateSwiperHeight(this);
-                        showImageSlider(this.slides[this.activeIndex].id);
-                    },
-                    resize: function () {
-                        updateSwiperHeight(this);
-                    }
-                }
-            });
-
-            // Автоматическая корректировка высоты под активный слайд
-            function updateSwiperHeight(swiperInstance) {
-                const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
-                if (activeSlide && activeSlide.firstElementChild) {
-                    const slideHeight = activeSlide.firstElementChild.offsetHeight;
-                    textSlider.style.height = `${slideHeight}px`;
-                }
-            }
-        });
-    </script>
-
     <!-- СКРИПТЫ СТРАНИЦЫ -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -3281,6 +3182,7 @@
                     },
                     992: {
                         spaceBetween: 0,
+                        allowTouchMove: false,
                     }
                 }
             });

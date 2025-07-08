@@ -372,6 +372,10 @@
     z-index: 1;
 }
 
+.wrapper[class*="theme"] .daily-schedule__item-bg-image-wrap {
+    display: none;
+}
+
 .daily-schedule__item-bg-img {
     width: 100%;
     height: 100%;
@@ -431,6 +435,41 @@
     color: #FFF;
 }
 
+.wrapper.theme-white .daily-schedule__time-start,
+.wrapper.theme-white .daily-schedule__time-divider,
+.wrapper.theme-white .daily-schedule__time-end {
+    background-color: #000;
+    color: #FFF !important;
+}
+
+.wrapper.wrapper.theme-yellow .daily-schedule__time-start,
+.wrapper.wrapper.theme-yellow .daily-schedule__time-divider,
+.wrapper.wrapper.theme-yellow .daily-schedule__time-end {
+    background-color: #000;
+    color: #FFFF00 !important;
+}
+
+.wrapper.wrapper.theme-blue .daily-schedule__time-start,
+.wrapper.wrapper.theme-blue .daily-schedule__time-divider,
+.wrapper.wrapper.theme-blue .daily-schedule__time-end {
+    background-color: #133C58;
+    color: #9FD7FF !important;
+}
+
+.wrapper.wrapper.theme-blackWhite .daily-schedule__time-start,
+.wrapper.wrapper.theme-blackWhite .daily-schedule__time-divider,
+.wrapper.wrapper.theme-blackWhite .daily-schedule__time-end {
+    background-color: #FFF;
+    color: #000 !important;
+}
+
+.wrapper.wrapper.theme-blackGreen .daily-schedule__time-start,
+.wrapper.wrapper.theme-blackGreen .daily-schedule__time-divider,
+.wrapper.wrapper.theme-blackGreen .daily-schedule__time-end {
+    background-color: #A9DD38;
+    color: #000 !important;
+}
+
 .daily-schedule__time-text {}
 
 .daily-schedule__video-poster-wrap {
@@ -452,8 +491,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 1361px) {
-}
+@media (max-width: 1361px) {}
 
 @media (max-width: 1281px) {
     .daily-schedule__item-bg-image-wrap {
@@ -858,6 +896,10 @@
         background-color: #F8F8F8;
     }
 
+    .wrapper[class*="theme"] .lifestyle-item__slider {
+        background-color: transparent;
+    }
+
     .lifestyle-item__swiper {
         margin-bottom: 30px;
     }
@@ -1189,6 +1231,10 @@
     gap: 24px;
 }
 
+.wrapper[class*="theme"] .development__buttons {
+    background-color: transparent;
+}
+
 .development__button {
     flex: 1 0 calc(33.333% - 24px);
     max-width: 389px;
@@ -1199,6 +1245,31 @@
     text-transform: capitalize;
     justify-content: flex-start;
     position: relative;
+}
+
+.wrapper.theme-white .development__button {
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-yellow .development__button {
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-blue .development__button {
+    background-color: transparent !important;
+    border: 1px solid #133C58 !important;
+}
+
+.wrapper.theme-blackWhite .development__button {
+    background-color: transparent !important;
+    border: 1px solid #FFF !important;
+}
+
+.wrapper.theme-blackGreen .development__button {
+    background-color: transparent !important;
+    border: 1px solid #A9DD38 !important;
 }
 
 .development__button_isIndivid {
@@ -1223,6 +1294,41 @@
     right: -10px;
 }
 
+.wrapper.theme-white .development__button_isIndivid::after {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.04);
+}
+
+.wrapper.theme-yellow .development__button_isIndivid::after {
+    background-color: #FFFF00;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0px 2px 4px 0px #FFFF000a;
+}
+
+.wrapper.theme-blue .development__button_isIndivid::after {
+    background-color: #9FD7FF;
+    color: #133C58;
+    border: 1px solid #133C58;
+    box-shadow: 0px 2px 4px 0px #133C580a;
+}
+
+.wrapper.theme-blackWhite .development__button_isIndivid::after {
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.wrapper.theme-blackGreen .development__button_isIndivid::after {
+    background-color: #000;
+    color: #A9DD38;
+    border: 1px solid #A9DD38;
+    box-shadow: 0px 2px 4px 0px #A9DD380a;
+}
+
 .development__button-img {
     margin-right: 40px;
     height: 32px;
@@ -1235,6 +1341,26 @@
     object-fit: cover;
 }
 
+.wrapper.theme-white .development__button-img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-yellow .development__button-img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blue .development__button-img svg path {
+    fill: #133C58;
+}
+
+.wrapper.theme-blackWhite .development__button-img svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-blackGreen .development__button-img svg path {
+    fill: #A9DD38;
+}
+
 .development__button:hover,
 .development__button:focus,
 .development__button:active,
@@ -1243,11 +1369,84 @@
     background-color: #C7D8A5 !Important;
 }
 
-.development__image-card-img-wrap {
-    height: 480px;
-    width: 100%;
-    border-radius: 24px;
-    overflow: hidden;
+.wrapper.theme-white .development__button:hover,
+.wrapper.theme-white .development__button:focus,
+.wrapper.theme-white .development__button:active,
+.wrapper.theme-white .development__button.active {
+    background-color: #000 !important;
+    color: #FFF !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-white .development__button:hover .development__button-img svg path,
+.wrapper.theme-white .development__button:focus .development__button-img svg path,
+.wrapper.theme-white .development__button:active .development__button-img svg path,
+.wrapper.theme-white .development__button.active .development__button-img svg path {
+    fill: #FFF;
+}
+
+.wrapper.theme-yellow .development__button:hover,
+.wrapper.theme-yellow .development__button:focus,
+.wrapper.theme-yellow .development__button:active,
+.wrapper.theme-yellow .development__button.active {
+    background-color: #000 !important;
+    color: #FFFF00 !important;
+    border: 1px solid #000 !important;
+}
+
+.wrapper.theme-yellow .development__button:hover .development__button-img svg path,
+.wrapper.theme-yellow .development__button:focus .development__button-img svg path,
+.wrapper.theme-yellow .development__button:active .development__button-img svg path,
+.wrapper.theme-yellow .development__button.active .development__button-img svg path {
+    fill: #FFFF00;
+}
+
+.wrapper.theme-blue .development__button:hover,
+.wrapper.theme-blue .development__button:focus,
+.wrapper.theme-blue .development__button:active,
+.wrapper.theme-blue .development__button.active {
+    background-color: #133C58 !important;
+    color: #9FD7FF !important;
+    border: 1px solid #133C58 !important;
+}
+
+.wrapper.theme-blue .development__button:hover .development__button-img svg path,
+.wrapper.theme-blue .development__button:focus .development__button-img svg path,
+.wrapper.theme-blue .development__button:active .development__button-img svg path,
+.wrapper.theme-blue .development__button.active .development__button-img svg path {
+    fill: #9FD7FF;
+}
+
+.wrapper.theme-blackWhite .development__button:hover,
+.wrapper.theme-blackWhite .development__button:focus,
+.wrapper.theme-blackWhite .development__button:active,
+.wrapper.theme-blackWhite .development__button.active {
+    background-color: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #FFF !important;
+}
+
+.wrapper.theme-blackWhite .development__button:hover .development__button-img svg path,
+.wrapper.theme-blackWhite .development__button:focus .development__button-img svg path,
+.wrapper.theme-blackWhite .development__button:active .development__button-img svg path,
+.wrapper.theme-blackWhite .development__button.active .development__button-img svg path {
+    fill: #000;
+}
+
+.wrapper.theme-blackGreen .development__button:hover,
+.wrapper.theme-blackGreen .development__button:focus,
+.wrapper.theme-blackGreen .development__button:active,
+.wrapper.theme-blackGreen .development__button.active {
+    background-color: #A9DD38 !important;
+    color: #000 !important;
+    border: 1px solid #A9DD38 !important;
+}
+
+.wrapper.theme-blackGreen .development__button:hover .development__button-img svg path,
+.wrapper.theme-blackGreen .development__button:focus .development__button-img svg path,
+.wrapper.theme-blackGreen .development__button:active .development__button-img svg path,
+.wrapper.theme-blackGreen .development__button.active .development__button-img svg path {
+    fill: #000;
 }
 
 .development__slide-popup {
@@ -1306,6 +1505,10 @@
         padding: 0px;
     }
 
+    .wrapper[class*="theme"] .development__container {
+        padding: 0px 1px;
+    }
+
     .development__description {
         padding: 0px 30px;
     }
@@ -1326,6 +1529,31 @@
         order: 2;
         padding: 30px;
         background-color: rgba(248, 248, 248, 1);
+        border-radius: 24px;
+    }
+
+    .wrapper[class*="theme"] .development__slider {
+        background-color: transparent;
+    }
+
+    .wrapper.theme-white .development__slider {
+        border: 1px solid #000;
+    }
+
+    .wrapper.theme-yellow .development__slider {
+        border: 1px solid #000;
+    }
+
+    .wrapper.theme-blue .development__slider {
+        border: 1px solid #133C58;
+    }
+
+    .wrapper.theme-blackWhite .development__slider {
+        border: 1px solid #FFF;
+    }
+
+    .wrapper.theme-blackGreen .development__slider {
+        border: 1px solid #A9DD38;
     }
 
     .development__image-card-title {
@@ -1437,6 +1665,30 @@
     position: relative;
 }
 
+.wrapper[class*="theme"] .how-to-get__item {
+    background-color: transparent;
+}
+
+.wrapper.theme-white .how-to-get__item {
+    border: 1px solid #000;
+}
+
+.wrapper.wrapper.theme-yellow .how-to-get__item {
+    border: 1px solid #000;
+}
+
+.wrapper.wrapper.theme-blue .how-to-get__item {
+    border: 1px solid #133C58;
+}
+
+.wrapper.wrapper.theme-blackWhite .how-to-get__item {
+    border: 1px solid #FFF;
+}
+
+.wrapper.wrapper.theme-blackGreen .how-to-get__item {
+    border: 1px solid #A9DD38;
+}
+
 .how-to-get__item-icon-wrap {
     position: absolute;
     top: 32px;
@@ -1449,6 +1701,26 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.wrapper.theme-white .how-to-get__item-icon-wrap svg path {
+    fill: #000;
+}
+
+.wrapper.wrapper.theme-yellow .how-to-get__item-icon-wrap svg path {
+    fill: #000;
+}
+
+.wrapper.wrapper.theme-blue .how-to-get__item-icon-wrap svg path {
+    fill: #133C58;
+}
+
+.wrapper.wrapper.theme-blackWhite .how-to-get__item-icon-wrap svg path {
+    fill: #FFF;
+}
+
+.wrapper.wrapper.theme-blackGreen .how-to-get__item-icon-wrap svg path {
+    fill: #A9DD38;
 }
 
 .how-to-get__item-inner {
