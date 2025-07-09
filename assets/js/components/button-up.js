@@ -8,11 +8,9 @@ if (window.innerWidth <= 768) {
     topBlock.removeAttribute("id");
     topBlock = topBlockMobile;
     topBlock.setAttribute("id", "topBlock");
-    console.log(buttonUp, topBlock);
 } else {
     topBlock.removeAttribute("id");
     topBlock.setAttribute("id", "topBlock");
-    console.log(buttonUp, topBlock);
 }
 
 window.addEventListener("resize", () => {
@@ -20,12 +18,9 @@ window.addEventListener("resize", () => {
         topBlock.removeAttribute("id");
         topBlock = topBlockMobile;
         topBlock.setAttribute("id", "topBlock");
-        console.log(buttonUp, topBlock);
     } else {
         topBlock.removeAttribute("id");
-        topBlock = topBlockDesctop;
         topBlock.setAttribute("id", "topBlock");
-        console.log(buttonUp, topBlock);
     }
 });
 

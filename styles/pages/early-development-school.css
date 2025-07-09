@@ -777,7 +777,7 @@
     }
 
     .child-age__content-title {
-        padding-left: 30px;
+        padding: 0px 30px;
     }
 
     .child-age__slider {

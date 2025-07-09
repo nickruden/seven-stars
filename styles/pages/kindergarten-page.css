@@ -233,6 +233,14 @@
         font-size: 14px;
         line-height: 130%;
     }
+
+    .wrapper.wrapper.text-medium .consists__slide-title {
+        font-size: 14px !important;
+    }
+
+    .wrapper.text-large .consists__slide-title {
+        font-size: 18px !important;
+    }
 }
 
 @media (max-width: 431px) {
@@ -730,6 +738,11 @@
     margin-bottom: 80px;
 }
 
+.wrapper.text-large .lifestyle-item__title,
+.wrapper.text-medium .lifestyle-item__title {
+    word-break: break-all;
+}
+
 .lifestyle-item__texts {
     max-width: 562px;
 }
@@ -769,6 +782,25 @@
 
 .lifestyle-item__footnote-mobile {
     display: none;
+}
+
+@media (min-width: 992px) {
+
+    .wrapper.text-medium .lifestyle-item__slider,
+    .wrapper.text-large .lifestyle-item__slider {
+        max-height: none;
+    }
+
+    .wrapper.text-medium .lifestyle-item__slide,
+    .wrapper.text-large .lifestyle-item__slide {
+        max-height: none;
+        height: 100%;
+    }
+
+    .wrapper.text-medium .lifestyle-item__slide-img-wrap,
+    .wrapper.text-large .lifestyle-item__slide-img-wrap {
+        height: 100%;
+    }
 }
 
 @media (max-width: 1341px) {}
@@ -1663,6 +1695,13 @@
     flex: 1 1 25%;
     height: 300px;
     position: relative;
+}
+
+.wrapper.text-medium .how-to-get__item,
+.wrapper.text-medium .how-to-get__item,
+.wrapper.text-large .how-to-get__item,
+.wrapper.text-large .how-to-get__item {
+    height: auto;
 }
 
 .wrapper[class*="theme"] .how-to-get__item {

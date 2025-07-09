@@ -9,129 +9,212 @@
     line-height: 150%;
     color: #FFF;
     text-transform: uppercase;
+    text-align: center;
     background-color: #4E6932;
     border: 1px solid #4E6932;
 }
 
+
+.wrapper.text-medium .my-button,
+.wrapper.text-medium .my-button * {
+    font-size: 18px !important;
+}
+
+.wrapper.text-large .my-button,
+.wrapper.text-large .my-button * {
+    font-size: 22px !important;
+}
+
+@media (max-width: 1341px) {}
+
+@media (max-width: 1281px) {
+    .wrapper.text-medium .my-button,
+    .wrapper.text-medium .my-button * {
+        font-size: 16px !important;
+    }
+
+    .wrapper.text-large .my-button,
+    .wrapper.text-large .my-button * {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 1020px) {
+    .wrapper.text-large .my-button,
+    .wrapper.text-large .my-button * {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 769px) {
+    .wrapper.text-medium .my-button,
+    .wrapper.text-medium .my-button * {
+        font-size: 16px !important;
+    }
+
+    .wrapper.text-large .my-button,
+    .wrapper.text-large .my-button * {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 651px) {}
+
+@media (max-width: 551px) {
+    .wrapper.text-medium .my-button,
+    .wrapper.text-medium .my-button * {
+        font-size: 14px !important;
+    }
+
+    .wrapper.text-large .my-button,
+    .wrapper.text-large .my-button * {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 431px) {}
+
 .wrapper.theme-white .my-button {
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: #000;
     border: 1px solid #000;
 }
+
 .wrapper.theme-yellow .my-button {
-    color: #FFFF00!important;
+    color: #FFFF00 !important;
     background-color: #000;
     border: 1px solid #000;
 }
+
 .wrapper.theme-blue .my-button {
-    color: #9FD7FF!important;
+    color: #9FD7FF !important;
     background-color: #133C58;
     border: 1px solid #133C58;
 }
+
 .wrapper.theme-blackWhite .my-button {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFF;
     border: 1px solid #FFF;
 }
+
 .wrapper.theme-blackGreen .my-button {
-    color: #000!important;
+    color: #000 !important;
     background-color: #A9DD38;
     border: 1px solid #A9DD38;
 }
 
 .wrapper.theme-white .my-button.--reverseBorderColors {
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: transparent;
     border: 1px solid #FFF;
 }
+
 .wrapper.theme-white .my-button.--reverseBorderColors:hover {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFF;
 }
+
 .wrapper.theme-yellow .my-button.--reverseBorderColors {
-    color: #FFFF00!important;
+    color: #FFFF00 !important;
     background-color: transparent;
     border: 1px solid #FFFF00;
 }
+
 .wrapper.theme-yellow .my-button.--reverseBorderColors:hover {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFFF00;
 }
+
 .wrapper.theme-blue .my-button.--reverseBorderColors {
-    color: #9FD7FF!important;
+    color: #9FD7FF !important;
     background-color: transparent;
     border: 1px solid #9FD7FF;
 }
+
 .wrapper.theme-blue .my-button.--reverseBorderColors:hover {
-    color: #133C58!important;
+    color: #133C58 !important;
     background-color: #9FD7FF;
 }
+
 .wrapper.theme-blackWhite .my-button.--reverseBorderColors {
-    color: #000!important;
+    color: #000 !important;
     background-color: transparent;
     border: 1px solid #000;
 }
+
 .wrapper.theme-blackWhite .my-button.--reverseBorderColors:hover {
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: #000;
 }
+
 .wrapper.theme-blackGreen .my-button.--reverseBorderColors {
-    color: #000!important;
+    color: #000 !important;
     background-color: transparent;
     border: 1px solid #000;
 }
+
 .wrapper.theme-blackGreen .my-button.--reverseBorderColors:hover {
-    color: #A9DD38!important;
+    color: #A9DD38 !important;
     background-color: #000;
 }
 
 .wrapper.theme-white .my-button.--reverseColors {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFF;
     border: 1px solid #FFF;
 }
+
 .wrapper.theme-white .my-button.--reverseColors:hover {
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: transparent;
     border: 1px solid #FFF;
 }
+
 .wrapper.theme-yellow .my-button.--reverseColors {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFFF00;
     border: 1px solid #FFFF00;
 }
+
 .wrapper.theme-yellow .my-button.--reverseColors:hover {
-    color: #FFFF00!important;
+    color: #FFFF00 !important;
     background-color: transparent;
     border: 1px solid #FFFF00;
 }
+
 .wrapper.theme-blue .my-button.--reverseColors {
-    color: #133C58!important;
+    color: #133C58 !important;
     background-color: #9FD7FF;
     border: 1px solid #9FD7FF;
 }
+
 .wrapper.theme-blue .my-button.--reverseColors:hover {
-    color: #9FD7FF!important;
+    color: #9FD7FF !important;
     background-color: transparent;
     border: 1px solid #9FD7FF;
 }
+
 .wrapper.theme-blackWhite .my-button.--reverseColors {
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: #000;
     border: 1px solid #000;
 }
+
 .wrapper.theme-blackWhite .my-button.--reverseColors:hover {
-    color: #000!important;
+    color: #000 !important;
     background-color: transparent;
     border: 1px solid #000;
 }
+
 .wrapper.theme-blackGreen .my-button.--reverseColors {
-    color: #A9DD38!important;
+    color: #A9DD38 !important;
     background-color: #000;
     border: 1px solid #000;
 }
+
 .wrapper.theme-blackGreen .my-button.--reverseColors:hover {
-    color: #000!important;
+    color: #000 !important;
     background-color: transparent;
     border: 1px solid #000;
 }
@@ -140,50 +223,50 @@
 .wrapper.theme-white .my-button .my-button__img-arrow path {
     stroke: #000;
 }
+
 .wrapper.theme-yellow .my-button .my-button__img-arrow path {
     stroke: #000;
 }
+
 .wrapper.theme-blue .my-button .my-button__img-arrow path {
     stroke: #133C58;
 }
+
 .wrapper.theme-blackWhite .my-button .my-button__img-arrow path {
     stroke: #FFF;
 }
+
 .wrapper.theme-blackGreen .my-button .my-button__img-arrow path {
     stroke: #A9DD38;
 }
 
-@media (max-width: 1341px) {
+@media (max-width: 1341px) {}
 
-}
 @media (max-width: 1281px) {
     /* .my-button {
         padding: 16px 10px;
     } */
 }
-@media (max-width: 992px) {
 
-}
-@media (max-width: 903px) {
+@media (max-width: 992px) {}
 
-}
+@media (max-width: 903px) {}
+
 @media (max-width: 769px) {
     /* .my-button {
         padding: 17px 10px;
     } */
 }
-@media (max-width: 651px) {
 
-}
+@media (max-width: 651px) {}
+
 @media (max-width: 551px) {
     /* .my-button {
         padding: 18px 10px;
     } */
 }
 
-@media (max-width: 431px) {
-
-}
+@media (max-width: 431px) {}
 
 
 /* ЦВЕТА */
@@ -192,33 +275,39 @@
     color: #4E6932;
     background-color: #C9DAA4;
 }
+
 .my-button_noColor {
     border: 1px solid #4E6932;
     color: #4E6932;
     background: transparent;
 }
+
 .wrapper.theme-white .my-button_noColor {
-    color: #000!important;
+    color: #000 !important;
     border: 1px solid #000;
     background: transparent;
 }
+
 .wrapper.theme-yellow .my-button_noColor {
-    color: #000!important;
+    color: #000 !important;
     border: 1px solid #000;
     background: transparent;
 }
+
 .wrapper.theme-blue .my-button_noColor {
-    color: #133C58!important;
+    color: #133C58 !important;
     border: 1px solid #133C58;
     background: transparent;
 }
+
 .wrapper.theme-blackWhite .my-button_noColor {
-    color: #FFF!important;
+    color: #FFF !important;
     border: 1px solid #FFF;
     background: transparent;
 }
+
 .wrapper.theme-blackGreen .my-button_noColor {
-    color: #A9DD38!important;
+    color: #A9DD38 !important;
     border: 1px solid #A9DD38;
     background: transparent;
 }
@@ -228,14 +317,17 @@
 .my-button_borderOval {
     border-radius: 100px;
 }
+
 .my-button_borderSquare {
     border-radius: 16px;
 }
+
 .my-button_noBorder {
-    border: none!important;
+    border: none !important;
     padding: 15px 0px;
     font-weight: 500;
 }
+
 .my-button_noBorder .my-button__img-arrow {
     margin-left: 10px;
 }
@@ -246,28 +338,33 @@
     background-color: #90AB7B;
     border: 1px solid #90AB7B;
 }
+
 .wrapper.theme-white .my-button:hover {
-    color: #000!important;
+    color: #000 !important;
     border: 1px solid #000;
     background: transparent;
 }
+
 .wrapper.theme-yellow .my-button:hover {
-    color: #000!important;
+    color: #000 !important;
     border: 1px solid #000;
     background: transparent;
 }
+
 .wrapper.theme-blue .my-button:hover {
-    color: #133C58!important;
+    color: #133C58 !important;
     border: 1px solid #133C58;
     background: transparent;
 }
+
 .wrapper.theme-blackWhite .my-button:hover {
-    color: #FFF!important;
+    color: #FFF !important;
     border: 1px solid #FFF;
     background: transparent;
 }
+
 .wrapper.theme-blackGreen .my-button:hover {
-    color: #A9DD38!important;
+    color: #A9DD38 !important;
     border: 1px solid #A9DD38;
     background: transparent;
 }
@@ -285,45 +382,54 @@
 }
 
 .wrapper.theme-white .my-button:hover.my-button_noColor {
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: #000000;
 }
+
 .wrapper.theme-white .my-button:hover.my-button_noColor .nowrap {
-    color: #FFF!important;
+    color: #FFF !important;
 }
+
 .wrapper.theme-yellow .my-button:hover.my-button_noColor {
-    color: #FFFF00!important;
+    color: #FFFF00 !important;
     background-color: #000000;
 }
+
 .wrapper.theme-yellow .my-button:hover.my-button_noColor .nowrap {
-    color: #FFFF00!important;
+    color: #FFFF00 !important;
 }
+
 .wrapper.theme-blue .my-button:hover.my-button_noColor {
-    color: #9FD7FF!important;
+    color: #9FD7FF !important;
     background-color: #133C58;
 }
+
 .wrapper.theme-blue .my-button:hover.my-button_noColor .nowrap {
-    color: #9FD7FF!important;
+    color: #9FD7FF !important;
 }
+
 .wrapper.theme-blackWhite .my-button:hover.my-button_noColor {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFF;
 }
+
 .wrapper.theme-blackWhite .my-button:hover.my-button_noColor .nowrap {
-    color: #000!important;
+    color: #000 !important;
 }
+
 .wrapper.theme-blackGreen .my-button:hover.my-button_noColor {
-    color: #000!important;
+    color: #000 !important;
     background-color: #A9DD38;
 }
+
 .wrapper.theme-blackGreen .my-button:hover.my-button_noColor .nowrap {
-    color: #000!important;
+    color: #000 !important;
 }
 
 .my-button:hover.my-button_noColor.my-button_noBorder {
     border: none;
     color: #b4c492;
-    background: transparent!important;
+    background: transparent !important;
 }
 
 .my-button:hover.my-button_noColor.my-button_noBorder .my-button__img-arrow path {
@@ -331,34 +437,42 @@
 }
 
 .wrapper.theme-white .my-button:hover.my-button_noColor.my-button_noBorder {
-    color: #676767!important;
+    color: #676767 !important;
 }
+
 .wrapper.theme-yellow .my-button:hover.my-button_noColor.my-button_noBorder {
-    color: #676767!important;
+    color: #676767 !important;
 }
+
 .wrapper.theme-blue .my-button:hover.my-button_noColor.my-button_noBorder {
-    color: #2988c7!important;
+    color: #2988c7 !important;
 }
+
 .wrapper.theme-blackWhite .my-button:hover.my-button_noColor.my-button_noBorder {
-    color: #e1e1e1!important;
+    color: #e1e1e1 !important;
 }
+
 .wrapper.theme-blackGreen .my-button:hover.my-button_noColor.my-button_noBorder {
-    color: #bee963!important;
+    color: #bee963 !important;
 }
 
 
 .wrapper.theme-white .my-button:hover.my-button_noBorder .my-button__img-arrow path {
     stroke: #676767;
 }
+
 .wrapper.theme-yellow .my-button:hover.my-button_noBorder .my-button__img-arrow path {
     stroke: #676767;
 }
+
 .wrapper.theme-blue .my-button:hover.my-button_noBorder .my-button__img-arrow path {
     stroke: #2988c7;
 }
+
 .wrapper.theme-blackWhite .my-button:hover.my-button_noBorder .my-button__img-arrow path {
     stroke: #e1e1e1;
 }
+
 .wrapper.theme-blackGreen .my-button:hover.my-button_noBorder .my-button__img-arrow path {
     stroke: #bee963;
 }
@@ -369,36 +483,43 @@
     color: #FFF;
     background-color: #b4c492;
 }
+
 .my-button.active.my-button_noColor {
     border: 1px solid #C7D8A5;
     color: #4E6932;
     background: #C7D8A5;
 }
+
 .wrapper.theme-white .my-button.active.my-button_noColor {
     border: 1px solid #000;
-    color: #FFF!important;
+    color: #FFF !important;
     background-color: #000;
 }
+
 .wrapper.theme-yellow .my-button.active.my-button_noColor {
     border: 1px solid #000;
-    color: #FFFF00!important;
+    color: #FFFF00 !important;
     background-color: #000;
 }
+
 .wrapper.theme-blue .my-button.active.my-button_noColor {
-    color: #9FD7FF!important;
+    color: #9FD7FF !important;
     background-color: #133C58;
     border: 1px solid #133C58;
 }
+
 .wrapper.theme-blackWhite .my-button.active.my-button_noColor {
-    color: #000!important;
+    color: #000 !important;
     background-color: #FFF;
     border: 1px solid #FFF;
 }
+
 .wrapper.theme-blackGreen .my-button.active.my-button_noColor {
-    color: #000!important;
+    color: #000 !important;
     background-color: #A9DD38;
     border: 1px solid #A9DD38;
 }
+
 .my-button.active.my-button_noColor.my-button_noBorder {
     border: none;
     color: #4E6932;

@@ -1,109 +1,179 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const wrapper = document.querySelector('.wrapper');
+document.addEventListener("DOMContentLoaded", function () {
+  const wrapper = document.querySelector(".wrapper");
 
-  const imageOnBtn = document.getElementById('on-images');
-  const imageOffBtn = document.getElementById('off-images');
+  const imageOnBtn = document.getElementById("on-images");
+  const imageOffBtn = document.getElementById("off-images");
 
-  const textSmallBtn = document.getElementById('small-size-texts');
-  const textMediumBtn = document.getElementById('medium-size-texts');
-  const textLargeBtn = document.getElementById('large-size-texts');
+  const textSmallBtn = document.getElementById("small-size-texts");
+  const textMediumBtn = document.getElementById("medium-size-texts");
+  const textLargeBtn = document.getElementById("large-size-texts");
 
   const themeButtons = {
-    white: document.getElementById('white-color-theme'),
-    yellow: document.getElementById('yellow-color-theme'),
-    blackWhite: document.getElementById('blackWhite-color-theme'),
-    blackGreen: document.getElementById('blackGreen-color-theme'),
-    blue: document.getElementById('blue-color-theme')
+    white: document.getElementById("white-color-theme"),
+    yellow: document.getElementById("yellow-color-theme"),
+    blackWhite: document.getElementById("blackWhite-color-theme"),
+    blackGreen: document.getElementById("blackGreen-color-theme"),
+    blue: document.getElementById("blue-color-theme"),
   };
 
-  const soundOnBtn = document.getElementById('on-sound');
-  const soundOffBtn = document.getElementById('off-sound');
+  const soundOnBtn = document.getElementById("on-sound");
+  const soundOffBtn = document.getElementById("off-sound");
 
-  const closePanelBtn = document.querySelector('.additional-feature-panel__close');
-  const normalVersionBtn = document.querySelector('.additional-feature-panel__button-off');
+  const closePanelBtn = document.querySelector(
+    ".additional-feature-panel__close"
+  );
+  const normalVersionBtn = document.querySelector(
+    ".additional-feature-panel__button-off"
+  );
+  const controlPanelBtn = document.querySelector(".button-add-features");
+  const panel = document.querySelector(".additional-feature-panel");
 
-  // Загрузка сохраненных настроек
-//   loadSettings();
-
-  imageOnBtn.addEventListener('click', () => toggleImages(true));
-  imageOffBtn.addEventListener('click', () => toggleImages(false));
-  
-  textSmallBtn.addEventListener('click', () => setTextSize('small'));
-  textMediumBtn.addEventListener('click', () => setTextSize('medium'));
-  textLargeBtn.addEventListener('click', () => setTextSize('large'));
-  
-  Object.keys(themeButtons).forEach(theme => {
-    themeButtons[theme].addEventListener('click', () => setColorTheme(theme));
+  imageOnBtn.addEventListener("click", () => {
+    toggleImages(false);
+    localStorage.setItem("showImage", true);
   });
-  
-  soundOnBtn.addEventListener('click', () => toggleSound(true));
-  soundOffBtn.addEventListener('click', () => toggleSound(false));
-  
-  closePanelBtn.addEventListener('click', closePanel);
-  normalVersionBtn.addEventListener('click', resetSettings);
+
+  imageOffBtn.addEventListener("click", () => {
+    toggleImages(true);
+    localStorage.setItem("showImage", false);
+  });
+
+  textSmallBtn.addEventListener("click", () => setTextSize("small"));
+  textMediumBtn.addEventListener("click", () => setTextSize("medium"));
+  textLargeBtn.addEventListener("click", () => setTextSize("large"));
+
+  Object.keys(themeButtons).forEach((theme) => {
+    themeButtons[theme].addEventListener("click", () => {
+      setColorTheme(theme);
+      localStorage.setItem("colorTheme", theme);
+    });
+  });
+
+  // soundOnBtn?.addEventListener("click", () => {
+  //   toggleSound(true);
+  //   localStorage.setItem("soundEnabled", "true");
+  // });
+
+  // soundOffBtn?.addEventListener("click", () => {
+  //   toggleSound(false);
+  //   localStorage.setItem("soundEnabled", "false");
+  // });
+
+  closePanelBtn.addEventListener("click", closePanel);
+  controlPanelBtn.addEventListener("click", togglePanel);
+  normalVersionBtn.addEventListener("click", resetSettings);
 
   // управление картинками
   function toggleImages(show) {
     if (show) {
-      wrapper.classList.remove('no-images');
+      wrapper.classList.add("no-images");
     } else {
-      wrapper.classList.add('no-images');
+      wrapper.classList.remove("no-images");
     }
   }
 
-//   function setTextSize(size) {
-//     body.classList.remove('text-small', 'text-medium', 'text-large');
-//     body.classList.add(`text-${size}`);
-//     localStorage.setItem('textSize', size);
-//   }
+  // управление размером текста
+  function setTextSize(size) {
+    wrapper.classList.remove('text-small', 'text-medium', 'text-large');
+    wrapper.classList.add(`text-${size}`);
+    localStorage.setItem('textSize', size);
 
-
-  function setColorTheme(theme) {
-    wrapper.classList.remove('theme-white', 'theme-yellow', 'theme-blackWhite', 'theme-blackGreen', 'theme-blue');
-    wrapper.classList.add(`theme-${theme}`);
+    [textSmallBtn, textMediumBtn, textLargeBtn].forEach(btn => btn.classList.remove('active'));
+    if (size === 'small') textSmallBtn.classList.add('active');
+    if (size === 'medium') textMediumBtn.classList.add('active');
+    if (size === 'large') textLargeBtn.classList.add('active');
   }
 
-//   function toggleSound(enabled) {
-//     if (enabled) {
-//       wrapper.classList.add('sound-enabled');
-//       initTextToSpeech();
-//     } else {
-//       wrapper.classList.remove('sound-enabled');
-//     }
-//   }
+  // управление цветовой темой
+  function setColorTheme(theme) {
+    wrapper.classList.remove(
+      "theme-white",
+      "theme-yellow",
+      "theme-blackWhite",
+      "theme-blackGreen",
+      "theme-blue"
+    );
+    wrapper.classList.add(`theme-${theme}`);
 
-//   function initTextToSpeech() {
-//     const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, div');
-//     elements.forEach(el => {
-//       el.addEventListener('mouseenter', speakText);
-//     });
-//   }
+    Object.values(themeButtons).forEach((btn) =>
+      btn.classList.remove("active")
+    );
+    themeButtons[theme].classList.add("active");
+  }
 
-//   function speakText(e) {
-//     if (!wrapper.classList.contains('sound-enabled')) return;
-    
-//     const utterance = new SpeechSynthesisUtterance(e.target.textContent);
-//     utterance.lang = 'ru-RU';
-//     window.speechSynthesis.cancel();
-//     window.speechSynthesis.speak(utterance);
-//   }
+  // function toggleSound(enabled) {
+  //   wrapper.classList.toggle('sound-enabled', enabled);
+  //   if (enabled) initTextToSpeech();
+  // }
+
+  // function initTextToSpeech() {
+  //   const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, div');
+  //   elements.forEach(el => {
+  //     el.addEventListener('mouseenter', speakText);
+  //   });
+  // }
+
+  // function speakText(e) {
+  //   if (!wrapper.classList.contains('sound-enabled')) return;
+  //   const utterance = new SpeechSynthesisUtterance(e.target.textContent);
+  //   utterance.lang = 'ru-RU';
+  //   window.speechSynthesis.cancel();
+  //   window.speechSynthesis.speak(utterance);
+  // }
 
   function closePanel() {
-    document.querySelector('.additional-feature-panel').style.display = 'none';
+    panel.classList.add("--displayNone");
+  }
+
+  function togglePanel() {
+    panel.classList.toggle("--displayNone");
   }
 
   function resetSettings() {
-    wrapper.className = 'wrapper';
+    wrapper.className = "wrapper";
+    localStorage.clear();
+
+    setTextSize("small");
+    toggleImages(false);
+    localStorage.setItem("showImage", true);
+    imageOffBtn.classList.remove("active");
+    imageOnBtn.classList.add("active");
+
+    Object.values(themeButtons).forEach((btn) => {
+      console.log(btn);
+      btn.classList.remove("active");
+    });
+
+    closePanel();
   }
 
-//   function loadSettings() {
-//     if (localStorage.getItem('imagesDisabled') === 'true') toggleImages(false);
-//     if (localStorage.getItem('soundEnabled') === 'true') toggleSound(true);
-    
-//     const savedSize = localStorage.getItem('textSize');
-//     if (savedSize) setTextSize(savedSize);
-    
-//     const savedTheme = localStorage.getItem('colorTheme');
-//     if (savedTheme) setColorTheme(savedTheme);
-//   }
+  function loadSettings() {
+    // Картинки
+    if (localStorage.getItem("showImage") === "true") {
+      toggleImages(false);
+      imageOffBtn.classList.remove("active");
+      imageOnBtn.classList.add("active");
+    } else {
+      toggleImages(true);
+      imageOnBtn.classList.remove("active");
+      imageOffBtn.classList.add("active");
+    }
+
+    // Размер текста
+    const size = localStorage.getItem("textSize") || "";
+    setTextSize(size);
+
+    // Тема
+    const theme = localStorage.getItem("colorTheme");
+    if (theme && themeButtons[theme]) {
+      setColorTheme(theme);
+    }
+
+    // Звук
+    // if (localStorage.getItem("soundEnabled") === "true") {
+    //   toggleSound(true);
+    // }
+  }
+
+  loadSettings();
 });

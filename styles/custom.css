@@ -107,23 +107,28 @@
 .wrapper.theme-white .swiper-button-next svg path {
     stroke: #000;
 }
+
 .wrapper.theme-white .swiper-button-next.swiper-button-disabled svg path,
 .wrapper.theme-white .swiper-button-prev.swiper-button-disabled svg path {
     stroke: #000;
 }
+
 .wrapper.theme-white .swiper-button-prev svg circle,
-.wrapper.theme-white .swiper-button-prev svg circle + path,
+.wrapper.theme-white .swiper-button-prev svg circle+path,
 .wrapper.theme-white .swiper-button-next svg circle,
-.wrapper.theme-white .swiper-button-next svg circle + path {
+.wrapper.theme-white .swiper-button-next svg circle+path {
     stroke: #FFF;
 }
+
 .wrapper.theme-white .swiper-button-prev svg circle,
 .wrapper.theme-white .swiper-button-next svg circle {
     fill: #000;
 }
+
 .wrapper.theme-white .swiper-pagination-bullet {
     background: #FFF;
 }
+
 .wrapper.theme-white .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #000;
 }
@@ -132,23 +137,28 @@
 .wrapper.theme-yellow .swiper-button-next svg path {
     stroke: #000;
 }
+
 .wrapper.theme-yellow .swiper-button-next.swiper-button-disabled svg path,
 .wrapper.theme-yellow .swiper-button-prev.swiper-button-disabled svg path {
     stroke: #000;
 }
+
 .wrapper.theme-yellow .swiper-button-prev svg circle,
-.wrapper.theme-yellow .swiper-button-prev svg circle + path,
+.wrapper.theme-yellow .swiper-button-prev svg circle+path,
 .wrapper.theme-yellow .swiper-button-next svg circle,
-.wrapper.theme-yellow .swiper-button-next svg circle + path {
+.wrapper.theme-yellow .swiper-button-next svg circle+path {
     stroke: #000;
 }
+
 .wrapper.theme-yellow .swiper-button-prev svg circle,
 .wrapper.theme-yellow .swiper-button-next svg circle {
     fill: #FFFF00;
 }
+
 .wrapper.theme-yellow .swiper-pagination-bullet {
     background: #FFFF00;
 }
+
 .wrapper.theme-yellow .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #000;
 }
@@ -157,23 +167,28 @@
 .wrapper.theme-blue .swiper-button-next svg path {
     stroke: #133C58;
 }
+
 .wrapper.theme-blue .swiper-button-next.swiper-button-disabled svg path,
 .wrapper.theme-blue .swiper-button-prev.swiper-button-disabled svg path {
     stroke: #133C58;
 }
+
 .wrapper.theme-blue .swiper-button-prev svg circle,
-.wrapper.theme-blue .swiper-button-prev svg circle + path,
-.wrapper.theme-blue .swiper-button-next svg circle, 
-.wrapper.theme-blue .swiper-button-next svg circle + path {
+.wrapper.theme-blue .swiper-button-prev svg circle+path,
+.wrapper.theme-blue .swiper-button-next svg circle,
+.wrapper.theme-blue .swiper-button-next svg circle+path {
     stroke: #133C58;
 }
+
 .wrapper.theme-blue .swiper-button-prev svg circle,
 .wrapper.theme-blue .swiper-button-next svg circle {
     fill: #9FD7FF;
 }
+
 .wrapper.theme-blue .swiper-pagination-bullet {
     background: #9FD7FF;
 }
+
 .wrapper.theme-blue .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #133C58;
 }
@@ -182,23 +197,28 @@
 .wrapper.theme-blackWhite .swiper-button-next svg path {
     stroke: #FFF;
 }
+
 .wrapper.theme-blackWhite .swiper-button-next.swiper-button-disabled svg path,
 .wrapper.theme-blackWhite .swiper-button-prev.swiper-button-disabled svg path {
     stroke: #FFF;
 }
+
 .wrapper.theme-blackWhite .swiper-button-prev svg circle,
-.wrapper.theme-blackWhite .swiper-button-prev svg circle + path,
+.wrapper.theme-blackWhite .swiper-button-prev svg circle+path,
 .wrapper.theme-blackWhite .swiper-button-next svg circle,
-.wrapper.theme-blackWhite .swiper-button-next svg circle + path {
+.wrapper.theme-blackWhite .swiper-button-next svg circle+path {
     stroke: #000;
 }
+
 .wrapper.theme-blackWhite .swiper-button-prev svg circle,
 .wrapper.theme-blackWhite .swiper-button-next svg circle {
     fill: #FFF;
 }
+
 .wrapper.theme-blackWhite .swiper-pagination-bullet {
     background: #000;
 }
+
 .wrapper.theme-blackWhite .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #FFF;
 }
@@ -207,27 +227,33 @@
 .wrapper.theme-blackGreen .swiper-button-next svg path {
     stroke: #A9DD38;
 }
+
 .wrapper.theme-blackGreen .swiper-button-next.swiper-button-disabled svg path,
 .wrapper.theme-blackGreen .swiper-button-prev.swiper-button-disabled svg path {
     stroke: #A9DD38;
 }
+
 .wrapper.theme-blackGreen .swiper-button-prev svg circle,
-.wrapper.theme-blackGreen .swiper-button-prev svg circle + path,
+.wrapper.theme-blackGreen .swiper-button-prev svg circle+path,
 .wrapper.theme-blackGreen .swiper-button-next svg circle,
-.wrapper.theme-blackGreen .swiper-button-next svg circle + path {
+.wrapper.theme-blackGreen .swiper-button-next svg circle+path {
     stroke: #000;
 }
+
 .wrapper.theme-blackGreen .swiper-button-prev svg circle,
 .wrapper.theme-blackGreen .swiper-button-next svg circle {
     fill: #A9DD38;
 }
+
 .wrapper.theme-blackGreen .swiper-button-next.swiper-button-disabled svg path,
 .wrapper.theme-blackGreen .swiper-button-prev.swiper-button-disabled svg path {
     stroke: #A9DD38;
 }
+
 .wrapper.theme-blackGreen .swiper-pagination-bullet {
     background: #000;
 }
+
 .wrapper.theme-blackGreen .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #A9DD38;
 }
@@ -267,40 +293,49 @@
     color: #4E6932;
 }
 
-.wrapper.theme-white ~ [data-tippy-root] .tippy-box {
-    background-color: #000!important;
-    border: 1px solid #FFF!important;
+.wrapper.theme-white~[data-tippy-root] .tippy-box {
+    background-color: #000 !important;
+    border: 1px solid #FFF !important;
 }
-.wrapper.theme-white ~ [data-tippy-root] .tippy-content {
-    color: #FFF!important;
+
+.wrapper.theme-white~[data-tippy-root] .tippy-content {
+    color: #FFF !important;
 }
-.wrapper.theme-yellow ~ [data-tippy-root] .tippy-box {
-    background-color: #000!important;
-    border: 1px solid #FFFF00!important;
+
+.wrapper.theme-yellow~[data-tippy-root] .tippy-box {
+    background-color: #000 !important;
+    border: 1px solid #FFFF00 !important;
 }
-.wrapper.theme-yellow ~ [data-tippy-root] .tippy-content {
-    color: #FFFF00!important;
+
+.wrapper.theme-yellow~[data-tippy-root] .tippy-content {
+    color: #FFFF00 !important;
 }
-.wrapper.theme-blue ~ [data-tippy-root] .tippy-box {
-    background-color: #133C58!important;
-    border: 1px solid #9FD7FF!important;
+
+.wrapper.theme-blue~[data-tippy-root] .tippy-box {
+    background-color: #133C58 !important;
+    border: 1px solid #9FD7FF !important;
 }
-.wrapper.theme-blue ~ [data-tippy-root] .tippy-content {
-    color: #9FD7FF!important;
+
+.wrapper.theme-blue~[data-tippy-root] .tippy-content {
+    color: #9FD7FF !important;
 }
-.wrapper.theme-blackWhite ~ [data-tippy-root] .tippy-box {
-    background-color: #FFF!important;
-    border: 1px solid #000!important;
+
+.wrapper.theme-blackWhite~[data-tippy-root] .tippy-box {
+    background-color: #FFF !important;
+    border: 1px solid #000 !important;
 }
-.wrapper.theme-blackWhite ~ [data-tippy-root] .tippy-content {
-    color: #000!important;
+
+.wrapper.theme-blackWhite~[data-tippy-root] .tippy-content {
+    color: #000 !important;
 }
-.wrapper.theme-blackGreen ~ [data-tippy-root] .tippy-box {
-    background-color: #A9DD38!important;
-    border: 1px solid #000!important;
+
+.wrapper.theme-blackGreen~[data-tippy-root] .tippy-box {
+    background-color: #A9DD38 !important;
+    border: 1px solid #000 !important;
 }
-.wrapper.theme-blackGreen ~ [data-tippy-root] .tippy-content {
-    color: #000!important;
+
+.wrapper.theme-blackGreen~[data-tippy-root] .tippy-content {
+    color: #000 !important;
 }
 
 @media (max-width: 769px) {
@@ -412,6 +447,7 @@
 
 .nowrap {
     white-space: nowrap;
+    overflow-wrap: break-word;
 }
 
 .--video-poster {
@@ -497,40 +533,304 @@
 
 
 .wrapper.no-images img {
-  display: none;
+    display: none;
 }
 
 .wrapper.theme-white * {
-    color: #000!important;
+    color: #000 !important;
 }
+
 .wrapper.theme-white {
     background: #FFF;
 }
 
 .wrapper.theme-yellow * {
-    color: #000!important;
+    color: #000 !important;
 }
+
 .wrapper.theme-yellow {
     background: #FFFF00;
 }
 
 .wrapper.theme-blue * {
-    color: #133C58!important;
+    color: #133C58 !important;
 }
+
 .wrapper.theme-blue {
     background: #9FD7FF;
 }
 
 .wrapper.theme-blackWhite * {
-    color: #FFF!important;
+    color: #FFF !important;
 }
+
 .wrapper.theme-blackWhite {
     background: #000;
 }
 
 .wrapper.theme-blackGreen * {
-    color: #A9DD38!important;
+    color: #A9DD38 !important;
 }
+
 .wrapper.theme-blackGreen {
     background: #000;
+}
+
+.wrapper.text-medium .--middle-texts,
+.wrapper.text-medium .--middle-texts * {
+    font-size: 18px !important;
+}
+
+.wrapper.text-large .--middle-texts,
+.wrapper.text-large .--middle-texts * {
+    font-size: 22px !important;
+}
+
+.wrapper.text-medium .--large-texts,
+.wrapper.text-medium .--large-texts * {
+    font-size: 28px !important;
+}
+
+.wrapper.text-large .--large-texts,
+.wrapper.text-large .--large-texts * {
+    font-size: 32px !important;
+}
+
+.wrapper.text-medium .--preMiddle-texts,
+.wrapper.text-medium .--preMiddle-texts * {
+    font-size: 16px !important;
+}
+
+.wrapper.text-large .--preMiddle-texts,
+.wrapper.text-large .--preMiddle-texts * {
+    font-size: 20px !important;
+}
+
+.wrapper.text-medium .--preLarge-texts,
+.wrapper.text-medium .--preLarge-texts * {
+    font-size: 22px !important;
+}
+
+.wrapper.text-large .--preLarge-texts,
+.wrapper.text-large .--preLarge-texts * {
+    font-size: 26px !important;
+}
+
+.wrapper.text-medium .block-title,
+.wrapper.text-medium .block-title * {
+    font-size: 56px;
+    overflow-wrap: break-word;
+}
+
+.wrapper.text-large .block-title,
+.wrapper.text-large .block-title * {
+    font-size: 60px;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1281px) {
+    .wrapper.text-medium .--middle-texts,
+    .wrapper.text-medium .--middle-texts * {
+        font-size: 16px !important;
+    }
+
+    .wrapper.text-large .--middle-texts,
+    .wrapper.text-large .--middle-texts * {
+        font-size: 20px !important;
+    }
+
+    .wrapper.text-medium .--large-texts,
+    .wrapper.text-medium .--large-texts * {
+        font-size: 26px !important;
+    }
+
+    .wrapper.text-large .--large-texts,
+    .wrapper.text-large .--large-texts * {
+        font-size: 30px !important;
+    }
+
+    .wrapper.text-medium .--preMiddle-texts,
+    .wrapper.text-medium .--preMiddle-texts * {
+        font-size: 14px !important;
+    }
+
+    .wrapper.text-large .--preMiddle-texts,
+    .wrapper.text-large .--preMiddle-texts * {
+        font-size: 18px !important;
+    }
+
+    .wrapper.text-medium .--preLarge-texts,
+    .wrapper.text-medium .--preLarge-texts * {
+        font-size: 20px !important;
+    }
+
+    .wrapper.text-large .--preLarge-texts,
+    .wrapper.text-large .--preLarge-texts * {
+        font-size: 24px !important;
+    }
+
+    .wrapper.text-medium .block-title,
+    .wrapper.text-medium .block-title * {
+        font-size: 53px;
+    }
+
+    .wrapper.text-large .block-title,
+    .wrapper.text-large .block-title * {
+        font-size: 57px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .wrapper.text-medium .--middle-texts,
+    .wrapper.text-medium .--middle-texts * {
+        font-size: 14px !important;
+    }
+
+    .wrapper.text-large .--middle-texts,
+    .wrapper.text-large .--middle-texts * {
+        font-size: 18px !important;
+    }
+
+    .wrapper.text-medium .--large-texts,
+    .wrapper.text-medium .--large-texts * {
+        font-size: 24px !important;
+    }
+
+    .wrapper.text-large .--large-texts,
+    .wrapper.text-large .--large-texts * {
+        font-size: 28px !important;
+    }
+
+    .wrapper.text-medium .--preLarge-texts,
+    .wrapper.text-medium .--preLarge-texts * {
+        font-size: 18px !important;
+    }
+
+    .wrapper.text-large .--preLarge-texts,
+    .wrapper.text-large .--preLarge-texts * {
+        font-size: 22px !important;
+    }
+
+    .wrapper.text-medium .block-title,
+    .wrapper.text-medium .block-title * {
+        font-size: 50px;
+    }
+
+    .wrapper.text-large .block-title,
+    .wrapper.text-large .block-title * {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .wrapper.text-medium .--middle-texts,
+    .wrapper.text-medium .--middle-texts * {
+        font-size: 16px !important;
+    }
+
+    .wrapper.text-large .--middle-texts,
+    .wrapper.text-large .--middle-texts * {
+        font-size: 20px !important;
+    }
+
+    .wrapper.text-medium .--large-texts,
+    .wrapper.text-medium .--large-texts * {
+        font-size: 26px !important;
+    }
+
+    .wrapper.text-large .--large-texts,
+    .wrapper.text-large .--large-texts * {
+        font-size: 30px !important;
+    }
+
+        .wrapper.text-medium .--preMiddle-texts,
+    .wrapper.text-medium .--preMiddle-texts * {
+        font-size: 16px !important;
+    }
+
+    .wrapper.text-large .--preMiddle-texts,
+    .wrapper.text-large .--preMiddle-texts * {
+        font-size: 20px !important;
+    }
+
+    .wrapper.text-medium .--preLarge-texts,
+    .wrapper.text-medium .--preLarge-texts * {
+        font-size: 18px !important;
+    }
+
+    .wrapper.text-large .--preLarge-texts,
+    .wrapper.text-large .--preLarge-texts * {
+        font-size: 22px !important;
+    }
+
+    .wrapper.text-medium .block-title,
+    .wrapper.text-medium .block-title * {
+        font-size: 54px;
+    }
+
+    .wrapper.text-large .block-title,
+    .wrapper.text-large .block-title * {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 651px) {
+
+    .wrapper.text-medium .block-title,
+    .wrapper.text-medium .block-title * {
+        font-size: 47px;
+    }
+
+    .wrapper.text-large .block-title,
+    .wrapper.text-large .block-title * {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 551px) {
+
+    .wrapper.text-medium .--large-texts,
+    .wrapper.text-medium .--large-texts * {
+        font-size: 22px !important;
+    }
+
+        .wrapper.text-medium .--preMiddle-texts,
+    .wrapper.text-medium .--preMiddle-texts * {
+        font-size: 14px !important;
+    }
+
+    .wrapper.text-large .--preMiddle-texts,
+    .wrapper.text-large .--preMiddle-texts * {
+        font-size: 18px !important;
+    }
+
+    .wrapper.text-medium .block-title,
+    .wrapper.text-medium .block-title * {
+        font-size: 40px;
+    }
+
+    .wrapper.text-large .block-title,
+    .wrapper.text-large .block-title * {
+        font-size: 47px;
+    }
+}
+
+@media (max-width: 431px) {
+
+    .wrapper.text-large .--large-texts,
+    .wrapper.text-large .--large-texts * {
+        font-size: 26px !important;
+    }
+
+    .wrapper.text-medium .block-title,
+    .wrapper.text-medium .block-title * {
+        font-size: 36px;
+    }
+
+    .wrapper.text-large .block-title,
+    .wrapper.text-large .block-title * {
+        font-size: 40px;
+    }
 }

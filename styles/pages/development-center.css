@@ -456,6 +456,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 130%;
+    overflow-wrap: break-word;
 }
 
 .advantage-item__swiper-controls {

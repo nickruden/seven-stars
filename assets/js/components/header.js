@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScroll);
 
   const burgerButton = document.querySelector(".mobile-menu__burger-button");
-  console.log(burgerButton)
   const mobileMenu = document.querySelector(".mobile-menu__content");
   const overlay = document.getElementById("burger-menu-overlay");
   const body = document.body;

@@ -27,6 +27,31 @@
     color: #303030;
 }
 
+.wrapper.theme-white .schedule__date {
+    background-color: #000;
+    color: #FFF !important;
+}
+
+.wrapper.theme-yellow .schedule__date {
+    background-color: #000;
+    color: #FFFF00 !important;
+}
+
+.wrapper.theme-blue .schedule__date {
+    background-color: #133C58;
+    color: #9FD7FF !important;
+}
+
+.wrapper.theme-blackWhite .schedule__date {
+    background-color: #F6F6F6;
+    color: #000 !important;
+}
+
+.wrapper.theme-blackGreen .schedule__date {
+    background-color: #000;
+    color: #A9DD38 !important;
+}
+
 
 /* БЛОК ПРЕИМУЩЕСТВА */
 .advantage-item {}
@@ -357,6 +382,7 @@
     line-height: 120%;
     color: #4E6932;
     margin-bottom: 16px;
+    overflow-wrap: break-word;
 }
 
 .advantage-item__slide-text {

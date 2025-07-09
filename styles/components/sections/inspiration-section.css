@@ -190,29 +190,40 @@
 }
 
 .inspiration-section__slider {
-    max-height: 298px;
+    /* max-height: 298px; */
     position: relative;
     z-index: 5;
 }
 
 .inspiration-section__swiper {}
 
-.inspiration-section__swiper-wrapper {}
+.inspiration-section__swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
 
 .inspiration-section__swiper-slide {
     border-radius: 16px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: stretch;
 }
 
 .inspiration-section__slide {
-    max-width: 389px;
-    height: 298px;
+    max-height: 300px;
+    max-width: none;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 32px;
     background-color: #FFF;
     position: relative;
+    flex: 1 1 auto;
+    /* Растягивается */
+    height: 100%;
 }
 
 .wrapper.theme-white .inspiration-section__slide * {
@@ -284,9 +295,15 @@
 }
 
 .inspiration-section__slide-image {
-    max-width: 389px;
+    max-width: none;
+    max-height: 300px;
     width: 100%;
-    height: 298px;
+    height: 100%;
+}
+
+.wrapper.text-large .inspiration-section__slide-image,
+.wrapper.text-large .inspiration-section__slide {
+    max-height: none;
 }
 
 .inspiration-section__slide-image-wrap {
@@ -403,19 +420,17 @@
         max-height: none;
     }
 
-    .inspiration-section__slide {
+    /* .inspiration-section__slide {
         width: auto;
         height: auto;
-        aspect-ratio: 389 / 298;
         max-width: none;
     }
 
     .inspiration-section__slide-image {
         width: auto;
         height: auto;
-        aspect-ratio: 389 / 298;
         max-width: none;
-    }
+    } */
 }
 
 @media (max-width: 1281px) {
@@ -544,6 +559,10 @@
         max-width: 580px;
     }
 
+    .inspiration-section__swiper-slide {
+        height: 100%;
+    }
+
     .inspiration-section__swiper-controls {
         display: flex;
         margin-bottom: 30px;
@@ -563,6 +582,11 @@
         padding: 30px 25px;
         border-radius: 0px;
         border-radius: 24px;
+    }
+
+    .inspiration-section__slide-image,
+    .inspiration-section__slide {
+        max-height: none;
     }
 
     .wrapper[class*="theme"] .inspiration-section__slider {

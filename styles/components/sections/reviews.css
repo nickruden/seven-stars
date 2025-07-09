@@ -61,7 +61,6 @@
 .reviews__content-title {
     font-size: 24px;
     line-height: 130%;
-    max-width: 361px;
 }
 
 .reviews__slider {
@@ -126,7 +125,7 @@
 }
 
 .reviews__slide-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 120%;
     color: #4E6932;
@@ -246,7 +245,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 130%;
-    max-width: 196px;
     color: #4E6932;
 }
 
@@ -307,7 +305,6 @@
 
     .reviews__content-title {
         font-size: 22px;
-        max-width: 340px;
     }
 
     .reviews__slide-img-wrap {
@@ -559,7 +556,7 @@
     }
 
     .reviews__slide-text {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .rewiews__swiper-controls {
@@ -631,9 +628,5 @@
 
     .reviews__slide {
         align-items: flex-start;
-    }
-
-    .reviews__slide-text {
-        font-size: 14px;
     }
 }

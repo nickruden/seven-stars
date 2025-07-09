@@ -51,7 +51,7 @@
 <body>
     <div class="wrapper">
         <!-- ЭТО ТОЖЕ ДОЛЖНО БЫТЬ В LAYOUT -->
-        <div class="additional-feature-panel">
+        <div class="additional-feature-panel --displayNone">
             <div class="my-container additional-feature-panel__container">
                 <div class="additional-feature-panel__inner">
                     <div class="additional-feature-panel__controls">
@@ -62,7 +62,7 @@
                                     role="tablist">
                                     <li class="nav-item additional-feature-panel__option-switch-nav-item"
                                         role="presentation">
-                                        <button class="nav-link active" id="on-images" data-bs-toggle="pill"
+                                        <button class="nav-link" id="on-images" data-bs-toggle="pill"
                                             type="button" role="tab">
                                             <svg width="24" height="17" viewBox="0 0 24 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@
                                     role="tablist">
                                     <li class="nav-item additional-feature-panel__option-switch-nav-item"
                                         role="presentation">
-                                        <button class="nav-link active" id="small-size-texts" data-bs-toggle="pill"
+                                        <button class="nav-link" id="small-size-texts" data-bs-toggle="pill"
                                             type="button" role="tab">
                                             Аа
                                         </button>
@@ -193,7 +193,7 @@
                                     </li>
                                     <li class="nav-item additional-feature-panel__option-switch-nav-item"
                                         role="presentation">
-                                        <button class="nav-link active" id="off-sound" data-bs-toggle="pill"
+                                        <button class="nav-link" id="off-sound" data-bs-toggle="pill"
                                             type="button" role="tab">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -225,8 +225,8 @@
             <div class="my-container header__container">
                 <div class="header__desktop">
                     <div class="header__left">
-                        <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg" alt="logo"
-                                class="header__logo-img"></a>
+                        <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg"
+                                alt="logo" class="header__logo-img"></a>
                         <div class="pre-mobile-menu header__pre-mobile-menu">
                             <div class="dropdown pre-mobile-menu__dropdown">
                                 <button class="burger-button dropdown-toggle" data-bs-toggle="dropdown"
@@ -236,13 +236,13 @@
                                     <span></span>
                                 </button>
 
-                                <ul class="dropdown-menu pre-mobile-menu__dropdown-menu" id="header-pre-mobile">
-                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item"
-                                            href="./pages/about.html">О нас</a>
+                                <ul class="dropdown-menu pre-mobile-menu__dropdown-menu --middle-text" id="header-pre-mobile">
+                                    <li><a class="dropdown-item pre-mobile-menu__dropdown-item" href="./pages/about.html">О
+                                            нас</a>
                                     </li>
 
                                     <!-- Детские сады -->
-                                    <li class="dropend">
+                                    <li class="dropend --middle-text">
                                         <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
                                             data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                             Детские сады
@@ -270,18 +270,17 @@
                                     </li>
 
                                     <!-- Центр развития -->
-                                    <li class="dropend">
+                                    <li class="dropend --middle-text">
                                         <a href="#" class="dropdown-item dropdown-toggle pre-mobile-menu__dropdown-item"
                                             data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                             Центр развития
                                         </a>
                                         <ul class="dropdown-menu header__dropdown-menu">
                                             <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                    href="./pages/development-center.html">О Центре развития</a>
+                                                    href="./pages/development-center.html">О Центре</a>
                                             </li>
                                             <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                    href="./pages/early-development-school.html">Развивающие занятия</a>
-                                            </li>
+                                                    href="./pages/early-development-school.html">Развивающие занятия</a></li>
                                             <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                     href="./pages/painting-education.html">Живопись</a>
                                             </li>
@@ -303,9 +302,8 @@
                         </div>
                     </div>
                     <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item"><a href="./pages/about.html" class="header__menu-link">О
-                                    нас</a>
+                        <ul class="header__menu-list --middle-texts">
+                            <li class="header__menu-item"><a href="./pages/about.html" class="header__menu-link">О нас</a>
                             </li>
                             <li class="header__menu-item dropdown header__dropdown">
                                 <a href="#" class="header__menu-link dropdown-toggle" data-bs-toggle="dropdown"
@@ -320,8 +318,7 @@
                                     <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                             href="./pages/kindergarten-page.html">ул. Декабрьских событий, 102</a></li>
                                     <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                            href="./pages/kindergarten-page.html">ул. Алмазная, 5 (Первомайский)</a>
-                                    </li>
+                                            href="./pages/kindergarten-page.html">ул. Алмазная, 5 (Первомайский)</a></li>
                                     <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                             href="./pages/kindergarten-page.html">Центр развития</a></li>
                                 </ul>
@@ -342,11 +339,9 @@
                                             каникулы</a></li>
                                 </ul>
                             </li>
-                            <li class="header__menu-item"><a href="./pages/news.html"
-                                    class="header__menu-link">Новости</a>
+                            <li class="header__menu-item"><a href="./pages/news.html" class="header__menu-link">Новости</a>
                             </li>
-                            <li class="header__menu-item"><a href="./pages/blog.html" class="header__menu-link">Блог</a>
-                            </li>
+                            <li class="header__menu-item"><a href="./pages/blog.html" class="header__menu-link">Блог</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-link">Сведения...</a></li>
                         </ul>
                     </nav>
@@ -409,10 +404,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__mobile">
+                <div class="header__mobile --no-sectionsLinks">
                     <div class="header__mobile-top">
-                        <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg" alt="logo"
-                                class="header__logo-img"></a>
+                        <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg"
+                                alt="logo" class="header__logo-img"></a>
                         <div class="header__buttons">
                             <a href="tel:+73952738200"
                                 class="my-button my-button_lightGreen my-button_borderOval header__link-phone">+7 (3952)
@@ -427,7 +422,7 @@
                             </button>
                             <div class="mobile-menu__content" id="header-mobile-navbar">
                                 <div class="mobile-menu__content-inner">
-                                    <ul class="mobile-menu__links">
+                                    <ul class="mobile-menu__links --middle-texts">
                                         <li class="mobile-menu__link-item"><a href="./pages/about.html"
                                                 class="mobile-menu__link">О
                                                 нас</a></li>
@@ -436,17 +431,16 @@
                                                 data-bs-toggle="dropdown" aria-expanded="false">Детские сады</a>
                                             <ul class="dropdown-menu header__dropdown-menu">
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./pages/kindergarten-page.html">ул. Каландаришвили, 7</a>
+                                                        href="./pages/kindergarten-page.html">ул. Каландаришвили, 7</a></li>
+                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
+                                                        href="./pages/kindergarten-page.html">ул. Александра Невского, 60</a>
                                                 </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./pages/kindergarten-page.html">ул. Александра Невского,
-                                                        60</a></li>
+                                                        href="./pages/kindergarten-page.html">ул. Березовая, 8 (Солнечный)</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./pages/kindergarten-page.html">ул. Березовая, 8
-                                                        (Солнечный)</a></li>
-                                                <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./pages/kindergarten-page.html">ул. Декабрьских событий,
-                                                        102</a></li>
+                                                        href="./pages/kindergarten-page.html">ул. Декабрьских событий, 102</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                         href="./pages/kindergarten-page.html">ул. Алмазная, 5
                                                         (Первомайский)</a></li>
@@ -460,11 +454,10 @@
                                                 развития</a>
                                             <ul class="dropdown-menu header__dropdown-menu">
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./pages/development-center.html">О Центре развития</a>
-                                                </li>
+                                                        href="./pages/development-center.html">О Центре развития</a></li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
-                                                        href="./pages/early-development-school.html">Развивающие
-                                                        занятия</a></li>
+                                                        href="./pages/early-development-school.html">Развивающие занятия</a>
+                                                </li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
                                                         href="./pages/painting-education.html">Живопись</a></li>
                                                 <li class="header__dropdown-item-wrap"><a class="dropdown-item"
@@ -488,7 +481,7 @@
                                         <button
                                             class="my-button my-button_noColor my-button_borderOval header__mobile-button">ЗАПИСАТЬСЯ</button>
                                     </div>
-                                    <div class="mobile-menu__contacts">
+                                    <div class="mobile-menu__contacts --middle-texts">
                                         <a href="#" class="mobile-menu__contact-link">Telegram</a>
                                         <a href="#" class="mobile-menu__contact-link">WhatsApp</a>
                                     </div>
@@ -496,7 +489,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="header__mobile-section-links">
+                    <div class="header__mobile-section-links --middle-texts">
                         <div class="header__links-slider">
                             <div class="swiper header__links-swiper">
                                 <div class="swiper-wrapper header__links-swiper-wrapper">
@@ -572,12 +565,11 @@
                 <button class="my-modal__close">&times;</button>
                 <div class="my-modal__content">
                     <div class="my-modal__texts">
-                        <div class="my-modal__title">Заказать обратный звонок</div>
-                        <p class="my-modal__subtitle">Оставьте свои контактные данные, и&nbsp;мы перезвоним вам
+                        <div class="my-modal__title --large-texts">Заказать обратный звонок</div>
+                        <p class="my-modal__subtitle --middle-texts">Оставьте свои контактные данные, и&nbsp;мы перезвоним вам
                             в&nbsp;ближайшее
                             время.</p>
                     </div>
-
                     <form action="" class="feedback-form my-modal__form">
                         <div class="feedback-form__elements">
                             <input type="text" name="input-name" id="inputName" class="my-input feedback-form__input"
@@ -618,12 +610,12 @@
                                     </div> <span class="hero-section__location-text"> В Иркутске</span>
                                 </div>
                             </div>
-                            <ul class="hero-section__list">
-                                <li class="hero-section__list-item">Дружим с детьми с 2007 года</li>
-                                <li class="hero-section__list-item">Возможность оплаты маткапиталом</li>
-                                <li class="hero-section__list-item">До 12 человек в группе в детских садах</li>
-                                <li class="hero-section__list-item">Лицензированные детские сады</li>
-                                <li class="hero-section__list-item">Реджио-подход</li>
+                            <ul class="hero-section__list --middle-texts">
+                                <li class="hero-section__list-item"><span> Дружим с детьми с 2007 года </span></li>
+                                <li class="hero-section__list-item"><span> Возможность оплаты маткапиталом </span></li>
+                                <li class="hero-section__list-item"><span> До 12 человек в группе в детских садах </span></li>
+                                <li class="hero-section__list-item"><span> Лицензированные детские сады </span></li>
+                                <li class="hero-section__list-item"><span> Реджио-подход </span></li>
                             </ul>
                         </div>
                         <div class="hero-section__links">
@@ -660,7 +652,7 @@
                 <div class="my-container my-stories__container">
                     <div class="my-stories__inner">
                         <div class="swiper my-stories__swiper">
-                            <div id="stories" class="swiper-wrapper my-stories__swiper-wrapper"></div>
+                            <div id="stories" class="swiper-wrapper my-stories__swiper-wrapper --preMiddle-texts"></div>
                         </div>
                     </div>
                 </div>
@@ -688,7 +680,7 @@
                         <div class="branches__contents">
                             <div class="branches__content-item" data-content-id="loc-1">
                                 <div class="branches__info">
-                                    <div class="branches__address">
+                                    <div class="branches__address --large-texts">
                                         <div class="branches__address-icon">
                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -699,7 +691,7 @@
                                         </div>
                                         <span class="branches__address-text">Каландаришвили, 7</span>
                                     </div>
-                                    <div class="branches__texts">
+                                    <div class="branches__texts --middle-texts">
                                         <div class="branches__text">Возможность оплатить маткапиталом</div>
                                         <div class="branches__price">42 500₽ / мес.</div>
                                     </div>
@@ -737,7 +729,7 @@
                             </div>
                             <div class="branches__content-item" data-content-id="loc-2">
                                 <div class="branches__info">
-                                    <div class="branches__address">
+                                    <div class="branches__address --large-texts">
                                         <div class="branches__address-icon">
                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -748,7 +740,7 @@
                                         </div>
                                         <span class="branches__address-text">Александра Невского, 60</span>
                                     </div>
-                                    <div class="branches__texts">
+                                    <div class="branches__texts --middle-texts">
                                         <div class="branches__text">Возможность оплатить маткапиталом</div>
                                         <div class="branches__price">42 500₽ / мес.</div>
                                     </div>
@@ -786,7 +778,7 @@
                             </div>
                             <div class="branches__content-item" data-content-id="loc-3">
                                 <div class="branches__info">
-                                    <div class="branches__address">
+                                    <div class="branches__address --large-texts">
                                         <div class="branches__address-icon">
                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -797,7 +789,7 @@
                                         </div>
                                         <span class="branches__address-text">Березовая, 8 (м-н Солнечный)</span>
                                     </div>
-                                    <div class="branches__texts">
+                                    <div class="branches__texts --middle-texts">
                                         <div class="branches__text">Возможность оплатить маткапиталом</div>
                                         <div class="branches__price">42 500₽ / мес.</div>
                                     </div>
@@ -835,7 +827,7 @@
                             </div>
                             <div class="branches__content-item" data-content-id="loc-4">
                                 <div class="branches__info">
-                                    <div class="branches__address">
+                                    <div class="branches__address --large-texts">
                                         <div class="branches__address-icon">
                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -846,7 +838,7 @@
                                         </div>
                                         <span class="branches__address-text">Декабрьских событий, 102</span>
                                     </div>
-                                    <div class="branches__texts">
+                                    <div class="branches__texts --middle-texts">
                                         <div class="branches__text">Возможность оплатить маткапиталом</div>
                                         <div class="branches__price">42 500₽ / мес.</div>
                                     </div>
@@ -884,7 +876,7 @@
                             </div>
                             <div class="branches__content-item" data-content-id="loc-5">
                                 <div class="branches__info">
-                                    <div class="branches__address">
+                                    <div class="branches__address --large-texts">
                                         <div class="branches__address-icon">
                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -895,7 +887,7 @@
                                         </div>
                                         <span class="branches__address-text">Алмазная, 5 (первомайский)</span>
                                     </div>
-                                    <div class="branches__texts">
+                                    <div class="branches__texts --middle-texts">
                                         <div class="branches__text">Возможность оплатить маткапиталом</div>
                                         <div class="branches__price">42 500₽ / мес.</div>
                                     </div>
@@ -933,7 +925,7 @@
                             </div>
                             <div class="branches__content-item" data-content-id="loc-6">
                                 <div class="branches__info">
-                                    <div class="branches__address">
+                                    <div class="branches__address --large-texts">
                                         <div class="branches__address-icon">
                                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -944,7 +936,7 @@
                                         </div>
                                         <span class="branches__address-text">Центр развития</span>
                                     </div>
-                                    <div class="branches__texts">
+                                    <div class="branches__texts --middle-texts">
                                         <div class="branches__text">Возможность оплатить маткапиталом</div>
                                         <div class="branches__price">42 500₽ / мес.</div>
                                     </div>
@@ -992,7 +984,7 @@
                     <div class="inspiration-section__inner">
                         <div class="inspiration-section__desc">
                             <h2 class="block-title inspiration-section__title">Мы <br> вдохновляемся <br> реджио</h2>
-                            <div class="inspiration-section__desc-text">
+                            <div class="inspiration-section__desc-text --middle-texts">
                                 <span class="inspiration-section__text">У нас нет случайных людей в коллективе. Наши
                                     педагоги
                                     вкладывают всю свою
@@ -1046,7 +1038,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">01</div>
-                                            <div class="inspiration-section__slide-text">Видим в каждом ребёнке личность
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Видим в каждом ребёнке личность
                                             </div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-1.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -1058,7 +1050,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Видим в каждом ребёнке личность
                                             </div>
                                         </div>
@@ -1066,7 +1058,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">02</div>
-                                            <div class="inspiration-section__slide-text">Не даем готовых ответов, но
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Не даем готовых ответов, но
                                                 исследуем
                                                 любой вопрос вместе </div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-2.png"
@@ -1079,7 +1071,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-2.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Не даем готовых ответов, но исследуем любой вопрос вместе
                                             </div>
                                         </div>
@@ -1087,7 +1079,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">03</div>
-                                            <div class="inspiration-section__slide-text">Слушаем и слышим детей</div>
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Слушаем и слышим детей</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-3.png"
                                                 alt="" class="inspiration-section__slide-text-img">
                                         </div>
@@ -1098,7 +1090,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-3.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Слушаем и слышим детей
                                             </div>
                                         </div>
@@ -1106,7 +1098,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">04</div>
-                                            <div class="inspiration-section__slide-text">Учим работать в команде</div>
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Учим работать в команде</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-4.png"
                                                 alt="" class="inspiration-section__slide-text-img">
                                         </div>
@@ -1117,7 +1109,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-4.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Учим работать в команде
                                             </div>
                                         </div>
@@ -1125,7 +1117,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">05</div>
-                                            <div class="inspiration-section__slide-text">Предлагаем детям разные пути
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Предлагаем детям разные пути
                                                 для
                                                 самовыражения</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-5.png"
@@ -1138,7 +1130,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-5.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Предлагаем детям разные пути для самовыражения
                                             </div>
                                         </div>
@@ -1146,7 +1138,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">06</div>
-                                            <div class="inspiration-section__slide-text">Помогаем ребенку раскрыть свой
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Помогаем ребенку раскрыть свой
                                                 потенциал в проектной работе</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-6.png"
                                                 alt="" class="inspiration-section__slide-text-img">
@@ -1158,7 +1150,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-6.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Помогаем ребенку раскрыть свой потенциал в проектной работе
                                             </div>
                                         </div>
@@ -1166,7 +1158,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">07</div>
-                                            <div class="inspiration-section__slide-text">Учимся рассуждать в моменте,
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Учимся рассуждать в моменте,
                                                 всегда и
                                                 везде</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-7.png"
@@ -1179,7 +1171,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-7.png" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Учимся рассуждать в моменте, всегда и везде
                                             </div>
                                         </div>
@@ -1187,7 +1179,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">08</div>
-                                            <div class="inspiration-section__slide-text">Говоря о правилах, объясняем,
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Говоря о правилах, объясняем,
                                                 откуда
                                                 они берутся</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-8.png"
@@ -1200,7 +1192,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-8.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Говоря о правилах, объясняем, откуда они берутся
                                             </div>
                                         </div>
@@ -1208,7 +1200,7 @@
                                     <div class="swiper-slide inspiration-section__swiper-slide">
                                         <div class="inspiration-section__slide --textImage_visible">
                                             <div class="inspiration-section__slide-number">09</div>
-                                            <div class="inspiration-section__slide-text">Способствуем пробуждению
+                                            <div class="inspiration-section__slide-text --preLarge-texts">Способствуем пробуждению
                                                 интереса и
                                                 мотивации к знаниям</div>
                                             <img src="./assets/images/pages/main/inspiration/text-slides/text-slide-img-9.png"
@@ -1221,7 +1213,7 @@
                                                 <img src="./assets/images/pages/main/inspiration/slide-img-9.jpg" alt=""
                                                     class="inspiration-section__slide-image-photo">
                                             </div>
-                                            <div class="inspiration-section__slide-image-mobile-text">
+                                            <div class="inspiration-section__slide-image-mobile-text --preLarge-texts">
                                                 Способствуем пробуждению интереса и мотивации к знаниям
                                             </div>
                                         </div>
@@ -1238,12 +1230,12 @@
                     <div class="avantage-descripion project-activity__description">
                         <h2 class="block-title avantage-descripion__title">занимаемся проектной деятельностью</h2>
                         <div class="avantage-descripion__texts">
-                            <div class="avantage-descripion__pre-title">Выбираем с детьми интересную тему и изучаем ее
+                            <div class="avantage-descripion__pre-title --large-texts">Выбираем с детьми интересную тему и изучаем ее
                                 со всех
                                 сторон</div>
                             <div class="avantage-descripion__accordion">
                                 <div class="avantage-descripion__accordion-content">
-                                    <div class="avantage-descripion__accordion-content-visible">
+                                    <div class="avantage-descripion__accordion-content-visible --middle-texts">
                                         <div class="avantage-descripion__accordion-visible-text">Дети учатся
                                             взаимодействовать в команде. Ежедневно проходят детские советы, на которых
                                             каждый получает право высказаться. Раз в несколько месяцев мы организуем
@@ -1466,11 +1458,11 @@
                         <h2 class="block-title avantage-descripion__title">изучаем мир <br> при помощи современных
                             инструментов</h2>
                         <div class="avantage-descripion__texts">
-                            <div class="avantage-descripion__pre-title">Мы не ограждаем детей от современных технологий.
+                            <div class="avantage-descripion__pre-title --large-texts">Мы не ограждаем детей от современных технологий.
                                 Под присмотром педагога ребенок может работать с цифровым оборудованием.</div>
                             <div class="avantage-descripion__accordion">
                                 <div class="avantage-descripion__accordion-content">
-                                    <div class="avantage-descripion__accordion-content-visible">
+                                    <div class="avantage-descripion__accordion-content-visible --middle-texts">
                                         <div class="avantage-descripion__accordion-visible-text">Мы создаем
                                             пространство, которое приглашает детей к исследованию и творчеству и дарит
                                             им приятное ощущение свободы, спокойствия, вызывает интерес и мотивацию.
@@ -1556,7 +1548,7 @@
                             <div class="swiper-wrapper modern-tools__swiper-wrapper">
                                 <div class="swiper-slide modern-tools__swiper-slide">
                                     <div class="modern-tools__slide">
-                                        <div class="modern-tools__slide-title">оверхед-проекторы</div>
+                                        <div class="modern-tools__slide-title --preMiddle-texts">оверхед-проекторы</div>
                                         <div class="modern-tools__slide-wrap-img">
                                             <img src="./assets/images/pages/main/modern-tools/slide-1.jpg" alt=""
                                                 class="modern-tools__slide-img">
@@ -1565,7 +1557,7 @@
                                 </div>
                                 <div class="swiper-slide modern-tools__swiper-slide">
                                     <div class="modern-tools__slide">
-                                        <div class="modern-tools__slide-title">электронные микроскопы</div>
+                                        <div class="modern-tools__slide-title --preMiddle-texts">электронные микроскопы</div>
                                         <div class="modern-tools__slide-wrap-img">
                                             <img src="./assets/images/pages/main/modern-tools/slide-2.jpg" alt=""
                                                 class="modern-tools__slide-img">
@@ -1574,7 +1566,7 @@
                                 </div>
                                 <div class="swiper-slide modern-tools__swiper-slide">
                                     <div class="modern-tools__slide">
-                                        <div class="modern-tools__slide-title">световые столы</div>
+                                        <div class="modern-tools__slide-title --preMiddle-texts">световые столы</div>
                                         <div class="modern-tools__slide-wrap-img">
                                             <img src="./assets/images/pages/main/modern-tools/slide-3.jpg" alt=""
                                                 class="modern-tools__slide-img">
@@ -1583,7 +1575,7 @@
                                 </div>
                                 <div class="swiper-slide modern-tools__swiper-slide">
                                     <div class="modern-tools__slide">
-                                        <div class="modern-tools__slide-title">ПЕСОЧНИЦЫ ДЛЯ ПОМЕЩЕНИЙ</div>
+                                        <div class="modern-tools__slide-title --preMiddle-texts">ПЕСОЧНИЦЫ ДЛЯ ПОМЕЩЕНИЙ</div>
                                         <div class="modern-tools__slide-wrap-img">
                                             <img src="./assets/images/pages/main/modern-tools/slide-4.jpg" alt=""
                                                 class="modern-tools__slide-img">
@@ -1592,7 +1584,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="avantage-descripion__pre-title-mobile">Мы берем самое лучшее из системы реджио,
+                        <div class="avantage-descripion__pre-title-mobile --middle-texts">Мы берем самое лучшее из системы реджио,
                             вдохновляя детей на
                             интересные открытия и обучая их общаться со сверстниками и взрослыми</div>
                     </div>
@@ -1605,11 +1597,11 @@
                     <div class="avantage-descripion preparing-child__description">
                         <h2 class="block-title avantage-descripion__title">Готовим ребенка к&nbsp;школе</h2>
                         <div class="avantage-descripion__texts">
-                            <div class="avantage-descripion__pre-title">Мы берем самое лучшее из системы реджио,
+                            <div class="avantage-descripion__pre-title --large-texts">Мы берем самое лучшее из системы реджио,
                                 вдохновляя детей на
                                 интересные открытия и обучая их общаться со сверстниками и взрослыми</div>
                             <div class="avantage-descripion__accordion">
-                                <div class="avantage-descripion__accordion-content">
+                                <div class="avantage-descripion__accordion-content --middle-texts">
                                     <div class="avantage-descripion__accordion-content-visible">
                                         <div class="avantage-descripion__accordion-visible-text">В обучении мы нацелены
                                             на живой, а
@@ -1680,11 +1672,11 @@
                         </div>
                     </div>
                     <div class="preparing-child__content">
-                        <div class="preparing-child__content-img-title">уже 17 лет выпускаем детей, на 100%
+                        <div class="preparing-child__content-img-title --preMiddle-texts">уже 17 лет выпускаем детей, на 100%
                             подготовленных к школе
                         </div>
                         <div class="preparing-child__content-img"></div>
-                        <div class="avantage-descripion__pre-title-mobile">Мы берем самое лучшее из системы реджио,
+                        <div class="avantage-descripion__pre-title-mobile --middle-texts">Мы берем самое лучшее из системы реджио,
                             вдохновляя детей на
                             интересные открытия и обучая их общаться со сверстниками и взрослыми</div>
                     </div>
@@ -1707,10 +1699,10 @@
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
                                     <span
-                                        class="accordion-button-title why-choose-us__accordion-button-title">Профессиональный
+                                        class="accordion-button-title why-choose-us__accordion-button-title --large-texts">Профессиональный
                                         подход</span>
                                     <span
-                                        class="accordion-button-text why-choose-us__accordion-button-text">Образовательная
+                                        class="accordion-button-text why-choose-us__accordion-button-text --middle-texts">Образовательная
                                         деятельность в наших садах составлена в соответствии с ФГОС и программы
                                         дошкольного образования «Вдохновение». Наша организация имеет все необходимые
                                         документы.</span>
@@ -1719,7 +1711,7 @@
                             <div id="collapseOne"
                                 class="accordion-collapse why-choose-us__accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body why-choose-us__accordion-body">
+                                <div class="accordion-body why-choose-us__accordion-body --middle-texts">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
                                     <span
                                         class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
@@ -1738,16 +1730,16 @@
                                 <button class="accordion-button why-choose-us__accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    <span class="accordion-button-title why-choose-us__accordion-button-title">В каждой
+                                    <span class="accordion-button-title why-choose-us__accordion-button-title --large-texts">В каждой
                                         группе — до 12 человек</span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text">Небольшое
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text --middle-texts">Небольшое
                                         количество детей в группах в детских садах позволяет педагогам уделять внимание
                                         каждому ребёнку.</span>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse why-choose-us__accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body why-choose-us__accordion-body">
+                                <div class="accordion-body why-choose-us__accordion-body --middle-texts">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
                                     <span
                                         class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
@@ -1766,9 +1758,9 @@
                                 <button class="accordion-button why-choose-us__accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    <span class="accordion-button-title why-choose-us__accordion-button-title">Уютная
+                                    <span class="accordion-button-title why-choose-us__accordion-button-title --large-texts">Уютная
                                         атмосфера</span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text">Для каждого
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text --middle-texts">Для каждого
                                         помещения разработан индивидуальный дизайн-проект с учетом всех нюансов — от
                                         безопасной мебели с закругленными краями до спокойной цветовой гаммы.</span>
                                 </button>
@@ -1776,7 +1768,7 @@
                             <div id="collapseThree"
                                 class="accordion-collapse why-choose-us__accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body why-choose-us__accordion-body">
+                                <div class="accordion-body why-choose-us__accordion-body --middle-texts">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
                                     <span
                                         class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
@@ -1796,8 +1788,8 @@
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
                                     <span
-                                        class="accordion-button-title why-choose-us__accordion-button-title">Компетентность</span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text">Весь наш
+                                        class="accordion-button-title why-choose-us__accordion-button-title --large-texts">Компетентность</span>
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text --middle-texts">Весь наш
                                         педагогический состав тщательно подобран, не только по образованию, но и по
                                         отношению к воспитательному процессу. Все педагоги регулярно повышают
                                         квалификацию.</span>
@@ -1805,7 +1797,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse why-choose-us__accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body why-choose-us__accordion-body">
+                                <div class="accordion-body why-choose-us__accordion-body --middle-texts">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
                                     <span
                                         class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
@@ -1825,16 +1817,16 @@
                                     data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseFive">
                                     <span
-                                        class="accordion-button-title why-choose-us__accordion-button-title">Ответственность
+                                        class="accordion-button-title why-choose-us__accordion-button-title --large-texts">Ответственность
                                         и безопасность</span>
-                                    <span class="accordion-button-text why-choose-us__accordion-button-text">Все
+                                    <span class="accordion-button-text why-choose-us__accordion-button-text --middle-texts">Все
                                         помещения оснащены системами пожарной безопасности, видеонаблюдения, охранной
                                         сигнализации. Вход доступен только через звонок.</span>
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse why-choose-us__accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body why-choose-us__accordion-body">
+                                <div class="accordion-body why-choose-us__accordion-body --middle-texts">
                                     <span class="accordion-button-title why-choose-us__accordion-button-title"></span>
                                     <span
                                         class="accordion-button-text why-choose-us__accordion-button-text-mobile">Образовательная
@@ -1853,11 +1845,11 @@
                         <div class="my-container feedback-block__container">
                             <div class="feedback-block__inner">
                                 <div class="feedback-block__description">
-                                    <div class="feedback-block__main-text">Хотите записаться на экскурсию в один из
+                                    <div class="feedback-block__main-text --large-texts">Хотите записаться на экскурсию в один из
                                         наших садов,
                                         <br> попасть в центр развития <br> или уточнить информацию?
                                     </div>
-                                    <div class="feedback-block__pre-text">Оставьте Ваш телефон, <br> и мы перезвоним в
+                                    <div class="feedback-block__pre-text --middle-texts">Оставьте Ваш телефон, <br> и мы перезвоним в
                                         ближайшее
                                         время</div>
                                 </div>
@@ -1867,10 +1859,9 @@
                                             class="my-input feedback-form__input" placeholder="Ваше имя">
                                         <input type="tel" name="input-phone" id="inputPhone"
                                             class="my-input feedback-form__input" placeholder="+7 (999) 999 99 99">
-                                        <label for="why-choose-us__agreementCheck"
-                                            class="my-checkbox feedback-form__checkbox">
-                                            <input type="checkbox" name="agreement-checkbox"
-                                                id="why-choose-us__agreementCheck" class="my-checkbox__old">
+                                        <label for="agreementCheck" class="my-checkbox feedback-form__checkbox">
+                                            <input type="checkbox" name="agreement-checkbox" id="agreementCheck"
+                                                class="my-checkbox__old">
                                             <span class="my-checkbox__new"></span>
                                             <span class="my-checkbox__text">согласие на <a
                                                     href="https://7zvezd-irk.ru/include/licenses_detail.php"
@@ -1934,13 +1925,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="lifestyle-item__footnote-mobile">сертифицировано по СанПину</div>
+                                <div class="lifestyle-item__footnote-mobile --preMiddle-texts">сертифицировано по СанПину</div>
                                 <div class="swiper block-nutrition__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-nutrition/slide-img.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-nutrition/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -1961,12 +1952,20 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="swiper-slide lifestyle-item__swiper-slide">
+                                            <div class="lifestyle-item__slide">
+                                                <div class="lifestyle-item__slide-img-wrap">
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-nutrition/slide-4.jpg"
+                                                        alt="" class="lifestyle-item__slide-img">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div
                                     class="swiper-pagination block-nutrition__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
-                                <div class="lifestyle-item__pre-title-mobile">
+                                <div class="lifestyle-item__pre-title-mobile --middle-texts">
                                     В каждом детском саду оборудован профессиональный пищеблок, в котором трудится повар
                                     и
                                     помощник
@@ -1978,13 +1977,13 @@
                                     здоровое <br> питание
                                 </h2>
                                 <div class="lifestyle-item__texts">
-                                    <div class="lifestyle-item__pre-title">
+                                    <div class="lifestyle-item__pre-title --large-texts">
                                         В каждом детском саду оборудован профессиональный пищеблок, в котором трудится
                                         повар и
                                         помощник
                                         повара
                                     </div>
-                                    <div class="lifestyle-item__text">
+                                    <div class="lifestyle-item__text --middle-texts">
                                         Кухня сертифицирована по СанПиНу, работает с проверенными поставщиками продуктов
                                         — «Саянский
                                         бройлер», «ЯНТА» и др. Рацион полноценный, сбалансированный, с рассчитанной
@@ -1995,7 +1994,7 @@
                                         завтрак (фруктопауза), обед, полдник, ужин.
                                     </div>
                                     <div class="lifestyle-item__swiper-notes">
-                                        <div class="lifestyle-item__footnote">сертифицировано по СанПину</div>
+                                        <div class="lifestyle-item__footnote --preMiddle-texts">сертифицировано по СанПину</div>
                                         <div class="swiper-navigation lifestyle-item__swiper-navigation">
                                             <div
                                                 class="swiper-button-prev block-nutrition__swiper-button-prev lifestyle-item__swiper-button-prev">
@@ -2082,14 +2081,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="lifestyle-item__footnote-mobile">удивляться всему, подмечать
+                                <div class="lifestyle-item__footnote-mobile --preMiddle-texts">удивляться всему, подмечать
                                     и&nbsp;открывать новое</div>
                                 <div class="swiper block-walk__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-walk/slide-img.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-walk/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2097,7 +2096,7 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-walk/slide-img-2.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-walk/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2105,7 +2104,7 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-walk/slide-img-3.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-walk/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2113,7 +2112,7 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-walk/slide-img-4.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-walk/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2123,7 +2122,7 @@
                                 <div
                                     class="swiper-pagination block-walk__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
-                                <div class="lifestyle-item__pre-title-mobile">
+                                <div class="lifestyle-item__pre-title-mobile --middle-texts">
                                     Детские площадки — это отличная возможность для ребёнка еще больше узнать об
                                     окружающем миреик
                                     повара
@@ -2134,11 +2133,11 @@
                                     прогулки <br> с пользой
                                 </h2>
                                 <div class="lifestyle-item__texts">
-                                    <div class="lifestyle-item__pre-title">
+                                    <div class="lifestyle-item__pre-title --large-texts">
                                         Детские площадки — это отличная возможность для ребёнка еще больше узнать об
                                         окружающем мире
                                     </div>
-                                    <div class="lifestyle-item__text">
+                                    <div class="lifestyle-item__text --middle-texts">
                                         <p>Прогулки устраиваются 1-2 раза в день, продолжительностью от 1 до 2х часов, в
                                             зависимости
                                             от погодных условий. Воспитатели организуют детей, время прогулки проходит с
@@ -2149,7 +2148,7 @@
                                             для себя столько всего интересного!</p>
                                     </div>
                                     <div class="lifestyle-item__swiper-notes">
-                                        <div class="lifestyle-item__footnote">удивляться всему, подмечать и открывать
+                                        <div class="lifestyle-item__footnote --preMiddle-texts">удивляться всему, подмечать и открывать
                                             новое</div>
                                         <div class="swiper-navigation lifestyle-item__swiper-navigation">
                                             <div
@@ -2237,13 +2236,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="lifestyle-item__footnote-mobile">осмотр педиатром</div>
+                                <div class="lifestyle-item__footnote-mobile --preMiddle-texts">осмотр педиатром</div>
                                 <div class="swiper block-health__swiper lifestyle-item__swiper">
                                     <div class="swiper-wrapper lifestyle-item__swiper-wrapper">
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-health/slide-img.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-health/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2251,7 +2250,7 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-health/slide-img.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-health/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2259,7 +2258,7 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-health/slide-img.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-health/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2267,7 +2266,7 @@
                                         <div class="swiper-slide lifestyle-item__swiper-slide">
                                             <div class="lifestyle-item__slide">
                                                 <div class="lifestyle-item__slide-img-wrap">
-                                                    <img src="./assets/images/pages/main/lifestyle/block-health/slide-img.jpg"
+                                                    <img src="./assets/images/pages/kindergarten-page/lifestyle/block-health/slide-1.jpg"
                                                         alt="" class="lifestyle-item__slide-img">
                                                 </div>
                                             </div>
@@ -2277,7 +2276,7 @@
                                 <div
                                     class="swiper-pagination block-health__swiper-pagination lifestyle-item__swiper-pagination">
                                 </div>
-                                <div class="lifestyle-item__pre-title-mobile">
+                                <div class="lifestyle-item__pre-title-mobile --middle-texts">
                                     Врач-педиатр регулярно осматривает детей в соответствии с требованиями в сфере
                                     здравоохранения
                                 </div>
@@ -2287,11 +2286,11 @@
                                     медицинское <br> сопровождение
                                 </h2>
                                 <div class="lifestyle-item__texts">
-                                    <div class="lifestyle-item__pre-title">
+                                    <div class="lifestyle-item__pre-title --large-texts">
                                         Врач-педиатр регулярно осматривает детей в соответствии с требованиями в сфере
                                         здравоохранения
                                     </div>
-                                    <div class="lifestyle-item__text">
+                                    <div class="lifestyle-item__text --middle-texts">
                                         Ежедневно с детьми проводятся утренние зарядки, закаливающие процедуры и
                                         прогулки — минимум
                                         2 раза в день. Все помещения оснащены бактерицидными лампами, санитайзерами,
@@ -2301,7 +2300,7 @@
                                         оборудования с дезинфицирующими средствами.
                                     </div>
                                     <div class="lifestyle-item__swiper-notes">
-                                        <div class="lifestyle-item__footnote">осмотр педиатром</div>
+                                        <div class="lifestyle-item__footnote --preMiddle-texts">осмотр педиатром</div>
                                         <div class="swiper-navigation lifestyle-item__swiper-navigation">
                                             <div
                                                 class="swiper-button-prev block-health__swiper-button-prev lifestyle-item__swiper-button-prev">
@@ -2361,8 +2360,8 @@
                                 <div class="swiper-wrapper double-slider__text-swiper-wrapper">
                                     <div class="swiper-slide double-slider__text-swiper-slide" id="slide1">
                                         <div class="double-slider__text-slide">
-                                            <div class="double-slider__slide-title">Сенсорные зоны</div>
-                                            <div class="double-slider__slide-text">
+                                            <div class="double-slider__slide-title --large-texts">Сенсорные зоны</div>
+                                            <div class="double-slider__slide-text --middle-texts">
                                                 <p>У маленьких детей процесс познания осуществляется не через
                                                     рациональное мышление, а через чувственный опыт и впечатления.
                                                     Именно поэтому наши помещения насыщены сенсорными зонами,
@@ -2376,10 +2375,10 @@
                                     </div>
                                     <div class="swiper-slide double-slider__text-swiper-slide" id="slide2">
                                         <div class="double-slider__text-slide">
-                                            <div class="double-slider__slide-title">Множество обучающих предметов и
+                                            <div class="double-slider__slide-title --large-texts">Множество обучающих предметов и
                                                 интересных
                                                 пособий</div>
-                                            <div class="double-slider__slide-text">
+                                            <div class="double-slider__slide-text --middle-texts">
                                                 <p>Игра — лучший способ обучения. Игра великолепно мотивирует детей
                                                     получать и активно запоминать информацию. Поэтому мы используем
                                                     на наших повседневных занятиях, помимо типовых, разнообразные
@@ -2389,10 +2388,10 @@
                                     </div>
                                     <div class="swiper-slide double-slider__text-swiper-slide" id="slide3">
                                         <div class="double-slider__text-slide">
-                                            <div class="double-slider__slide-title">Все необходимое для творческой
+                                            <div class="double-slider__slide-title --large-texts">Все необходимое для творческой
                                                 деятельности
                                             </div>
-                                            <div class="double-slider__slide-text">
+                                            <div class="double-slider__slide-text --middle-texts">
                                                 <p>Огромное количество природных и бросовых материалов, чтобы пробудить
                                                     в ребёнке природную любознательность и познакомить его с миром</p>
                                             </div>
@@ -2400,17 +2399,16 @@
                                     </div>
                                     <div class="swiper-slide double-slider__text-swiper-slide" id="slide4">
                                         <div class="double-slider__text-slide">
-                                            <div class="double-slider__slide-title">Продуманная планировка помещений
+                                            <div class="double-slider__slide-title --large-texts">Продуманная планировка помещений
                                             </div>
-                                            <div class="double-slider__slide-text">
+                                            <div class="double-slider__slide-text --middle-texts">
                                                 <p>Способствует активному взаимодействию детей с окружающей средой,
                                                     пробуждает в них исследовательский и творческий интерес</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="double-slider__text-swiper-controls">
+                                <div class="double-slider__text-swiper-controls">
                                 <div class="swiper-pagination double-slider__text-swiper-pagination"></div>
                                 <div class="swiper-navigation double-slider__text-swiper-navigation">
                                     <div class="swiper-button-prev double-slider__text-swiper-button-prev">
@@ -2448,6 +2446,7 @@
                                         </svg>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
                         <div class="double-slider__img-sliders">
@@ -2619,10 +2618,10 @@
                     <div class="avantage-descripion development__description">
                         <h2 class="block-title avantage-descripion__title">всестороннее развитие</h2>
                         <div class="avantage-descripion__texts">
-                            <div class="avantage-descripion__pre-title">Занятия ведут опытные педагоги</div>
+                            <div class="avantage-descripion__pre-title --large-texts">Занятия ведут опытные педагоги</div>
                             <div class="avantage-descripion__accordion">
                                 <div class="avantage-descripion__accordion-content">
-                                    <div class="avantage-descripion__accordion-content-visible">
+                                    <div class="avantage-descripion__accordion-content-visible --middle-texts">
                                         <div class="avantage-descripion__accordion-visible-text">Дополнительные занятия
                                             проводятся <br> в
                                             определенные дни недели в специально <br> отведенное время.</div>
@@ -2675,7 +2674,7 @@
                                 <div class="swiper-wrapper development__swiper-wrapper">
                                     <div class="swiper-slide development__swiper-slide" data-slide="0">
                                         <div class="development__slide">
-                                            <div class="development__image-card-title">робототехника</div>
+                                            <div class="development__image-card-title --preMiddle-texts">робототехника</div>
                                             <div class="development__image-card-img-wrap">
                                                 <img src="./assets/images/pages/main/development/block-img.jpg" alt=""
                                                     class="development__image-card-img">
@@ -2684,7 +2683,7 @@
                                     </div>
                                     <div class="swiper-slide development__swiper-slide" data-slide="1">
                                         <div class="development__slide">
-                                            <div class="development__image-card-title">ритмика</div>
+                                            <div class="development__image-card-title --preMiddle-texts">ритмика</div>
                                             <div class="development__image-card-img-wrap">
                                                 <img src="./assets/images/pages/main/development/block-img.jpg" alt=""
                                                     class="development__image-card-img">
@@ -2693,7 +2692,7 @@
                                     </div>
                                     <div class="swiper-slide development__swiper-slide" data-slide="2">
                                         <div class="development__slide">
-                                            <div class="development__image-card-title">Музыка</div>
+                                            <div class="development__image-card-title --preMiddle-texts">Музыка</div>
                                             <div class="development__image-card-img-wrap">
                                                 <img src="./assets/images/pages/main/development/block-img.jpg" alt=""
                                                     class="development__image-card-img">
@@ -2702,7 +2701,7 @@
                                     </div>
                                     <div class="swiper-slide development__swiper-slide" data-slide="3">
                                         <div class="development__slide">
-                                            <div class="development__image-card-title">Английский</div>
+                                            <div class="development__image-card-title --preMiddle-texts">Английский</div>
                                             <div class="development__image-card-img-wrap">
                                                 <img src="./assets/images/pages/main/development/block-img.jpg" alt=""
                                                     class="development__image-card-img">
@@ -2711,7 +2710,7 @@
                                     </div>
                                     <div class="swiper-slide development__swiper-slide" data-slide="4">
                                         <div class="development__slide">
-                                            <div class="development__image-card-title">Творчество</div>
+                                            <div class="development__image-card-title --preMiddle-texts">Творчество</div>
                                             <div class="development__image-card-img-wrap">
                                                 <img src="./assets/images/pages/main/development/slide-img-2.jpg" alt=""
                                                     class="development__image-card-img">
@@ -2720,7 +2719,7 @@
                                     </div>
                                     <div class="swiper-slide development__swiper-slide" data-slide="5">
                                         <div class="development__slide">
-                                            <div class="development__image-card-title">Логопед</div>
+                                            <div class="development__image-card-title --preMiddle-texts">Логопед</div>
                                             <div class="development__image-card-img-wrap">
                                                 <img src="./assets/images/pages/main/development/block-img.jpg" alt=""
                                                     class="development__image-card-img">
@@ -2844,8 +2843,8 @@
                         <h2 class="block-title holidays__title">яркие <br> праздники</h2>
                         <div class="holidays__texts">
                             <div class="holidays__texts-inner">
-                                <div class="holidays__pre-title">Яркие праздники — часть эстетического воспитания</div>
-                                <div class="holidays__text">Устраивая праздничные мероприятия, мы заботимся не только об
+                                <div class="holidays__pre-title --large-texts">Яркие праздники — часть эстетического воспитания</div>
+                                <div class="holidays__text --middle-texts">Устраивая праздничные мероприятия, мы заботимся не только об
                                     оформлении
                                     помещении и наличии аниматоров, но и тщательно подбираем репертуар, обращаем
                                     внимание на костюмы
@@ -2873,7 +2872,7 @@
                             <div class="swiper-wrapper holidays__swiper-wrapper">
                                 <div class="swiper-slide holidays__swiper-slide">
                                     <div class="holidays__slide">
-                                        <div class="holidays__image-card-title">праздник осени</div>
+                                        <div class="holidays__image-card-title --preMiddle-texts">праздник осени</div>
                                         <div class="holidays__image-card-img-wrap">
                                             <img src="./assets/images/pages/main/holidays/card-img-1.jpg" alt=""
                                                 class="holidays__image-card-img">
@@ -2882,7 +2881,7 @@
                                 </div>
                                 <div class="swiper-slide holidays__swiper-slide">
                                     <div class="holidays__slide">
-                                        <div class="holidays__image-card-title">выпускной</div>
+                                        <div class="holidays__image-card-title --preMiddle-texts">выпускной</div>
                                         <div class="holidays__image-card-img-wrap">
                                             <img src="./assets/images/pages/main/holidays/card-img-2.jpg" alt=""
                                                 class="holidays__image-card-img">
@@ -2891,7 +2890,7 @@
                                 </div>
                                 <div class="swiper-slide holidays__swiper-slide">
                                     <div class="holidays__slide">
-                                        <div class="holidays__image-card-title">встреча весны</div>
+                                        <div class="holidays__image-card-title --preMiddle-texts">встреча весны</div>
                                         <div class="holidays__image-card-img-wrap">
                                             <img src="./assets/images/pages/main/holidays/card-img-3.jpg" alt=""
                                                 class="holidays__image-card-img">
@@ -2900,7 +2899,7 @@
                                 </div>
                                 <div class="swiper-slide holidays__swiper-slide">
                                     <div class="holidays__slide">
-                                        <div class="holidays__image-card-title">новый год</div>
+                                        <div class="holidays__image-card-title --preMiddle-texts">новый год</div>
                                         <div class="holidays__image-card-img-wrap">
                                             <img src="./assets/images/pages/main/holidays/card-img-4.jpg" alt=""
                                                 class="holidays__image-card-img">
@@ -2974,8 +2973,8 @@
                                                 class="staff__slide-img">
                                         </div>
                                         <div class="staff__slide-body">
-                                            <div class="staff__slide-title">Олеся Сергеевна</div>
-                                            <div class="staff__slide-text">дополнительная информация <br> о
+                                            <div class="staff__slide-title --preLarge-texts">Олеся Сергеевна</div>
+                                            <div class="staff__slide-text --middle-texts">дополнительная информация <br> о
                                                 воспитателе</div>
                                         </div>
                                     </div>
@@ -2987,8 +2986,8 @@
                                                 class="staff__slide-img">
                                         </div>
                                         <div class="staff__slide-body">
-                                            <div class="staff__slide-title">Анастасия Николаевна</div>
-                                            <div class="staff__slide-text">дополнительная информация <br> о
+                                            <div class="staff__slide-title --preLarge-texts">Анастасия Николаевна</div>
+                                            <div class="staff__slide-text --middle-texts">дополнительная информация <br> о
                                                 воспитателе</div>
                                         </div>
                                     </div>
@@ -3000,8 +2999,8 @@
                                                 class="staff__slide-img">
                                         </div>
                                         <div class="staff__slide-body">
-                                            <div class="staff__slide-title">Гульнара Руфатовна</div>
-                                            <div class="staff__slide-text">дополнительная информация <br> о
+                                            <div class="staff__slide-title --preLarge-texts">Гульнара Руфатовна</div>
+                                            <div class="staff__slide-text --middle-texts">дополнительная информация <br> о
                                                 воспитателе</div>
                                         </div>
                                     </div>
@@ -3013,8 +3012,8 @@
                                                 class="staff__slide-img">
                                         </div>
                                         <div class="staff__slide-body">
-                                            <div class="staff__slide-title">Анна Витальевна</div>
-                                            <div class="staff__slide-text">дополнительная информация <br> о
+                                            <div class="staff__slide-title --preLarge-texts">Анна Витальевна</div>
+                                            <div class="staff__slide-text --middle-texts">дополнительная информация <br> о
                                                 воспитателе</div>
                                         </div>
                                     </div>
@@ -3026,8 +3025,8 @@
                                                 class="staff__slide-img">
                                         </div>
                                         <div class="staff__slide-body">
-                                            <div class="staff__slide-title">Анна Витальевна</div>
-                                            <div class="staff__slide-text">дополнительная информация <br> о
+                                            <div class="staff__slide-title --preLarge-texts">Анна Витальевна</div>
+                                            <div class="staff__slide-text --middle-texts">дополнительная информация <br> о
                                                 воспитателе</div>
                                         </div>
                                     </div>
@@ -3051,10 +3050,10 @@
                                         <div class="map-widgets__widget-texts">
                                             <div class="map-widgets__widget-rating">
                                                 <div class="map-widgets__widget-number">4,8</div>
-                                                <div class="map-widgets__widget-rating-text">по мнению пользователей
+                                                <div class="map-widgets__widget-rating-text --middle-texts">по мнению пользователей
                                                     Яндекс</div>
                                             </div>
-                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на
+                                            <a href="" class="map-widgets__widget-text-link --preMiddle-texts">Смотреть больше отзывов <br> на
                                                 Яндекс.Карты</a>
                                         </div>
                                         <div class="map-widgets__widget-icons">
@@ -3111,10 +3110,10 @@
                                         <div class="map-widgets__widget-texts">
                                             <div class="map-widgets__widget-rating">
                                                 <div class="map-widgets__widget-number">4,7</div>
-                                                <div class="map-widgets__widget-rating-text">по мнению пользователей
+                                                <div class="map-widgets__widget-rating-text --middle-texts">по мнению пользователей
                                                     2ГИС</div>
                                             </div>
-                                            <a href="" class="map-widgets__widget-text-link">Смотреть больше отзывов на
+                                            <a href="" class="map-widgets__widget-text-link --preMiddle-texts">Смотреть больше отзывов <br> на
                                                 2ГИС</a>
                                         </div>
                                         <div class="map-widgets__widget-icons">
@@ -3169,7 +3168,7 @@
                             </div>
                         </div>
                         <div class="reviews__content-inner">
-                            <div class="reviews__content-title">Приятные слова родителей о&nbsp;наших садах</div>
+                            <div class="reviews__content-title --large-texts">Приятные слова родителей <br> о&nbsp;наших садах</div>
                             <div class="reviews__slider">
                                 <div class="rewiews__swiper-controls">
                                     <div class="swiper-pagination rewiews__swiper-pagination"></div>
@@ -3221,7 +3220,7 @@
                                                             alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
-                                                <div class="reviews__slide-text">Березовая, 8</div>
+                                                <div class="reviews__slide-text --preMiddle-texts">Березовая, 8</div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide reviews__swiper-slide">
@@ -3233,7 +3232,7 @@
                                                             alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
-                                                <div class="reviews__slide-text">ул. Александра Невского, 60</div>
+                                                <div class="reviews__slide-text --preMiddle-texts">ул. Александра Невского, 60</div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide reviews__swiper-slide">
@@ -3245,7 +3244,7 @@
                                                             alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
-                                                <div class="reviews__slide-text">Алмазная, 5</div>
+                                                <div class="reviews__slide-text --preMiddle-texts">Алмазная, 5</div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide reviews__swiper-slide">
@@ -3257,7 +3256,7 @@
                                                             alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
-                                                <div class="reviews__slide-text">Березовая, 8</div>
+                                                <div class="reviews__slide-text --preMiddle-texts">Березовая, 8</div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide reviews__swiper-slide">
@@ -3269,7 +3268,7 @@
                                                             alt="" class="reviews__slide-img">
                                                     </div>
                                                 </a>
-                                                <div class="reviews__slide-text">Березовая, 8</div>
+                                                <div class="reviews__slide-text --preMiddle-texts">Березовая, 8</div>
                                             </div>
                                         </div>
                                     </div>
@@ -3283,11 +3282,11 @@
                         <div class="my-container feedback-block__container">
                             <div class="feedback-block__inner">
                                 <div class="feedback-block__description">
-                                    <div class="feedback-block__main-text">Хотите записаться на экскурсию в один из
+                                    <div class="feedback-block__main-text --large-texts">Хотите записаться на экскурсию в один из
                                         наших садов,
                                         <br> попасть в центр развития <br> или уточнить информацию?
                                     </div>
-                                    <div class="feedback-block__pre-text">Оставьте Ваш телефон, <br> и мы перезвоним в
+                                    <div class="feedback-block__pre-text --middle-texts">Оставьте Ваш телефон, <br> и мы перезвоним в
                                         ближайшее
                                         время</div>
                                 </div>
@@ -3325,7 +3324,7 @@
                             <div class="contacts__desc">
                                 <div class="contacts__smd">
                                     <h2 class="contacts__title">Контакты</h2>
-                                    <div class="contacts__info">
+                                    <div class="contacts__info --middle-texts">
                                         <a href="tel:+73952738200" class="contacts__phone">
                                             <div class="contacts__phone-img-wrap">
                                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3349,8 +3348,8 @@
                                 </div>
                                 <div class="contacts__addresses">
                                     <div class="contacts__address-block">
-                                        <div class="contacts__address-title">Детские сады</div>
-                                        <ul class="contacts__address-items">
+                                        <div class="contacts__address-title --large-texts">Детские сады</div>
+                                        <ul class="contacts__address-items --middle-texts">
                                             <li class="contacts__address-item">ул. Алмазная, 5 (м-н Первомайский)</li>
                                             <li class="contacts__address-item">ул. Декабрьских событий, 102</li>
                                             <li class="contacts__address-item">ул. Александра Невского, 60</li>
@@ -3359,8 +3358,8 @@
                                         </ul>
                                     </div>
                                     <div class="contacts__address-block">
-                                        <div class="contacts__address-title">Центр развития</div>
-                                        <ul class="contacts__address-items">
+                                        <div class="contacts__address-title --large-texts">Центр развития</div>
+                                        <ul class="contacts__address-items --middle-texts">
                                             <li class="contacts__address-item">ул. Александра Невского, 60</li>
                                         </ul>
                                     </div>
@@ -3391,12 +3390,12 @@
                             </a>
                             <button class="my-button footer__button-reviews --reverseColors">оставить отзыв</button>
                         </div>
-                        <div class="footer__info-text">Сеть частных детских садов <br> и центр развития детей <br> с
+                        <div class="footer__info-text --preMiddle-texts">Сеть частных детских садов <br> и центр развития детей <br> с
                             лицензией № 9378 от 29.07.2016 </div>
                         <button class="my-button footer__button-reviews --mobile --reverseColors">оставить отзыв</button>
                     </div>
                     <div class="footer__right">
-                        <nav class="footer__menu">
+                        <nav class="footer__menu --middle-texts">
                             <ul class="footer__menu-list">
                                 <li class="footer__menu-item"><a href="" class="footer__menu-link">Сведения об
                                         организации</a>
@@ -3529,7 +3528,6 @@
         function updateActiveButton(index) {
             buttons.forEach(button => {
                 button.classList.remove('active');
-                console.log(1)
             });
 
             const activeButton = document.querySelector(`.development__button[data-slide="${index}"]`);

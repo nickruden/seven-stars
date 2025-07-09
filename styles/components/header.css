@@ -112,9 +112,20 @@
 }
 
 .header__menu {
-    padding: 14px 28px;
+    padding: 16px 20px;
     border: 1.6px solid #96B554;
     border-radius: 100px;
+    margin: 0px 32px;
+}
+
+.wrapper.text-medium .header__menu {
+    max-width: 611px;
+    border-radius: 24px;
+}
+
+.wrapper.text-large .header__menu {
+    max-width: 547px;
+    border-radius: 24px;
 }
 
 .wrapper.theme-white .header__menu {
@@ -139,6 +150,8 @@
 
 .header__menu-list {
     display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .header__menu-item {}
@@ -155,6 +168,7 @@
 
 .header__contacts {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
@@ -195,6 +209,7 @@
 
 .header__buttons {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
@@ -318,6 +333,7 @@
     line-height: 100%;
     color: #030303;
     padding: 9px 10px;
+    width: max-content;
 }
 
 .header__mobile-button {
@@ -584,26 +600,6 @@
         background-color: #A9DD38;
     }
 
-    .wrapper.theme-white .pre-mobile-menu__dropdown-menu {
-        background-color: #FFF;
-    }
-
-    .wrapper.theme-yellow .pre-mobile-menu__dropdown-menu {
-        background-color: #FFFF00;
-    }
-
-    .wrapper.theme-blue .pre-mobile-menu__dropdown-menu {
-        background-color: #9FD7FF;
-    }
-
-    .wrapper.theme-blackWhite .pre-mobile-menu__dropdown-menu {
-        background-color: #000;
-    }
-
-    .wrapper.theme-blackGreen .pre-mobile-menu__dropdown-menu {
-        background-color: #000;
-    }
-
     .burger-button.show span:nth-of-type(1) {
         transform: rotate(45deg) translate(6px, 11px);
     }
@@ -631,6 +627,31 @@
         border: 1px solid #4E6932;
         padding: 0px;
         border-radius: 11px;
+    }
+
+    .wrapper.theme-white .pre-mobile-menu__dropdown-menu {
+        background-color: #FFF;
+        border-color: #000;
+    }
+
+    .wrapper.theme-yellow .pre-mobile-menu__dropdown-menu {
+        background-color: #FFFF00;
+        border-color: #000;
+    }
+
+    .wrapper.theme-blue .pre-mobile-menu__dropdown-menu {
+        background-color: #9FD7FF;
+        border-color: #133C58;
+    }
+
+    .wrapper.theme-blackWhite .pre-mobile-menu__dropdown-menu {
+        background-color: #000;
+        border-color: #FFF;
+    }
+
+    .wrapper.theme-blackGreen .pre-mobile-menu__dropdown-menu {
+        background-color: #000;
+        border-color: #A9DD38;
     }
 
     .pre-mobile-menu__dropdown-item {
@@ -831,6 +852,12 @@
     .mobile-menu__link-item .header__dropdown-menu {
         left: 0px !important;
         width: calc(100% + 60px);
+    }
+}
+
+@media (max-width: 551px) {
+    .header__mobile-top {
+        padding: 24px;
     }
 }
 
