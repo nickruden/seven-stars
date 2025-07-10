@@ -29,12 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const panel = document.querySelector(".additional-feature-panel");
 
   imageOnBtn.addEventListener("click", () => {
-    toggleImages(false);
+    toggleImages(true);
     localStorage.setItem("showImage", true);
   });
 
   imageOffBtn.addEventListener("click", () => {
-    toggleImages(true);
+    toggleImages(false);
     localStorage.setItem("showImage", false);
   });
 
@@ -65,10 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // управление картинками
   function toggleImages(show) {
+    console.log(show);
     if (show) {
-      wrapper.classList.add("no-images");
-    } else {
       wrapper.classList.remove("no-images");
+    } else {
+      wrapper.classList.add("no-images");
     }
   }
 
@@ -204,16 +205,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Картинки
     if (localStorage.getItem("showImage") === "true") {
       toggleImages(false);
-      imageOffBtn.classList.remove("active");
-      imageOnBtn.classList.add("active");
+      imageOffBtn.classList.add("active");
+      imageOnBtn.classList.remove("active");
     } else {
       toggleImages(true);
-      imageOnBtn.classList.remove("active");
-      imageOffBtn.classList.add("active");
+      imageOnBtn.classList.add("active");
+      imageOffBtn.classList.remove("active");
     }
 
     // Размер текста
-    const size = localStorage.getItem("textSize") || "";
+    const size = localStorage.getItem("textSize") || "small";
     setTextSize(size);
 
     // Тема

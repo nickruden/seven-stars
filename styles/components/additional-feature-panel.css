@@ -149,15 +149,15 @@
     color: #000;
 }
 
-.wrapper[class*="text"] .my-button.additional-feature-panel__button-off, .my-button.additional-feature-panel__button-off {
+.wrapper[class*="text"] .my-button.additional-feature-panel__button-off,
+.my-button.additional-feature-panel__button-off {
     width: 260px;
     padding: 16px 24px;
-    color: #000 !important;
-    border: 1px solid #000 !important;
-    font-size: 16px!important;
+    font-size: 16px !important;
     white-space: nowrap;
 }
 
+.additional-feature-panel__button-off,
 .wrapper[class*="theme"] .additional-feature-panel__button-off {
     color: #000 !important;
     border: 1px solid #000 !important;
@@ -179,9 +179,10 @@
         font-size: 18px;
     }
 
-    .additional-feature-panel__button-off {
+    .wrapper[class*="text"] .my-button.additional-feature-panel__button-off,
+    .my-button.additional-feature-panel__button-off {
         width: auto;
-        font-size: 15px;
+        font-size: 15px !important;
     }
 }
 
@@ -215,9 +216,10 @@
         gap: 40px 55px;
     }
 
-    .additional-feature-panel__button-off {
+    .wrapper[class*="text"] .my-button.additional-feature-panel__button-off,
+    .my-button.additional-feature-panel__button-off {
         padding: 14px 22px;
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
 
@@ -282,9 +284,11 @@
 }
 
 @media (max-width: 431px) {
-    .additional-feature-panel__button-off {
+
+    .wrapper[class*="text"] .my-button.additional-feature-panel__button-off,
+    .my-button.additional-feature-panel__button-off {
         padding: 12px 20px;
-        font-size: 12px;
+        font-size: 12px !important;
         line-height: 100%;
     }
 }
