@@ -49,15 +49,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // soundOnBtn?.addEventListener("click", () => {
-  //   toggleSound(true);
-  //   localStorage.setItem("soundEnabled", "true");
-  // });
+  soundOnBtn?.addEventListener("click", () => {
+    toggleSound(true);
+    localStorage.setItem("soundEnabled", "true");
+  });
 
-  // soundOffBtn?.addEventListener("click", () => {
-  //   toggleSound(false);
-  //   localStorage.setItem("soundEnabled", "false");
-  // });
+  soundOffBtn?.addEventListener("click", () => {
+    toggleSound(false);
+    localStorage.setItem("soundEnabled", "false");
+  });
 
   closePanelBtn.addEventListener("click", closePanel);
   controlPanelBtn.addEventListener("click", togglePanel);
@@ -74,14 +74,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // управление размером текста
   function setTextSize(size) {
-    wrapper.classList.remove('text-small', 'text-medium', 'text-large');
+    wrapper.classList.remove("text-small", "text-medium", "text-large");
     wrapper.classList.add(`text-${size}`);
-    localStorage.setItem('textSize', size);
+    localStorage.setItem("textSize", size);
 
-    [textSmallBtn, textMediumBtn, textLargeBtn].forEach(btn => btn.classList.remove('active'));
-    if (size === 'small') textSmallBtn.classList.add('active');
-    if (size === 'medium') textMediumBtn.classList.add('active');
-    if (size === 'large') textLargeBtn.classList.add('active');
+    [textSmallBtn, textMediumBtn, textLargeBtn].forEach((btn) =>
+      btn.classList.remove("active")
+    );
+    if (size === "small") textSmallBtn.classList.add("active");
+    if (size === "medium") textMediumBtn.classList.add("active");
+    if (size === "large") textLargeBtn.classList.add("active");
   }
 
   // управление цветовой темой
@@ -101,25 +103,71 @@ document.addEventListener("DOMContentLoaded", function () {
     themeButtons[theme].classList.add("active");
   }
 
-  // function toggleSound(enabled) {
-  //   wrapper.classList.toggle('sound-enabled', enabled);
-  //   if (enabled) initTextToSpeech();
-  // }
+  function toggleSound(enabled) {
+    wrapper.classList.toggle("sound-enabled", enabled);
+    if (enabled) {
+      enableSpeechDelegation();
+    } else {
+      disableSpeechDelegation();
+    }
+  }
 
-  // function initTextToSpeech() {
-  //   const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, div');
-  //   elements.forEach(el => {
-  //     el.addEventListener('mouseenter', speakText);
-  //   });
-  // }
+  let currentSpeakHandler = null;
 
-  // function speakText(e) {
-  //   if (!wrapper.classList.contains('sound-enabled')) return;
-  //   const utterance = new SpeechSynthesisUtterance(e.target.textContent);
-  //   utterance.lang = 'ru-RU';
-  //   window.speechSynthesis.cancel();
-  //   window.speechSynthesis.speak(utterance);
-  // }
+  function enableSpeechDelegation() {
+    disableSpeechDelegation();
+
+    currentSpeakHandler = function (e) {
+      if (!wrapper.classList.contains("sound-enabled")) return;
+
+      const target = e.target.closest(
+        "p, h1, h2, h3, h4, h5, h6, li, a, span, button, label, div, img"
+      );
+      if (!target) return;
+
+      const text = getElementText(target);
+      if (!text || text.length < 2 || text === lastSpokenText) return;
+
+      lastSpokenText = text;
+      window.speechSynthesis.cancel();
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "ru-RU";
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+
+      window.speechSynthesis.speak(utterance);
+    };
+
+    wrapper.addEventListener("click", currentSpeakHandler);
+    wrapper.addEventListener("mouseenter", currentSpeakHandler, true);
+  }
+
+  function disableSpeechDelegation() {
+    if (currentSpeakHandler) {
+      wrapper.removeEventListener("click", currentSpeakHandler);
+      wrapper.removeEventListener("mouseenter", currentSpeakHandler, true);
+      currentSpeakHandler = null;
+    }
+  }
+
+  let lastSpokenText = "";
+
+  function getElementText(el) {
+    if (el.alt) return el.alt;
+    if (el.ariaLabel) return el.ariaLabel;
+    if (el.getAttribute("aria-label")) return el.getAttribute("aria-label");
+
+    let text = el.innerText || el.textContent || "";
+    text = text.trim();
+
+    if (!text && el.parentElement) {
+      text = el.parentElement.innerText?.trim() || "";
+    }
+
+    return text;
+  }
 
   function closePanel() {
     panel.classList.add("--displayNone");
@@ -143,6 +191,11 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(btn);
       btn.classList.remove("active");
     });
+
+    toggleSound(false);
+    localStorage.removeItem("soundEnabled");
+    soundOffBtn.classList.add("active");
+    soundOnBtn.classList.remove("active");
 
     closePanel();
   }
@@ -170,9 +223,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Звук
-    // if (localStorage.getItem("soundEnabled") === "true") {
-    //   toggleSound(true);
-    // }
+    if (localStorage.getItem("soundEnabled") === "true") {
+      toggleSound(true);
+      soundOnBtn.classList.add("active");
+      soundOffBtn.classList.remove("active");
+    } else {
+      toggleSound(false);
+      soundOffBtn.classList.add("active");
+      soundOnBtn.classList.remove("active");
+    }
   }
 
   loadSettings();
