@@ -121,12 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSpeakHandler = function (e) {
       if (!wrapper.classList.contains("sound-enabled")) return;
 
-      const target = e.target.closest(
-        "p, h1, h2, h3, h4, h5, h6, li, a, span, button, label, div, img"
-      );
-      if (!target) return;
+      const target = e.target;
 
-      const text = getElementText(target);
+      const text = getElementDirectTextOrDirectChildrenText(target);
+
       if (!text || text.length < 2 || text === lastSpokenText) return;
 
       lastSpokenText = text;
@@ -141,8 +139,33 @@ document.addEventListener("DOMContentLoaded", function () {
       window.speechSynthesis.speak(utterance);
     };
 
-    wrapper.addEventListener("click", currentSpeakHandler);
     wrapper.addEventListener("mouseenter", currentSpeakHandler, true);
+  }
+
+  function getElementDirectTextOrDirectChildrenText(el) {
+    let text = "";
+
+    // Собственный текст узла (исключаем текст из детей)
+    for (const node of el.childNodes) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        text += node.textContent;
+      }
+    }
+
+    if (text.trim().length >= 2) return text.trim();
+
+    // Проверяем ТОЛЬКО прямых детей, не потомков
+    for (const child of el.children) {
+      const childText = Array.from(child.childNodes)
+        .filter((n) => n.nodeType === Node.TEXT_NODE)
+        .map((n) => n.textContent)
+        .join("")
+        .trim();
+
+      if (childText.length >= 2) return childText;
+    }
+
+    return "";
   }
 
   function disableSpeechDelegation() {
@@ -155,19 +178,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let lastSpokenText = "";
 
-  function getElementText(el) {
+  function getElementTextStrict(el) {
     if (el.alt) return el.alt;
     if (el.ariaLabel) return el.ariaLabel;
     if (el.getAttribute("aria-label")) return el.getAttribute("aria-label");
 
     let text = el.innerText || el.textContent || "";
-    text = text.trim();
-
-    if (!text && el.parentElement) {
-      text = el.parentElement.innerText?.trim() || "";
-    }
-
-    return text;
+    return text.trim(); // Больше не ищем в родителях
   }
 
   function closePanel() {
