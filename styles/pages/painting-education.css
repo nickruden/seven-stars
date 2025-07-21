@@ -156,7 +156,7 @@
     gap: 16px;
 }
 
-.lesson-structure__lesson-stage-text {
+.lesson-structure__lesson-stage-texts p, .lesson-structure__lesson-stage-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 130%;
@@ -186,7 +186,7 @@
         padding: 25px;
     }
 
-    .lesson-structure__lesson-stage-text {
+    .lesson-structure__lesson-stage-texts p, .lesson-structure__lesson-stage-text {
         font-size: 15px;
     }
 
@@ -369,7 +369,7 @@
         min-height: 240px;
     }
 
-    .lesson-structure__lesson-stage-text {
+    .lesson-structure__lesson-stage-texts p, .lesson-structure__lesson-stage-text {
         font-size: 14px;
     }
 }
