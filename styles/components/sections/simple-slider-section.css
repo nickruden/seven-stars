@@ -52,7 +52,7 @@
     }
 
     .--desktopMode-wrap .simple-slider-section__swiper-slide {
-        flex: 1 1 calc(33.333% - 28px);
+        flex: 0 1 calc(34.063% - 28px);
     }
 
     .--desktopMode-wrap .simple-slider-section__slide {
