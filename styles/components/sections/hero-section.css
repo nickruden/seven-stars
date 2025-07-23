@@ -37,10 +37,7 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 610px;
-}
-
-.wrapper[class*="text"] .hero-section__body-texts {
-    margin-bottom: 40px;
+    gap: 40px;
 }
 
 .hero-section__title {
@@ -490,7 +487,7 @@
     background-color: #CFCFCF;
 }
 
-.wrapper[class*="text"] .hero-section__wrap-img {
+.wrapper[class*="text-medium"] .hero-section__wrap-img, .wrapper[class*="text-large"] .hero-section__wrap-img {
     max-height: none;
     height: 100%;
 }

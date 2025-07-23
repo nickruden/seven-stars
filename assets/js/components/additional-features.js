@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (el.getAttribute("aria-label")) return el.getAttribute("aria-label");
 
     let text = el.innerText || el.textContent || "";
-    return text.trim(); // Больше не ищем в родителях
+    return text.trim();
   }
 
   function closePanel() {
@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.clear();
 
     setTextSize("small");
-    toggleImages(false);
-    localStorage.setItem("showImage", true);
+    toggleImages(true);
+    localStorage.removeItem("showImage");
     imageOffBtn.classList.remove("active");
     imageOnBtn.classList.add("active");
 
