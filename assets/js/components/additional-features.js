@@ -221,11 +221,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function loadSettings() {
     // Картинки
     if (localStorage.getItem("showImage") === "true") {
-      toggleImages(false);
+      toggleImages(true);
       imageOffBtn.classList.add("active");
       imageOnBtn.classList.remove("active");
     } else {
-      toggleImages(true);
+      toggleImages(false);
       imageOnBtn.classList.add("active");
       imageOffBtn.classList.remove("active");
     }
