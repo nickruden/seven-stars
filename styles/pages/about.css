@@ -45,7 +45,7 @@
     margin-bottom: 40px;
 }
 
-.about-info__text {
+.about-info__texts p, .about-info__text {
     font-size: 16px;
     line-height: 130%;
 }
@@ -79,7 +79,7 @@
         gap: 13px;
     }
 
-    .about-info__text {
+    .about-info__texts p, .about-info__text {
         font-size: 15px;
     }
 }
@@ -110,7 +110,7 @@
         margin-bottom: 35px;
     }
 
-    .about-info__text {
+    .about-info__texts p, .about-info__text {
         font-size: 16px;
     }
 }
@@ -130,14 +130,6 @@
 
     .about-info__body {
         max-width: none;
-    }
-
-    .about-info__text {
-        font-size: 15px;
-    }
-
-    .about-info__text {
-        font-size: 16px;
     }
 }
 
@@ -176,7 +168,7 @@
         gap: 15px;
     }
 
-    .about-info__text {
+    .about-info__texts p, .about-info__text {
         font-size: 14px;
     }
 }
@@ -223,12 +215,12 @@
     max-width: 610px;
 }
 
-.avantage-descripion__text {
+.avantage-descripion__texts p, .avantage-descripion__text {
     font-size: 16px;
     line-height: 130%;
 }
 
-.avantage-descripion__text:not(:last-child) {
+.avantage-descripion__texts p:not(:last-child), .avantage-descripion__text:not(:last-child) {
     margin-bottom: 16px;
 }
 
@@ -296,7 +288,7 @@
         font-size: 22px;
     }
 
-    .avantage-descripion__text {
+    .avantage-descripion__texts p, .avantage-descripion__text {
         font-size: 15px;
     }
 }
@@ -387,7 +379,7 @@
         margin-bottom: 30px;
     }
 
-    .avantage-descripion__text {
+    .avantage-descripion__texts p, .avantage-descripion__text {
         font-size: 14px;
     }
 
