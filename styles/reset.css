@@ -58,7 +58,13 @@ body {
     flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-bottom: 0px;
 }
 
@@ -73,19 +79,23 @@ a:hover {
 }
 
 .wrapper.theme-white a:hover {
-    color: #808080!important;
+    color: #808080 !important;
 }
+
 .wrapper.theme-yellow a:hover {
-    color: #676767!important;
+    color: #676767 !important;
 }
+
 .wrapper.theme-blue a:hover {
-    color: #558db2!important;
+    color: #558db2 !important;
 }
+
 .wrapper.theme-blackWhite a:hover {
-    color: #969696!important;
+    color: #969696 !important;
 }
+
 .wrapper.theme-blackGreen a:hover {
-    color: #9aa18c!important;
+    color: #9aa18c !important;
 }
 
 ol,
@@ -115,6 +125,20 @@ button {
 
 button {
     background: transparent;
+}
+
+table,
+td,
+tr {
+    border: 1px solid gray;
+}
+
+td p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+td {
+    padding: 5px;
 }
 
 .wrapper {
