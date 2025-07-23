@@ -21,6 +21,7 @@
     border-bottom: 1px solid #4E6932;
     border-left: none;
     border-right: none;
+    border-radius: 0px !important;
 }
 
 .wrapper[class*="theme"] .info-parts__accordion-item {
