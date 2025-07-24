@@ -145,8 +145,8 @@
     padding-left: 0px;
     padding-bottom: 0px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    flex-direction: column;
     max-width: 900px;
     font-size: 16px;
     font-weight: 500;
@@ -154,8 +154,22 @@
     color: #303030;
 }
 
+.info-parts__accordion-body a {
+    color: #7cbbf0;
+}
+
+.info-parts__accordion-body a:hover {
+    color: #4d7392;
+}
+
+.info-parts__accordion-body h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 30px 0px 4px;
+}
+
 .info-parts__accordion-body ul li {
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 .info-parts__accordion-body ul,
