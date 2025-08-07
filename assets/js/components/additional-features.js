@@ -220,10 +220,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function loadSettings() {
     // Картинки
-    if (localStorage.getItem("showImage") === "true") {
+    if (localStorage.getItem("showImage") !== "false") {
       toggleImages(true);
-      imageOffBtn.classList.add("active");
-      imageOnBtn.classList.remove("active");
+      imageOffBtn.classList.remove("active");
+      imageOnBtn.classList.add("active");
     } else {
       toggleImages(false);
       imageOnBtn.classList.add("active");
